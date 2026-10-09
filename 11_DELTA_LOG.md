@@ -440,22 +440,22 @@ Stage 0.7 — Investigation Plan & Final Output Blueprint
 ## Delta Update: 2026-10-10 / North Sync 기업 도입 타당성 / Stage 1~5 재평가 (자료 F~I)
 
 ### 기록 방식
-- 대상: \`11_DELTA_LOG.md\`, 기존 내용 맨 뒤
-- 방식: **append-only**; A~E 및 Scope/Plan 등 이전 Delta 원문 보존. 최신 결론은 갱신된 \`10_CURRENT_SUMMARY.md\`를 우선.
-- 브랜치: \`research/20261010-north-sync-v2-test\`
-- 규칙 기준: \`fc18d1c2d667ec4847f0eaf0c4bc29cce509a651\`
+- 대상: `11_DELTA_LOG.md`, 기존 내용 맨 뒤
+- 방식: **append-only**; A~E 및 Scope/Plan 등 이전 Delta 원문 보존. 최신 결론은 갱신된 `10_CURRENT_SUMMARY.md`를 우선.
+- 브랜치: `research/20261010-north-sync-v2-test`
+- 규칙 기준: `fc18d1c2d667ec4847f0eaf0c4bc29cce509a651`
 
 ### 단계
 - Stage 1 — Initial Research: 사용자 제공 가상 F~I 추가 접수.
 - Stage 2 — Adversarial Review: 실제 회수와 서비스 자체 복원, 서버 동기화 전후, 권한 철회와 잔류 로컬 파일, 요금제 가치와 비용·종속 위험의 대안 해석 검토.
 - Stage 3 — Evidence & Freshness Check: A~I의 v2.2·시점·요금제·표본·근거 유형 대조; 외부 원자료·실서비스·감사 실증은 별도 미확인.
 - Stage 4 — Revision & Delta Update: 이전의 미복원/Plus 미실증/보안 동작 미검증/가격 공백에 관한 현재 판단 수정.
-- Stage 5 — Closure Readiness Check: **조건부로 최종보고서 초안 단계에 진입 가능**. 기업 전체 도입 승인과 별개의 판정이며, 이번 요청에 따라 Stage 6~8 실행 및 \`FINAL_REPORT.md\` 작성은 하지 않음.
+- Stage 5 — Closure Readiness Check: **조건부로 최종보고서 초안 단계에 진입 가능**. 기업 전체 도입 승인과 별개의 판정이며, 이번 요청에 따라 Stage 6~8 실행 및 `FINAL_REPORT.md` 작성은 하지 않음.
 
 ### 현재 실행 작업
 - 작업 1 자료 수집·버전 정리: A~I(전부 2026년 v2.2)의 **제공 문구 수준** 분류 완료.
 - 작업 2 P0 보안: H로 10계정의 신규 서버 접속 차단 관찰; 잔류 오프라인 사본·보안 구현·감사 여전히 검증 필요.
-- 작업 3 P0 데이터 무결성: F로 C/D 3건 전부 내용 회수 확인; G로 Plus의 서버 기동기화 이력 복원 부분 실증; 충돌 방지·미동기화 내용 보호 미검증.
+- 작업 3 P0 데이터 무결성: F로 C/D 3건 전부 내용 회수 확인; G로 Plus의 서버에 동기화된 이전 버전의 이력 복원 부분 실증; 충돌 방지·미동기화 내용 보호 미검증.
 - 작업 4 P1 업무/운영: I의 대상 25명·Windows 11/macOS 14, SLA/지원 조건 파악; 실제 가용성·복구 운영 미검증.
 - 작업 5 P1 비용/계약: I에 근거한 확인 가능 비용 부분합 산출, 12개월 계약·반출/삭제 조건 분석; 완전한 TCO 및 이식성 미확인.
 - 작업 6 제한적 시나리오/반례: A~I 내부 모순·인과 비약·수치 일반화 검토 수행; 추가 외부/독립 실증 대기.
@@ -468,7 +468,7 @@ Stage 0.7 — Investigation Plan & Final Output Blueprint
 - [보류] 6/8을 일반적인 Plus 복원 성공률 또는 시스템 신뢰성·데이터 손실률로 일반화하지 않음. 2회도 원래 서버에 없던 내용이므로 해당 결과만으로 버전 복원 기능의 오작동으로 규정하지 않음.
 - [확실] H는 10개 테스트 계정 모두 권한 철회 후 **새로운 서버 접속 차단** 관찰. 동기화됐던 로컬 사본의 일부는 오프라인 기기에 남아 열람 가능; 기존 세션·키 관리·장치 암호화·원격 삭제·감사 완전성은 미확인.
 - [공식] I의 요금·SLA·지원·계약·반출·삭제 조건은 가상 공급업체 정책 주장으로 확인되며, SLA 성능과 삭제·반출 완전성은 실증되지 않음.
-- [보류] **전체 기업 도입 승인 보류**. 보고서는 조건부 판정과 잔여 미검증 게이트를 명시하는 Decision Report · Standard로 작성 *가능*하지만, 현재 \`FINAL_REPORT.md\`는 작성하지 않음.
+- [보류] **전체 기업 도입 승인 보류**. 보고서는 조건부 판정과 잔여 미검증 게이트를 명시하는 Decision Report · Standard로 작성 *가능*하지만, 현재 `FINAL_REPORT.md`는 작성하지 않음.
 
 ### 새로 확인된 사실
 - **F (2026-10-09, v2.2), 가상 후속 백업 조사 / 사내 기록**
@@ -501,14 +501,14 @@ Stage 0.7 — Investigation Plan & Final Output Blueprint
 
 ### 바뀐 판단
 - 이전: [불명확] 3건 중 사례 3 확인 범위 미복원; Plus 버전 이력 실제 복원 성공 미확인; H 해당 보안 동작 미검증; 사용자별 가격·계약/SLA/반출 정보 공백; Stage 5 진입 보류.
-- 변경: [확실] F의 외부 백업으로 사례 3 최종 회수(해시 일치); G의 Plus 서버 기동기화 수정 내용 6건 복원(해시 일치); H의 신규 서버 접속 철회 시험 관찰; I의 요금·계약·지원/반출 안내 및 계산 가능한 부분비용 확보.
+- 변경: [확실] F의 외부 백업으로 사례 3 최종 회수(해시 일치); G의 Plus 서버에 동기화된 수정 내용 6건 복원(해시 일치); H의 신규 서버 접속 철회 시험 관찰; I의 요금·계약·지원/반출 안내 및 계산 가능한 부분비용 확보.
 - 변경: [보류] **서비스 도입 승인**은 여전히 보류. [유력] 핵심 판단을 '과거 사례의 미복원 우려'에서 '미동기화 내용과 로컬 데이터 보호, 복구·계약·보안 통제의 잔여 위험'으로 이동.
 - 변경: [유력] Stage 5의 **보고서 작성 가능성은 조건부 가능**. 남은 P0/P1 미확인을 명시한 조건부/보류 도입 Decision Report 작성은 가능하며, 사용자가 이번에 금지한 Stage 6~8 실행과 파일 작성은 하지 않음.
 - 이유: F~I의 신규 관찰과 공식 주장 분리, 반복시험 적용 범위 및 비용/계약 조건 반영.
 
 ### 최종 산출물 반영 위치
 - 예정 섹션/장: 2 A~I 출처·시험 환경·조건, 3 충돌·F/G 복구 경로 구분, 4 H 보안/오프라인 파일·SLA, 5 I 비용·요금제·계약·내보내기, 6 G 반례·일반화 한계, 7 보류/조건부 시범도입 게이트, 8 A~I 근거 매트릭스·시험 잔여.
-- 반영 방식: **상태 기록만**; 확정된 Decision Report · Standard / 기존 Final Output Blueprint 보존. \`FINAL_REPORT.md\` 미작성.
+- 반영 방식: **상태 기록만**; 확정된 Decision Report · Standard / 기존 Final Output Blueprint 보존. `FINAL_REPORT.md` 미작성.
 
 ### 불명확한 점
 - [불명확] D 사례 1·2의 원본/회수 해시 일치 및 F/G/H 시험 로그 원본과 독립 재현.
@@ -533,4 +533,4 @@ Stage 0.7 — Investigation Plan & Final Output Blueprint
 - [보류] 구버전 위험: 자료상 v2.2 일치, 이후 개정이나 현실 서비스 버전 존재는 확인하지 않음.
 
 ### 붙일 위치
-- \`11_DELTA_LOG.md\` 맨 뒤에 append-only로 추가. 기존 Scope Update / Investigation Plan / A~E Delta 원문을 삭제·수정하지 않음.
+- `11_DELTA_LOG.md` 맨 뒤에 append-only로 추가. 기존 Scope Update / Investigation Plan / A~E Delta 원문을 삭제·수정하지 않음.

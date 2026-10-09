@@ -414,8 +414,8 @@
 |---|---|---|
 | `FINAL_REPORT.md` | 조사 브랜치에 저장/교체 | ... |
 | `10_CURRENT_SUMMARY.md` | 교체 | ... |
-| `11_DELTA_LOG.md` | 초기화 | ... |
-| `12_ARCHIVE_LOG.md` | append | ... |
+| `11_DELTA_LOG.md` | 필요한 경우에만 초기화(복구 경로 확인 후) | ... |
+| `12_ARCHIVE_LOG.md` | Closeout 기록 필요 시 append | ... |
 
 ### 재개 조건
 - ...

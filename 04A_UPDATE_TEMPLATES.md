@@ -51,7 +51,9 @@ Stage 0.5 — Scope & Output Proposal
 ### 추천 기본 범위
 - ...
 
-### 최종 산출물 양식 제안
+### 최종 산출물 양식 제안 (실제 형식 선택이 중요한 경우에만)
+
+- 이미 지정된 형식이 있거나 형식 비교가 중요하지 않으면 아래 비교 블록은 생략하고 지정된 형식 또는 합리적 기본값만 기록한다.
 
 추천: [Brief Final Report / Full Report / Academic-style Report / Essay-Column Report / Decision Report / Comparison Report / Source Dossier]
 
@@ -80,7 +82,7 @@ Stage 0.5 — Scope & Output Proposal
 - 부록 필요 여부:
 
 ### 다음 단계
-- 단순 조사 / 조사축 1~2개: Stage 1 Initial Research 진행
+- 단순 조사 / 조사축 1~2개: Stage 0.7 생략 가능. 협업형은 범위 동의 또는 명시적 착수 위임 후 Stage 1; 범위 명확한 일회성·즉시 실행 위임은 바로 진행
 - 조사축 3개 이상 / 누적 조사 / 최종보고서 예정: Stage 0.7 Investigation Plan 진행
 - 레포트형 / 장문 / 과제형 / 칼럼형: Stage 0.7에서 Final Output Blueprint 작성
 
@@ -163,7 +165,7 @@ Stage 0.7 — Investigation Plan & Final Output Blueprint
 - 최종 완성 위임 여부: 없음 / 있음: ...
 
 ### 다음 실행 작업
-- Stage 1에서 [작업명]부터 시작한다.
+- 예정 작업: Stage 1의 [작업명]. 실제 착수 상태: 동의·명시적 위임 확인 후 실행 / 계획 제안 중이므로 대기.
 
 ### 참조 상태
 - 공식 근거: 미확인

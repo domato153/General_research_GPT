@@ -212,3 +212,27 @@
 - **P2 추가:** 오래된 작업논문과 최신 정식 학술지 판본 간 표본/효과 크기 혼용을 *개별 모델의 출처 정합성 오류*로 분류. 재발이나 최종 결론 왜곡이 확인되기 전까지 규칙을 과도하게 강화하지 않는다.
 - **현재 시험:** 5작업 전망·검증, 6작업 종합 보고서까지 같은 대화에서 진행. 최종 원고의 수치·출처·상태기록의 자체 정정 여부, 이미 기록한 41개국 연구 수치 판본 차이 및 국내 PDF 공백을 함께 점검.
 - **변경 경계:** 이 기록은 개발 브랜치의 테스트 결과 문서에만 append. v2 시험 기준 커밋, 개발 규칙, `main`, 해당 연구 브랜치 상태 파일·결론은 수정하지 않는다.
+
+## 13. AI 고용 자연어 실사용 시험 — 5단계 미래 전망 분석 (2026-10-10)
+
+> 제11~12장의 **동일한 진행 중인 자연어 E2E 시험**. 사용자 제공 5단계 본문, 공개기관 원문 일부 직접 교차 확인, GitHub 조사 브랜치 실제 재조회에 근거한다. v2 규칙이나 `main` 변경은 승인하지 않는다.
+
+### 진행·상태 검증
+
+- 연구 브랜치 `research/20261010-ai-employment-impact` HEAD는 보고 커밋 `5599a3dc00f73d3656e8e0ac01001d224a660fde`와 정확히 일치. 고정 규칙 SHA `fc18d1c2d667ec4847f0eaf0c4bc29cce509a651` 대비 10커밋 앞, 뒤처짐 0. 전체 diff 변경 파일은 `10_CURRENT_SUMMARY.md`, `11_DELTA_LOG.md` 두 개만. `main` HEAD `3bc7ea1e2241b718b23d70c26d2e5840f5810c92` 불변. `FINAL_REPORT.md` 미작성.
+- 실제로 1~5작업(실측, 인과·반례, 직업·임금, 생산성·대체/보완, 전망·시나리오) 완료, 6작업(종합 근거 재검증·Full Report) 대기라고 Summary/Delta에 일치 기록. **T10/T11 통합 경로의 추가 긍정 관찰**이며 최종 E2E 완주 PASS는 아님.
+
+### 내용 대조 및 판단
+
+- WEF `Future of Jobs Report 2025`: 2025~2030 일자리 창출 1억 7천만/대체 9,200만/순증 7,800만은 여러 거시 동인의 기업 예측 기반 외삽이지 AI 단독의 인과 효과가 아님. 별도 AI·정보처리 항목 창출 약 1,100만/대체 900만, 표본 1,043사·55경제권도 공식 WEF 기사·방법론과 부합. 출처: https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/appendix-6d9e5fce68/ 와 https://www.weforum.org/stories/jobs-and-the-future-of-work/future-of-jobs-report-2025-the-fastest-growing-and-declining-jobs/
+- 미국 BLS 2025~2035 고용 총증가 5,917,600개(+3.5%), 컴퓨터·수학 직군 +403,100개(+7.3%), 사무·행정 지원 감소는 BLS 고정 연도 표와 2026-09-21 공식 해설에 부합. AI 순수 효과가 아니라 기준 전망임을 올바르게 구분. https://www.bls.gov/emp/tables/emp-by-major-occupational-group.htm / https://www.bls.gov/opub/ted/2026/total-employment-projected-to-grow-3-5-percent-between-2025-and-2035.htm
+- 한국 2024~2034 취업자 합계 +6.4만(2024~29 +36.7만, 2029~34 −30.3만), 2030부터 감소, 조건부 추가 필요인력 122.2만은 고용노동부·한국고용정보원 2026-02 발표와 부합. 노동공급 감소와 AI 자동화에 의한 직접 해고를 분리. https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18965
+- Goldman Sachs 2026-04 자체 모델의 AI 관련 월간 고용 증가 억제 약 16,000명 및 실업률 +0.1%p, 2026-03 약 10년 동안 6~7% 누적 직업전환·기본 가정 실업률 +0.6%p 전망은 공식 자료에 존재. 실측 해고건수·2030년 확정 총량으로 오해하지 않은 점 적절. https://www.goldmansachs.com/insights/articles/the-jobs-ai-is-likely-to-boost-and-those-it-may-disrupt / https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-us-labor-market
+- ILO/IMF 노출도, McKinsey 업무시간 자동화 전망, 기관별 시나리오를 합산하거나 확정 실직 숫자로 환산하지 않음. 조건부 시나리오 A/B/C에 근거 없는 실업률 확률을 부여하지 않음. **전망/실측 분리 및 상대자료 해석은 양호.** 상세 주장 전수감사는 아직 미실시.
+
+### 기존 개선 과제에 연결
+
+- **P1 보존:** Stage 0.5~0.7 사용자와의 *사전 공동 설계*가 중요하다는 요구는 별개. 조사 진행 중 형식적 승인 요구 최소화와 혼동하지 않음.
+- **P2 출처/판본:** BLS `news.release/ecopro.nr0.htm`처럼 시간이 지나면서 내용이 교체되거나 검색 색인·페이지 캐시가 다른 연도를 보여줄 수 있는 링크보다, 전망 연도가 명시된 고정 게시물/시계열 표를 우선해 최종 출처를 검증. 이번 보고서의 실제 2025~35 수치 오류로 판정한 것이 아니라 **재현성 개선 후보**. 앞서 발견한 QJE/NBER 판본 혼용은 아직 정정 여부 추적 중.
+- **P2/P3 계속 관찰:** 41개국 초급 인원 추정치 수치 판본 차이, 자료 출처 분류(`[체감]`), 한국고용정보원 2026 여름호 PDF 미열람과 Summary/Delta 상태 표시를 최종 검수에서 확인. 단발 수치 오류마다 신규 의무 검증 게이트를 만들지 않음.
+- **다음 단계 핵심 시험:** 작업 6에서 이전 단계의 오류·누락을 **스스로** 찾아 재조사/교정하는지, 정확한 원문 출처·판본이 반영되는지, 장문 `FINAL_REPORT.md`를 생성·저장·재조회하고 규칙·운영 `main`을 보존하는지 확인. 아직 완료 판정 불가.

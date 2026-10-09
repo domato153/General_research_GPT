@@ -1,6 +1,6 @@
 # Universal Research Harness — Update Templates
 
-> 이 파일의 템플릿은 필요할 때만 사용한다. 기본 저장 대상은 현재 조사 브랜치다. `FINAL_REPORT.md`는 공통 양식이며 개별 결과물은 `FINAL_REPORT.md`에 작성한다.
+> 이 파일의 템플릿은 필요할 때만 사용한다. 기본 저장 대상은 현재 조사 브랜치다. `13_FINAL_REPORT.md`는 공통 양식이며 개별 결과물은 `FINAL_REPORT.md`에 작성한다.
 
 ## 역할
 

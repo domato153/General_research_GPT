@@ -761,5 +761,5 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 - [ ] 불필요한 반복이나 주변 설명으로 과도하게 길어지지 않았는가?
 - [ ] 근거 상태와 불확실성이 드러나는가?
 - [ ] Watchlist 또는 재개 조건이 있는가?
-- [ ] `FINAL_REPORT.md` 전체 교체용으로 붙여넣을 수 있는가?
+- [ ] 결과를 해당 조사 브랜치의 `FINAL_REPORT.md`에 안전하게 저장할 수 있는가?
 ```

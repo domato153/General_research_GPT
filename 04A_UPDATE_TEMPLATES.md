@@ -1,5 +1,7 @@
 # Universal Research Harness — Update Templates
 
+> 이 파일의 템플릿은 필요할 때만 사용한다. 기본 저장 대상은 현재 조사 브랜치다. `FINAL_REPORT.md`는 공통 양식이며 개별 결과물은 `FINAL_REPORT.md`에 작성한다.
+
 ## 역할
 
 이 파일은 복붙용 MD 갱신 블록 템플릿만 담는다.  
@@ -302,7 +304,7 @@ YYYY-MM-DD
 
 ## 5. Final Report Replacement
 
-붙일 위치: `13_FINAL_REPORT.md` 전체 교체  
+붙일 위치: `FINAL_REPORT.md` 전체 교체  
 방식: replacement
 
 ```md
@@ -325,11 +327,11 @@ YYYY-MM-DD
 ## 5A. Long Final Report Segmented Replacement
 
 사용 시점:
-- `13_FINAL_REPORT.md`가 길어 한 번에 안정적으로 출력하기 어려울 때
+- `FINAL_REPORT.md`가 길어 한 번에 안정적으로 출력하기 어려울 때
 - 사용자가 장문 레포트, 딥 리서치 보고서, 10페이지 이상급 결과물을 원할 때
 - 누락, 중복, 앞뒤 결론 불일치, 근거 없는 확장을 줄이고 싶을 때
 
-붙일 위치: 모든 Part를 순서대로 합친 뒤 `13_FINAL_REPORT.md` 전체 교체  
+붙일 위치: 모든 Part를 순서대로 합친 뒤 `FINAL_REPORT.md` 전체 교체  
 방식: segmented replacement
 
 ### 1단계 — Segment Plan
@@ -337,7 +339,7 @@ YYYY-MM-DD
 ````md
 ## Final Report Segment Plan
 
-- 최종 파일: `13_FINAL_REPORT.md`
+- 최종 파일: `FINAL_REPORT.md`
 - 방식: 분할 출력 후 전체 조립 replacement
 - 총 Part 수:
 - 최종 산출물 형식:
@@ -353,21 +355,21 @@ YYYY-MM-DD
 
 ### 복붙 안내
 - Part 1부터 마지막 Part까지 순서대로 이어 붙인다.
-- 모든 Part를 합친 뒤 프로젝트 소스의 `13_FINAL_REPORT.md` 전체를 교체한다.
+- 모든 Part를 합친 뒤 해당 조사 브랜치의 `FINAL_REPORT.md`에 저장한다.
 - Part 일부만 붙인 상태는 최종 확정본으로 보지 않는다.
 ````
 
 ### 2단계 — Part 출력
 
 ````md
-## `13_FINAL_REPORT.md` Part X/N
+## `FINAL_REPORT.md` Part X/N
 
 포함 범위:
 - 섹션 ... ~ 섹션 ...
 
 복붙 방식:
 - 아래 코드블록 내용만 이전 Part 바로 뒤에 이어 붙인다.
-- 안내문은 `13_FINAL_REPORT.md` 본문에 넣지 않는다.
+- 안내문은 `FINAL_REPORT.md` 본문에 넣지 않는다.
 
 ```md
 [실제 13_FINAL_REPORT.md 본문]
@@ -388,7 +390,7 @@ YYYY-MM-DD
 - [ ] 목차 번호와 본문 번호가 일치하는가?
 - [ ] 앞 Part와 뒤 Part의 결론이 충돌하지 않는가?
 - [ ] 참고 출처 메모와 Watchlist가 마지막에 포함됐는가?
-- [ ] 최종 적용 방식이 `13_FINAL_REPORT.md` 전체 교체임을 안내했는가?
+- [ ] 최종 적용 방식이 `FINAL_REPORT.md` 전체 교체임을 안내했는가?
 ````
 
 ---
@@ -455,7 +457,7 @@ YYYY-MM-DD
 ### 최종 산출물
 - 형식:
 - 보고서 모드:
-- 저장 위치: `13_FINAL_REPORT.md`
+- 저장 위치: `FINAL_REPORT.md`
 
 ### 최종 결론
 - ...
@@ -465,7 +467,7 @@ YYYY-MM-DD
 - [재검증 필요] ...
 
 ### 파일 정리 지시
-- `13_FINAL_REPORT.md`에 최종보고서 저장
+- `FINAL_REPORT.md`에 최종보고서 저장
 - `10_CURRENT_SUMMARY.md`를 최신 요약으로 교체
 - `11_DELTA_LOG.md`의 기존 내용은 `12_ARCHIVE_LOG.md`로 이동
 - `11_DELTA_LOG.md`는 새 델타 기록 대기 상태로 초기화

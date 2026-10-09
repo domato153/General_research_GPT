@@ -1,5 +1,7 @@
 # Universal Research Harness — State Management / Optimized
 
+> 이 문서는 실제로 상태 파일을 사용하는 조사 브랜치에서만 적용한다. `main`이나 ChatGPT 프로젝트 소스가 기본 저장 대상이 아니며, `13_FINAL_REPORT.md`는 양식이고 실제 보고서는 `FINAL_REPORT.md`다.
+
 ## 역할
 
 이 파일은 상태 관리의 **짧은 운영 규칙**만 담는다.  
@@ -13,7 +15,8 @@
 10_CURRENT_SUMMARY.md  ← 항상 먼저 보는 최신 요약
 11_DELTA_LOG.md        ← Summary 이후 변화분
 12_ARCHIVE_LOG.md      ← 오래된 로그와 Closeout 보관
-13_FINAL_REPORT.md     ← 최종 산출물 / 최종보고서 템플릿 기준
+13_FINAL_REPORT.md     ← 공통 보고서 양식
+FINAL_REPORT.md        ← 개별 조사 브랜치의 실제 보고서
 ```
 
 ---
@@ -43,7 +46,7 @@
 | Investigation Plan | `11_DELTA_LOG.md` | append | Stage 0.7 이후 |
 | Delta Update | `11_DELTA_LOG.md` | append | 중간 조사 결과 |
 | Current Summary | `10_CURRENT_SUMMARY.md` | 전체 교체 | Delta 압축/중간 정리 |
-| Final Report | `13_FINAL_REPORT.md` | 전체 교체 | 최종보고서 확정 |
+| Final Report | `FINAL_REPORT.md` | 결과물 작성 또는 교체 | 최종보고서 확정 |
 | Archived Delta Batch | `12_ARCHIVE_LOG.md` | append | Delta를 Archive로 이동 |
 | Closeout | `12_ARCHIVE_LOG.md` | append | 조사 종료 |
 | Reopen Update | `11_DELTA_LOG.md` | append | 종료된 조사 재개 |
@@ -140,7 +143,7 @@ Final Report 상태는 아래 중 하나로 적는다.
 
 ## Lightweight State Sync Check
 
-조사가 길어져도 매번 긴 상태파일을 만들지는 않는다. 다만 아래 조건 중 하나라도 해당하면 답변 끝에서 MD 갱신 필요 여부를 반드시 판정한다.
+상태 파일을 실제로 쓰는 조사에서만 아래 상황을 참고해 MD 갱신 필요 여부를 판단한다. 매 답변 출력은 강제하지 않는다.
 
 ### 체크 트리거
 
@@ -206,61 +209,16 @@ Archive는 다음 경우에만 본다.
 
 ---
 
-## Final Report 종료 규칙
+## Final Report 종료 규칙 (선택)
 
-조사를 끝낼 때는 아래를 수행한다.
+- 결과물은 해당 조사 브랜치의 `FINAL_REPORT.md`에 저장하고, 양식 `13_FINAL_REPORT.md`는 변경하지 않는다.
+- 실제 Summary/Delta/Archive를 운영한 조사에서만 필요에 따라 요약 갱신, Archive 이동, Delta 초기화, Closeout을 수행한다.
+- 최종보고서의 근거·구성·표현 검토는 상태 파일 사용 여부와 무관하게 수행한다.
 
-1. `13_FINAL_REPORT.md` 전체 교체용 Final Report 제공
-2. `10_CURRENT_SUMMARY.md` 전체 교체용 Summary 제공
-3. 기존 `11_DELTA_LOG.md`를 `12_ARCHIVE_LOG.md`로 이동
-4. `11_DELTA_LOG.md` 초기화
-5. `12_ARCHIVE_LOG.md`에 Closeout 블록 append
-6. 재개 조건과 Watchlist 남김
+## 저장·수동 복붙
 
-레포트형·장문·과제형·칼럼형 요청에서는 Stage 6.5와 Stage 7 검토를 통과하기 전까지 위 절차로 닫지 않는다.
-
----
-
-## 프로젝트 소스 적용 규칙
-
-이 하네스의 MD 갱신 블록은 기본적으로 로컬 파일 저장용이 아니라, 사용자가 프로젝트에 등록해 둔 **프로젝트 소스** 갱신용으로 안내한다.
-
-사용자가 “프로젝트 소스에 넣고 쓴다”, “프로젝트 소스 갈아끼운다”, “소스에 반영한다”라고 말한 경우에는 아래 원칙을 따른다.
-
-- append-only 블록은 프로젝트 소스의 같은 파일명 문서 맨 뒤에 추가하라고 안내한다.
-- replacement 블록은 프로젝트 소스의 같은 파일명 문서 전체를 교체하라고 안내한다.
-- 파일명은 임의로 바꾸지 않는다.
-- 로컬 다운로드 파일을 제공하더라도, 최종 적용 대상이 프로젝트 소스라면 “다운로드 후 보관”보다 “프로젝트 소스에서 해당 파일을 교체/추가”를 우선 안내한다.
-- 여러 파일을 갱신해야 하면 적용 순서와 대상 파일을 먼저 말한다.
-- 사용자가 별도로 요청하지 않는 한, “로컬 파일만 저장하면 끝”인 것처럼 안내하지 않는다.
-
----
-
-## 장문 Final Report 프로젝트 소스 적용 규칙
-
-`13_FINAL_REPORT.md`를 여러 Part로 나눠 출력한 경우, 각 Part는 최종 파일을 만들기 위한 조립 조각이다.
-
-- Part 1부터 마지막 Part까지 순서대로 이어 붙인다.
-- 모든 Part를 합친 뒤 프로젝트 소스의 `13_FINAL_REPORT.md` 전체를 교체한다.
-- Part 일부만 붙인 상태를 최종 확정본으로 보지 않는다.
-- 마지막 Part 출력 후에는 누락, 중복, 목차 번호, 결론 일관성 검증을 수행한다.
-- 사용자가 프로젝트 소스에 바로 순차 붙여넣기를 원하면 Part 1은 파일 앞부분, Part 2부터는 바로 뒤에 이어 붙이라고 안내한다.
-- 분할 출력은 `13_FINAL_REPORT.md`에만 적용한다. `10_CURRENT_SUMMARY.md`, `11_DELTA_LOG.md`, `12_ARCHIVE_LOG.md`는 기존 append/replacement 규칙을 따른다.
-
----
-
-## 출력 안내 규칙
-
-사용자에게 갱신 블록을 줄 때는 먼저 적용 순서를 말한다.
-
-예:
-
-```text
-적용 순서:
-1. 프로젝트 소스의 `11_DELTA_LOG.md` 맨 뒤에 아래 블록 추가
-2. 프로젝트 소스의 `10_CURRENT_SUMMARY.md` 교체는 아직 필요 없음
-3. 다음 단계는 Stage 2 공격적 검토
-```
-
-여러 파일을 갱신할 때는 파일별로 블록을 분리한다.  
-한 블록 안에 append용과 전체 교체용을 섞지 않는다.
+- 기본 저장 대상은 현재 `research/*` 브랜치의 지정 파일이며, 변경 전 브랜치·파일을 확인하고 변경 후 커밋·diff를 재조회한다.
+- append-only 블록은 그 브랜치의 로그 말미에 추가한다. replacement는 같은 브랜치에서 지정한 **결과 파일만** 교체한다. `main`이나 ChatGPT 프로젝트 소스를 자동 교체하지 않는다.
+- 사용자가 명시적으로 수동 복붙을 원할 때에는 `04A_UPDATE_TEMPLATES.md`의 기존 블록 형식을 이용하여 적용 순서와 위치를 설명한다.
+- 긴 Final Report는 Part를 합쳐 누락·중복·번호·결론·출처를 확인한 후 `FINAL_REPORT.md`에 저장한다.
+- 쓰기 도구가 없다면 결과를 제공하되 실제 저장 완료를 주장하지 않는다.

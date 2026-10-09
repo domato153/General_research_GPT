@@ -1,18 +1,20 @@
 # Final Report Template — Output Modes
 
+> 이 문서는 공통 보고서 **양식**이며 조사 결과를 덮어쓰지 않는다. 실제 결과물은 현재 조사 브랜치의 `FINAL_REPORT.md`에 저장한다. 이미 정해진 형식에 대해 반복 승인을 요구하지 않는다.
+
 ## 역할
 
 이 파일은 최종 산출물의 양식 기준이다.  
-`13_FINAL_REPORT.md`는 실제 최종보고서를 저장하는 파일이기도 하지만, 새 조사에서는 아래 구조를 기준 템플릿으로 사용한다.
+`13_FINAL_REPORT.md`는 공통 템플릿이며 개별 최종보고서는 별도 `FINAL_REPORT.md`로 저장한다.
 
 최종보고서는 단순 요약으로 고정하지 않는다.  
-Stage 0.5에서 사용자 목적에 맞는 산출물 양식을 제안하고, Stage 0.7에서 Final Output Blueprint를 만든 뒤, Stage 6~7에서 그 양식에 맞춰 조립·확장·검토한다.
+사용자의 목적과 지정 형식에 맞춰 양식을 선택한다. Stage 0.5의 제안·Stage 0.7의 Blueprint는 실제 필요한 복잡한 조사에만 적용한다.
 
 ---
 
 ## 1. 최종 산출물 양식 제안 규칙
 
-최종 결과물의 모양이 중요한 요청에서는 보고서 작성 전에 먼저 양식 후보를 설명하고 추천한다.
+결과물의 형식이 중요하지만 아직 정해지지 않았다면 양식을 추천한다. 기본값을 정할 수 있으면 별도의 사전 승인 없이 진행한다.
 
 사용자가 아래처럼 말하면 이 규칙을 적용한다.
 
@@ -134,7 +136,7 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 ```md
 ## Final Report Segment Plan
 
-- 최종 파일: `13_FINAL_REPORT.md`
+- 최종 파일: `FINAL_REPORT.md`
 - 방식: 분할 출력 후 전체 조립 replacement
 - 총 Part 수:
 - 최종 산출물 형식:
@@ -152,7 +154,7 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 ### Part 출력 기본형
 
 ````md
-## `13_FINAL_REPORT.md` Part X/N
+## `FINAL_REPORT.md` Part X/N
 
 포함 범위:
 - 섹션 ... ~ 섹션 ...
@@ -168,9 +170,9 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 
 ### 결합 원칙
 
-- Part 1은 `13_FINAL_REPORT.md`의 시작 부분을 포함한다.
+- Part 1은 `FINAL_REPORT.md`의 시작 부분을 포함한다.
 - Part 2부터는 이전 Part 바로 뒤에 이어 붙일 내용만 포함한다.
-- 모든 Part를 합친 뒤 프로젝트 소스의 `13_FINAL_REPORT.md` 전체를 교체한다.
+- 모든 Part를 합친 뒤 조사 브랜치의 `FINAL_REPORT.md`에 저장한다.
 - 마지막 Part 이후 누락, 중복, 목차 번호, 결론 일관성, 출처 메모 포함 여부를 검증한다.
 
 
@@ -747,8 +749,8 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 # 14. Final Report 확정 전 체크리스트
 
 ```md
-- [ ] Stage 0.5에서 최종 산출물 양식을 추천했는가?
-- [ ] 사용자가 승인했거나 기본 추천값으로 진행 가능한가?
+- [ ] 사용자 목적에 맞는 최종 산출물 양식을 선택했는가?
+- [ ] 지정된 형식 또는 합리적인 기본값으로 진행할 수 있는가?
 - [ ] Stage 0.7을 수행했다면 Final Output Blueprint가 있는가?
 - [ ] 실제 Final Report가 선택한 양식과 일치하는가?
 - [ ] 레포트형 요청을 Brief 형식으로 닫지 않았는가?
@@ -759,5 +761,5 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 - [ ] 불필요한 반복이나 주변 설명으로 과도하게 길어지지 않았는가?
 - [ ] 근거 상태와 불확실성이 드러나는가?
 - [ ] Watchlist 또는 재개 조건이 있는가?
-- [ ] `13_FINAL_REPORT.md` 전체 교체용으로 붙여넣을 수 있는가?
+- [ ] `FINAL_REPORT.md` 전체 교체용으로 붙여넣을 수 있는가?
 ```

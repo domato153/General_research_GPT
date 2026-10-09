@@ -1,5 +1,7 @@
 # Universal Research Harness — Validation Rules
 
+> 블록 형식 검증은 해당 블록을 **실제로 사용·저장할 때만** 적용한다. 일반 조사에 상태 기록과 Closeout을 강제하지 않는다. 결과물은 해당 조사 브랜치의 `FINAL_REPORT.md`, 공통 양식은 `FINAL_REPORT.md`다. 근거 정확성 검증은 형식 검증과 별개다.
+
 ## 역할
 
 이 파일은 MD 갱신 블록과 Final Report를 출력하기 전의 엄격한 검증 규칙이다.  
@@ -271,13 +273,13 @@ Reopen Update는 종료된 조사를 다시 열 때만 사용한다.
 
 Final Report를 출력하기 전에 아래를 확인한다.
 
-- Stage 0.5에서 최종 산출물 형식을 정했는가?
-- Stage 0.5에서 양식 후보와 추천 이유를 설명했는가?
+- 사용자가 원하는 최종 산출물 형식을 정했는가?
+- 사용자가 양식 비교를 원하거나 형식이 불명확한 경우에만 추천 이유를 설명했는가?
 - Stage 0.7을 수행했다면 Final Output Blueprint가 있는가?
 - 현재 Final Report가 선택된 모드와 맞는가?
 - 사용자가 “레포트형/내용 많이/칼럼/과제형”을 원했는데 Brief Final Report로 끝내지 않았는가?
 - 사용자가 짧은 결론만 원했는데 Full Report로 과잉 작성하지 않았는가?
-- 선택한 양식의 장점과 한계가 사용자에게 사전에 안내됐는가?
+- 양식 비교가 실제 필요한 경우 장점·한계를 적절히 설명했는가?
 - 선택한 양식과 출력 밀도가 사용자 목적에 맞는가?
 
 검증 실패 예시:
@@ -331,7 +333,7 @@ Final Report를 출력하기 전에 아래를 확인한다.
 - 앞 Part의 결론과 뒤 Part의 결론이 충돌하지 않는가?
 - 새 Part에서 근거 없는 새 주장이 갑자기 추가되지 않았는가?
 - 마지막 Part 이후 전체 결합 검증을 안내했는가?
-- 최종 적용 방식이 `13_FINAL_REPORT.md` 전체 replacement임을 안내했는가?
+- 최종 적용 방식이 `FINAL_REPORT.md` 전체 replacement임을 안내했는가?
 
 검증 실패 예시:
 
@@ -457,12 +459,11 @@ Closeout에는 아래가 필요하다.
 - 재개 조건
 - 붙일 위치
 
-Closeout은 Final Report를 확정 저장할 때 사용한다.  
-Final Report 초안만 만든 경우에는 Closeout을 생략할 수 있다.
+Closeout은 상태 파일을 실제 사용한 장기 조사의 정리가 필요할 때만 사용한다. 일반 보고서에는 강제하지 않는다.
 
-Closeout 후에는 반드시 다음을 안내한다.
+Closeout을 수행했다면 적용 범위에서 아래를 확인한다.
 
-1. `13_FINAL_REPORT.md` 저장
+1. `FINAL_REPORT.md` 저장
 2. `10_CURRENT_SUMMARY.md` 교체
 3. `11_DELTA_LOG.md` Archive 이동
 4. `11_DELTA_LOG.md` 초기화
@@ -540,14 +541,14 @@ Mini Review Gate는 중간 조사 답변의 짧은 검증 절차이며, 그 자�
 
 - `11_DELTA_LOG.md` append 필요
 - `10_CURRENT_SUMMARY.md` replacement 권장
-- `13_FINAL_REPORT.md` 초안 작성 가능
+- `FINAL_REPORT.md` 초안 작성 가능
 - 아직 갱신 불필요
 
 ### 블록 생성 조건
 
 - `11_DELTA_LOG.md` append 필요로 판정하면 Scope Update, Investigation Plan, Delta Update, Reopen Update 중 맞는 블록을 고른다.
 - `10_CURRENT_SUMMARY.md` replacement 권장으로 판정하면 Current Summary 전체 교체 블록을 만든다.
-- `13_FINAL_REPORT.md` 초안 작성 가능으로 판정하면 Final Output Mode 검증을 먼저 통과한다.
+- `FINAL_REPORT.md` 초안 작성 가능으로 판정하면 Final Output Mode 검증을 먼저 통과한다.
 - `12_ARCHIVE_LOG.md`는 Summary 압축 또는 Final Report 확정 없이는 쓰지 않는다.
 
 ### 실패 예시
@@ -575,7 +576,7 @@ Mini Review Gate는 중간 조사 답변의 짧은 검증 절차이며, 그 자�
 - [ ] 장문 레포트 요청을 Brief Final Report로 닫지 않았는가?
 - [ ] 선택한 출력 밀도에 비해 과소 요약되거나 과잉 확장되지 않았는가?
 - [ ] 장문 Final Report를 분할 출력했다면 Segment Plan, Part 번호, 누락/중복 검증, 최종 조립 안내가 있는가?
-- [ ] Final Report 확정 저장이라면 Closeout까지 안내했는가?
+- [ ] 실제 상태 파일을 사용해 Closeout이 필요한 경우에만 이를 수행했는가?
 - [ ] 너무 길면 Summary 갱신을 권했는가?
 - [ ] 다음 단계가 분명한가?
 ```

@@ -287,7 +287,7 @@ Stage 1의 중간 조사 결과는 사용자가 원한 목적과 선택된 최�
 ### 할 일
 - `11_DELTA_LOG.md` append 필요 여부 판정
 - `10_CURRENT_SUMMARY.md` replacement 필요 여부 판정
-- `13_FINAL_REPORT.md` 초안 작성 가능 여부 판정
+- `FINAL_REPORT.md` 초안 작성 가능 여부 판정
 - 아직 갱신하지 않는다면 이유를 1문장으로 남김
 
 ### 출력 원칙

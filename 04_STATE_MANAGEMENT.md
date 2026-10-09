@@ -162,14 +162,14 @@ Final Report 상태는 아래 중 하나로 적는다.
 
 - `11_DELTA_LOG.md` append 필요
 - `10_CURRENT_SUMMARY.md` replacement 권장
-- `13_FINAL_REPORT.md` 초안 작성 가능
+- `FINAL_REPORT.md` 초안 작성 가능
 - 아직 갱신 불필요
 
 ### 실행 원칙
 
 - `11_DELTA_LOG.md`는 조사 범위 결정, 작업계획, 중간 결론, 바뀐 판단이 생겼을 때 우선한다.
 - `10_CURRENT_SUMMARY.md`는 같은 주제로 길게 이어졌거나 다음 대화에서 이어받기 어려울 때 우선한다.
-- `13_FINAL_REPORT.md`는 최종 산출물 모드가 정해지고 핵심 질문에 답할 수 있을 때 초안으로 간다.
+- `FINAL_REPORT.md`는 최종 산출물 모드가 정해지고 핵심 질문에 답할 수 있을 때 초안으로 간다.
 - `12_ARCHIVE_LOG.md`는 Summary 압축 이후나 Final Report 확정 이후에만 쓴다.
 - 갱신 블록이 필요하면 `04A_UPDATE_TEMPLATES.md`와 `04B_VALIDATION_RULES.md`를 적용한다.
 

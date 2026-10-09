@@ -123,7 +123,7 @@ Stage 9   — Closeout / 상태 정리
 
 ### 장문 Final Report 분할 출력
 
-`13_FINAL_REPORT.md`가 한 번에 안정적으로 출력하기 어려울 정도로 길어질 때는 Stage 6.5~8에서 Segment Plan을 먼저 만든 뒤 Part 1부터 순서대로 출력한다.
+실제 최종보고서 `FINAL_REPORT.md`가 한 번에 안정적으로 출력하기 어려울 정도로 길어질 때는 Stage 6.5~8에서 Segment Plan을 먼저 만든 뒤 Part 1부터 순서대로 출력한다.
 
 적용 조건:
 
@@ -169,7 +169,7 @@ Stage 9   — Closeout / 상태 정리
 
 - `11_DELTA_LOG.md` append 필요
 - `10_CURRENT_SUMMARY.md` replacement 권장
-- `13_FINAL_REPORT.md` 초안 작성 가능
+- `FINAL_REPORT.md` 초안 작성 가능
 - 아직 갱신 불필요
 
 원칙: 상태 갱신 체크는 **짧게 자주**, 실제 갱신 블록은 **필요할 때만 정확하게** 출력한다.

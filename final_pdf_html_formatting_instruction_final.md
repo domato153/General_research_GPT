@@ -5,7 +5,8 @@
 최종 보고서 원고의 **본문 내용은 수정하지 않고**, HTML/CSS를 이용해 최종 PDF를 만든다. DOCX는 이 파이프라인의 목표물이 아니다.
 
 원본 문서:
-- `13_FINAL_REPORT.md` 또는 사용자가 제공한 최종 보고서 MD
+- 현재 조사 브랜치에 **확정 저장된 `FINAL_REPORT.md`** 또는 사용자가 지정한 최종 보고서 MD
+- `13_FINAL_REPORT.md`는 **공통 보고서 양식**으로, 실제 조사 원고 대신 입력하지 않는다. 최종 보고서가 없는 경우 양식을 실제 내용으로 오인해 PDF를 만들지 않는다.
 
 최종 산출물:
 - `report.html`
@@ -31,7 +32,7 @@
 권장 파이프라인:
 
 ```text
-13_FINAL_REPORT.md
+FINAL_REPORT.md (또는 사용자 지정 최종 원고)
         ↓
 Markdown parser
         ↓

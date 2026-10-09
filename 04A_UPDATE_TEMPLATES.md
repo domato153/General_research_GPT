@@ -389,7 +389,7 @@ YYYY-MM-DD
 - 안내문은 `FINAL_REPORT.md` 본문에 넣지 않는다.
 
 ```md
-[실제 13_FINAL_REPORT.md 본문]
+[선택한 공통 양식에 맞춰 작성한 실제 조사 브랜치 FINAL_REPORT.md 본문]
 ```
 
 다음 Part:
@@ -490,10 +490,10 @@ YYYY-MM-DD
 - [재검증 필요] ...
 
 ### 파일 정리 지시
-- `FINAL_REPORT.md`에 최종보고서 저장
-- `10_CURRENT_SUMMARY.md`를 최신 요약으로 교체
-- `11_DELTA_LOG.md`의 기존 내용은 `12_ARCHIVE_LOG.md`로 이동
-- `11_DELTA_LOG.md`는 새 델타 기록 대기 상태로 초기화
+- `FINAL_REPORT.md`에 **확정 완료한** 최종보고서 저장
+- Summary/Delta를 실제 운영한 경우에만 `10_CURRENT_SUMMARY.md`를 최신 요약으로 교체
+- Delta의 기존 원문 또는 불변 커밋 SHA·경로·범위 복구를 **검증한 다음**, 필요한 내용만 `12_ARCHIVE_LOG.md`로 이동
+- 해당 보존을 확인한 경우에만 `11_DELTA_LOG.md`를 새 Delta 기록 대기 상태로 초기화
 
 ### 재개 조건
 - 새 공식 자료 발표

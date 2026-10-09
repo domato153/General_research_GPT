@@ -1,6 +1,7 @@
 # 범용 조사 워크스페이스 v2 — 실행계획
 
-- 상태: **실행 준비 완료 / 설계 변경 미착수**
+- 상태: **설계 수정 완료 / 정적·GitHub 통합 검증 완료 / 독립 모델 비교·실제 프로젝트 E2E 미실행 / main 반영 승인 대기**
+- 시험 결과: [`V2_TEST_RESULTS.md`](V2_TEST_RESULTS.md)
 - 대상: `domato153/General_research_GPT`
 - 작업 브랜치: `design/research-v2`
 - v1 비교 기준: `main` 커밋 `3bc7ea1e2241b718b23d70c26d2e5840f5810c92` (이 계획 작성 시점의 HEAD)

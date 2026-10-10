@@ -23,7 +23,7 @@
 | X14 | 구버전 summary와 새 근거 충돌 | 02_RESEARCH_PIPELINE.md — `변경 후 유효한 Stage 7` | 신규 검증 근거와 역사 기록 분리 | STATIC_REVIEW_ONLY |
 | X15 | 명시적 임시 초안 요청 | 02_RESEARCH_PIPELINE.md — `편집 준비/초안/일괄 완성 구분` | 초안 허용·확정 보류 | RUNTIME_PRIORITY |
 | X16 | 편집안 미선택 상태에서 준비 요청 | 02_RESEARCH_PIPELINE.md — `편집 준비/초안/일괄 완성 구분` | 편집안 먼저, 초안 강행 금지 | RUNTIME_PRIORITY |
-| X17 | 종료 가능 여부 질문에서 감사 미실시 | 02_RESEARCH_PIPELINE.md — `첫 발동 우선 조건` | 같은 턴 실제 readiness 감사 | RUNTIME_PRIORITY |
+| X17 | 종료 가능 여부 질문에서 감사 미실시 | 02_RESEARCH_PIPELINE.md — Stage 5 `실제 종료 준비 판단 트리거` | 같은 턴 실제 readiness 감사 | RUNTIME_PRIORITY |
 | X18 | W-ID에는 있는 반론이 원고에는 없음 | 02_RESEARCH_PIPELINE.md — `검수 성공의 최소 단위` | 본문 실제 문장 확인 | RUNTIME_PRIORITY |
 | X19 | 중요 반론 원문 미확인 | 01_CORE_RULES.md — `최신성 검증 시` | 원문 재검증 또는 한계 표시 | STATIC_REVIEW_ONLY |
 | X20 | 새 스레드의 채팅 원문 미접근 | 02_RESEARCH_PIPELINE.md — `DELIVERY_UNKNOWN` | 표시·저장 일치 UNKNOWN | STATIC_REVIEW_ONLY |
@@ -33,7 +33,7 @@
 | X24 | 실측 계약·소득을 '체감'으로 축소 | 02_RESEARCH_PIPELINE.md — `부호·차감 방향·분모` | 자료 정의 실제 측정 반영 | STATIC_REVIEW_ONLY |
 | X25 | 과거판 숫자·최신판 제목 혼용 | 01_CORE_RULES.md — `최신성 검증 시` | 판본·표본·기간 일치 | STATIC_REVIEW_ONLY |
 | X26 | 요청한 PDF 실제 생성과 검증 | 13_FINAL_REPORT.md — `PDF 제작 시` | 실물·렌더링 확인 — 후순위 | PDF_DEFER |
-| X27 | 선택 이미 완료된 '계속해줘' | 01_CORE_RULES.md — `AI 추천 기본값은 사용자 확정이 아니다` | 추가 승인·가짜 선택 금지 | STATIC_REVIEW_ONLY |
+| X27 | 선택 이미 완료된 '계속해줘' | 02_RESEARCH_PIPELINE.md — `사용자의 '계속해'` / `이미 선택받은 계획` | 추가 승인·가짜 선택 금지 | STATIC_REVIEW_ONLY |
 | X28 | 첫 결과 새 검증 경로 제시 | 02_RESEARCH_PIPELINE.md — `첫 발동 우선 조건` | 새 선택의 가치와 비용 제시 | STATIC_REVIEW_ONLY |
 | X29 | 냉시작 때 GitHub read 실패 | 01_CORE_RULES.md — `실제 결과 파일` | 원인·불명확 범위 노출 | RUNTIME_PRIORITY |
 | X30 | 실제 표시 편집안 vs 원격 blob 불일치 | 02_RESEARCH_PIPELINE.md — `Stage 5 최초 제안에도 제시 전 스냅샷` | 문구·ID·근거 및 표시증거 검사 | RUNTIME_PRIORITY |

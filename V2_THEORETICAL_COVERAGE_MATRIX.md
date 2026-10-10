@@ -71,6 +71,12 @@
 | T06R4 | GitHub 접근장애 폴백 | `04_STATE_MANAGEMENT.md:27` | 읽기 실패·목록 일부 접근 | X04,X10 | X10 | X29 | X29 | NOT RUN | POS+NEG+FAIL ASSIGNED | SHARED SCENARIO: X29 |
 | T09 | PDF 렌더/한글/표 검수 | `13_FINAL_REPORT.md:759` | final_pdf_html_formatting_instruction_final.md | X26 | X26 | X34 | X35 | NOT RUN | POS+NEG+FAIL ASSIGNED | 독립성 미검증(서로 다른 ID만으로 입증 불가) |
 
+### 최신 시험 준비 보완 — 고정 규칙 추적 vs 실제 시험 채점 (2026-10-10)
+
+- 이 표의 `source :line`은 **frozen `ac4675d50bc0355b0939f7eb32b6fd72605acfb4` 원문 기준**이다. 외부 종합감사에서 일부 줄번호가 '존재하지 않는다'고 한 지적은 실제 GitHub 고정 원문과 불일치했으므로 문서의 원래 앵커를 임의 수정하지 않는다. 물리적 위치 재조회 59/59는 규칙 동작·의미 충분성의 실측 PASS가 아니다.
+- 기존 **SHARED SCENARIO 7행, SAME-DIRECTION/비대칭 4행** 표시는 계속 유지한다. 동일 사건의 요구별 관찰 조건과 독립 실행 수 분리는 [`V2_E2E_PRE_POST_PROTOCOL.md` F.3](V2_E2E_PRE_POST_PROTOCOL.md)에 정의했다. X37/X45의 전제 분리·X44 명시적 철회 변형·X29/X30/X46/X21/X35의 실물 증거 조건도 해당 프로토콜에서 관리한다.
+- 테스트 정의 집합 `N01~N12 / X01~X48`과 59행의 NOT RUN 상태는 **변경하지 않았다**. 시험 계획 추가 보완을 실제 E2E PASS로 승격하지 않는다.
+
 ## 3차 감사의 의미론적 정정 — 시험 숫자 과대판정 방지
 
 - **독립 시험 수와 행별 할당 수는 다르다.** 같은 입력·상태·오답 검출 기준을 한 요구의 여러 POS/NEG/FAIL 열에 적으면 `SHARED SCENARIO`; ID만 다르더라도 실제 정상·부정 조건이 둘 다 같은 성공 방향이라면 `SAME-DIRECTION`으로 판단한다. 별개로 집계하지 않는다.

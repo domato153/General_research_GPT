@@ -10,7 +10,7 @@
 - 짧은 사실 확인이나 단순 질문에는 브랜치를 만들지 않는다.
 
 ## 설계 시험 진행 체크포인트 (개발 브랜치 전용)
-- `V2_PROGRESS_CHECKPOINT.md`: C1~C7 실제 E2E 결과, 미완료 작업, 보류 중인 개선 후보, 다음 자연어 시험을 한곳에서 찾아보기 위한 **짧은 인계 파일**. 상세 증거 정본은 `V2_TEST_RESULTS.md`·`V2_EXECUTION_PLAN.md` 및 해당 `research/*` 브랜치 원문이다. 체크포인트는 자동 갱신되지 않으므로 실제 브랜치 HEAD를 재확인한다.
+- `V2_PROGRESS_CHECKPOINT.md`: C1~C12 실제 E2E 결과, 미완료 작업, 보류 중인 개선 후보, 다음 자연어 시험을 한곳에서 찾아보기 위한 **짧은 인계 파일**. 상세 증거 정본은 `V2_TEST_RESULTS.md`·`V2_EXECUTION_PLAN.md` 및 해당 `research/*` 브랜치 원문이다. 체크포인트는 자동 갱신되지 않으므로 실제 브랜치 HEAD를 재확인한다.
 
 ## ChatGPT 프로젝트 연결
 `PROJECT_BOOTSTRAP.md`의 내용을 ChatGPT 프로젝트 지침에 넣고 GitHub 연결을 이용한다. 필요한 규칙 파일만 읽는다. 운영 시 `main`, 격리 시험 시 **명시된 고정 후보 SHA**를 규칙 기준으로 사용한다. 프로젝트 지침이 자동 전환됐다고 가정하지 않는다.

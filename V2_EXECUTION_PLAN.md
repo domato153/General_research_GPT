@@ -754,3 +754,12 @@ North Sync A~I 다중 턴 E2E와 FINAL_REPORT.md 저장까지 완료됐는지 �
 - **다음 검증:** `V2_E2E_PRE_POST_PROTOCOL.md`에 따라 별도 비개인화 프로젝트에서 짧은 자연어 주시험을 수행하고, 최초 실패와 회복을 분리 기록한다. 추가 결함은 **`design/research-v2` 개발 브랜치에서만** 국소 수정 후 같은 59항목 매핑·18보호 조건을 재검증한다. `main`은 이번 작업의 목적지가 아니다.
 
 **검증 정본:** `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_PRE_APPLY_VERIFICATION.md`, `V2_POST_APPLY_VERIFICATION.md`, `V2_EXTERNAL_AUDIT_RECONCILIATION.md`. 기존 `V2_TEST_RESULTS.md` §§1~48은 변경하지 않았다.
+
+## 30. 개발 적용 단계 종료 — 정적 완전성·무회귀의 실증 경계 (2026-10-10)
+
+- **사용자 요청한 개발 단계 작업 완료:** 초반~최종 전체 이슈, 첫 외부 감사 수정 권고, 기존 기능 보호·부정시험, 고정 전후 소스 비교, 격리 후보 개선, 개발 `design/research-v2` PR #1 실제 적용, 적용 후 **59/59 규칙/테스트 설계 연결·18/18 정합성 보호 조건** 재검증. 단순한 문자열 계약 검사로 독립 모델 성능 PASS를 선언하지 않는다.
+- **재현 ref:** 변경 전 BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`; 변경 후 적용된 개발 규칙 `0e5721bc730f6f8b67f816bf0e589b8870b43d8b`. 외부 첫 감사의 `c9f8...`과 초기 연구 `fb22...`는 다른 버전이다. 이후 개발 HEAD의 문서 커밋이 고정 시험 규칙 SHA를 바꾸지 않는다.
+- **시험 프로토콜 오지정 수정:** `V2_E2E_PRE_POST_PROTOCOL.md`에서 시험용 후보 ref를 적용된 개발 규칙으로 교정했다. 첫 독립감사 자료는 역사기록으로 보존하고 신규 `V2_POST_APPLY_REAUDIT_REQUEST.md`를 재감사 우선 진입점으로 사용한다.
+- **완료 검증 정본:** `V2_DEVELOPMENT_PHASE_CLOSEOUT.md`, `V2_POST_APPLY_VERIFICATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_EXTERNAL_AUDIT_RECONCILIATION.md`, `V2_FULL_ISSUE_INVENTORY.md`; 기존 실제 E2E `V2_TEST_RESULTS.md` §§1~48의 최초 FAIL/회복 PASS 분리 유지.
+- **별도로 계속 시험할 사항:** 동일 모델/접근권한·비개인화 프로젝트의 **실제** BASE↔개선 규칙 자연어 N01~12 / 부정 X01~28, 새 스레드 T06-R R1~R4, 실물 출처/원고·저장/브랜치 변경 확인, 서버 HEAD 경합/도구 장애/인젝션, PDF 생성·렌더, 불필요한 승인·검색량·시간·비용 차이. **NOT TESTED** 항목을 자동 PASS로 전환하지 말 것.
+- `main` 승격은 이 개발 작업의 목표가 아니다. 실제 E2E의 결함이 발견되면 **`design/research-v2`에서 국소 보완 → 동일 이론 검증 → 다시 실사용 평가**한다. 사용자는 내부 단계/검수법을 몰라도 되는 **짧은 자연어**가 주시험의 기본이다.

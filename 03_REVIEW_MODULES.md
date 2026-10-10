@@ -241,7 +241,7 @@
 - ...
 
 ### 이후 참조 규칙
-- 이후에는 `10_CURRENT_SUMMARY.md`와 `11_DELTA_LOG.md`만 우선 참고한다.
+- 이후 승인된 작업·진척은 `RESEARCH_PLAN.md`와 실제 결과 파일, 최신 결론·변화는 운영 중인 `10_CURRENT_SUMMARY.md`와 `11_DELTA_LOG.md`를 우선 참고한다.
 ```
 
 ---

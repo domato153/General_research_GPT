@@ -1,5 +1,15 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [2026-10-11 사용자 서식 확정] 신규 PDF 레이아웃 APPROVED — 운영 정본화·출시 미완료
+
+- 사용자가 원래 Marie-style PDF와 단순 가로축소 수정을 미관상 반려한 뒤 **전면 재설계된 14페이지 A4 레이아웃을 승인**. 최종 국소 요구: (a) 일반 한국어 본문 문단 첫 줄 `text-indent: 1em`, 구조화된 표·목록·소결 등 예외; (b) 소결 박스 패딩 상하 `3mm`, 좌우 `4.1mm`, 줄간격 `1.61`; 표지·목차·그 밖의 서식 유지. 사용자에게 기존 본문·소결이 함께 있는 한 페이지 PDF/PNG로 재제시하여 `무난함. 확정하겠음.` 승인받음.
+- **실제 로컬 산출물(대화 첨부, GitHub 미보존):** 승인받은 CSS `/mnt/data/pdf_style_revision_preview/report_redesign.css`, HTML `report_redesign.html`, 전체 14p `report_revised_full_internal.pdf`, 한 페이지 비교 `paragraph_conclusion_one_page.pdf/.png`. 승인 CSS를 그대로 묶은 전체 PDF/HTML/CSS는 이 대화의 `/mnt/data/pdf_style_revision_preview/approved_release/`에 준비, PDF 14페이지/빈 페이지 0/용지 밖 텍스트 블록 0 기계 검사. 로컬 파일/대화 링크는 GitHub 저장 증거로 오인하지 않는다. 현재 사용자의 승인은 **디자인 확정**이지 운영 `main`의 규칙 승격이나 ChatGPT 프로젝트 설정 교체 승인이 아니다.
+- **필수 정본화 공백:** 개발 브랜치의 `final_pdf_html_formatting_instruction_final.md`는 여전히 이전 Marie-style 지시서(blob `8c3e55b42bc8b7997f4671d8ada35ba8f315c699`)이며 신규 승인 CSS/HTML은 GitHub 개발 규칙에 아직 통합되지 않았다. 방치하면 운영 PDF 생성에서 사용자가 반려한 양식이 재활성화될 수 있다. **다음 작업:** 승인된 CSS/레이아웃을 일반 보고서용 서식 정본 및 저장소의 재사용 가능한 자산으로 정확히 통합하고 새 원고 1건에 최소 표적 적용 검증; 이전 서식은 Git 역사로 보존하고 반려된 현행 선택지로 부활시키지 않는다.
+- **출시 경로:** (1) 승인된 PDF 스타일 정본화, (2) 개발판 `PROJECT_BOOTSTRAP.md`와 필수 조사 엔진 규칙만 운영용으로 정리(시험 로그·V2_ 감사 문서의 무분별한 `main` 병합 금지), (3) 사용자에게 일반 조사용 최종 bootstrap 전문 파일과 프로젝트 지침·첨부 교체 안내 제공, (4) **별도 승인 후** `main` 선별 승격 및 SHA/회귀 확인, (5) 실사용 프로젝트 교체 후 일반 조사와 `research/*`에서 `/handoff`→무목적어 `검토해줘`와 명시 대상 검토를 최초 행동으로 표적 확인. 운영 승격·실사용 적용·주입 SHA는 현재 NOT DONE/UNKNOWN.
+- 기존 P1 최초 FAIL(/handoff 후 검토를 PDF 조회로 오인)은 그대로 보존. D01 축약 E2E와 LONG-LITE 01~04의 범위 한정 PASS, R5/CAS/API/UI·초장문 생성·토큰 절감·실주입 등 미시험, 결정/반려/보류 이력 변경 없음. 기존 시험 프로젝트 설정은 사용자가 지금 교체하지 않기로 함.
+
+
+
 ## [2026-10-11 PDF-STYLE 실제 렌더링·시각 검수] 현행 결과 — 원본 VISUAL FAIL 1건 / 국소 수정본 검수 PASS
 
 - **원본의 실제 첫 렌더:** 피시험 `design/20261011-pdf-style-smoke` HEAD `0b34dcfa02a88d687ef25a474a84c9a924396dd5`의 `report.html` blob `11d00ce36fa3af2ab8beb3f49f622ce89baf0b29`, `report_style.css` blob `2f18e0c528c92ba8c538f33ab678a1c8d8644d1e`를 재구성하고 로컬 Git blob SHA로 **완전 일치** 확인 후 Chromium 144/Playwright로 실제 PDF 렌더. 12페이지 A4. 원본 표지 영문 첫 줄 끝부분 `regreSSHion):`이 오른쪽으로 **잘려서 최초 시각 검수 FAIL**. 원인은 첫 줄에 `white-space:nowrap`, 가로 변형 `scaleX(.75)`, 표지의 `overflow:hidden`이 공존할 때 해당 실제 글꼴에서 가용 너비 초과.

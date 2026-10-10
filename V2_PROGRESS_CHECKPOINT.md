@@ -1,21 +1,21 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
-> 상태: **진행 중 (C10 종료 전 독립 감사 FAIL, 다음 C11/실제 재감사 회복시험)** · 기록 기준일: **2026-10-10** · 성격: **현재 상태 찾아보기용 체크포인트, 원문 정본이 아님**
+> 상태: **진행 중 (C11 명시 재감사 회복 PASS(C10 선제 게이트 FAIL 유지), 다음 C12/표적 보완)** · 기록 기준일: **2026-10-10** · 성격: **현재 상태 찾아보기용 체크포인트, 원문 정본이 아님**
 
 ## 1. 먼저 알아야 할 것
 
 - 저장소: `domato153/General_research_GPT`. **개발 브랜치** `design/research-v2`의 설계 시험만 다룬다. 운영 `main` 템플릿 및 실제 E2E 연구 내용은 여기서 수정하지 않는다.
 - 절대목표: **AI가 사용자의 열린 조사 요청에 실제로 다른 방향·검증 방법을 제안 → 사용자가 선택/수정 → 승인 범위 내에서 실제 조사 → 첫 유의미한 결과를 자발적으로 공유하며 서로 다른 재검증 경로 제안 → 사용자 선택대로 실제 보완조사 → 필요시 반복 → 충분한 근거·반론 검증 후 사용자와 최종 내용 선별·완성 결정 → 검증된 보고서 전달/요청 시 저장.** 매 검색 또는 기승인 작업마다 형식적 재승인을 요구하지 않는다.
 - 가장 최근 설계 **규칙 고정 후보 SHA**: `a10efe04c354bdae463c77424f7672f9615916da` (최종보고서 수록 내용 선별 규칙 포함). 이 체크포인트·시험 문서의 새 커밋을 **규칙 SHA로 대체하지 않는다**.
-- 실제 E2E **연구 브랜치**: `research/20261010-ai-employment-kr-us-1538-fb22`; 이 스냅샷에서 확인한 HEAD: `c9bc22fe91495125198de641b4ea7e6e5d6e0777`. 연구 브랜치의 **출발 기준은 구 규칙 `fb22fe86834893e607072b41885277d29cfc57fc`**. 신규 규칙 SHA `a10...`의 후손은 아니다. 시험 프로젝트에 실제 주입된 런타임 규칙 SHA는 브랜치 계보만으로는 입증 불가. **버전 불일치를 숨기거나 연구 브랜치를 조용히 리베이스하지 않는다.**
+- 실제 E2E **연구 브랜치**: `research/20261010-ai-employment-kr-us-1538-fb22`; 이 스냅샷에서 확인한 HEAD: `a5e0e5f98ee5d263541a33cc6f21786a68ff5612`. 연구 브랜치의 **출발 기준은 구 규칙 `fb22fe86834893e607072b41885277d29cfc57fc`**. 신규 규칙 SHA `a10...`의 후손은 아니다. 시험 프로젝트에 실제 주입된 런타임 규칙 SHA는 브랜치 계보만으로는 입증 불가. **버전 불일치를 숨기거나 연구 브랜치를 조용히 리베이스하지 않는다.**
 - 기존 운영 `main` 확인 HEAD: `3bc7ea1e2241b718b23d70c26d2e5840f5810c92`. 이 값은 시점 스냅샷이며 앞으로 불변이라고 가정하지 않는다.
 
 ## 2. 원문 위치 / 신뢰할 자료의 우선순위
 
-1. **실제 조사 진행·승인 범위:** [연구 브랜치의 `RESEARCH_PLAN.md`](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/RESEARCH_PLAN.md)와 결과 원문. 새 작업 전에는 **실제 연구 브랜치 최신 HEAD**를 먼저 읽는다.
-2. **실제 근거:** 같은 고정 연구 HEAD의 [W01 고용 자료](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W01_EMPLOYMENT_EVIDENCE.md), [W01-A 인구·고용률 분해](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W01_A_POPULATION_ADJUSTMENT.md), [W02 인과성](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W02_CAUSAL_EVIDENCE.md), [W03 기업 사례](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W03_COMPANY_CASE_EVIDENCE.md), [W04 신입·경력 고용](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W04_OCCUPATION_AGE_TENURE_FLOWS.md), [W05 신규·순고용](https://github.com/domato153/General_research_GPT/blob/c9bc22fe91495125198de641b4ea7e6e5d6e0777/W05_NEW_JOBS_NET_EMPLOYMENT.md).
+1. **실제 조사 진행·승인 범위:** [연구 브랜치의 `RESEARCH_PLAN.md`](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/RESEARCH_PLAN.md)와 결과 원문. 새 작업 전에는 **실제 연구 브랜치 최신 HEAD**를 먼저 읽는다.
+2. **실제 근거:** 같은 고정 연구 HEAD의 [W01 고용 자료](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W01_EMPLOYMENT_EVIDENCE.md), [W01-A 인구·고용률 분해](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W01_A_POPULATION_ADJUSTMENT.md), [W02 인과성](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W02_CAUSAL_EVIDENCE.md), [W03 기업 사례](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W03_COMPANY_CASE_EVIDENCE.md), [W04 신입·경력 고용](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W04_OCCUPATION_AGE_TENURE_FLOWS.md), [W05 신규·순고용](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W05_NEW_JOBS_NET_EMPLOYMENT.md), [W06 사전 교차감사](https://github.com/domato153/General_research_GPT/blob/a5e0e5f98ee5d263541a33cc6f21786a68ff5612/W06_PRE_REPORT_AUDIT.md).
 3. **시험 판정·원문 검증 이력:** [`V2_TEST_RESULTS.md` §31~39](https://github.com/domato153/General_research_GPT/blob/40c0df18fec60a958b2282b5c23fc6c828565feb/V2_TEST_RESULTS.md) — 구체적 테스트 입력, GitHub 계보, 수치 검증, 판정과 한계. **이 파일은 상세 로그이고 이 체크포인트가 이를 대체하지 않는다.**
-4. **개선 후보·결정 맥락:** [`V2_EXECUTION_PLAN.md` §14~17](https://github.com/domato153/General_research_GPT/blob/40c0df18fec60a958b2282b5c23fc6c828565feb/V2_EXECUTION_PLAN.md) — 최종보고서 선별 개선 설계/회귀와 C1~C10 보류된 수정 제안.
-5. **실제 모델의 출력:** 사용자 제공 C1~C10 응답. 현 연결만으로 직접 확인하지 못하는 런타임 프롬프트·도구 검색 로그는 **미검증**으로 남긴다.
+4. **개선 후보·결정 맥락:** [`V2_EXECUTION_PLAN.md` §14~17](https://github.com/domato153/General_research_GPT/blob/40c0df18fec60a958b2282b5c23fc6c828565feb/V2_EXECUTION_PLAN.md) — 최종보고서 선별 개선 설계/회귀와 C1~C11 보류된 수정 제안.
+5. **실제 모델의 출력:** 사용자 제공 C1~C11 응답. 현 연결만으로 직접 확인하지 못하는 런타임 프롬프트·도구 검색 로그는 **미검증**으로 남긴다.
 
 **재개 규칙:** 이 파일은 빠른 입구. 참조 커밋이 오래되었다면 해당 브랜치의 최근 HEAD와 `RESEARCH_PLAN.md`/증거 파일을 대조해 현재 상태를 복원한다. 상세 로그를 재출력하거나 낡은 시점 메모로 최신 원문을 덮지 않는다.
 
@@ -32,6 +32,8 @@
 | C7 W03 기업 사례 | SEC에서 Block 감원 계획→실행, Klarna/KT/Amazon 혼합 원인 및 삼성·Grindr 반례 대조 | 연구 PASS, 대표성·최신성/중간 재선택 **PARTIAL** |
 | C8 W04 직종·연령·경력 | Census 졸업자·QWI 입직/이탈, KLI 신입 개발자 공고, NY Fed AI 도입 업체설문 비교 | 연구 PASS, 사용자 재선택 **PARTIAL** |
 | C9 W05 신규·순고용 | BLS 직업 stock, KLI AI 바우처 인과 비교, LinkedIn 공고 원문 정의 검증 | 연구 PASS, 국가 순효과 미식별 |
+| C10 자발 종료 전 감사 | 실제 감사 대신 W06 예정계획만 설명 | **FAIL** |
+| C11 사용자 명시 감사 재요청 | W01~05 원문 교차대조 및 4편 중요 근거 발굴, A 보완/B 현 근거 종료 선택 | **회복 PASS**; 4편 A 치명 분류 과잉 가능 |
 
 - **W-ID 실제 상태:** W01 인구보정 포함 **조건부 완료**, W02 인과성 **조건부 완료**, W03 기업 사례 **조건부 완료**, W04 직종·연령·경력 **조건부 완료**, W05 신규일자리·순고용 **조건부 완료**; W06 최종 교차검증·보고서 **대기**. 보고서 최종 확정 및 외부 게시 허가는 **없음**.
 - **실사용에서 아직 검증하지 않은 것:** W05 결과 후 종료 전 독립 감사·후속 방법 선택, Stage 5 사용자와 **본문/압축·부록/제외** 내용 공동 선별, Stage 6~7의 실제 근거·선택 반영, Stage 8 최종 승인/채팅 전달 vs GitHub 저장·재조회, 새 채팅 상태 복구 및 단일 새 SHA 완주.
@@ -55,10 +57,10 @@
 
 ## 5. 다음 실행 및 종료 조건
 
-- **바로 다음 C11 시험 입력:** `지금 답변은 앞으로 점검하겠다는 계획이잖아. 보고서를 쓰기 전에 지금까지 조사한 결과를 실제로 다시 점검해줘. 중요한 누락이나 서로 충돌하는 근거가 있는지 확인하고, 추가조사가 필요한지 아니면 현재 근거로 마무리해도 될지 판단 근거와 추천을 알려줘. 내가 선택하기 전에는 보고서를 확정하지 마.`
-- **C10 실측 실패:** W06에서 앞으로 감사하겠다는 계획만 설명했고 W01~W05 실증 근거·반론·누락을 실제 대조하지 않음. 다음 C11에서 사용자의 재요청을 받고 실제 교차감사 및 보완/현재근거 종료 선택을 할 수 있는지 검사. C11 성공은 C10 자발적 관문 FAIL을 지우지 않는다. 새 중요한 결함/사용자 선택이 있으면 실질 보완 1회 이상, 기존 검증 반복뿐이면 감사 관문 확인 후 보고서 선별로 넘어간다. 시험 메타데이터는 **개발 브랜치**에 기록하고, 모델의 **연구 브랜치**는 시험 모델이 스스로 변경할 때만 변한다.
+- **바로 다음 C12 시험 입력:** `좋아. 추천한 A 경로로 네 연구만 추가 검증해줘. 각 연구의 실제 비교집단·기간·사전추세·인과 한계와 기존 W02·W04·W05 결론이 어떻게 달라지는지만 확인하고, 종료 전 감사 판정도 다시 내려줘. 조사 범위를 더 넓히지 말고, 아직 최종보고서는 작성하지 마.`
+- **C11 명시 재요청 회복 PASS:** W06 실제 감사 파일, 새 4편 원문, 기존 충돌 재대조 및 A 보완/B 현재근거 종료 선택 확인. 이전 C10 무자발 감사 FAIL 보존. **다음 C12**는 A 네 편의 실제 연구설계만 제한적으로 검증하고 결론·종료가능성 재판정. 이후 최종 본문/부록·제외 사용자 공동선별과 Stage7 최종원고 감사, 사용자 완성 위임·전달/저장만 한 번 검증하고 이번 E2E 종료한다. 시험 메타데이터는 **개발 브랜치**에 기록하고, 모델의 **연구 브랜치**는 시험 모델이 스스로 변경할 때만 변한다.
 - 이후 중요 누락 검토·필요한 보완, Stage 5 공동 최종수록 내용, Stage 6 보고서 초안, Stage 7 검증, Stage 8 사용자 최종완성 지시·전달/저장, 새 채팅 재개 시험을 순서대로 관찰.
-- **성공 조건:** 각 관문의 실제 모델 동작과 근거·커밋 실재 여부 검증. "모의 44/44"나 C1~C10 관문 일부 PASS를 전체 동작 PASS로 확장하지 않는다. 한 번에 모든 버전을 혼합해 '고정 SHA 단일 완주'로 주장하지 않는다.
+- **성공 조건:** 각 관문의 실제 모델 동작과 근거·커밋 실재 여부 검증. "모의 44/44"나 C1~C11 관문 일부 PASS를 전체 동작 PASS로 확장하지 않는다. 한 번에 모든 버전을 혼합해 '고정 SHA 단일 완주'로 주장하지 않는다.
 
 
 ## 7. W05 이후 반드시 시험할 종료 전 독립 감사
@@ -66,7 +68,7 @@
 **중요:** 단순히 W05 조사 → 최종보고서 한 번에 작성하면 시험 목표가 미완료다. `02_RESEARCH_PIPELINE.md` Stage 5 규칙에 이미 **전체 W-ID 근거·반론·누락·판본 충돌 재감사와 사용자 보완/종료 선택**이 규정돼 있고, 아직 실사용 E2E에서 나오지 않았다.
 
 - **C9: 실제 수행·검증 PASS.** W05 신규일자리·순고용 자료를 분리하고 국가 순인과효과 미식별을 유지.
-- **C10 실사용: FAIL.** 모델은 W06 감사 예정 작업만 안내하고 기존 W01~W05 근거를 실제 대조하지 않았으며, 가치 있는 추가 보완 vs 현 근거 종료 선택도 미제시. **C11 자연어 회복시험**에서 사용자의 명시적인 감사 요청에 실제 재검증과 사용자 선택이 나오는지 확인하되 C10 결과는 보존.
+- **C10 실사용 FAIL 유지; C11 명시적 감사 재요청 회복 PASS.** W06 새 근거·반론 확인, A 네 편 제한 보완 또는 B 현근거 종료 선택 제시. C12에서 A 실제 실행 및 Stage5 유효성 재판정 후 최종 보고서 수록내용 선택·Stage7 검수로 종료한다.
 - **조건부 되돌아가기:** 실제 새 중대 결함이 발견되거나 사용자가 중요한 새 보완을 선택하면 실질 원문 재검증/추가조사와 결론 재판정 1회 이상 시행하고 종료 판단을 다시 확인. 이미 재검증한 같은 주장의 단순 반복이나 가치 낮은 제안이면 **재조사하지 말고 감사 게이트와 선택 실행 여부만 평가**.
 - **후반:** 사용자와 최종 본문/부록/제외 선택 → 원고 증거·반론 감사 → 최종 완성 위임 → 전달/요청 시 GitHub 보존 및 재조회. 일괄 위임·기승인 범위에는 형식적 승인 과다 요구 금지.
 

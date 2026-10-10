@@ -4,7 +4,7 @@
 - revision: 1
 - status: RECOMMENDED (사용자 미선택)
 - date: 2026-10-11 Asia/Seoul
-- research_branch: `research/20261011-v2-r1-from-n07`
+- research_branch: `research/20261011-v2-r2-draft`
 - research_head_at_proposal: `e105fb85e9aad619167f5e208a5d6b304c2ddc32`
 - applied_rules_commit: `44bd894cb464229a6d8b926f152113dd0f1bbbae`
 - evidence_ids: W1, W2, W3; W4·W5 미완료

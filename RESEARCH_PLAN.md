@@ -13,10 +13,10 @@
 | W01 | Enumerate products, manufacturers, regional offerings and exact model variants; distinguish shipping vs preorder vs announcements with dated corroboration. | PARTIAL |
 | W02 | Explain HITS inductive/haptic, TMR (+mechanical or haptic), Hall+optical, adjustable actuation, dynamic rapid-trigger, feedback, reliability limitations. | PARTIAL |
 | W03 | Independently verify click-latency distributions and repeat-click tests, firmware behaviors, input measurement endpoints; reconcile apples-to-apples differences. | OPEN |
-| W04 | Identify repeat owner/Chinese reviewer reports, long-term faults and real shipping/QA; distinguish anecdotal from corroborated. | PARTIAL: first owner/firmware follow-up documented, longitudinal/post-fix validation remains OPEN |
-| W05 | Verify Chinese MSRP, live retail, Korea official preorder/stock and landed-import cost/AS; identify waiting value. | PARTIAL |
+| W04 | Identify repeat owner/Chinese reviewer reports, long-term faults and real shipping/QA; distinguish anecdotal from corroborated. | PARTIAL: both user-selected paths surveyed; still no matched X5 v0.2.0 or HTS Pro v5.26 same-unit retest and no defect-rate denominators |
+| W05 | Verify Chinese MSRP, live retail, Korea official preorder/stock and landed-import cost/AS; identify waiting value. | PARTIAL: KR option-list offers and CN historical prices found; exact checkout SKU, warranty, import costs unknown; L5 10/12 reservation future |
 | W06 | Adversarial reassessment, currentness audit, decision-focused comparison and recommendation based on evidence. | OPEN |
-| W07 | After first meaningful findings, present review choices to user, undertake selected follow-up. Final report only after explicit user finalization decision. | FIRST USER ROUND COMPLETE; selected owner/firmware follow-up researched; next selection/final report not authorized |
+| W07 | After first meaningful findings, present review choices to user, undertake selected follow-up. Final report only after explicit user finalization decision. | FIRST ROUND + BOTH SELECTED FOLLOWUPS COMPLETED; further rounds and final report not yet commissioned |
 
 ## Early verified anchors (not final)
 - IPI HAZEX 雾: IT之家 2026-07-28, launch announced ¥398.65/¥499.8; TMR, 10 positions 0.2mm increments, 5 vibration levels, 63g/69g, **manufacturer 6.5ms latency claim not comparable**: https://www.ithome.com/0/982/652.htm
@@ -37,3 +37,6 @@ A decision report in Korean (not yet final): concise verdict, detailed model/sta
 
 ## 2026-10-11 selected follow-up
 The user selected the Chinese owner/firmware option from the first research-round review. Verified findings saved in `FOLLOWUP_20261011_OWNER_FIRMWARE.md` (AULA X5 v0.1.25/0.2.0, L5 not yet available, IPI Haze I/II owner reports, G-Wolves HTS Plus Pro firmware 20-stage RT and contradictory experiences). These documents supersede old firmware-status claims without deleting the historical record. Final report remains unapproved; missing same-version independent long-term tests, quantitative failure prevalence, and new L5 field tests.
+
+## 2026-10-11 combined user-requested follow-up — current entry point
+User asked to undertake BOTH previously listed options (1: X5 v0.2.0 and G-Wolves 5.26 firmware effectiveness, 2: L5 Oct12 preorder and current Chinese/Korean purchase choices). Completed source investigation and preserved full dated outcome in `FOLLOWUP_20261011_DUAL_PATH.md`. Important result: cannot claim X5 click-miss fix without matched updated-user tests, HTS Pro RT genuinely enabled but hold/off issue persists in some version-unknown users; L5 preorder **future** and price not yet public; X5 Korea Enuri listed Oct11 ₩81,450 option-based, IPI Gmarket ₩105,900 option-based, G-Wolves official $159, exact checkout and AS unresolved. Razer officially developing analog mouse without date/price. Historical files remain preserved. No final report authorization, and `main` not modified.

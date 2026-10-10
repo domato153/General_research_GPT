@@ -14,7 +14,7 @@
 | X05 | HEAD 동시 변경·CAS 충돌 | PROJECT_BOOTSTRAP.md — `브랜치 전체 HEAD의 원자적 CAS` | 덮어쓰기 중단 | RUNTIME_PRIORITY |
 | X06 | 기존 반론 연구가 원고에서 누락 | 02_RESEARCH_PIPELINE.md — `검수 성공의 최소 단위` | 근거별 내용 대조 후 국소 복구 | RUNTIME_PRIORITY |
 | X07 | 표시 편집안과 저장 제안 불일치 | 02_RESEARCH_PIPELINE.md — `Stage 5 최초 제안에도 제시 전 스냅샷` | 실제 표시와 저장문구 분리 | STATIC_REVIEW_ONLY |
-| X08 | 신규 채용공고를 실제 채용으로 오인 | 02_RESEARCH_PIPELINE.md — `데이터 기반 연구의 실제 실행 확인` | 측정 단위·대표성 검사 | STATIC_REVIEW_ONLY |
+| X08 | 신규 채용공고를 실제 채용으로 오인 | 04B_VALIDATION_RULES.md — `모집단·측정 단위` / `새 일자리`와 `실제 채용공고` 구별 | 측정 단위·대표성 검사 | STATIC_REVIEW_ONLY |
 | X09 | Summary 부재·W-ID 파일 존재 | 01_CORE_RULES.md — `실제 결과 파일` | 실제 파일로 복구 | STATIC_REVIEW_ONLY |
 | X10 | 새 스레드 유일 연구 후보 | 01_CORE_RULES.md — `실제 결과 파일` | 브랜치/파일 실증 복원 | STATIC_REVIEW_ONLY |
 | X11 | 복원 후보 여러 개 | 01_CORE_RULES.md — `실제 결과 파일` | 후보 혼동 시 질문 | RUNTIME_PRIORITY |
@@ -25,7 +25,7 @@
 | X16 | 편집안 미선택 상태에서 준비 요청 | 02_RESEARCH_PIPELINE.md — `편집 준비/초안/일괄 완성 구분` | 편집안 먼저, 초안 강행 금지 | RUNTIME_PRIORITY |
 | X17 | 종료 가능 여부 질문에서 감사 미실시 | 02_RESEARCH_PIPELINE.md — Stage 5 `실제 종료 준비 판단 트리거` | 같은 턴 실제 readiness 감사 | RUNTIME_PRIORITY |
 | X18 | W-ID에는 있는 반론이 원고에는 없음 | 02_RESEARCH_PIPELINE.md — `검수 성공의 최소 단위` | 본문 실제 문장 확인 | RUNTIME_PRIORITY |
-| X19 | 중요 반론 원문 미확인 | 01_CORE_RULES.md — `최신성 검증 시` | 원문 재검증 또는 한계 표시 | STATIC_REVIEW_ONLY |
+| X19 | 중요 반론 원문 미확인 | 01_CORE_RULES.md — `실사용 위험 신호`의 `원문 미열람` / 확인하지 않은 성공 선언 금지 | 원문 재검증 또는 한계 표시 | STATIC_REVIEW_ONLY |
 | X20 | 새 스레드의 채팅 원문 미접근 | 02_RESEARCH_PIPELINE.md — `DELIVERY_UNKNOWN` | 표시·저장 일치 UNKNOWN | STATIC_REVIEW_ONLY |
 | X21 | 여러 파일 저장 중 HEAD 이동 | PROJECT_BOOTSTRAP.md — `브랜치 전체 HEAD의 원자적 CAS` | 다중파일 부분저장 경고 | RUNTIME_PRIORITY |
 | X22 | 여러 W-ID 선행 작업 혼합 | 02_RESEARCH_PIPELINE.md — `첫 발동 우선 조건` | 진척별 나눠 기록 | STATIC_REVIEW_ONLY |
@@ -38,7 +38,7 @@
 | X29 | 냉시작 때 GitHub read 실패 | 01_CORE_RULES.md — `실제 결과 파일` | 원인·불명확 범위 노출 | RUNTIME_PRIORITY |
 | X30 | 실제 표시 편집안 vs 원격 blob 불일치 | 02_RESEARCH_PIPELINE.md — `Stage 5 최초 제안에도 제시 전 스냅샷` | 문구·ID·근거 및 표시증거 검사 | RUNTIME_PRIORITY |
 | X31 | 분모 없는 대표기업 비율 요구 | 02_RESEARCH_PIPELINE.md — `부호·차감 방향·분모` | 비율 날조 금지 | STATIC_REVIEW_ONLY |
-| X32 | 핵심 PDF 원문 접근 실패 | 01_CORE_RULES.md — `최신성 검증 시` | 원문 직접검증 미실시 표시 | RUNTIME_PRIORITY |
+| X32 | 핵심 PDF 원문 접근 실패 | 01_CORE_RULES.md — `실사용 위험 신호`의 `원문 미열람` / 미확인 범위 공개 | 원문 직접검증 미실시 표시 | RUNTIME_PRIORITY |
 | X33 | 최신 공시 접근 실패 | 01_CORE_RULES.md — `최신성 검증 시` | 현행성 미확인 표기 | STATIC_REVIEW_ONLY |
 | X34 | PDF 양식은 있으나 원고 파일 없음 | 13_FINAL_REPORT.md — `PDF 제작 시` | 완성 주장 금지 — 후순위 | PDF_DEFER |
 | X35 | PDF 폰트·표·렌더 오류 | 13_FINAL_REPORT.md — `PDF 제작 시` | 실물 품질 감사 — 후순위 | PDF_DEFER |

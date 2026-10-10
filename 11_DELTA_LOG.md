@@ -40,7 +40,7 @@ Summary에 반영되지 않은 최신 변화, 조사 범위 결정, 작업계획
 
 ## 참조 규칙
 
-- 먼저 `10_CURRENT_SUMMARY.md`를 확인한다.
+- 결론·변화 추적은 `10_CURRENT_SUMMARY.md`를 먼저 확인한다. 착수한 다단계 조사의 승인 W-ID·진척은 별도 `RESEARCH_PLAN.md` 정본을 우선한다.
 - 이 파일에서는 Summary 이후 새로 생긴 변화만 확인한다.
 - 과거 Delta와 Closeout은 `12_ARCHIVE_LOG.md`에 보관한다.
 - Archive는 과거 판단의 근거 확인, 폐기된 주장 추적, 오래된 출처 재검증, Closeout 확인이 필요할 때만 확인한다.

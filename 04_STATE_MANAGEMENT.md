@@ -12,7 +12,8 @@
 ## 상태 파일
 
 ```text
-10_CURRENT_SUMMARY.md  ← 항상 먼저 보는 최신 요약
+RESEARCH_PLAN.md       ← 착수한 다단계 조사의 승인 W-ID·진척 정본
+10_CURRENT_SUMMARY.md  ← 최신 조사 결론·상태 요약(사용하는 경우)
 11_DELTA_LOG.md        ← Summary 이후 변화분
 12_ARCHIVE_LOG.md      ← 오래된 로그와 Closeout 보관
 13_FINAL_REPORT.md     ← 공통 보고서 양식
@@ -34,7 +35,7 @@ FINAL_REPORT.md        ← 개별 조사 브랜치의 실제 보고서
 - 매번 Archive를 보지 않는다.
 - 최신 근거와 결론은 Summary/Delta·실제 조사 파일로 확인하되, 사용자 승인 작업·완료 기준·진척에 관해서는 `RESEARCH_PLAN.md`를 정본으로 취급한다. 충돌하면 커밋·실제 승인 근거를 확인해 정정한다.
 - Summary 이후 변화만 Delta Log에서 확인한다.
-- Final Report는 결과물이고, 진행 상태 관리는 Summary/Delta가 맡는다.
+- Final Report는 결과물이고, 승인 계획의 진행 상태는 RESEARCH_PLAN이, 선택적인 결론·변화 기록은 Summary/Delta가 맡는다.
 - 최종 산출물 형식은 Summary와 Stage 0.7 Plan에 남긴다.
 - 실제 다단계 조사를 착수하면 승인된 작업 W-ID·필수 완료 기준의 정본을 해당 브랜치의 `RESEARCH_PLAN.md`에 둔다. 승인된 기준 계획 내용은 조용히 덮어쓰지 않고 버전과 변경 사용자 지시 근거를 남긴다. 진행 중에는 완료/부분 완료/조건부 완료/보류·근거 파일·잔여 필수 항목·다음 W-ID를 간결하게 갱신한다. Summary/Delta 전체 갱신은 선택이며 정본과 충돌하면 실제 브랜치·커밋을 확인한다.
 - 장기 조사에 별도 RESEARCH_PLAN.md·STAGE*.md 등 실제 작업 파일을 만든다면 **현재 단계, 주요 파일 경로, 미확정 결정, 최종 상태**를 Summary/Delta 또는 짧은 상태 진입점에 기록한다. 전체 연구 내용을 중복 기록할 필요는 없다.

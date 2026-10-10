@@ -23,7 +23,7 @@
 | H06 | 외부 1·2·3차 감사 원문 보존 | ARCHIVED/EXACT TEXT MATCH | V2_EXTERNAL_AUDIT_01_ORIGINAL.md; 02_ORIGINAL.md; 03_ORIGINAL.md | Files 도구가 반환한 텍스트와 GitHub 파일 3/3 글자 동일; 원본 bytes 해시는 별도 미검산 |
 | H07 | E01~E22 최초·중간·후반 실측 및 회복 | 22/22 TRACEABLE | V2_FULL_ISSUE_INVENTORY.md; V2_TEST_RESULTS.md §§1~48 | 최초 FAIL을 회복 PASS로 덮지 않음 |
 | H08 | H/M/L 8 + R 12 + 기존 G 12 + T06R 4 + PDF 1 | 37/37 TRACEABLE | V2_REQUIREMENT_DISPOSITION_CROSSWALK.md | 기존 E22 더해 총 59 |
-| H09 | 채택·반려/범위 비채택·대체·미시험 구분 | INDEXED | V2_DECISION_REGISTER.md | 33 A / 18 N / 12 P; 사용자 명시 판단과 개발 해석 분리 |
+| H09 | 채택·반려/범위 비채택·대체·미시험 구분 | INDEXED | V2_DECISION_REGISTER.md | 33 A / 18 REJ / 12 P; 사용자 명시 판단과 개발 해석 분리 |
 | H10 | 과거 C10/C13 첫 FAIL, C14 Stage7 PARTIAL과 회복 PASS | PRESERVED | V2_TEST_RESULTS.md §§42~48 | 최초 자발성 실패 소급 수정 금지 |
 | H11 | 59개 소스·시험 참조와 독립성 불확실성 | STATIC LINK ONLY | V2_THEORETICAL_COVERAGE_MATRIX.md | 56 모델 행동 요구와 3 평가 규약; 7 SHARED/4 SAME-DIRECTION; 실제 PASS 아님 |
 | H12 | N01~N12 / X01~X48 계획과 경고 | PLANNED | V2_E2E_PRE_POST_PROTOCOL.md | 실제 E2E 미실행 |

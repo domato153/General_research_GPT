@@ -1,0 +1,1 @@
+R8 fixture: This subpath reserves R8_VALIDATION_RESULT.md as a directory in the Git tree. It is not a Markdown report. Do not delete or change this fixture.

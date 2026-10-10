@@ -36,8 +36,8 @@ Archive는 현재 판단을 만들기 위한 기본 작업 공간이 아니라, 
 
 ## 사용 규칙
 
-- Summary에 반영된 오래된 Delta 묶음은 Archived Delta Batch로 이 파일에 append한다.
-- Final Report를 확정 저장하면 Closeout 블록을 이 파일에 append한다.
+- Archive 대상인 오래된 Delta는 **원문 또는 정확한 불변 커밋 SHA·파일 경로·대상 범위**로 복구할 수 있는 형태로 Archived Delta Batch에 보존한다. 요약만 남기고 원문을 추적 불가 상태로 만들지 않는다.
+- 상태 파일을 운영했고 실제 기록 정리가 필요하여 Closeout을 수행한다면 그 블록을 append한다. **Final Report 확정 자체만으로 Closeout은 의무가 아니다.**
 - Archive에 들어온 내용은 현재 결론을 장황하게 반복하지 말고, 왜 이동했는지와 어떤 판단이 보관되는지 중심으로 정리한다.
 - 새 조사를 진행할 때는 먼저 `10_CURRENT_SUMMARY.md`와 `11_DELTA_LOG.md`를 보고, 필요한 경우에만 Archive를 확인한다.
 

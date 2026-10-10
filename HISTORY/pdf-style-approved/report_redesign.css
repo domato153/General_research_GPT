@@ -1,0 +1,112 @@
+/* Original research text is unchanged. All layout and design are independent of the previous style. */
+@page cover {
+ size: A4; margin: 0;
+}
+@page contents {
+ size: A4; margin: 0;
+}
+@page report {
+ size: A4;
+ margin: 24mm 22.5mm 21mm 23mm;
+ @top-left {content: "RESEARCH  /  OPENSSH"; font-family: "Noto Sans CJK KR", sans-serif; font-weight: 700; font-size: 7pt; letter-spacing: .10em; color: #677888; padding-top: 7mm;}
+ @top-right {content: "CVE-2024-6387"; font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; font-weight: 500; letter-spacing: .08em; color: #677888; padding-top: 7mm;}
+ @bottom-left {content: "TECHNICAL SECURITY REPORT    •    2026.10.11";font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; color: #677888; padding-bottom: 7mm;}
+ @bottom-right {content: counter(page) "  /  " counter(pages); font-family: "Noto Sans CJK KR", sans-serif; font-size: 7.4pt; color: #1e4158; font-weight: 700; padding-bottom: 7mm;}
+}
+:root {--navy:#112C40;--navy-dark:#0A1A29;--accent:#DD9D65;--turquoise:#3C8E8B;--muted:#586A74;--soft:#F3F6F5;--line:#DCE5E7;}
+* {box-sizing:border-box;}
+html,body {margin:0;padding:0;}
+body {color:#1F303B; font-family:"Noto Sans CJK KR","Noto Sans CJK JP",sans-serif; font-size:9.65pt; line-height:1.67; font-weight:400;}
+.cover {page:cover; height:297mm; width:210mm; position:relative; overflow:hidden; background:var(--navy-dark);color:#F8FBFB; break-after:page;}
+.cover-edge {position:absolute;top:0;left:0;bottom:0;width:6.5mm;background:var(--accent);}
+.cover-top {position:absolute;left:23mm;right:22mm;top:24mm;display:flex;justify-content:space-between;align-items:flex-start;}
+.cover-brand {font-size:8.8pt;font-weight:800;letter-spacing:.22em;color:#E9F1F0;}
+.cover-top-right {font-size:7.8pt;text-align:right;font-weight:500;line-height:1.65;letter-spacing:.07em;color:#95AFBE;}
+.cover-symbol {position:absolute;top:22mm;left:15.9mm;width:7mm;height:11mm;z-index:1;display:none;}
+.cover-orbit {position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.09);pointer-events:none;}
+.cover-orbit-a {width:240mm;height:240mm;top:81mm;left:113mm;}
+.cover-orbit-b {width:152mm;height:152mm;top:126mm;left:153mm;border-width:1.3px;border-color:rgba(221,157,101,.18);}
+.cover:before {content:"";position:absolute;left:23mm;right:22mm;top:49mm;height:.35mm;background:rgba(255,255,255,.22);}
+.cover-index {position:absolute;left:23mm;top:72mm;color:var(--accent);font-size:8pt;font-weight:700;letter-spacing:.20em;}
+.cover-middle {position:absolute;left:23mm;right:20mm;top:92mm;}
+.cover-code {font-size:10.5pt;font-weight:600;color:#96BDC3;letter-spacing:.08em;}
+.cover-code-rule {display:inline-block;width:13mm;height:1px;background:#96BDC3;vertical-align:middle;margin-left:3mm;}
+.cover-title {margin:11mm 0 0; padding:0; font-weight:800;letter-spacing:-.040em;}
+.cover-title .title-en {display:block;font-size:22pt;line-height:1.24;font-weight:700;letter-spacing:-.037em;overflow-wrap:anywhere;max-width:160mm;}
+.cover-title .title-ko {display:block;margin-top:11mm;font-size:34.5pt;line-height:1.30;letter-spacing:-.067em;}
+.cover-title .visual-break {display:inline;}
+.cover-subtitle {font-size:10pt;font-weight:400;letter-spacing:.006em;line-height:1.6;color:#BFD1D6;margin-top:15mm;max-width:140mm;}
+.cover-middle:after {content:"";position:absolute;top:91mm;left:0;width:20mm;height:1.45mm;background:var(--accent);}
+.cover-bottom {position:absolute;bottom:26mm;left:23mm;right:22mm;display:flex;justify-content:space-between;align-items:end;font-size:8pt;letter-spacing:.1em;color:#CEDDE1;font-weight:700;}
+.cover-bottom-left {max-width:110mm;}
+.accent-pipe {color:var(--accent);margin:0 2mm;}
+.cover-bottom-rule {position:absolute;left:23mm;right:22mm;bottom:20mm;height:.35mm;background:rgba(255,255,255,.2);}
+/* Contents page */
+.toc {page:contents;break-before:page;break-after:page;height:297mm;position:relative;overflow:hidden;background:#F7F7F3;color:var(--navy);padding:24mm 23mm 20mm;}
+.toc:before{content:"";height:2.5mm;width:26mm;position:absolute;top:0;left:23mm;background:var(--accent);}
+.toc-kicker{font-size:8pt;letter-spacing:.18em;color:var(--turquoise);font-weight:800;}
+.toc-header{display:flex;gap:9mm;align-items:center;margin:12mm 0 9mm;}
+.toc-small-num{font-family:"Noto Serif CJK KR",serif;font-size:58pt;color:#D6DEDC;line-height:1;}
+.toc h2{font-family:"Noto Serif CJK KR",serif;font-size:34pt;letter-spacing:-.07em;margin:0;line-height:1.12;}
+.toc-en{font-family:"Noto Sans CJK KR",sans-serif;font-size:11pt;letter-spacing:.11em;font-weight:500;color:#71858A;}
+.toc-header p{font-size:9pt;color:#667D81;margin:3mm 0 0;}
+.toc-note{background:#E9EEEC;padding:7mm 7.5mm;border-left:1.3mm solid var(--turquoise);font-size:12.6pt;font-weight:700;line-height:1.4;margin-bottom:8mm;}
+.toc-note-label{font-size:7.3pt;color:#5B8485;letter-spacing:.14em;margin-bottom:2mm;}
+.toc-list{display:block;}
+.toc-row{display:flex;text-decoration:none;color:var(--navy);align-items:baseline;gap:4mm;border-bottom:1px solid #CFDAD8;padding:4mm 0;min-height:11mm;}
+.toc-num{font-family:"Noto Sans CJK KR",sans-serif;font-size:9pt;color:var(--turquoise);font-weight:800;letter-spacing:.08em;min-width:10mm;}
+.toc-name{flex:1;white-space:nowrap;font-family:"Noto Sans CJK KR",sans-serif;font-size:11.1pt;font-weight:600;letter-spacing:-.027em;}
+.toc-dots{display:none;}
+.toc-pg{display:none;min-width:8mm;text-align:right;color:#778C8E;font-size:9pt;}
+.toc-row:after{content:target-counter(attr(href),page);font-size:9pt;color:#778C8E;}
+.toc-appendix{margin-top:8mm;display:block;columns:2;column-gap:9mm;}
+.toc-appendix-label{color:var(--turquoise);font-size:8pt;font-weight:800;letter-spacing:.16em;margin:0 0 3mm;column-span:all;}
+.toc-app-row{display:block;text-decoration:none;color:#5C7477;font-size:8.5pt;line-height:1.55;margin:0 0 2mm;break-inside:avoid;break-inside:avoid;}
+/* Running report */
+.report-body{page:report; padding:0;}
+.report-section{margin:0;}
+.report-section.major-break{break-before:auto;}
+.report-body h2 {font-family:"Noto Serif CJK KR", "Noto Sans CJK KR",serif; font-weight:700; font-size:18.8pt;letter-spacing:-.052em;color:var(--navy);line-height:1.34;margin:11mm 0 7mm; padding:0 0 4.5mm;border-bottom:1px solid #C5D2D5;break-after:avoid;}
+.report-section:first-child h2{margin-top:1mm;}
+.report-section:not(.metadata):not(.executive) h2{margin-top:14mm;}
+.report-section.major-break h2{margin-top:3mm;}
+.report-section h2:before{content:"";display:block;width:11mm;height:1.5mm;background:var(--turquoise);margin:0 0 5mm;}
+.report-section.appendix h2:before{background:var(--accent);}
+.report-body h3{font-size:11.75pt;font-weight:700;color:#193A50;letter-spacing:-.035em;line-height:1.43;margin:9mm 0 4mm;break-after:avoid;}
+.report-body p{margin:0 0 4.9mm;line-height:1.73;orphans:3;widows:3;word-break:normal;overflow-wrap:break-word;text-align:left;text-indent:1em;}
+.report-body strong{font-weight:700;color:#142E41;}
+.report-body .lead-verdict {padding:7mm 8mm; background:#EDF3F2; border-left:1.3mm solid var(--turquoise); margin:0 0 6.8mm; text-indent:0; font-size:10.6pt;line-height:1.74;font-weight:600;break-inside:avoid;}
+.report-body .lead-verdict strong{font-weight:800;}
+.report-body ul,.report-body ol {padding-left:6.9mm;margin:3mm 0 6mm;list-style-position:outside;}
+.report-body li{padding-left:1mm;margin:0 0 3mm;line-height:1.62;break-inside:avoid;}
+.report-body .metadata-list {list-style:none;padding-left:0;margin:0 0 13mm;display:block;}
+.report-body .metadata-list li{padding:2.7mm 0;border-bottom:1px solid #E1E8E8;line-height:1.55;font-size:9pt;break-inside:avoid;}
+.report-body .table-wrap{margin:7mm 0 8mm;width:100%;}
+.report-body table {border-collapse:collapse;width:100%;table-layout:fixed;font-size:8.4pt;line-height:1.5;word-break:normal;overflow-wrap:anywhere;border-top:1.5px solid var(--navy);}
+.report-body table th {text-align:left;font-weight:700;color:#173749;background:#E8F0EF;padding:3.1mm 3.1mm;border-bottom:1px solid #BACDCE;}
+.report-body table td {vertical-align:top;text-align:left;padding:3.2mm 3mm;border-bottom:1px solid #D5DFE0;}
+.report-body table tr{break-inside:avoid;}
+.report-body table thead{display:table-header-group;}
+.report-body table tr:nth-child(even) td{background:#F8FAF9;}
+.report-body .conclusion-box{position:relative;margin:6mm 0 7mm;padding:3mm 4.1mm;background:#F0F4F3;border:1px solid #D4E1E0;border-left:3px solid var(--turquoise);line-height:1.61;font-size:9.5pt;break-inside:avoid;text-indent:0;}
+.report-body .conclusion-box strong{color:#1F6668;display:inline;font-weight:800;margin-right:2mm;}
+.report-body .appendix:not(.major-break) h2{margin-top:12mm;}
+.report-section.appendix .table-wrap{margin-top:5mm;}
+.report-section.appendix table{font-size:7.9pt;}
+.report-section.appendix .table-wrap table td{padding:2.7mm 2.5mm;}
+.report-section.appendix li{font-size:8.25pt;line-height:1.57;margin-bottom:2.8mm;overflow-wrap:anywhere;word-break:normal;}
+.report-section.appendix a{color:#285F76;text-decoration:none;overflow-wrap:anywhere;word-break:break-all;}
+.report-body a{color:#255D72;text-decoration:underline;text-decoration-color:#9BBDC0;text-underline-offset:2px;overflow-wrap:anywhere;}
+.report-body pre{white-space:pre-wrap;word-break:break-all;overflow-wrap:anywhere;padding:4mm;background:#F1F4F4;border-left:2px solid #ACCACB;font-family:"Noto Sans Mono CJK KR",monospace;font-size:8.2pt;line-height:1.55;}
+.report-body blockquote{margin:5mm 0;padding:3.5mm 5mm;border-left:2px solid var(--turquoise);background:#F5F8F7;}
+.report-body p:empty {display:none;}
+@media screen {
+ body {background:#E7EAEA;}
+ .cover, .toc {margin:12mm auto;box-shadow:0 2mm 10mm rgba(10,26,41,.17);}
+ .report-body{max-width:210mm;background:white;margin:0 auto;padding:22mm;box-shadow:0 2mm 10mm rgba(10,26,41,.17);}
+}
+
+.report-section.appendix:has(h2#section-24){break-before:page;}
+
+/* First-line indent applies to normal report prose; structural containers stay flush. */
+.report-body .lead-verdict, .report-body .conclusion-box p, .report-body .table-wrap p, .report-body li p {text-indent:0;}

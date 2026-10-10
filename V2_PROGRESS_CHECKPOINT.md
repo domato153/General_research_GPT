@@ -5,7 +5,7 @@
 
 > **이 채팅의 역할은 평가자/규칙 개발자**이다. 다른 ChatGPT 프로젝트의 **실제 조사 모델**이 진행한 C1~C14와 회복 결과를 사용자로부터 받아 평가하고, 평가 기록만 `design/research-v2`에 남긴다. **평가자가 조사 모델을 대신해 새 실제 E2E를 실행하거나 사용자 승인 없이 연구 브랜치를 고치지 않는다.** 새 스레드에서 먼저 이 역할을 확정한다.
 
-1. GitHub에서 `design/research-v2`의 **최신 HEAD**와 이 체크포인트 **§20**, `V2_REAUDIT_03_REMEDIATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_E2E_PRE_POST_PROTOCOL.md`, `V2_EXECUTION_PLAN.md` **§32**를 먼저 읽는다. 기존 `V2_TEST_RESULTS.md` §§1~48 및 과거 체크포인트 §§0~15는 역사 판정 기록으로 보존한다. 중요 사실은 상세 시험 로그를 정본으로 하고, 이 파일은 빠른 인덱스로만 쓴다.
+1. GitHub에서 `design/research-v2`의 **최신 HEAD**와 이 체크포인트 **§21**, `V2_REAUDIT_03_FINAL_GATE.md`, `V2_E2E_READY_HANDOFF.md`, `V2_REAUDIT_03_REMEDIATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_E2E_PRE_POST_PROTOCOL.md`, `V2_EXECUTION_PLAN.md` **§32**를 먼저 읽는다. 기존 `V2_TEST_RESULTS.md` §§1~48 및 과거 체크포인트 §§0~15는 역사 판정 기록으로 보존한다. 중요 사실은 상세 시험 로그를 정본으로 하고, 이 파일은 빠른 인덱스로만 쓴다.
 2. 과거 AI 고용 E2E 원자료를 재감사할 이유가 있을 때만 `research/20261010-ai-employment-kr-us-1538-fb22`의 `RESEARCH_PLAN.md`·W01~W06·최종본과 HEAD를 확인한다. 최신 확인 연구 HEAD는 `cbe5b68d8a0fcfa355d320268ceb8b3c8e9d634b`. 새 후보의 실사용 시험은 이 과거 연구를 재시작하지 말고 **별도 격리 프로젝트·연구 브랜치**로 진행한다.
 3. **완료/미완료 구분:** 22개 과거 이슈 포함 59개 요구의 실제 소스 줄·시험 ID 정합성과 3차 외부 감사 P1-A/P1-B 국소 보완까지 완료. 56개 행동 요구의 시험 ID 할당은 실사용 성공도 독립 시험 56쌍도 아님. **실제 새 프로젝트 독립 BASE↔개선 후 자연어 모델 E2E·T06-R·도구 실패/HEAD 충돌·PDF 렌더·지연/비용 비교는 아직 NOT TESTED**. 기존 C10/C13 FAIL·C14 PARTIAL은 보존.
 4. **다음 작업:** **짧은 자연어 자연사용 E2E**를 BASE와 개발 적용 고정 SHA의 **별도 독립 모델/프로젝트**에서 실시하고 실제 행동·출처·GitHub 브랜치/파일·추가 승인 횟수를 비교한다. 그 다음 T06-R·실패 주입·PDF·회귀 판정. 개발 브랜치에 발견 결함을 국소 보완하고 적용 후 이론 매핑을 다시 돌린다. 운영 `main`은 이번 작업 범위에서 계속 제외한다.
@@ -234,3 +234,11 @@
 - **실행을 준비한 새 테스트:** 자연어 N01~N12, 부정/예외 X01~X48(신규 X44·X45 무저장/기존저장권한, X46 최초 Stage5 채팅 전달 장애, X47 개정본 선택권, X48 가짜 선택/반복 검수 비용). **실제 신규 독립 GPT E2E / PDF / READ 장애 / UI 저장본 대조 / CAS 경합 = NOT TESTED**.
 - **기존 기록 보존:** C10 최초 FAIL, C13 최초 FAIL, C14 Stage7 PARTIAL 및 회복 PASS는 이 패치로 달라지지 않음. `main` 및 과거 AI 고용 연구 브랜치 불변. E2E 종료 전 `main` 승격 계획 없음.
 - **바로 다음 단계:** 3차 감사 패치본 `ac4675...`와 BASE `cd64bef...` 동등조건 **실제 자연어 E2E**, X29/X30/X44~X47, 안전/도구 실패·PDF/비용 측정. 같은 3차 정적 감사 반복으로 실제 E2E를 대신하지 않음.
+
+## 21. 연결 중단 후 최종 정리·실사용 E2E 착수 정본 (2026-10-10)
+
+- **완료:** 제3차 외부 감사 B의 P1-A/P1-B 및 작은 P2 지적을 `design/research-v2`에서 수정, 감사 기록·시험 프로토콜·검증 매트릭스 연결 마무리. 규칙 **고정 SHA `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`**, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`. 이후 개발 HEAD는 문서 기록용 커밋으로만 증가할 수 있으며 고정 SHA의 규칙 동작을 바꾸지 않는다.
+- **검사:** GitHub 고정 원문 직접 재조회, 전체 **59/59** 실제 소스 줄·근거 문구·연결된 시험 ID 존재, **18/18** 안전·권한·보고서/스냅샷 계약 문자열 확인, 엔진 규칙 8파일 동결=개발 blob 일치. `01_CORE_RULES.md`, `04A_UPDATE_TEMPLATES.md`, `05_DOMAIN_MODULES.md` BASE blob 불변. 시험 N01~N12/X01~X48 계획; `SHARED` 7행·`SAME-DIRECTION` 의심 4행을 독립 시험 성공으로 집계하지 않음.
+- **현재 우선 문서:** `V2_REAUDIT_03_FINAL_GATE.md`(실제로 재검증한 범위와 남은 한계) → `V2_E2E_READY_HANDOFF.md`(새 독립 E2E의 정확한 버전/실행 방법) → `V2_E2E_PRE_POST_PROTOCOL.md`(자연어·부정 시험 목록) → `V2_REAUDIT_03_REMEDIATION.md`(외부 감사 B의 지적/국소 패치).
+- **여전히 미검증:** **독립 ChatGPT BASE↔신규 규칙 자연어 최초 E2E, X29 GitHub 읽기실패, X30 실제 사용자 표시↔GitHub 기록, X44~X47 권한·표시 장애, PDF 실제 렌더, HEAD 경합·비용/승인량 무회귀**. 정적 검사 숫자를 기능 합격으로 상향하지 말 것.
+- **다음 작업:** 이 평가자 대화에서 독단적으로 구 조사 E2E를 재실행하지 않는다. 사용자가 별도 비개인화 시험 프로젝트에 고정 규칙을 실제 주입해 결과를 제공하면 **최초 자연어 행동 / 명시적 회복 / 장애 대응**을 구별해 판정·기록. `main` 및 과거 연구 브랜치는 이번 작업에서 계속 보존한다.

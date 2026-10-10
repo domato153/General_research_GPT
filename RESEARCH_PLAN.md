@@ -69,5 +69,5 @@
 - 승인한 편집안: CVE6387-EDITORIAL-01 rev1 P1, status SELECTED. FINAL_REPORT_EDITORIAL_PROPOSAL.md에 사용자 발화 보존.
 - Stage 6·6.5: Full Report 표준~상세 완성 원고 FINAL_REPORT.md 구성(보존 이전 임시본 FINAL_REPORT_DRAFT.md).
 - Stage 7: ROUND1/ROUND2/ROUND3/W5 원문과 경쟁 설명을 실제 대조, 20개 근거·서술 확인; 1개 표현 자동 매칭 예외는 원고 문맥으로 검증하여 통과. 상세 FINAL_REPORT_REVIEW.md.
-- Stage 8: GitHub 최종보존은 별도 fetch_file 재조회 후 완료 선언 가능; 사용자 전문 전달도 실제 최종 응답과 따로 구분.
+- Stage 8: 최종 원고 FINAL_REPORT.md 연구 브랜치에 저장 후 fetch_file 재조회 완료. 최종 원고 커밋 ecdde156b036184a757d0f56704b5150849bd883, blob cb4b764e1a236df63802cf5a612e7a84c6f66270, 검수 FINAL_REPORT_REVIEW.md 저장·재조회 확인. 채팅 전문 전달은 이 답변에서 수행하며 앱 UI 수신 여부까지 도구로 증명하지는 않음.
 - 공식 작업 저장 경계: 새 연구 브랜치만 수정; main 및 기존 브랜치 미변경.

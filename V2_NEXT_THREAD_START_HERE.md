@@ -1,5 +1,9 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [현행 — 2026-10-11] LONG-LITE 종료 / PDF-STYLE 대기
+
+LONG-LITE-01, 02, 03, 04: 각 관찰 범위 PASS. LL03은 일탈·이탈 단문 응답을 확인했고 내부 도구 로그는 미확인. 실제 100~200쪽 신규 작성 및 토큰 절감은 미검증. 다음은 `final_pdf_html_formatting_instruction_final.md`와 D01 확정 원고를 사용한 내용 불변 HTML/CSS PDF-STYLE 시안. PDF 실물 렌더는 별도 단계. 최신 시험 기록은 `V2_LONG_LITE_TEST_LOG.md` 참조.
+
 ## [현행 최신 — 2026-10-11] LONG-LITE-01·02·04 실전 PASS, LL-03 단문 마지막
 
 - **LL-04 피시험 모델 실제 PASS:** 144쪽 공개 arXiv:2303.18223 v19의 §6.1.1 p44/프롬프트 4요소, Table 13 p48 예시 3건, Update log p98 2023-06/09 변경이 서로 어떻게 연결되는지 원문 위치/판본 기준으로 설명. v19 첫 장 내부 v18 표기 불일치, 구형 Update log의 Table 12 표기·현행 Table 12 tips/Table 13 examples 구분, 과거 v12 §8.1/Table 14 tips/Table 15 examples 대응까지 찾아냄. 평가자가 실제 arXiv 페이지와 v19·v12 PDF를 표적 재조회하고 일치 확인. **LL-01·02·04 실전 관찰 범위 PASS**. 상세 `V2_LONG_LITE_TEST_LOG.md` 최신 절 참조.

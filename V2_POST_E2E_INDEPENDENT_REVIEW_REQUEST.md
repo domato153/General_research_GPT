@@ -7,7 +7,7 @@
   - `01_CORE_RULES.md` blob `842a663b32af51ac369e3153c2516ace7ebb32e1`
   - `02_RESEARCH_PIPELINE.md` blob `117bea4cc683eb315b77336f093b6dff049b56b9`
   - `13_FINAL_REPORT.md` blob `f0d7088e53931bcfb4daca20c7ed444bdbb18b35`
-  - `PROJECT_BOOTSTRAP.md` blob `1a6205f30682c57ff54bfb0670caa4cdbcf27578`
+  - `PROJECT_BOOTSTRAP.md` blob `7679da59bae84c641934386f0dd57cac93d4cd8a` (기존 `/handoff`의 과거 재시작 지시 충돌 방지·인계 종료 전 교차검사 최소 보완 포함)
 - 고정 피시험 후보: `ac4675d50bc0355b0939f7eb32b6fd72605acfb4` (이 SHA를 **새 패치 SHA와 혼동하지 말 것**).
 - 변경된 규칙 세 파일과 고정 후보를 비교하고, 외부 리뷰어가 필요하면 `00_INDEX.md`, `04B_VALIDATION_RULES.md`, `V2_E2E_LIVE_EVALUATOR_NOTES.md`, `V2_RUNTIME_EARLY_WARNING_DESIGN.md`, `V2_POST_E2E_X48_STATIC_COVERAGE.md`, `V2_POST_E2E_PATCH_REGRESSION_PLAN.md` 확인.
 - **절대 금지:** `main`·피시험 고정 커밋·기존 연구 브랜치 수정, 원고/테스트 입력에 평가 정답 주입, 사례 실전 실행 없이 PASS 보고.

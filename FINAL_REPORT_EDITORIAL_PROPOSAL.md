@@ -1,15 +1,23 @@
 # FINAL_REPORT_EDITORIAL_PROPOSAL — 한국·미국 충전시설과 BEV 보급
 
 - proposal_id: EV-KRUS-20261011-P01
-- revision: 2
-- status: RECOMMENDED (사용자 수록 구성 미선택)
+- revision: 3
+- status: SELECTED (안1, 사용자 최종완성 및 GitHub 저장 위임)
 - date: 2026-10-11 Asia/Seoul
 - research_branch: `research/20261011-v2-r4-audit`
-- research_head_at_revision: `994309f305e8e49704a417feaf38f1093c2ddfc1`
+- research_head_at_revision: `257e000dc2c914295bcc330831aac19b32625f8c`
 - applied_rules_commit: `44bd894cb464229a6d8b926f152113dd0f1bbbae`
 - 연구 중단은 사용자 명시 지시, 본문 편집안은 미선택
 
-## 최종보고서 구성 선택 (현행 제안, rev.2)
+## rev.3 현행 결정 — 2026-10-11
+
+- **사용자 명시 선택:** 안1 균형형 실증연구 보고서로 최종 완성, 지정 GitHub 브랜치 저장, 채팅 보고서 표시 위임.
+- 배치: 실제 관측변화·긍정/비유의/상충 인과근거·경쟁 설명·한미 비교·정책적 함의는 본문, 변수와 원자료·연구별 검증과 미실시 민감도는 부록.
+- 핵심 보정: 미국 2024→2025 BEV 비중 8.14%→7.87% = −0.27%p; U-06 동일 예산 2배 이상 구조모형, U-07 위치/포트·민간/공공 및 ZEV-DID 분리, 중요한 null 결과 포함.
+- W1~W3 부분완료, W4~W5 미실시, 공통 신규 추정계수 미식별 유지. 하단 rev.2 제안은 **과거 제안 상태**이며 현행은 SELECTED.
+- 최종 산출물 FINAL_REPORT.md. main 병합·대외 공개 없음.
+
+## 최종보고서 구성 선택 (과거 rev.2 제안, 현행 아님)
 
 사용자 확인 결정: **추가조사는 여기서 마무리한다.** 이는 W4/W5가 완료됐다는 의미가 아니며, 기존 rev.1에서 추천한 추가 W4/W5 검증 경로는 현재 실행 대상이 아니다. 본문 구성 선택이나 원고 작성·최종 확정까지 승인한 것으로 처리하지 않는다.
 

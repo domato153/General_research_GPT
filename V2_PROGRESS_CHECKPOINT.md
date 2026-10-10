@@ -1,4 +1,6 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
+> **현재 상태(2026-10-11)가 우선:** 실제 **단일 CANDIDATE N01~N12 전부 실행**; 최초 PASS 10, 실패 2(N09 C13, N10 C14), N11 회복 PASS. 아래 2026-10-10 'E2E 미시험' 기재는 당시 이력이며 최신 상태가 아니다. 개발판 **첫 규칙 수정 + 정적 자체검토 + X01~X48 정적 대응 위치 점검** 완료, **외부 독립검토/새 수정판 실전 회귀/자동 알림 서비스는 미완료**. 다음 정확한 행동은 **독립 외부 read-only 검토**. 최신 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단이다.
+
 > 상태: **1~3차 외부 감사 완료, 3차 B 판정의 P1-A/P1-B를 `design/research-v2`에 국소 수정. 현재 규칙 고정 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`. 소스·테스트 참조 59/59, 모델 행동 56개 POS/NEG 사례 할당(독립성/실행 미검증), 실패 폴백 34행 참조, 정적 18조건 재확인 대상. 실제 독립 E2E·READ/WRITE 실패 주입·PDF/비용은 NOT TESTED. 다음 단계는 비개인화 BASE↔CANDIDATE 실제 시험.** · 기록 기준일: **2026-10-10** · 성격: **현재 상태 찾아보기용 체크포인트, 원문 정본이 아님**
 
 ## 0. 새 스레드 재개 순서 — 실행 전 1회 확인
@@ -277,3 +279,13 @@
 - [실험 증거 기록표](V2_E2E_EVIDENCE_TEMPLATE.csv)는 자연어 N12+부정 X48+X44-철회+D01 타 도메인 **총 62 케이스 × 두 후보 = 124 빈 행**, 전부 `NOT_RUN`·active SHA UNKNOWN. 아직 어떤 점수도 부여하지 않았다.
 - **현 도구의 한계:** 연결된 GitHub는 규칙 파일 읽기/기록에 사용 가능하지만, 사용자 ChatGPT의 프로젝트 생성·개인화 OFF·도구 연결·실주입 파일 확인·실제 UI 전송 오류 주입을 완료하지는 못한다. 실제 사용자가 별도 비개인화 두 프로젝트를 구성하고 동일 설정을 확인해야 한다. 정상 연구 N01 이전 시험 브랜치를 사전 생성하면 실사용 행동 평가를 왜곡할 수 있으므로 생성하지 않음.
 - 이 단계에서 **GitHub 준비 완료 ≠ 전체 시험환경 검증 완료 ≠ 실 E2E PASS**. main/역사 연구 브랜치/고정 엔진 원본 보호, 다음 N01은 추가 실행 지시 전 NOT RUN.
+
+## 26. N01~N12 독립 CANDIDATE 실전 종료·개발판 1차 개선·인계 (2026-10-11)
+
+- 최신 세부 관찰 정본: `V2_E2E_LIVE_EVALUATOR_NOTES.md`; 피시험 고정 후보 규칙 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`. **N01~N12 모두 실행, 최초 행동 10 PASS / 2 FAIL**. N09 C13 준비 단계 편집 사용자 선택 미확정에서 장문 초안 선행, N10 C14 Li/Gbeda 비교 내용 누락 + '부록 상세' 검수 과대판정. N10 파일 저장·채팅 본문 전달은 PASS, N11 국소 회복 PASS, N12 간결 결론 PASS. BASE 비교시험은 NOT RUN.
+- 실제 N11 후 연구 `research/20261011-kr-us-ev-charging-adoption` HEAD `818c7f21bdbc4ef33a66cf343c306f6b90abb9ac`; 보호 `main` HEAD `3bc7ea1e2241b718b23d70c26d2e5840f5810c92` (2026-10-11 확인 시점). 규칙 출발 SHA/연구 HEAD/개발 HEAD/현재 ChatGPT 프로젝트 실제 주입 SHA(UNKNOWN)를 혼동하지 않는다.
+- N12 종료 후 개발 `design/research-v2`에서 `01_CORE_RULES.md`, `02_RESEARCH_PIPELINE.md`, `13_FINAL_REPORT.md` **실제 규칙 1차 수정·저장·재조회 완료**. 사용자 선택 준비/초안/완성 경계와 W3 중요 비교 수치·이질성의 원고 수록 감사, 원자료 추출 실행/수치 부호·분모, 모델 내 STOP/HOLD/WARN/UNKNOWN 조건부 위험경고 추가.
+- `V2_POST_E2E_STATIC_SELF_REVIEW.md` 정적 조건 11/11, `V2_POST_E2E_X48_STATIC_COVERAGE.md` X01~48의 대응 위치 48/48 검사만 완료. 이는 의미상 모델 동작·외부감시·P0/P1 회귀 보호 PASS가 **아님**. 외부 GitHub 자동 이벤트 감시/푸시 알림은 미구현; ChatGPT 실시간 채팅을 외부 감시기가 전수 읽는다는 보장 없음. 독립 검토 전달문서 `V2_POST_E2E_INDEPENDENT_REVIEW_REQUEST.md`는 **요청서 준비**, 실제 외부 검토 NOT RUN.
+- `V2_POST_E2E_PATCH_REGRESSION_PLAN.md`: 외부검토 후 문제의 범위만 국소 수정, **N01~N12 전수 반복 불필요**, 변경 부문 N09/N10와 정상 초안·일괄 위임·위험 저장·원자료/수치/경고의 표적 R1~R10, 필요할 때 다른 분야 D01을 모델에서 실전 검증. 미실시·장애 주입 불가 항목은 NOT TESTED/BLOCKED 유지.
+- **현재 사용자 지시**: `/handoff` 수행. 새 연구·실전 모델 E2E·독립 감사 실제 실행·규칙 추가 패치·운영 `main` 병합·테스트 프로젝트 교체·PDF 생성은 이 인계 턴에 수행하지 않음. 다음 1단계는 현재 패치의 **별도 독립 read-only 외부감사**이며, 그다음 표적 회귀 및 사용자 결정 후 PDF 양식 시안. 실제 PDF 출력·렌더 테스트는 별도 후순위.
+- 복원 인덱스 최신: `V2_NEXT_THREAD_START_HERE.md` / 평가 `V2_E2E_LIVE_EVALUATOR_NOTES.md` / 자가검사 `V2_POST_E2E_STATIC_SELF_REVIEW.md` / 외부감사 요청 `V2_POST_E2E_INDEPENDENT_REVIEW_REQUEST.md` / 표적 회귀 `V2_POST_E2E_PATCH_REGRESSION_PLAN.md`. 과거 §§0~25는 최초 당시 결정·검증 기록으로 남겨 놓는다.

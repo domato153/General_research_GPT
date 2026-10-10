@@ -23,7 +23,7 @@
 
 ## A3. 미국: 신규 등록 주별 BEV 분리 원문 확보 (진전)
 - 원출처: Alliance for Automotive Innovation, `GET CONNECTED EV Quarterly Report, 2025 Q4`, https://www.autosinnovate.org/posts/papers-reports/Get%20Connected%20EV%20Quarterly%20Report%202025%20Q4.pdf (2026-03-25).
-- 원문 PDF p.14: `2025 (Full Year) New Light-Duty Vehicle Registrations By Powertrain` 각 주·DC별 PHEV / BEV / FCEV / EV Total 구분. 미국 전체 BEV 7.87%, PHEV 1.72%, EV Total 9.59% (각각 **2025년 경량차 신규 등록 중 비율**, 누적 EV 보유량 아님). BEV 점유율 2024 대비 +0.27%p. 데이터 원천 S&P Global Mobility의 신규등록 자료(소매/법인 포함, 2025 calendar year), Alliance 집계.
+- 원문 PDF p.14: `2025 (Full Year) New Light-Duty Vehicle Registrations By Powertrain` 각 주·DC별 PHEV / BEV / FCEV / EV Total 구분. 미국 전체 BEV 7.87%, PHEV 1.72%, EV Total 9.59% (각각 **2025년 경량차 신규 등록 중 비율**, 누적 EV 보유량 아님). BEV 점유율 2024 대비 **-0.27%p** (2024 8.14% → 2025 7.87%; 원문 2024년 Q4 보고서 p.11 및 2025년 Q4 보고서 p.14 직접 교차검증). 데이터 원천 S&P Global Mobility의 신규등록 자료(소매/법인 포함, 2025 calendar year), Alliance 집계.
 - 보고서 p.13은 Q4 2025 주별 BEV 신규등록 비율도 제공. 같은 PDF는 실제 화면 캡처로 테이블 구성을 확인.
 - 보고서 p.1과 p.3의 'EV sales 9.6%' 또는 판매대수 1,511,549는 **BEV+PHEV+FCEV**, BEV 판매대수로 쓰면 오류.
 - 2025년 PDF에 주별 신규 BEV 등록 **비율**은 존재하나 동일 표만으로 주별 신규등록 **절대 대수**를 구할 수 없음. 주별 전체 신규등록 분모/S&P 원자료 이용권한·다운로드 검증 필요.
@@ -48,3 +48,6 @@
 - 신규 확인: 한국 한전 운영 **17지역×2016–2025년** 충전소 시계열 CSV가 존재함; 한국교통연구원 지역별 충전시설·친환경차 필터형 데이터 후보; 미국 2025 주별 승용급 BEV 신규등록 **비율**의 명확한 1차 산업데이터 표; 한국 보조금 행정 지표와 미국 2025 세제 정책 교란 지점.
 - **미완료**: (a) 한국 전국 전체 충전사업자 시도·시군구×연도별 진짜 과거 데이터, (b) 2018–2025 한국 승용 BEV 신규등록 flow 통계 원표, (c) 미국 2018–2025 주별 BEV flow 실제 CSV/연간 분모 원자료, (d) 정책/가격/지역소득 교란변수 패널, (e) 데이터 다운로드→결측·일관성 검사와 상호 결합.
 - W1 상태 **부분 완료 유지**. 연구자의 신규 회귀·인과효과 추정 W2/W3 미착수. 다음 권장 조치는 **이 데이터 출처의 실제 다운로드 경로·변수 정의·전체 커버리지 확인**(정의 확인 후에만 W2). 수집이 불가능하면 전체 인프라 인과효과 주장 대신 **제한적 보조 분석·선행연구 검증**으로 전환 여부를 사용자와 별도 협의.
+
+## 2026-10-11 W2에서 발견한 중요 정정
+- 최초 A안 메모의 BEV 2024→2025 비율 +0.27%p는 잘못 읽은 부호. 2024 8.14% → 2025 7.87%, **-0.27%p 감소**가 정확하며 W2에서 원문 두 판본을 실제 확인함. 이 정정은 W1의 데이터 해석과 W2 통계 요약에 반영.

@@ -19,9 +19,9 @@
 | 순서 | 파일 | 읽어야 할 이유 |
 |---|---|---|
 | 1 | [V2_NEXT_THREAD_START_HERE.md](V2_NEXT_THREAD_START_HERE.md) | 지금 역할·기준 좌표·다음 단계 |
-| 2 | [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md) | A33 채택 / N18 반려·비채택·SUPERSEDED / P12 미검증·보류, 출처별 판단 |
+| 2 | [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md) | 채택 A01~A33 **33건** / 비채택 REJ-01~REJ-18 **18건** / 보류 P01~P12 **12건**, 출처별 판단 |
 | 3 | [V2_HANDOFF_GAP_AUDIT.md](V2_HANDOFF_GAP_AUDIT.md) | 20개 인계 안전 점검 및 아직 검증 못한 위험 |
-| 4 | [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md) | E22+H/M/L8+R12+G12+T06R4+T09 = 59개 ID → 결정·시험 역추적 |
+| 4 | [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md) | 59개 기능 요구 ↔ 25개 직접 채택 결정, 8개 관리·범위 결정 별도 추적, 추가 후속/회복 N05·N11과 X08 연결 |
 | 5 | [V2_REAUDIT_03_FINAL_GATE.md](V2_REAUDIT_03_FINAL_GATE.md) | 마지막 규칙 동결 정적 검증 결과와 경계 |
 | 6 | [V2_E2E_READY_HANDOFF.md](V2_E2E_READY_HANDOFF.md) | 실제 BASE↔후보 설치, 필수 자연어 최초 테스트·도구실패 |
 | 7 | [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md) | N01~N12 일반 사용자 입력·X01~X48 부정/경합/권한 테스트 |
@@ -34,7 +34,7 @@
 - **사용자가 직접 결정:** 개선안은 **개발 브랜치에 적용**하고 `main` 승격은 이번 작업 목적이 아님. 다음 스레드 인계·독립 실증 준비. 사용자의 자연어만으로 엔진이 중요한 선택을 제안해야 한다.
 - **외부 감사자의 판단:** 첫째/둘째는 '수정 후 재감사', 셋째는 **B — P1 최소 수정 후 E2E 진입**. 3차 B는 개발자 사후 코드 수정으로 **A로 소급 변경되지 않음**.
 - **개발자 채택·적용:** Stage 5 최초 편집안 선저장(허용 시), 명시적 GitHub 비저장 우선, 읽기실패 별도 X29, 화면↔저장 X30, revision X47, 반론·원고 국소 검수, 편집 선택 3분기, 중복 검색/승인 억제.
-- **반려/비채택:** `main` 즉시 패치, 자동 W06 수행·보고서 최종화, 가짜 2~3개 선택지, 원고 단순 누락 때 전면 재조사, SHA=원자적 CAS 주장, 59/59=실제 E2E 성공 주장, 오래된 후보 SHA 사용 등.
+- **반려/비채택(REJ-01~REJ-18; 시험 N01~N12와 다른 ID):** `main` 즉시 패치, 자동 W06 수행·보고서 최종화, 가짜 2~3개 선택지, 원고 단순 누락 때 전면 재조사, SHA=원자적 CAS 주장, 59/59=실제 E2E 성공 주장, 오래된 후보 SHA 사용 등.
 - **미실행·보류는 반려가 아님:** 실제 신규 모델 E2E/냉시작/READ·WRITE 실패/UI↔blob/PDF/비용/활성 주입 SHA. 대기 중인 사항은 [결정 대장 P01~P12](V2_DECISION_REGISTER.md) 참조.
 - **과거 최초 모델 실패 유지:** C10 자발 감사 FAIL, C13 내용 편집 공동 선택 FAIL, C14 핵심 반론 누락 Stage7 PARTIAL. C11/C13-R/C14-R의 별도 회복 PASS가 최초 실패를 지우지 않는다.
 

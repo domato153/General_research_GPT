@@ -91,3 +91,10 @@ https://economicgraph.linkedin.com/content/dam/me/economicgraph/en-us/PDF/us-sof
 - **조건부 완료:** new hires vs internal deployment/retitling; job postings vs actual hiring; firm observed stock vs AI-caused increment; offset strictest inference checked. Documents recorded with source URLs; Korean 2025 AI industry survey confirmed publication but no unverified numerical claim. W01~04 relevant crosschecks done.
 - Important new finding: Korean KLI voucher strict applicant control wipes out apparent +10.8% customer/+29.5% supplier effects; US LinkedIn 1.3m 'new jobs' methodology = postings; US BLS data scientists 2022→2025 +102,810 actual workforce stock. **These alter the strength of job creation claims downward**, but do not establish negative net effect.
 - Next W06: reconcile all estimates and conflicts, audited summary table, finalize only with explicit user authorization; W06/FINAL_REPORT.md **not** commenced. No write to main or other branches.
+
+## W06-A 연구 4편에 따른 고용상쇄 판정 보정 (2026-10-10)
+근거 파일: `W06_A_FOUR_STUDY_VALIDATION.md`.
+- Hampole et al. (NBER 33509, 공개 저자본 헤더 2026-02-22)은 2005~09 기업-대학 채용 관계를 도구변수로 써 2014~23 AI 기술 관련 기업의 업무 대체와 생산성 확대의 **기업 단위 상쇄 경로**를 관측. 기업 AI도입 강도 1SD 증가와 5년 고용성장 +6.8%p(IV) 관계; 선택·도구변수 배제제약·AI/ML 역사적 범위 유의.
+- 직군별 상쇄 재배치 분해에서 **연도 고정효과가 집계수준을 흡수**, 저자도 aggregate absolute effect를 식별하지 못한다고 명시. 고용가중 재배치 효과 합이 0이 되도록 한 분해는 **국가 AI 순고용 0의 실증이 아니다**.
+- Aum/Shin 2017~19 한국 IT서비스 기업의 구인공고 증가는 신규 입직의 검증된 증가가 아니고 빅데이터·클라우드의 고용증가를 GenAI 창출 수로 환산 금지.
+- 수정 판정: **일부 기업에 대한 기술 도입-직종대체-생산성 확장 동시 연구 근거가 존재하므로 W05 메커니즘 증거 강화**. 그러나 한국/미국 전체 AI 때문에 신규 창출된 고용 vs AI가 없앤 고용의 공통 분모·동일 기간 인과량이 없으므로 국가별 순고용 및 상쇄율은 계속 미식별.

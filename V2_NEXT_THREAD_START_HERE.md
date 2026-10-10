@@ -1,5 +1,12 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [현행 최신 — 2026-10-11] LONG-LITE-01·02·04 실전 PASS, LL-03 단문 마지막
+
+- **LL-04 피시험 모델 실제 PASS:** 144쪽 공개 arXiv:2303.18223 v19의 §6.1.1 p44/프롬프트 4요소, Table 13 p48 예시 3건, Update log p98 2023-06/09 변경이 서로 어떻게 연결되는지 원문 위치/판본 기준으로 설명. v19 첫 장 내부 v18 표기 불일치, 구형 Update log의 Table 12 표기·현행 Table 12 tips/Table 13 examples 구분, 과거 v12 §8.1/Table 14 tips/Table 15 examples 대응까지 찾아냄. 평가자가 실제 arXiv 페이지와 v19·v12 PDF를 표적 재조회하고 일치 확인. **LL-01·02·04 실전 관찰 범위 PASS**. 상세 `V2_LONG_LITE_TEST_LOG.md` 최신 절 참조.
+- **남은 실전 한 건:** LL-03 일상 단문 정상 경로. 사용자에게 한 문장짜리 단순 질문을 시험 ChatGPT Project의 별도 새 채팅에 입력하도록 안내하고 답변을 확인(불필요한 분할/저장/승인 금지). 이것 외 무거운 독립 대형 E2E/새 스킬·100~200쪽 신규 보고서/장문 신규 시험을 추가하지 말 것. 통과 후 PDF-STYLE 시안 진행. 실제 PDF 렌더 성공은 아직 주장할 수 없음. 실제 주입된 ChatGPT 프로젝트 규칙 SHA UNKNOWN 및 R5/CAS/API/UI 등 기존 미시험 경계 유지.
+
+
+
 ## [현행 최신 — 2026-10-11] LONG-LITE-01·02 실전 PASS, 마지막 경량 LL-03·04
 
 - 개발 브랜치 `design/handoff-fidelity-review-20261011`의 02/04/13 장문 최소 보완은 계속 격리 상태. **LONG-LITE-01 실전 PASS:** 3-Part 검토용 보고서와 상태 재조회. **LONG-LITE-02 실전 PASS:** 다른 새 채팅에서 기존 `RESEARCH_PLAN.md`로 재개 후 가상 E2를 '감소 없음'에서 '8개 중 3개 구역에 비교 계측자료 없어 판정 불가'로 정정해 `E2-R1`을 분리 보존, `FINAL_REPORT.md` Part 2/3만 수정하고 Part1·E1/E3 보존. 연구 브랜치 최종 HEAD `722601c8ccaadc0cb189a7e8cd5ead8a15df3c8e`, 원고 blob `2c36b2bfb075ab14d4629040a91a1d5714e8a930`, revision blob `65bf230eaf3e5d5f952070ff3e591905fcbbb99e`. 비교상 커밋 1개, 원고 딱 두 줄 교체. 보호 main/다른 브랜치 무단 변경 없음.

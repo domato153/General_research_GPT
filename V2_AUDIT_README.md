@@ -1,5 +1,7 @@
 # 범용 조사 엔진 v2 — 외부 독립 감사 패키지 INDEX (2026-10-10)
 
+> **3차 감사 보완 및 정적 검증 종료 — 신규 평가 시작점:** [V2_REAUDIT_03_FINAL_GATE.md](V2_REAUDIT_03_FINAL_GATE.md) → [V2_E2E_READY_HANDOFF.md](V2_E2E_READY_HANDOFF.md) → [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md). 규칙 고정 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`, N01~12/X01~48. **3차 외부 감사의 B 판정과 P1-A/B 국소 대응은 완료했으나 실제 모델 E2E/무회귀는 NOT TESTED**. 아래의 과거 3차 감사 요청서와 이전 SHA는 역사 참조이며, 동일 감사 요청을 새 E2E 모델에 주입하지 않는다. 
+
 > **최신 작업 상태 — 3차 재감사 B, 국소 P1/P2 패치 완료 (2026-10-10):** [V2_REAUDIT_03_REMEDIATION.md](V2_REAUDIT_03_REMEDIATION.md)에서 사용자 첨부 3차 감사의 P1-A/P1-B와 추적표/모드/비용 P2 지적에 대한 **실제 수정·검증·한계**를 확인한다. **최신 규칙 고정 SHA `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`**, 변경 전 BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`. E2E는 [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md) **N01~N12 / X01~X48**로 시행한다. [V2_THEORETICAL_COVERAGE_MATRIX.md](V2_THEORETICAL_COVERAGE_MATRIX.md)의 59행 소스 위치·시험 ID는 실제 동결 파일에서 확인했고, 공유·비대칭 시험의 **독립성은 미입증**이라고 기록했다. **실제 독립 모델 E2E·장애 주입·PDF/비용은 NOT TESTED**. `main` 승격은 범위 밖.
 
 > **역사: 세 번째 외부 감사 직전의 요청 자료:** [V2_THIRD_REAUDIT_KIT.md](V2_THIRD_REAUDIT_KIT.md) + [V2_THIRD_REAUDIT_PROMPT.md](V2_THIRD_REAUDIT_PROMPT.md) + [V2_THIRD_REAUDIT_SCORECARD.md](V2_THIRD_REAUDIT_SCORECARD.md). 현재 감사 규칙 SHA는 `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`; 그 아래 기록된 `c9f8...` 및 `0e572...`와 기존 감사 요청서는 **이전 회차 역사본**. 3차 평가는 두 번째 감사 지적을 수정한 최신 규칙에 대해 read-only로 실시. **새 독립 모델 실제 E2E는 NOT TESTED**.

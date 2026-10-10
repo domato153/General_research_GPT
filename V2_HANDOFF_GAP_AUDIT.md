@@ -38,8 +38,8 @@
 
 ## 채택·반려·보류 재점검
 
-1. [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md)에는 **A 33건(채택·설계 적용), N 18건(진짜 반려/이번 범위 비채택/옛 후보 대체/잘못된 증명 반려), P 12건(미검증·불확실·운영 범위 보류)**을 분리했다. **사용자가 직접 반려하지 않은 대안을 '사용자 반려'라고 쓰지 않았다.**
-2. [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md)에서 기존 59개 요구 **E22 + 이전 외부 H/M/L8 + R12 + G12 + T06R4 + T09 = 59건**, 모두 실제 A-결정과 시험 근거 참조. 이는 **형식적 양방향 추적의 충족**이지 59개 기능의 실사용 성공률이 아니다.
+1. [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md)에는 **A 33건(채택·설계 적용), REJ 18건(진짜 반려/이번 범위 비채택/옛 후보 대체/잘못된 증명 반려), P 12건(미검증·불확실·운영 범위 보류)**을 분리했다. **사용자가 직접 반려하지 않은 대안을 '사용자 반려'라고 쓰지 않았다.**
+2. [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md)에서 기존 59개 요구 **E22 + 이전 외부 H/M/L8 + R12 + G12 + T06R4 + T09 = 59건**, 모두 실제 A-결정과 시험 근거 참조. 채택 A33건 중 직접 기능 연결 25건과 별도 거버넌스 8건을 구분하며, 후속/회복 N05·N11·X08도 별도 연결했다. 이는 **형식적 양방향 추적의 충족**이지 59개 기능의 실사용 성공률이 아니다.
 3. 외부 원본 [1차](V2_EXTERNAL_AUDIT_01_ORIGINAL.md)·[2차](V2_EXTERNAL_AUDIT_02_ORIGINAL.md)·[3차](V2_EXTERNAL_AUDIT_03_ORIGINAL.md)를 보존했다. **외부 감사의 B/P1 권고와 개발자 '국소 수정 완료'는 서로 다른 출처·판정**이다. 이전 3차 B가 사후 A가 된 적은 없다.
 4. **반려 아닌 미검증:** C10/C13/C14 새 후보 최초 자발성, GitHub 냉시작/READ, no-write, 실제 편집안 UI↔blob, CAS, PDF 렌더, 비용. 기존 첫 FAIL과 회복 PASS는 별도.
 5. 외부 3차 감사의 '라인 번호 오류' 지적은 **원문 위치 재검증 취지를 채택**, 일부 전체 줄수 주장만 실제 고정 원문 조회와 달라 **부분 반려**. 이 두 사실을 함께 보존했다.

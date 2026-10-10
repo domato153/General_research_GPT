@@ -1,5 +1,11 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [현행 최신 — 2026-10-11] LONG-LITE-01·02 실전 PASS, 마지막 경량 LL-03·04
+
+- 개발 브랜치 `design/handoff-fidelity-review-20261011`의 02/04/13 장문 최소 보완은 계속 격리 상태. **LONG-LITE-01 실전 PASS:** 3-Part 검토용 보고서와 상태 재조회. **LONG-LITE-02 실전 PASS:** 다른 새 채팅에서 기존 `RESEARCH_PLAN.md`로 재개 후 가상 E2를 '감소 없음'에서 '8개 중 3개 구역에 비교 계측자료 없어 판정 불가'로 정정해 `E2-R1`을 분리 보존, `FINAL_REPORT.md` Part 2/3만 수정하고 Part1·E1/E3 보존. 연구 브랜치 최종 HEAD `722601c8ccaadc0cb189a7e8cd5ead8a15df3c8e`, 원고 blob `2c36b2bfb075ab14d4629040a91a1d5714e8a930`, revision blob `65bf230eaf3e5d5f952070ff3e591905fcbbb99e`. 비교상 커밋 1개, 원고 딱 두 줄 교체. 보호 main/다른 브랜치 무단 변경 없음.
+- **남은 소형 실전 관문 2건:** LL-03 단문 정상 경로(불필요한 스킬/승인/저장 없음), LL-04 144쪽 공개 `arxiv.org/pdf/2303.18223`의 일부 떨어진 지점·표13·개정로그 교차 확인. LL-04 평가자 출처 spot-check 완료는 피시험 모델 PASS 아님. 불필요한 재설계·대형 보고서 완주·실물 PDF 렌더를 LL 검사에 포함하지 않음. 두 건이 중대 결함 없이 종료되면 PDF-STYLE 양식 시안으로 전환하고 원격 개발 문서에 경계별 결과 기록. 새 규칙의 실제 프로젝트 자동 주입 SHA는 UNKNOWN 유지, D01 연구 HEAD 불변.
+
+
 ## [현행 최신 — 2026-10-11] LONG-LITE-01 최초 실전 PASS, LL-02 새 채팅 재개 검사
 
 - D01 전체 대표 경로 PASS 기록 유지. LONG-LITE 국소 규칙 02/04/13은 개발 격리 브랜치 `design/handoff-fidelity-review-20261011`에만 적용 중. 피시험 첫 3-Part 가상 검토용 초안 **LONG-LITE-01 PASS**: `research/20261011-long-lite-smoke` HEAD `b466b7fbb2baf0d1605e61b58bdeb1cb66324219`, `FINAL_REPORT.md` blob `262f374d0ed0966ee01fb4f40339fe03f7ef0b8f`, `RESEARCH_PLAN.md` blob `1bc76a2b39367f0f63a695231f13bc30f6fc8d92` 조회. E1/E2/E3 반영, 조건부 결론·Part 순서·P1 가상 승인/미확정·근거 맵 정상. 현재 시험 원고는 이미 한 파일에 3 Part가 들어 있지만 확정 문서 아님.

@@ -14,7 +14,7 @@
    - `<main class="report-body"><section class="report-section">...` : 실제 본문. `h2`/ `h3`는 원문 순서 유지. 첫 부록은 필요할 때 `class="report-section appendix appendix-break"`로 페이지 전환할 수 있으나 `#section-24` 같은 고정 ID를 사용하지 않는다.
    - `<aside class="conclusion-box"><strong>소결:</strong>...</aside>` : 원고의 '소결' 시작 문단을 의미 변경 없이 박스화한다. `lead-verdict`는 결론 강조에 선택적으로 사용.
 3. `<link rel="stylesheet" href="report_style.css">`로 연결하고 **`final_pdf_report_style.css`의 내용**을 동일한 `report_style.css`로 복사해 산출한다. 색상·사이즈와 기타 승인된 기본 디자인은 유지한다.
-4. 사용자 요청이 PDF 실물까지 포함하면 **WeasyPrint 68.0 또는 동등한 named @page/string-set/target-counter 지원 렌더러**로 A4 PDF를 출력한다. Chromium 호환은 별도 검증 전 보장하지 않는다. 제목·발행일·문서 번호·목차 항목·러닝 헤더는 각 보고서의 실제 값으로 채운다. 검증 없이 OpenSSH/CVE/2026-10-11 사례 문자열을 새 보고서에 복사하지 않는다.
+4. 사용자 요청이 PDF 실물까지 포함하면 **WeasyPrint 68.0 또는 동등한 named @page/target-counter 지원 렌더러**로 A4 PDF를 출력한다. Chromium 호환은 별도 검증 전 보장하지 않는다. 제목·발행일·문서 번호·목차 항목은 각 보고서의 실제 값으로 채운다. 복사한 `report_style.css`의 머리말 기본값(`FINAL REPORT`)과 바닥글 기본값(`RESEARCH REPORT`)은 해당 보고서의 실제 짧은 제목·발행일로 **선택적으로 교체**할 수 있다. `final_pdf_report_style.css` 공통 원본에는 특정 조사 주제나 날짜를 고정하지 않는다. 검증 없이 OpenSSH/CVE/2026-10-11 사례 문자열을 새 보고서에 복사하지 않는다.
 
 ## 승인 서식의 핵심 수치
 - A4 표지·목차의 독립 named page 및 본문 `@page report`: 위 24mm/오른쪽 22.5mm/아래 21mm/왼쪽 23mm.

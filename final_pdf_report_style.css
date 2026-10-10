@@ -10,8 +10,8 @@
  size: A4;
  margin: 24mm 22.5mm 21mm 23mm;
  @top-left {content: "GENERAL  /  RESEARCH"; font-family: "Noto Sans CJK KR", sans-serif; font-weight: 700; font-size: 7pt; letter-spacing: .10em; color: #677888; padding-top: 7mm;}
- @top-right {content: string(report-short); font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; font-weight: 500; letter-spacing: .08em; color: #677888; padding-top: 7mm;}
- @bottom-left {content: "RESEARCH REPORT    •    " string(report-date);font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; color: #677888; padding-bottom: 7mm;}
+ @top-right {content: "FINAL REPORT"; font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; font-weight: 500; letter-spacing: .08em; color: #677888; padding-top: 7mm;}
+ @bottom-left {content: "RESEARCH REPORT";font-family: "Noto Sans CJK KR", sans-serif; font-size: 7pt; color: #677888; padding-bottom: 7mm;}
  @bottom-right {content: counter(page) "  /  " counter(pages); font-family: "Noto Sans CJK KR", sans-serif; font-size: 7.4pt; color: #1e4158; font-weight: 700; padding-bottom: 7mm;}
 }
 :root {--navy:#112C40;--navy-dark:#0A1A29;--accent:#DD9D65;--turquoise:#3C8E8B;--muted:#586A74;--soft:#F3F6F5;--line:#DCE5E7;}
@@ -30,7 +30,7 @@ body {color:#1F303B; font-family:"Noto Sans CJK KR","Noto Sans CJK JP",sans-seri
 .cover:before {content:"";position:absolute;left:23mm;right:22mm;top:49mm;height:.35mm;background:rgba(255,255,255,.22);}
 .cover-index {position:absolute;left:23mm;top:72mm;color:var(--accent);font-size:8pt;font-weight:700;letter-spacing:.20em;}
 .cover-middle {position:absolute;left:23mm;right:20mm;top:92mm;}
-.cover-code {string-set: report-short content(text); font-size:10.5pt;font-weight:600;color:#96BDC3;letter-spacing:.08em;}
+.cover-code {font-size:10.5pt;font-weight:600;color:#96BDC3;letter-spacing:.08em;}
 .cover-code-rule {display:inline-block;width:13mm;height:1px;background:#96BDC3;vertical-align:middle;margin-left:3mm;}
 .cover-title {margin:11mm 0 0; padding:0; font-weight:800;letter-spacing:-.040em;}
 .cover-title .title-en {display:block;font-size:22pt;line-height:1.24;font-weight:700;letter-spacing:-.037em;overflow-wrap:anywhere;max-width:160mm;}
@@ -112,4 +112,4 @@ body {color:#1F303B; font-family:"Noto Sans CJK KR","Noto Sans CJK JP",sans-seri
 /* First-line indent applies to normal report prose; structural containers stay flush. */
 .report-body .lead-verdict, .report-body .conclusion-box p, .report-body .table-wrap p, .report-body li p {text-indent:0;}
 
-/* PDF is rendered with named @page and string-set; verify font, TOC count and page breaks per report. */
+/* Named @page + target-counter require WeasyPrint; customize the report copy of running header/date text as needed. */

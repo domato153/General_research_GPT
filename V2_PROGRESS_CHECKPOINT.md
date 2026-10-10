@@ -1,6 +1,12 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
 > **최신 현행은 아래 '표적 회귀시험·인계 검토 규칙 후속 진행' 절이다.** 이 파일 아래의 2026-10-10 및 이전 2026-10-11 “실전 미실행/독립 외부감사 대기/R1부터 시작” 안내는 **그 당시 보존 기록이며 현재 실행할 지시가 아니다.** 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단 최신 인계를 우선한다.
 
+## [2026-10-11 최신] LONG-LITE-02 새 채팅 국소 수정 PASS, LL-03/04 잔여
+
+- **LL-02 실제 새 채팅 재개 PASS:** 피시험 모델의 E2 정정 보고를 `research/20261011-long-lite-smoke` HEAD `722601c8ccaadc0cb189a7e8cd5ead8a15df3c8e`에서 원문 대조. 전 HEAD `b466b7f...` 대비 커밋 1개, 변경 파일은 E2 revision 신규·`FINAL_REPORT.md` Part2/3 딱 두 줄 수정·`RESEARCH_PLAN.md` 재개 근거 매핑 갱신. Part1 문장 동일, E1(18% 총량 감소)·E3(비용 미확정) 유지, '3개 구역 감소 없음'→'비교 계측자료 부재로 판정 불가' 및 운영시간 증가 가설 삭제. `E2-R1` 보정 문서와 fixture 원본 blob 불변 확인. 최종 확정/외부조사 미실행. **LONG-LITE-02 관찰 범위 PASS**.
+- **다음은 최소 2개 실전 관찰만:** LONG-LITE-03은 기존 시험 Project의 단독 간단한 질문으로 불필요한 GitHub/상태/사용자 승인 절차를 유발하는지 확인. LONG-LITE-04는 144쪽 공개 arXiv 논문 `https://arxiv.org/pdf/2303.18223`을 다른 새 채팅에서 앞·중간·뒤 3~5개 지점만 조회해 §6.1.1 설명/표13/뒤쪽 개정 이력의 서로 떨어진 자료 연결을 평가. 이전 평가자 `SOURCE_SPOT_CHECK_PASS`를 피시험 모델 PASS로 소급하지 않음. 두 시험에서 중대한 결함 없으면 **PDF-STYLE 시안으로 진행**하며 100~200쪽 새 작성/기존 R·N 전수 재시험 추가 금지.
+
+
 ## [2026-10-11 최신] LONG-LITE-01 실제 시험 PASS, 재개·국소 수정 대기
 
 - **피시험 최초 동작:** 개발 후보 `109985c6c1ea5ac422ea4f63018df1818e4c71e1`을 기준으로 3-Part 가상 LED 가로등 검토용 원고를 생성하고 격리 `research/20261011-long-lite-smoke`에 저장. HEAD **`b466b7fbb2baf0d1605e61b58bdeb1cb66324219`**와 `FINAL_REPORT.md` blob `262f374d0ed0966ee01fb4f40339fe03f7ef0b8f`, `RESEARCH_PLAN.md` blob `1bc76a2b39367f0f63a695231f13bc30f6fc8d92` 실제 재조회. 전후 전력 100/82MWh 18% 감소 계산, 구역별 3/8 반론 E2의 실질 본문 설명, 단가 E3 미확인 보존, Part 순서/근거 맵, P1 가상 선택 및 미확정 상태 **관찰 범위 PASS**.

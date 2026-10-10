@@ -113,9 +113,19 @@ Frank 등(2026)의 사전공개 연구는 미국의 직업·주별 실업보험 
 
 실제 도입 데이터를 연결한 연구의 결과는 더 복잡하다. 한국노동연구원 사업체패널에서 AI 도입은 숙련수준별 인력 **구성** 변화와 관계가 있지만, 도입사업체의 총고용이 언제나 줄거나 늘었다고 보기 어렵다. 다른 KLI 고용영향평가에서는 AI 바우처 수요기업 고용이 단순 비교에서 약 **10.8%**, 공급기업은 약 **29.5%** 높게 나타났지만, 사업에 신청했다가 선정되지 못한 기업을 대조군으로 삼자 유의한 총고용 증가효과가 확인되지 않았다. 이는 기존에 성장하던 기업의 AI 도입·지원사업 참여를 AI로 인한 추가 채용으로 잘못 분류할 수 있음을 보여준다. 그렇다고 효과가 정확히 0이라고 확정한 연구도 아니다. [KLI AI 바우처 고용영향평가](https://www.kli.re.kr/eia/asmntRsltView.es?mid=a30301000000&nPage=1&rslt_no=336), [KLI 사업체패널](https://www.kli.re.kr/kli_eng/panelBriefView.es?mid=a10104030000&pblct_sn=10287).
 
+**미국에서도 'AI에 노출된 직업'과 'AI를 실제 사용하는 기업'은 다르다.** 미국 Census의 2026년 기업동향조사(BTOS) AI 보충조사(2025년 11월~2026년 1월)는 기업의 **18%**가 사업 기능에 AI를 사용하며, 고용인원 가중 기준으로는 **32%**라고 추정했다. AI 사용기업 중 **66%**는 AI를 업무 *증강* 용도로만 사용한다고 응답했고, **전체 기업의 2%**가 AI로 인한 직원 감소를 보고했다. 이는 실제 도입 범위와 활용 목적을 보여주는 전국 단위 조사이지만, 기업의 자체 응답이며 해고 건수·AI 순고용 인과효과를 식별하지 않는다. 따라서 AI 노출이 높은 모든 직업의 인원변화를 '이미 AI가 대체한 인원'으로 볼 수 없고, 반대로 2%라는 기업 비율로 AI 관련 감원이 없다고 주장할 수도 없다. [미국 Census CES-WP-26-25](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html).
+
 Aum·Shin의 한국 지역별 연구도 무조건 '생성형 AI가 한국 고용을 줄였다'는 추가 근거로 사용할 수 없다. 실제 분석기간이 **2017~2019년**이고, 일반 AI와 빅데이터·클라우드 확산을 함께 다뤘다. 초기 지역 산업구성에 따른 기술 노출도와 고용률의 음의 연관성이 일부 여성·비IT 서비스업에서 발견됐으나 추가 도구변수·긴 사전추세 검증이 부족하다. 2025년 공개판과 후속 개정본을 서로 다른 독립 연구 두 편으로 세지 않는다. 이 연구는 AI를 포함한 **기존 디지털 기술의 역사적 영향**에 관한 보조 증거이지 2022~2026년 생성형 AI 사건연구가 아니다. [Aum·Shin, St. Louis Fed Review 2025](https://www.stlouisfed.org/publications/review/2025/apr/labor-market-impact-of-digital-technologies).
 
-### 3.4 제한된 시장에서는 생성형 AI 공개 후 직접적인 부정 효과가 나타난다
+### 3.4 실제 도입 기업을 추적한 덴마크의 상반된 결과
+
+실제 AI 채택 이력과 고용기록을 연결한 덴마크 중앙은행의 2026년 9월 연구는 **2023년에 AI를 도입한 기업이 미도입 비교기업보다 2025년 말 고용 증가율이 약 11% 낮았다**고 보고한다. 이 차이는 소규모 기업과 AI 고노출 업무의 **신규 채용 감소**에 집중됐으며, 국가 전체 고용에는 아직 큰 변화가 나타나지 않았다. 11%는 기존 직원 11%를 해고했다거나 실제 고용인원이 모두 11% 감소했다는 의미가 아니다. 도입기업과 미도입기업이 처음부터 다르게 성장했을 가능성도 완전히 제거되지 않으며, 덴마크 기업 자료를 한국·미국에 그대로 적용할 수 없다. [덴마크 중앙은행 WP 223, 2026-09](https://www.nationalbanken.dk/en/news-and-knowledge/publications-and-speeches/working-paper/2026/ai-adoption-and-firm-size-employment-effects-in-monthly-administrative-data).
+
+반면 Humlum·Vestergaard의 덴마크 노동자·사업장 AI 챗봇 사용 설문과 행정자료를 결합한 이중차분 연구(2026년 3월 개정)는 도입 이후 약 2년의 **평균 소득과 기록된 근로시간**에서 유의미한 효과를 확인하지 못했고, AI 관련 업무의 재조직과 신규 업무 수행은 관측했다. 이것은 앞선 연구의 **기업 고용 증가율**과 다른 결과변수를 측정하므로 두 연구가 동일한 질문에서 정면 충돌한 것은 아니다. [NBER WP 33777](https://www.nber.org/papers/w33777).
+
+두 연구는 '실제 AI 도입'을 관측한 증거의 중요성을 보여주지만, 도입의 자기선택 문제와 서로 다른 노동시장 결과를 구분해야 함을 동시에 보여준다.
+
+### 3.5 제한된 시장에서는 생성형 AI 공개 후 직접적인 부정 효과가 나타난다
 
 Hui·Reshef·Zhou(2024)는 온라인 프리랜서 플랫폼 Upwork에서 글쓰기·교정과 이미지·디자인 분야를 상대적으로 덜 노출된 직종과 비교했다. 2022년 1월~2023년 4월 개인·월 패널의 이중차분 분석으로 ChatGPT와 이미지 생성 모델 공개 이전의 추세가 대체로 유사하다는 사건연구 결과를 제시한다.
 
@@ -147,6 +157,8 @@ ICT실태조사 기준 2024년 경력 **3년 미만** 개발 인력은 전년 �
 ### 4.3 경력자·고숙련자가 모두 안전한 것은 아니다
 
 미국 ADP 자료에서는 같은 AI 고노출 직업의 경력자들이 22~25세만큼 큰 고용 감소 격차를 보이지 않았다. 그러나 이를 '경력은 AI로부터 보호된다'는 일반 법칙으로 확대할 수 없다. Hui 등의 프리랜서 연구에서는 과거 실적이 좋고 플랫폼 평가가 높은 근로자도 계약·소득 감소로부터 뚜렷하게 보호되지는 않았다. 통계적으로 고숙련 프리랜서가 **반드시 더 큰 피해를 입었다**고 확정할 수는 없지만, **기존 경력의 가치가 플랫폼 경쟁에서 자동으로 방패가 되지는 않는다**는 반례다.
+
+**신입 직원 비중 감소가 신입 직원의 절대 감원을 뜻하지 않는 반례**도 있다. Chandar·Klein Teeselink의 2026년 9월 연구는 **41개국의 구인공고 12억 5천만 건과 고용기록 1억 5,400만 건**을 결합해 AI 도입기업의 해외 자회사와 비교 자회사를 분석했다. AI 도입기업 자회사에서 신입 비중은 낮아졌으나, 주요 원인은 **신입 직원의 절대 고용 감소보다는 경력직 인원의 증가**였으며, 전체 고용도 소폭 증가했을 가능성이 제시됐다. 따라서 신입 비중만 낮아졌다고 신입 해고가 늘었다고 계산할 수 없다. 다만 AI 도입을 생성형 AI 관련 채용공고로 *간접 추정*했고 해외 자회사 표본을 이용했으므로, 국내 전체 노동시장의 실제 도입효과나 신입 취업 상황을 대신하지 못한다. [Chandar·Klein Teeselink, Stanford DEL 2026-09](https://digitaleconomy.stanford.edu/publication/how-does-ai-change-labor-demand/).
 
 업무 구성 차이도 중요하다. 반복적인 기초 코드 작성·초안 작성·문서 정리는 AI에 의해 쉽게 보완되거나 대체될 수 있다. 반면 고객·조직 맥락을 이해하고 결과를 검토하는 업무는 사람의 숙련과 결합될 수 있다. 그러나 이런 가능성은 경력별 인과 고용 추정치가 아니며, 중년 근로자도 직무 전환·자동화로 피해를 볼 수 있다.
 
@@ -263,9 +275,13 @@ Hampole·Papanikolaou·Schmidt·Seegmiller의 기업·직종·업무 AI 노출 �
 | Frank 외, 2026.1 사전공개 | 미국 UI 청구·졸업코호트·LinkedIn | 고노출 악화 2022초부터 선행 | 사전공개·선택편의·UI 포괄범위 |
 | 한국은행, 2026.8 | 청년 고노출 **업종** | 감소 업종 집중·신규채용 및 기존 이탈 변화 | 인구·경기·과잉채용 교란; AI 채택 직접 추적 아님 |
 | 한국노동연구원, AI 바우처 | 수혜 vs 신청 탈락기업 | 단순 고용증가, 엄격 대조 후 유의 효과 미검출 | 바우처 사업효과≠AI 기술 단독; 검정력 |
+| 미국 Census BTOS, 2026.4 | 전국 대표 기업의 실제 AI 사용·용도 설문 | 사업 기능 도입 18%, 사용기업 66% 증강만, 전체 기업 2% 고용 감소 보고 | 기업 응답 비율≠고용 인원·AI 순수 인과효과 |
 | Aum·Shin, 2025 원문 | 한국 시군구 2017~2019 디지털 기술 노출 | 일부 여성·비IT 서비스 음의 관계 | 2022 후 GenAI가 아님, 사전추세·IV 부족 |
 | Hui 외, 2024 게재 | 2022.1~2023.4 Upwork 글쓰기·디자인 vs 비교직종 | 월 계약·수입 감소 | 국제 플랫폼, 정규직 해고 아님, 계정 선택편의 |
 | Hampole 외, 2026.2 저자본 | 기업·직종 AI/ML 노출 및 채용 네트워크 IV | 직무 대체와 회사 성장 병존 | 기업별·역사적 AI; 국가 순고용 미식별, IV 배제제약 |
+| 덴마크 중앙은행, 2026.9 | AI 도입기업 vs 미도입 기업, 월별 행정고용 | 도입기업의 상대적 고용 증가율 약 11% 낮음; 신규 채용 약화 | 덴마크 한정·선택편의·11%는 해고율 아님 |
+| Humlum·Vestergaard, 2026.3 개정 | 실제 챗봇 채택설문+근로시간·임금 행정자료 | 평균 소득·근로시간의 유의미한 차이 미검출, 업무 재편 | 채용·고용총량과 다른 종속변수 |
+| Chandar·Klein Teeselink, 2026.9 | 41개국 다국적기업 해외 자회사·비교군 | 신입 비중 하락은 주로 경력직 고용 증가, 전체 고용 소폭 증가 시사 | 채용공고 기반 채택 대리변수·해외자회사 표본 |
 
 **중요한 연구 간 비충돌:** Stanford의 좁은 초기경력 손실과 Yale의 평균효과 미검출은 표본·종속변수가 다르다. 미국 Census의 총이직 감소와 한국은행의 기존 청년 이탈 증가도 기간·노출업종·지역·이직정의가 달라 자동으로 반박 관계가 되지 않는다. 기업 단위 고용 확대와 신규 입직자의 취업 곤란도 동시에 가능하다.
 
@@ -299,6 +315,7 @@ Hampole·Papanikolaou·Schmidt·Seegmiller의 기업·직종·업무 AI 노출 �
 - [BLS OEWS 데이터과학자 2022](https://www.bls.gov/oes/2022/may/oes152051.htm), [BLS OEWS 2025 직업별 집계](https://www.bls.gov/news.release/ocwage.t01.htm)
 - [Stanford DEL Canaries 2026-08](https://digitaleconomy.stanford.edu/news/canariesaug26/)
 - [Census QWI 초기경력 채용 연구 2026-04](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html)
+- [Census 실제 AI 도입·업무 활용 조사 2026-04](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html)
 - [Census 대학졸업생 2026-09](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-56.html)
 - [Yale Budget Lab AI 노동시장 연구](https://budgetlab.yale.edu/research/what-we-do-and-dont-know-about-how-ai-affecting-labor-market)
 - [NY Fed 구인공고 연구 2026-05](https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/)
@@ -306,6 +323,12 @@ Hampole·Papanikolaou·Schmidt·Seegmiller의 기업·직종·업무 AI 노출 �
 - [Frank 외 2026 사전공개](https://arxiv.org/abs/2601.02554)
 - [Hui 외 Organization Science 2024](https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441)
 - [Hampole 외 2026-02 저자 PDF](https://menakahampole.com/AI_and_the_Labor_Market.pdf)
+
+### 국제 비교 연구(한국·미국에 직접 외삽하지 않음)
+
+- [덴마크 중앙은행 2026-09, 실제 AI 도입기업의 고용 증가율](https://www.nationalbanken.dk/en/news-and-knowledge/publications-and-speeches/working-paper/2026/ai-adoption-and-firm-size-employment-effects-in-monthly-administrative-data)
+- [Humlum·Vestergaard, 2026-03 개정, AI 챗봇 사용과 소득·시간](https://www.nber.org/papers/w33777)
+- [Chandar·Klein Teeselink, 2026-09, 41개국 기업의 경력별 노동수요](https://digitaleconomy.stanford.edu/publication/how-does-ai-change-labor-demand/)
 
 ### 기업·신규채용 자료
 - [Block SEC 2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1512673/000162828026053368/xyz-20260630.htm)

@@ -5,7 +5,7 @@
 - research_head (proposal source snapshot): fd096bf51b8e4a1adc5f0548a2117f0acd672f28
 - rules_commit: 44bd894cb464229a6d8b926f152113dd0f1bbbae
 - date: 2026-10-11 (Asia/Seoul)
-- status: RECOMMENDED (NOT USER-SELECTED, NOT FINALIZED)
+- status: SELECTED (2026-10-11 user-approved integrated option; full report completion delegated)
 - scope: Stage 5 technical readiness audit and final editorial selection proposal; no final draft/FINAL_REPORT.md yet.
 - supporting research: RESEARCH_PLAN.md, ROUND1_FINDINGS.md, ROUND2_PATCH_VALIDATION.md, ROUND3_A_C_FINDINGS.md, W5_SYNTHESIS.md
 
@@ -38,3 +38,9 @@
 - This is a stored proposal, not user approval, not a draft, not Stage 7 review, not Stage 8 completion.
 - Next: show exactly the key P1/P2/P3 language to user and ask only the significant choice; if user delegates authoring and completion, Stage 6/6.5/7/8 separately verify and execute.
 - External publication/sharing is not authorized.
+
+## User selection and delegation (2026-10-11)
+- User exact instruction: "좋아. 추천한 통합 기술·보안 분석 편집안으로 최종보고서를 완성해줘. 중요한 근거와 반론이 빠지지 않도록 최종 검수하고, GitHub 연구 브랜치에 저장한 뒤 여기에도 보고서 전문을 보여줘."
+- Selection: P1 integrated technical-security Full Report, Standard~Expanded. Existing appendix/exclusion rules retained, all required counterevidence retained.
+- Authority: complete manuscript, perform final evidence review, save on current research branch, then display full manuscript in chat; no external publication, no main/legacy branch write.
+- Plan revision: original proposal_id CVE6387-EDITORIAL-01 rev1 was displayed previously and user selected it. This section records approval; it does not rewrite the original recommendation wording.

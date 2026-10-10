@@ -23,15 +23,16 @@ FINAL_REPORT.md        ← 개별 조사 브랜치의 실제 보고서
 
 ## 참조 우선순위
 
-1. 상태 파일을 사용 중이면 `10_CURRENT_SUMMARY.md`와 이후 `11_DELTA_LOG.md`
-2. Summary/Delta가 초기 상태이거나 별도 파일을 가리키지 않으면 **현재 브랜치의 실제 계획·작업·결과 파일 조회**
-3. 필요할 때만 `13_FINAL_REPORT.md` (공통 양식)
-4. 과거 결정·근거 복구가 필요할 때만 `12_ARCHIVE_LOG.md`
+1. 착수한 다단계 조사의 승인 작업과 진척은 `RESEARCH_PLAN.md`·실제 작업 결과 파일을 우선 확인한다.
+2. 상태 파일을 사용 중이면 `10_CURRENT_SUMMARY.md`와 이후 `11_DELTA_LOG.md`를 확인하되 계획 정본과 모순이면 실제 승인 근거·파일·커밋으로 확인한다.
+3. Summary/Delta가 초기 상태이거나 별도 파일을 가리키지 않으면 **현재 브랜치의 실제 계획·작업·결과 파일 조회**
+4. 필요할 때만 `13_FINAL_REPORT.md` (공통 양식)
+5. 과거 결정·근거 복구가 필요할 때만 `12_ARCHIVE_LOG.md`
 
 원칙:
 
 - 매번 Archive를 보지 않는다.
-- 현재 판단은 Current Summary 기준으로 한다.
+- 최신 근거와 결론은 Summary/Delta·실제 조사 파일로 확인하되, 사용자 승인 작업·완료 기준·진척에 관해서는 `RESEARCH_PLAN.md`를 정본으로 취급한다. 충돌하면 커밋·실제 승인 근거를 확인해 정정한다.
 - Summary 이후 변화만 Delta Log에서 확인한다.
 - Final Report는 결과물이고, 진행 상태 관리는 Summary/Delta가 맡는다.
 - 최종 산출물 형식은 Summary와 Stage 0.7 Plan에 남긴다.

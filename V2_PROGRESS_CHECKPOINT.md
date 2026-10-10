@@ -215,3 +215,11 @@
 - **P2 PDF/사용성:** `13_FINAL_REPORT.md`에 기존 `final_pdf_html_formatting_instruction_final.md`를 요청시에만 연결. X34 입력 파일 없음, X35 렌더·폰트 실패, X36 일곱 산출물, X37 채팅만 전달, X38~X43 부분승인·첫 결과·판본·태그·규칙 SHA 미확인·Part 누락 시험 추가. 현 E2E 설계 **N01~N12/X01~X43**.
 - **개발 무결성:** 수정 전 개발 HEAD `6f65e4...` 대비 규칙 파일 `02_RESEARCH_PIPELINE.md`, `04_STATE_MANAGEMENT.md`, `04B_VALIDATION_RULES.md`, `13_FINAL_REPORT.md` + 검증문서 2개만 변경. 코어·상태 템플릿·도메인 모듈 원본 SHA 그대로, `main` 및 과거 AI 고용 연구 브랜치 불변. 원문 앵커·시험 참조 **59/59**, 보호 18/18 재조회 통과.
 - **다음 필수:** 별도 비개인화 GPT 프로젝트에서 BASE `cd64...` ↔ 2차 보완 규칙 `3c0a...`으로 짧은 자연어 첫 응답 E2E, T06-R 읽기 장애·실제 사용자 표시안 X30·GitHub 경쟁 쓰기·PDF 실물·비용/승인량 비교. 실제 증거가 없다면 NOT TESTED 유지. `main` 승격은 이 개발 프로젝트의 목적이 아니다.
+
+## 19. 3차 외부 비개인화 감사 키트 정본 준비 (2026-10-10)
+
+- **요청:** 2차 독립 재감사 결론 '수정 후 재감사'에 따라, 최신 `design/research-v2` 적용 규칙이 이론상 전체 요구·기존 기능 보호·모듈 충돌 문제를 제대로 해결하는지 외부 Temporary/Unpersonalized 감사자가 충분히 독립 판정 가능한 키트 제공. **감사 자체는 아직 3차 미실시**.
+- **감사용 규칙 SHA 정확한 동결:** BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0` → 이번 수정 규칙 `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`. 2차 감사 대상 `0e5721...`과 첫 외부 감사 `c9f8...`은 이력. 이후 작성된 kit/checkpoint 문서 커밋은 규칙 SHA를 변경하지 않음.
+- **바로 전달할 3개 파일:** `V2_THIRD_REAUDIT_KIT.md`(약 11.9k자·10개 절, 고정 8규칙 파일 blob+BASE↔현규칙/2차↔현규칙 diff, 59요구·역사 C10/13/14·1/2차 감사·P0/P1/P2·반례·독립 판정기준), `V2_THIRD_REAUDIT_PROMPT.md`(외부 모델에 전달할 복사 지시문), `V2_THIRD_REAUDIT_SCORECARD.md`(59개 빈 근거·판정 행, 사전 PASS 미기입). 개발 브랜치 GitHub 링크 사용.
+- **증거 상태 정직히 유지:** `V2_THEORETICAL_COVERAGE_MATRIX.md`의 **59/59 SOURCE LINKED / 56개 행동 요구 POS+NEG 시나리오 / 34개 폴백 계획 / 평가규약 3건**은 문서 **설계와 시험 준비**의 의미만. **독립 실제 모델 E2E, X29 GitHub READ 장애, X30 실제 채팅 표시↔저장, 동시 쓰기·PDF 렌더·비용 무회귀는 NOT TESTED**. 첫 C10/C13 FAIL, C14 Stage7 PARTIAL은 별도 회복 성공과 함께 보존.
+- **다음:** 외부 감사자가 원문 파일과 버전 diff를 직접 확인한 3차 read-only 판정(A E2E 진입 / B P1 국소 수정 / C 구조적 반려)을 받아 `design/research-v2`에서 후속 조치. 이론 검증만 무한 반복하지 말고 심각한 갭이 없으면 **별도 실제 자연어 E2E**로 진행. `main`/과거 연구 브랜치 변경 금지.

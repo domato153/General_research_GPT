@@ -1,6 +1,14 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
 > **최신 현행은 아래 '표적 회귀시험·인계 검토 규칙 후속 진행' 절이다.** 이 파일 아래의 2026-10-10 및 이전 2026-10-11 “실전 미실행/독립 외부감사 대기/R1부터 시작” 안내는 **그 당시 보존 기록이며 현재 실행할 지시가 아니다.** 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단 최신 인계를 우선한다.
 
+## [2026-10-11 현행] LONG-LITE 경량 규칙 구현·평가자 측 표적 검사 완료, 피시험 모델 행동 대기
+
+- **작업 구현:** `design/handoff-fidelity-review-20261011`에서 `02_RESEARCH_PIPELINE.md`(Stage 6.5의 선택적 원문/Part 재조회·부분 보존·조립), `04_STATE_MANAGEMENT.md`(짧은 재개 진입점), `13_FINAL_REPORT.md`(Segment Plan 연결)만 국소 보완. 구현 커밋 `a168c48c95c06e02dbbebbb2fde7f35c6abcf2f9`. 후보 규칙 고정 `44bd894...`, 운영 main, D01 연구 브랜치 미변경. **규칙을 시험 Project에 실제 주입하지는 않음**.
+- **검사 결과:** `V2_LONG_LITE_TEST_LOG.md`에 평가자 측 LONG-LITE-01/02 소형 Part 모의 PASS, 03 원래 규칙 3개 파일 문자 보존 및 단문 비발동 정적 PASS 기록. 04는 arXiv:2303.18223 2026-03-18 v19 **144쪽 실제 공개 PDF**의 p0/p43/p47/p97/p142 선택적 조회 및 §6.1.1↔Table 13↔개정 로그 교차 대조 **SOURCE_SPOT_CHECK_PASS**; PDF 원본 로컬 SHA256, 전 페이지, 중/후반 렌더 시각 품질 미확인. **실제 피시험 모델 LONG-LITE 행동은 NOT TESTED**. 평가자의 정적·출처 검사만으로 100~200쪽 신규 작성 성공 보증 불가.
+- **실전 최소 fixture:** `V2_LONG_LITE_FIXTURE.md`에 가상 E1/E2/E3·3개 짧은 Part 작업 제공. 실제 ChatGPT 시험 프로젝트 별도 새 채팅에서 최신 개발 브랜치 02/04/13을 명시적으로 조회한 뒤 fixture로 검토용 Part 작성→E2 정정 후 국소 수정→단문 비발동 관찰하면 된다. 같은 시험 채팅에서 PDF URL 원문의 앞/중간/뒤 3~5곳만 표적 조회하여 source 기반 교차 확인. **추가 대형 E2E 금지**. 근거를 가져오면 최초 행동·기록을 판정하고 중대한 문제가 없다면 PDF-STYLE 진행. 실주입 규칙 SHA는 UNKNOWN, 고정 후보의 자동 배포·승격 아님.
+
+
+
 ## [2026-10-11 최신] D01 축약 E2E 최종 PASS — LONG-LITE 다음
 
 - **D01 최종 통과(관찰 범위):** 사용자 명시 P1 선택·최종 완성·GitHub 저장·채팅 전문 제공 위임에 따라 피시험 모델이 OpenSSH CVE-2024-6387 Full Report를 작성. 연구 브랜치 `research/20261011-openssh-cve-2024-6387` 최종 HEAD **`d55714adb510cbdd293ae9d92a358a22e5dc9812`** 직접 조회, 최종 원고 저장 커밋 **`ecdde156b036184a757d0f56704b5150849bd883`**, `FINAL_REPORT.md` blob **`cb4b764e1a236df63802cf5a612e7a84c6f66270`**, `FINAL_REPORT_REVIEW.md` blob **`2ca1336ca1c0baff996f0dbf6805085029b0c4a5`** 확인. 상태 후속 커밋은 연구 `RESEARCH_PLAN.md`만 갱신. 사용자 제공 마지막 응답은 보고서 본문 전부(7장·4부록·S1~S20)를 포함. Markdown 표 공백·링크 표기·이스케이프 정규화한 사용자 복사 원고 vs GitHub 원고 **12,716 코드포인트/FNV-1a32 `b5b36a3a` 일치**(비암호학적 내용 대응 검사). **실제 ChatGPT UI 전체 전송의 별도 호스트 수신 로그까지 확보한 것은 아니나 사용자 복사본에서 전문이 확인됨.**

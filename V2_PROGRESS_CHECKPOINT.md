@@ -269,3 +269,11 @@
 - **이번 변경으로 해결한 계획 P2:** X37 단발 no-store vs X45 기승인 저장 분리, X44 명시적 저장철회 변형, 7 공유/4 같은 방향 사례의 사건별 중복 채점 제한, N05 자율 경로와 고정 근거 비교 분리, 추가 분야 축약 검증과 비용 평가 기준, X29/X30/X46/X21/X35 실물 시험의 운영자 준비 조건.
 - **실제 독립 E2E 직전 남은 일:** BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`와 CANDIDATE `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`를 별도 비개인화 환경에 올바르게 주입했다는 외부 증거, 동등 도구/권한·격리 시험 브랜치, 실제 UI·GitHub 호출 및 장애 주입 관측 준비. 이들은 이번 턴에 **구축/실행하지 않았고 BLOCKED/NOT TESTED**이며 사용자 추가 지시 전 실 E2E를 시작하지 않음.
 - **frozen 후보와 최신 개발 HEAD 주의:** 최신 `PROJECT_BOOTSTRAP.md`의 선택형 `/handoff`는 후보 동결 뒤 별도 변경. 따라서 §23의 '10/10 HEAD 동일'은 당시 관측에 한정한다. 실제 비교는 동결 후보만 사용하고 새 기능을 시험하려면 새 SHA가 필요하다.
+
+## 25. 실제 독립 E2E 운영자 설치 키트·증거표 준비 (2026-10-10)
+
+- 고정 규칙 BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`, CANDIDATE `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`. [운영자 스타트 키트](V2_E2E_OPERATOR_START_KIT.md)에 두 프로젝트의 설정·파일 주입·오염방지·시험 개시 절차를 구체적으로 정리.
+- [BASE Bootstrap 사본](V2_E2E_INSTALL_BASE_BOOTSTRAP.md) blob `94819eacd429e6d67f20f611223e9a4db63f7481`, [CANDIDATE 사본](V2_E2E_INSTALL_CANDIDATE_BOOTSTRAP.md) blob `6da01d7fc2394dd2718452ce83a96e987472e8c5`는 원본 고정 commit fetch와 문자열/blob SHA가 일치한다. [14개 규칙 매니페스트](V2_E2E_PINNED_RULE_MANIFEST.csv)에서 변경 7개/동일 7개.
+- [실험 증거 기록표](V2_E2E_EVIDENCE_TEMPLATE.csv)는 자연어 N12+부정 X48+X44-철회+D01 타 도메인 **총 62 케이스 × 두 후보 = 124 빈 행**, 전부 `NOT_RUN`·active SHA UNKNOWN. 아직 어떤 점수도 부여하지 않았다.
+- **현 도구의 한계:** 연결된 GitHub는 규칙 파일 읽기/기록에 사용 가능하지만, 사용자 ChatGPT의 프로젝트 생성·개인화 OFF·도구 연결·실주입 파일 확인·실제 UI 전송 오류 주입을 완료하지는 못한다. 실제 사용자가 별도 비개인화 두 프로젝트를 구성하고 동일 설정을 확인해야 한다. 정상 연구 N01 이전 시험 브랜치를 사전 생성하면 실사용 행동 평가를 왜곡할 수 있으므로 생성하지 않음.
+- 이 단계에서 **GitHub 준비 완료 ≠ 전체 시험환경 검증 완료 ≠ 실 E2E PASS**. main/역사 연구 브랜치/고정 엔진 원본 보호, 다음 N01은 추가 실행 지시 전 NOT RUN.

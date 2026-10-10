@@ -62,3 +62,10 @@
 - 이 PASS는 실제 재개·국소 수정·원고 연결과 원본 보존의 증거이며, 장기 100~200쪽 생산/토큰 절감·프로젝트 규칙 실주입 SHA 검증과 다름. 최초 실패 없으며 추가 결함 주입/대규모 E2E 하지 않음.
 - 남음: LONG-LITE-03 단문 자연어 정상 경로(불필요한 Stage/파일·승인 없음), LONG-LITE-04 실제 144페이지 arXiv PDF를 **피시험 모델이** 3~5곳 표적으로 조회·교차 참조하는 실전 검증. 평가자가 했던 정적/출처 spot-check는 이미 기록되어 있으나 모델 실전 판정은 남음. 중대 결함 없으면 PDF-STYLE 이동.
 
+## LONG-LITE-04 피시험 모델 144쪽 원자료 표적 검증 — PASS (2026-10-11)
+
+- **피시험 출력 관찰:** arXiv `2303.18223` *A Survey of Large Language Models* v19, 144쪽에 대해 첫 장→§6.1.1(44쪽)→Table 13(48쪽)→Update log(98쪽), 추가로 과거 v12 PDF §8.1/Table 14/Table 15를 선택적 대조. 전체를 일괄 요약하거나 보고서를 새로 쓰지 않았음.
+- **평가자 독립 1차 원문 확인:** https://arxiv.org/abs/2303.18223 에 v1 2023-03-31, v19 2026-03-18, 144 pages/1081 citations. https://arxiv.org/pdf/2303.18223 p0 실제 각주 `Version: v18 (major update on March 7, 2026)` vs PDF 여백 표시 `arXiv:2303.18223v19` 서로 다름. p43/인쇄 44 §6.1.1 4요소 task description/input data/contextual information/prompt style 및 QA·meta-review·text-to-SQL 3개 예시 Table 13 연결 확인. p47/인쇄 48 Table 13 caption 청색 task/적색 context/녹색 demonstration/금색 style, input data는 별도 색상 구분 명시 없음. p46 Table 12는 prompt tips. p97/인쇄98 Update log 2023-06-29 prompt design 추가, 2023-09-10 '§6.1.1 prompt examples Table 12'의 **현행 표 번호와 불일치하는 오래된 기록** 확인. https://arxiv.org/pdf/2303.18223v12 p59/인쇄 60 §8.1 prompt creation, Table 14 prompt tips, Table 15 examples; 판본별 이동을 구분한 설명 합당.
+- **판정:** **LONG-LITE-04 실전 SOURCE_SPOT_CHECK_PASS**. 피시험 출력의 위치·개념/표 연결·먼 거리 개정 기록·판본 차이를 평가자 원문으로 교차 대조. 이전 평가자 자체 04 점검을 피시험 성공으로 소급한 것이 아니고, 이번 사용자 제공 피시험 응답이 별도 근거. v12 추가 조회는 표 번호의 실질 불일치를 확인하는 데 적절했음. 원문 전체 독파·PDF 전 페이지 시각 렌더·피시험의 실제 컨텍스트 토큰 감소·144쪽 원고 생산은 NOT TESTED.
+- **남은 마지막 최소 시험:** LONG-LITE-03의 실제 단문 답변은 아직 사용자에게서 수령하지 못함. `일탈/이탈` 차이처럼 단순 질문을 시험 Project 새 채팅에서 한 번만 묻고, 불필요한 GitHub 파일·Segment Plan·승인 대기가 없는지 확인. 이상 없으면 LONG-LITE 종료 및 PDF-STYLE 시안. 시험을 더 늘리지 않음.
+

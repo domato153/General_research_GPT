@@ -10,6 +10,8 @@
 
 ## B. 한국 고용 변화
 - 2019 연평균 취업자 27,123천명, 15~64세 고용률 66.8%, 청년층 실업률 8.9%. 통계청 원자료를 재게시한 공공기관 요약: https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=1741 (2020-01-16)
+- 2020 연평균 취업자 26,904천명, 전년 -218천명(팬데믹 충격). https://kostat.go.kr/board.es?act=view&bid=210&list_no=387733&mid=a10301030100 (2021-01-13)
+- 2021 연평균 취업자 27,273천명, 전년 +369천명. https://www.mods.go.kr/board.es?act=view&bid=210&list_no=416337&mid=a10301030200 (2022-01-12)
 - 2022 연평균 취업자 28,089천명, 전년 +816천명(+3.0%). https://mods.go.kr/board.es?act=view&bid=210&list_no=422981&mid=a10301030200 (2023-01-11)
 - 2023 연평균 취업자 28,416천명, 전년 +327천명. https://kostat.go.kr/board.es?act=view&bid=210&list_no=429025&mid=a10301010000 (2024-01-10)
 - 2024 연평균 취업자 28,576천명, 전년 +159천명(공표 반올림); https://mods.go.kr/board.es?act=view&bid=210&list_no=434801&mid=a10301030200 (2025-01-15)

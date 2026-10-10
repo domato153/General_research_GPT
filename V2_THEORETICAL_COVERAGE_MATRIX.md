@@ -20,20 +20,20 @@
 | E04 | 최초 결과 공동검토 | `PROJECT_BOOTSTRAP.md:37` | 첫 결과 관문 발동 | N04 | **MAPPED** |
 | E05 | 최종 위임/권한 | `02_RESEARCH_PIPELINE.md:35` | 최종 완성 위임 | X01,X02,X15 | **MAPPED** |
 | E06 | 중간 중요방법 재선택 | `02_RESEARCH_PIPELINE.md:199` | 새 결과로 사용자가 달리 선택할 만한 검증 경로 | X27,X28 | **MAPPED** |
-| E07 | 모집단과 임의사례 | `03_REVIEW_MODULES.md:6` | 대표표본 비율/공식 모수 | X23 | **MAPPED** |
-| E08 | 판본·수치 | `03_REVIEW_MODULES.md:6` | 판본, 관측 기간, 모집단 | X25 | **MAPPED** |
-| E09 | 원문 확인 수준 | `03_REVIEW_MODULES.md:7` | 원문 열람 수준 | N06,X25 | **MAPPED** |
+| E07 | 모집단과 임의사례 | `03_REVIEW_MODULES.md:10` | 대표표본 비율/공식 모수 | X23 | **MAPPED** |
+| E08 | 판본·수치 | `03_REVIEW_MODULES.md:10` | 판본, 관측 기간, 모집단 | X25 | **MAPPED** |
+| E09 | 원문 확인 수준 | `03_REVIEW_MODULES.md:11` | 원문 열람 수준 | N06,X25 | **MAPPED** |
 | E10 | 경쟁 인과 설명 | `PROJECT_BOOTSTRAP.md:50` | 가장 강한 경쟁 설명 | N06,X19 | **MAPPED** |
-| E11 | 최신 공시와 계획 | `03_REVIEW_MODULES.md:7` | 최신 연도·완료 vs 계획 상태 | X25 | **MAPPED** |
-| E12 | 태그·분모 전제 | `03_REVIEW_MODULES.md:7` | [체감]은 원칙적으로 | X24 | **MAPPED** |
-| E13 | 진행상태 최신화 | `04_STATE_MANAGEMENT.md:31` | W02 대기 | X09,X14 | **MAPPED** |
+| E11 | 최신 공시와 계획 | `03_REVIEW_MODULES.md:11` | 최신 연도·완료 vs 계획 상태 | X25 | **MAPPED** |
+| E12 | 태그·분모 전제 | `03_REVIEW_MODULES.md:11` | [체감]은 원칙적으로 | X24 | **MAPPED** |
+| E13 | 진행상태 최신화 | `04_STATE_MANAGEMENT.md:29` | W02 대기 | X09,X14 | **MAPPED** |
 | E14 | 정적/모의/실제 구분 | `V2_E2E_PRE_POST_PROTOCOL.md:65` | 동등한 실제 독립 비교 미수행 | N01,N12 | **MAPPED** |
 | E15 | C10 실제 감사 | `02_RESEARCH_PIPELINE.md:394` | 종료 준비 질문의 위임 한계 | N08,X17 | **MAPPED** |
 | E16 | C13 편집 선택 | `02_RESEARCH_PIPELINE.md:417` | 편집 준비/초안/일괄 완성 구분 | N09,X15,X16 | **MAPPED** |
 | E17 | C14 반례 추적 | `02_RESEARCH_PIPELINE.md:549` | 접근 가능한 사용자 표시 편집 제안 | N10,X06,X07,X20 | **MAPPED** |
 | E18 | 부차적 편집 차이 | `13_FINAL_REPORT.md:759` | 부차적 배치 차이 | N10 | **MAPPED** |
-| E19 | 주입 규칙 SHA 검증 | `04_STATE_MANAGEMENT.md:30` | 세 버전 분리 | X12 | **MAPPED** |
-| E20 | 냉시작 | `04_STATE_MANAGEMENT.md:27` | 새 스레드 냉시작과 기록 정합성 | X09,X10,X11,X12 | **MAPPED** |
+| E19 | 주입 규칙 SHA 검증 | `04_STATE_MANAGEMENT.md:28` | 세 버전 분리 | X12 | **MAPPED** |
+| E20 | 냉시작 | `04_STATE_MANAGEMENT.md:25` | 새 스레드 냉시작과 기록 정합성 | X09,X10,X11,X12 | **MAPPED** |
 | E21 | 기존 H/M/L 안전 | `PROJECT_BOOTSTRAP.md:53` | 서버 측 기대 HEAD | X03,X04,X05,X21 | **MAPPED** |
 | E22 | 사용성·PDF | `V2_E2E_PRE_POST_PROTOCOL.md:83` | 이번 조사 결과를 PDF로 만들어줘 | N12,X13,X26 | **MAPPED** |
 | H1 | 채팅 전달/원격보존 | `PROJECT_BOOTSTRAP.md:51` | 보고서 전달 완료 | X04 | **MAPPED** |
@@ -45,14 +45,14 @@
 | L1 | 의미있는 옵션 수량 | `02_RESEARCH_PIPELINE.md:195` | 추가조사·재검증 방법 2~3개 | N04,X27,X28 | **MAPPED** |
 | L2 | 열린 요청의 우선조정 | `01_CORE_RULES.md:84` | 협업형 복합 조사 | N01,N02 | **MAPPED** |
 | R01 | 반복 게이트·비용 | `02_RESEARCH_PIPELINE.md:551` | 기계적인 모든 W-ID 표를 노출하지 않는다 | N12,X13,X27 | **MAPPED** |
-| R02 | 과거 표시 선택 복원 불가 | `04_STATE_MANAGEMENT.md:32` | 표시 원문과 저장 기록의 일치 여부는 UNKNOWN | X20 | **MAPPED** |
+| R02 | 과거 표시 선택 복원 불가 | `04_STATE_MANAGEMENT.md:30` | 표시 원문과 저장 기록의 일치 여부는 UNKNOWN | X20 | **MAPPED** |
 | R03 | 검수 전수탐색 비용 | `02_RESEARCH_PIPELINE.md:393` | 무의미한 자료 전수 재검색 없이 | X18,X27 | **MAPPED** |
 | R04 | 준비성≠W06 전체승인 | `02_RESEARCH_PIPELINE.md:394` | 미완료 W-ID(W06 전체 포함)를 자동 수행 | X17 | **MAPPED** |
 | R05 | 편집 누락/원문 누락 분기 | `02_RESEARCH_PIPELINE.md:580` | 결함 유형별 최소 회귀 | X18,X19 | **MAPPED** |
-| R06 | 활성 규칙 미증명 | `04_STATE_MANAGEMENT.md:30` | 확인할 수 없으면 '미검증' | X12 | **MAPPED** |
-| R07 | 복수 연구 후보 충돌 | `04_STATE_MANAGEMENT.md:29` | 두 개 이상 충돌하는 후보 | X10,X11 | **MAPPED** |
+| R06 | 활성 규칙 미증명 | `04_STATE_MANAGEMENT.md:28` | 확인할 수 없으면 '미검증' | X12 | **MAPPED** |
+| R07 | 복수 연구 후보 충돌 | `04_STATE_MANAGEMENT.md:27` | 두 개 이상 충돌하는 후보 | X10,X11 | **MAPPED** |
 | R08 | GitHub CAS 과신 금지 | `PROJECT_BOOTSTRAP.md:53` | 원자적 CAS(compare-and-swap) | X21 | **MAPPED** |
-| R09 | 원문·PDF 접근 난점 | `03_REVIEW_MODULES.md:6` | 판본, 관측 기간, 모집단 | X25,X26 | **MAPPED** |
+| R09 | 원문·PDF 접근 난점 | `03_REVIEW_MODULES.md:10` | 판본, 관측 기간, 모집단 | X25,X26 | **MAPPED** |
 | R10 | 중복 승인 금지 | `02_RESEARCH_PIPELINE.md:417` | 추가 형식적 승인 없이 | X02,N12 | **MAPPED** |
 | R11 | 외부 독립 감사 한계 | `V2_E2E_PRE_POST_PROTOCOL.md:65` | 동등한 실제 독립 비교 미수행 | N01,N12 | **MAPPED** |
 | R12 | 실험 동일 조건 | `V2_E2E_PRE_POST_PROTOCOL.md:11` | 동일 모델·추론 노력 | N01,N12 | **MAPPED** |
@@ -68,10 +68,10 @@
 | G10 | 미착수 Summary 반박 | `04_STATE_MANAGEMENT.md:49` | Summary/Delta가 '아직 조사 시작 전' | X09 | **MAPPED** |
 | G11 | 여러 W-ID 중복 근거 | `02_RESEARCH_PIPELINE.md:549` | 여러 W-ID에 중복 등장한 연구 | N10,X06 | **MAPPED** |
 | G12 | Segment Plan | `13_FINAL_REPORT.md:129` | Segment Plan | X26 | **MAPPED** |
-| T06R1 | 단일 조사 브랜치 재개 | `04_STATE_MANAGEMENT.md:29` | 단일 후보로 식별되면 | X10 | **MAPPED** |
+| T06R1 | 단일 조사 브랜치 재개 | `04_STATE_MANAGEMENT.md:27` | 단일 후보로 식별되면 | X10 | **MAPPED** |
 | T06R2 | 최신 HEAD/후속 보정 | `04_STATE_MANAGEMENT.md:43` | 최신 근거와 결론 | X09,X14 | **MAPPED** |
-| T06R3 | 복수 브랜치 구분 | `04_STATE_MANAGEMENT.md:29` | 두 개 이상 충돌하는 후보 | X11 | **MAPPED** |
-| T06R4 | GitHub 접근장애 폴백 | `04_STATE_MANAGEMENT.md:29` | 후보가 없거나 GitHub 접근이 안 되면 | X04,X10 | **MAPPED** |
+| T06R3 | 복수 브랜치 구분 | `04_STATE_MANAGEMENT.md:27` | 두 개 이상 충돌하는 후보 | X11 | **MAPPED** |
+| T06R4 | GitHub 접근장애 폴백 | `04_STATE_MANAGEMENT.md:27` | 후보가 없거나 GitHub 접근이 안 되면 | X04,X10 | **MAPPED** |
 | T09 | PDF 렌더/한글/표 검수 | `V2_E2E_PRE_POST_PROTOCOL.md:83` | 이번 조사 결과를 PDF로 만들어줘 | X26 | **MAPPED** |
 
 ## 별도 '기존 기능 손실 금지' 조건

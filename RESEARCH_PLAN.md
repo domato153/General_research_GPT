@@ -6,10 +6,10 @@
 - 프로젝트 공통 규칙 기준: `44bd894cb464229a6d8b926f152113dd0f1bbbae`
 - 후보에서 읽은 규칙: `02_RESEARCH_PIPELINE.md`, `04_STATE_MANAGEMENT.md`, `13_FINAL_REPORT.md`; 가상 원자료 `V2_LONG_LITE_FIXTURE.md`
 - 결과 경로: `FINAL_REPORT.md` — **검토용 초안만**, Part 1→2→3 순서 모두 작성. 최종보고서 확정/발행 없음.
-- 재개 진입점: 이 `RESEARCH_PLAN.md`; 브랜치의 최신 HEAD·보고서 blob SHA는 재개 시 실제 조회(고정 SHA를 현재 HEAD로 오인하지 않음).
+- 재개 진입점: 이 `RESEARCH_PLAN.md`; 보고서 blob SHA `262f374d0ed0966ee01fb4f40339fe03f7ef0b8f` (재조회 확인). 브랜치 최신 HEAD는 재개 시 실제 조회.
 - 모의 편집 선택: `proposal_id=P1`, `revision=1`. P1은 **fixture가 가정한 편집안**이며 실제 사용자의 독립적 최종 승인으로 기록하지 않음. 전력 변화·핵심 반론은 본문 수록, 비용 절감 미입증, 근거 없는 원인 추측과 세계 추계 제외.
 - 범위: 합성 E1~E3만 사용; 외부 조사 없음; 원문 E1~E3 수정 금지. 3개 Part 각각 짧은 문단.
-- 상태: Part 1 초안 저장 대상 / Part 2 초안 저장 대상 / Part 3 초안 저장 대상; 파일 저장 후 실제 원문 재조회가 필요함. Stage 8 최종 확정 미착수; 전체 장문·성능 계측 시험 아님.
+- 상태: Part 1·2·3 초안 모두 `FINAL_REPORT.md`에 저장하고 실제 파일에서 순서·핵심 E1~E3를 재조회함. Stage 8 최종 확정 미착수; 전체 장문·성능 계측 시험 아님.
 
 ## 근거 ID와 원고 위치
 

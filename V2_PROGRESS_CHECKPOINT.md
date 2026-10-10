@@ -1,6 +1,12 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
 > **최신 현행은 아래 '표적 회귀시험·인계 검토 규칙 후속 진행' 절이다.** 이 파일 아래의 2026-10-10 및 이전 2026-10-11 “실전 미실행/독립 외부감사 대기/R1부터 시작” 안내는 **그 당시 보존 기록이며 현재 실행할 지시가 아니다.** 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단 최신 인계를 우선한다.
 
+## [2026-10-11 최신 /handoff] PDF-STYLE 시험 입력 전송 후 응답 대기
+
+- 최신 정본 인계: `V2_NEXT_THREAD_START_HERE.md` /handoff 절(커밋 `5a487fb3cc7ea34fb93dca28a6f3de699509049f` 직후 기준). D01 축약 E2E PASS, LONG-LITE-01~04 각각 관찰 범위 PASS. 03은 사용자 출력만 관찰했으며 도구 전수 로그 미확인. 100~200쪽 신규 저술·실측 토큰 절감·실물 PDF 렌더·프로젝트 실주입 SHA는 미검증.
+- 사용자는 기존 ChatGPT 시험 프로젝트 새 채팅에 PDF-STYLE HTML/CSS 정적 시안 작성 지시를 이미 보냄. 대상 형식 정본 `final_pdf_html_formatting_instruction_final.md`, 원고 `research/20261011-openssh-cve-2024-6387/FINAL_REPORT.md`, 예정 격리 브랜치 `design/20261011-pdf-style-smoke`. 조회 시 시험 브랜치는 아직 확인되지 않아 실제 결과는 **PENDING/NOT VERIFIED**. 원고·개발·고정 규칙/main 보호 유지, PDF 실제 렌더 불허.
+- 다음 작업: 피시험 결과를 받으면 실제 시험 브랜치·`report.html`/`report_style.css`·커밋과 원고 구성·내용 보존을 독립 재조회한 후 정적 시안 판정. 새 실험 착수나 렌더 없이 평가·인계만 재개.
+
 ## [2026-10-11 최신] LONG-LITE-04 실전 PASS — LL-03 한 건만 대기
 
 - **실제 공개 장문 LL-04 PASS:** 피시험 모델이 arXiv:2303.18223 v19 144쪽에서 1/44/48/98쪽의 제목·§6.1.1 네 구성요소·Table 13 3개 사례·2023 개정 기록을 읽고 상호 연결을 설명. 원문 arXiv v19 메타데이터와 144쪽 PDF를 평가자가 직접 대조. v19 PDF 첫 장의 v18 내부 각주 불일치, 2023-09 Update log의 Table 12 기록과 v19 Table 12(tips)/13(examples) 차이, v12 §8.1 Table 14(tips)/15(examples) 판본 이동까지 실제 PDF 텍스트 대조에서 지지됨. **LONG-LITE-04 피시험 모델 SOURCE_SPOT_CHECK_PASS**, 현재 결과는 144쪽 문서 표적 조회 역량의 증거일 뿐 전체 장문 작성/정량 토큰 절약이나 시각 PDF 품질 시험 아님.

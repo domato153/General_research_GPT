@@ -663,3 +663,27 @@ North Sync A~I 다중 턴 E2E와 FINAL_REPORT.md 저장까지 완료됐는지 �
 - **버전 계보 미해결:** 연구 브랜치의 원규칙 fb22와 신규 고정 후보 a10의 Git ancestry 불일치(실제 런타임 주입 버전 미확인), 단일 SHA E2E 검증은 여전히 부족. 메타데이터 문제로 별도 보존.
 
 **현재 C1~C11 판정:** 실제 협업·인과 근거비판·표적 사용자 재조사·명시 재감사 회복은 관찰 PASS, C10 자발 Stage5 FAIL, 최종 편집·Stage7 결함 발견/회귀 및 최종 전달은 NOT TESTED. 설계 개선 후보만 보존; 고정 규칙·운영 `main`·실제 연구 브랜치 수정하지 않는다.
+
+## 24. C12 선택한 4편 재검증·결론 보정·Stage 5 재판정 실측 PASS (2026-10-10)
+
+**시험 입력:** `좋아. 추천한 A 경로로 네 연구만 추가 검증해줘. 각 연구의 실제 비교집단·기간·사전추세·인과 한계와 기존 W02·W04·W05 결론이 어떻게 달라지는지만 확인하고, 종료 전 감사 판정도 다시 내려줘. 조사 범위를 더 넓히지 말고, 아직 최종보고서는 작성하지 마.` 실제 모델은 범위를 확장하지 않고 Frank/Aum-Shin/Hampole/Hui만 다룸. GitHub 연구 브랜치 `research/20261010-ai-employment-kr-us-1538-fb22`는 `a5e0e5f98ee5d263541a33cc6f21786a68ff5612` → `43fd501c19132ab69240b3ad5fef7723745d8c99` **5 commits ahead / 0 behind**. 실제 변경 파일 `W06_A_FOUR_STUDY_VALIDATION.md` 신규, `W02_CAUSAL_EVIDENCE.md`·`W04_OCCUPATION_AGE_TENURE_FLOWS.md`·`W05_NEW_JOBS_NET_EMPLOYMENT.md`·`RESEARCH_PLAN.md` 수정. `FINAL_REPORT.md` 미작성.
+
+### PASS 관측
+- **실제 지정된 재조사 수행:** Frank 2026 arxiv 2601.02554의 미국 UI 실업위험 2022초 선행악화와 졸업자·교육표본의 선택/추정치 한계; Aum·Shin 2025 St Louis Fed 연구의 한국 **2017~2019** 분석기간, 지역×산업 도입강도 shift-share와 도구변수/평행추세 결여, AI·빅데이터·클라우드 혼합과 다른 NBER/SSRN 판본 구별; Hampole 외 저자 2026-02-22 판본의 과거 AI/ML 측정과 대학채용 IV, 기업 5년 성장 +6.8pp, 직업별 상대 재배치와 경제전체 순고용 절대항 미식별; Hui 외 Organization Science 2024 Upwork DiD, 글쓰기 프리랜서 월 계약 -2%, 월 소득 -5.2%, 고성과자가 확실히 보호되지 않는다는 결과 및 단일 플랫폼 선택편의.
+- **실제 보정 기록:** W02 초기경력 AI 원인 확신 낮춤/프리랜서 제한적 단기 대체 근거 강화; W04 정규직 청년 비교에 국한하고 숙련프리랜서 피해 예외 반영; W05 기업 내 생산성 확대·대체 상쇄 가능성 준실험 근거 추가, 양국 국가 총순고용 부호·상쇄율 미식별 유지. 수정 내용이 원래 W02/04/05 파일 **끝에 별도 반영 섹션으로 기록됨**을 확인. 연구 기간·표본·지표 혼합하지 않음.
+- **종료 전 감사 재판정 PASS:** '추가 핵심조사 불필요 / 높음·조건부'를 자료별 한계와 함께 설명. 새 근거로 중요한 인과 해석을 수정했으나 사용자에게 기존에 금지된 최종보고서 작성은 시도하지 않음. A 선택→실제 신규 근거확인→예전 결론 보정→Stage5 재판정의 E2E 회귀 흐름 관측.
+
+### 표본 독립 근거검증
+- Frank `https://arxiv.org/abs/2601.02554` 공식 초록: 2022초 실업위험 상승, 2021후 졸업자 진입 악화와 교육노출자의 취업성과 혼재.
+- Aum/Shin `https://www.stlouisfed.org/publications/review/2025/apr/labor-market-impact-of-digital-technologies` 및 해당 Fed `Review` PDF p3: 명시적 2017~19 분석기간, 산업 채택 설문·지역고용조사, AI와 big data/cloud 혼합; NBER `https://www.nber.org/papers/w33469` 초록은 IoT·고숙련 강조 판본 차이. **2022+ GenAI 한국 고용 인과자료로 직접 외삽 금지**.
+- Hampole 저자 2026-02-22 PDF `https://menakahampole.com/AI_and_the_Labor_Market.pdf`: 1SD adoption→5년고용 성장 +6.8 percentage points(pp27), 직업 내 relative share -14.5%/집중 exposure +7.5%, pp32~33 fixed effects remove absolute aggregate effect; 경제전체 효과=0 실증 아님. NBER `https://www.nber.org/papers/w33509` 메타의 2025 버전과 구분.
+- Hui 출판원 `https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441`, 저자 소속 공식 `https://olin.washu.edu/about/news-and-media/news/2023/08/study-ai-tools-cause-a-decline-in-freelance-work-and-incomeat-least-in-the-short-run.php`: 글쓰기 프리랜서 월계약 -2% 수입 -5.2% 단기, 고성과자 확정적 보호 없음. DOI 출판본 2024와 공개원고 2023 구분.
+- **검증한 것과 미검증 구분:** 공식 원문/초록, Fed PDF 날짜, Hampole 저자 PDF 핵심 텍스트·표본 방법, Hui 학술지/저자 요약 및 제한된 내용 대조. 논문 4편 모든 회귀식·코드·표를 독립 통계 재현한 것은 아님.
+
+### 보완해야 할 약점·후반 마지막 관문
+- **P1 현 결과를 최종 원고에 재적용해야 함:** W02 원래 `W02 판정` 본문 및 `RESEARCH_PLAN.md` W02 행에는 아직 초기경력 AI 영향 '유력' 등 과거 표현이 남고, 파일 말미에만 새 '확신 하향' 보정이 있다. W01 행의 오래된 'W02 대기' 등 정합성 결함도 지속. **초안 작성/Stage7 검수 시 최신 W06-A가 과거 수치/상위 요약보다 우선하도록 실제 원고를 대조**. 기존 역사 파일 자체를 소급 수정하지 않은 것은 이력 보존 관점에서 타당하나 편집 실수 위험은 존재.
+- **P2 연구 교차검증의 겸손함:** Aum·Shin 2017~19/과거 일반 기술, Hampole 2010~23 AI/ML, Hui 플랫폼 2022~23 GenAI, Frank preprint는 대상/기간이 달라 하나의 nationwide causal coefficient로 합칠 수 없음. 'Hui가 ChatGPT의 확정적인 무작위배정 인과효과를 증명'도 금지.
+- **P1 이전 C10 자발 Stage5 FAIL 보존:** C11 명시 감사 PASS, C12 사용자 A 선택 수행·재판정 PASS는 실제 검증력 근거이지만 자발 종료 단계 누락 문제는 아직 패치/재발시험 필요.
+- **Stage5 사용자 편집 내용 결정 아직 NOT TESTED**, Stage7 실제 원고 대조/중요 오류 발견 시 국소 복구와 Stage8 확정·전달/저장 역시 NOT TESTED. 추가 독립 연구 라운드는 이제 종료; 남은 자연어 E2E 최대 두 구간에 집중한다.
+- **C13 natural readiness:** `좋아. 추가조사는 여기서 마무리하자. 이제 최종보고서 준비를 진행해줘.` 모델이 **실제 조사 결과**에 기초해 본문 깊이/간략·부록/제외를 실질적으로 추천·사용자에게 선택하게 하는지 확인, 불리한 핵심 반례를 숨기지 않음, 승인되지 않은 최종 확정 금지.
+- **C14:** C13 실제 제안 가운데 사용자에게 맞는 구성을 선택·수정한 뒤 최종보고서 *작성/검토/확정 권한*을 명시 부여. Stage7 W-ID와 출처·반론·최신 보정 비교, 사용자가 선택한 본문/부록/제외 반영, 실제 원고·GitHub 저장 요청 시 재조회까지 확인. 발견한 실질 오류만 국소 수정+재검수; 새로운 조사 W07 창설/동일 논문 무한 재검색 금지. **C14 메시지는 C13 응답 후 구체화하고 미리 사용자 결정을 가장하지 않는다.**

@@ -3,7 +3,7 @@
 ## A. 두 고정 비교대상 및 증거 수준
 - Repository: domato153/General_research_GPT
 - BASE 개발 규칙: cd64bef326544cacc0dc05fe6f65d9e1bd318fc0
-- **2차 외부 감사 보완 후 현재 개발 규칙 고정 SHA:** `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33` (`design/research-v2` 소스 규칙 4개 추가 보완 및 PDF/편집추적 반영 완료 시점). 이전 PR #1 규칙 `0e5721bc730f6f8b67f816bf0e589b8870b43d8b`와 최초 감사 구후보 `c9f8b9a52eab43e24f322e19da03e3006504a206`는 **역사적 비교/지적 자료**이며 이번 신규 E2E의 변경 후 규칙이 아니다. 기록 문서 갱신으로 개발 HEAD가 이동하더라도 정확한 규칙 버전 비교는 이 고정 SHA를 사용한다.
+- **3차 독립 재감사 P1-A/P1-B 국소 보완 후 현재 개발 규칙 고정 SHA:** `ac4675d50bc0355b0939f7eb32b6fd72605acfb4` (`design/research-v2` 실제 규칙 변경 커밋). 직전 3차 감사 대상 `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`와 최초 개발 병합 `0e5721bc730f6f8b67f816bf0e589b8870b43d8b`, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`는 서로 구분한다. 실제 런타임 프로젝트 주입 성공은 규칙 저장소 커밋만으로 증명되지 않는다.
 - 과거 실제 연구 브랜치 출발은 fb22fe86834893e607072b41885277d29cfc57fc였으며 새 개발 SHA를 단일 규칙으로 실사용한 증거가 아님. 과거 시험은 문제 발견의 실증이지만 이 BASE/CANDIDATE의 동등 조건 A/B 시험이 아니다.
 - 수행 완료: 두 버전의 소스 정적 검사와 원문 보존 검사, 과거 E2E 결과 재판독. 미수행: 이 정확한 두 SHA를 서로 다른 실제 비개인화 ChatGPT 프로젝트에 주입한 독립 완주 E2E. 후자를 완료 전 PASS로 기록하지 않는다.
 

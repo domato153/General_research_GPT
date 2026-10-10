@@ -4,7 +4,7 @@
 - revision: 2
 - status: RECOMMENDED (사용자 수록 구성 미선택)
 - date: 2026-10-11 Asia/Seoul
-- research_branch: `research/20261011-v2-r1-from-n07`
+- research_branch: `research/20261011-v2-r4-audit`
 - research_head_at_revision: `994309f305e8e49704a417feaf38f1093c2ddfc1`
 - applied_rules_commit: `44bd894cb464229a6d8b926f152113dd0f1bbbae`
 - 연구 중단은 사용자 명시 지시, 본문 편집안은 미선택

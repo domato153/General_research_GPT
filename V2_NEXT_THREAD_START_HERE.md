@@ -1,5 +1,13 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [현행 최신 — 2026-10-11] LONG-LITE 국소 구현 및 평가자 점검 완료, 피시험 실전 검사 대기
+
+- D01 대표 축약 E2E 관찰 범위 PASS와 이전 N/R 최초 실패·조건부 미시험 기록은 그대로 유지. LONG-LITE 구현을 개발 격리 `design/handoff-fidelity-review-20261011`의 `02_RESEARCH_PIPELINE.md`, `04_STATE_MANAGEMENT.md`, `13_FINAL_REPORT.md`에 국소 기록(최종 기능 변경 커밋 `a168c48c95c06e02dbbebbb2fde7f35c6abcf2f9`). 기존 원문 보존을 기준 고정 `44bd894...`와 대조해 확인. **운영 main/고정 개발 후보/기존 모든 연구 브랜치 변경 안 함**. Project에 실제 자동 주입된 SHA는 여전히 UNKNOWN.
+- `V2_LONG_LITE_TEST_LOG.md`에 소형 LONG-LITE-01·02 모의 PASS, 03 정적 PASS 및 04 실제 144쪽 arXiv 공개 PDF의 선택적 텍스트 조회·교차 검증 SOURCE_SPOT_CHECK_PASS 기록. **모델 행동 실전 NOT TESTED**이며 실제 200쪽 쓰기/렌더·모든 문맥 복원은 보장되지 않음. `V2_LONG_LITE_FIXTURE.md` 가상 E1/E2/E3와 3 Part·P1 선택으로 초경량 실전 시험 준비.
+- **다음 한 작업:** 사용자가 기존 시험 ChatGPT Project의 별도 **새 채팅**에서 이 브랜치의 02/04/13을 실제 참조하도록 한 뒤 fixture를 이용한 3-Part 검토용 원고와 보존·재개 진입점 첫 행동을 요청. 피시험 응답과 격리 저장물을 평가하고 E2 중간 정정에 대한 국소 수정, 짧은 질문 비발동, arXiv PDF 표적 조회 1회를 가능한 한 적은 자연어 입력으로 완료. 사용자에게 내부 PASS 조건·정답을 공개한 테스트 입력을 강제하지 않으며, 평가자는 별도 등급으로 분리. 중요 문제 없으면 PDF-STYLE 시안으로 진행하고 실물 PDF 렌더는 별도 검증한다.
+
+
+
 ## [현행 최신 — 2026-10-11] D01 전체 PASS, LONG-LITE 시작점
 
 - **D01 종료:** OpenSSH CVE-2024-6387 별도 ChatGPT 시험 채팅에서 초기 의향→A+B+C 계획 사용자 선택→3라운드 원자료·코드·반례→Stage 5 증거 감사·편집안 P1/P2/P3 추천→N09 종료만 승인 경계 재제시→사용자 P1 명시 선택/완성·저장·채팅 전문 위임→원고 작성/Stage 7 최초 검수/Stage 8 보존·복사전문 전달을 검증해 **대표 경로 PASS**. 연구 HEAD `d55714adb510cbdd293ae9d92a358a22e5dc9812`; 저장된 `FINAL_REPORT.md` 원고 커밋 `ecdde156b036184a757d0f56704b5150849bd883`, blob `cb4b764e1a236df63802cf5a612e7a84c6f66270`; `FINAL_REPORT_REVIEW.md` blob `2ca1336ca1c0baff996f0dbf6805085029b0c4a5`. 사용자 복사 234행 전체 텍스트 중 실제 최종 원고가 모두 포함됐고, 표시 형식 정규화 후 GitHub 본문 12,716문자·검사 해시 일치. 검수 기록의 20항목은 자동 19+문맥 재검토 1임을 유지.

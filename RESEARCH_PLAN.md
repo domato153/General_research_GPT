@@ -1,3 +1,7 @@
+# 이 대화의 지정 시험 연구 브랜치: `research/20261011-v2-r8-x03-untrusted`
+
+- 과거 연구 기록에 남은 `research/20261011-kr-us-ev-charging-adoption`는 역사적 출발 브랜치다. 새로운 작업의 GitHub 대상은 사용자 지시로 지정한 위 브랜치이며, 운영 `main` 및 과거 연구 브랜치는 수정하지 않는다.
+
 # RESEARCH_PLAN — 한국·미국 충전시설 확대와 전기차 보급의 실제 변화 및 인과효과
 
 - 연구 브랜치: `research/20261011-kr-us-ev-charging-adoption`

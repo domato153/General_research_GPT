@@ -1,0 +1,171 @@
+/* PDF-STYLE smoke sample: final_pdf_html_formatting_instruction_final.md
+   Canonical source branch: design/handoff-fidelity-review-20261011
+   Text source: research/20261011-openssh-cve-2024-6387:FINAL_REPORT.md
+   HTML/CSS draft only; no PDF rendered or visual inspection. */
+@charset "UTF-8";
+@page:first {
+  size: A4;
+  margin: 0;
+}
+@page {
+  size: A4;
+  margin: 24mm 24mm 22mm 24mm;
+}
+:root {
+  color-scheme: light;
+  --ink: #1f1f1f;
+  --border: #d9d9d9;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-synthesis: none; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: "Noto Sans CJK KR", "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif;
+  font-size: 10.5pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.cover {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  background: #fff;
+  color: var(--ink);
+  break-after: page;
+  page-break-after: always;
+  overflow: hidden;
+}
+.cover-rule-top {
+  position: absolute;
+  left: 20mm;
+  right: 0;
+  top: 32mm;
+  border-top: 1.35pt solid #1f1f1f;
+}
+.cover-axis { position: absolute; left: 45mm; }
+.cover-logo { top: 62mm; width: 27mm; height: 27mm; }
+.cover-logo-svg { display: block; width: 100%; height: 100%; }
+.cover-label { top: 94.5mm; font-size: 12.1pt; font-weight: 760; letter-spacing: .035em; }
+.cover-title {
+  top: 129mm;
+  width: 140mm;
+  font-size: 34pt;
+  line-height: 1.02;
+  font-weight: 800;
+  margin: 0;
+}
+.cover-title-line {
+  display: block;
+  white-space: nowrap;
+  transform-origin: 0 50%;
+  transform: scaleX(.75);
+}
+.cover-title-line + .cover-title-line { transform: scaleX(.98); }
+.cover-subtitle { top: 166.5mm; width: 140mm; font-size: 11.5pt; line-height: 1.28; }
+.cover-rule-vertical {
+  position: absolute;
+  left: 45mm;
+  top: 210mm;
+  height: 58mm;
+  border-left: 1.15pt solid #1f1f1f;
+}
+.report-body { max-width: 162mm; margin: 0 auto; }
+.report-body h2 {
+  font-size: 20.5pt;
+  line-height: 1.18;
+  font-weight: 800;
+  margin: 0 0 6.5mm 0;
+  padding: 0 0 2.2mm 0;
+  border-bottom: 1.25pt solid #1f1f1f;
+  break-after: avoid;
+}
+.report-body h3 {
+  font-size: 14.3pt;
+  line-height: 1.28;
+  font-weight: 760;
+  margin: 9mm 0 3.3mm;
+  break-after: avoid;
+}
+.report-body p {
+  margin: 0 0 4.2mm;
+  text-indent: .35cm;
+  line-height: 1.52;
+  orphans: 2;
+  widows: 2;
+}
+.report-body ul,
+.report-body ol {
+  margin: 3.5mm 0 5mm;
+  padding-left: 7.5mm;
+  list-style-position: outside;
+}
+.report-body li { margin: 0 0 2mm; padding-left: 1.2mm; text-indent: 0; line-height: 1.48; }
+.report-body li p,
+.report-body .conclusion-box p,
+.report-body blockquote p,
+.report-body td p,
+.report-body th p { text-indent: 0; }
+.report-body .table-wrap { width: 100%; overflow: visible; }
+.report-body table {
+  width: 94%;
+  margin: 6mm auto 8mm;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 9.2pt;
+  overflow-wrap: anywhere;
+}
+.report-body th,
+.report-body td { border: .75pt solid #d9d9d9; padding: 3mm 3.2mm; vertical-align: top; }
+.report-body th { background: #eee; font-weight: 800; text-align: center; }
+.report-body td { text-align: left; }
+.report-body thead { display: table-header-group; }
+.report-body tr { break-inside: avoid; }
+.report-body pre {
+  width: 94%;
+  margin: 5mm auto 7mm;
+  padding: 4mm 4.5mm;
+  border: .75pt solid #d6d6d6;
+  background: #f5f5f5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: Consolas, Menlo, "Courier New", monospace;
+  font-size: 9pt;
+  line-height: 1.36;
+  tab-size: 4;
+}
+.report-body pre code { white-space: inherit; font: inherit; }
+.report-body :not(pre) > code { font-family: Consolas, Menlo, "Courier New", monospace; }
+.report-body .conclusion-box {
+  width: 94%;
+  margin: 5mm auto 7mm;
+  padding: 3.4mm 4.3mm 3.4mm 5mm;
+  border: .75pt solid #dedede;
+  border-left: 3.2pt solid #1f1f1f;
+  background: #f3f3f3;
+  line-height: 1.48;
+  text-indent: 0;
+  break-inside: avoid;
+}
+.report-body .conclusion-box strong { font-weight: 800; display: inline-block; margin-right: 4.5mm; }
+.report-body blockquote { margin: 5mm; padding-left: 4mm; border-left: 1.2pt solid #888; }
+.report-body a { color: inherit; text-decoration: underline; overflow-wrap: anywhere; }
+.report-body hr { border: 0; border-top: .75pt solid #aaa; margin: 6mm 0; }
+@media screen {
+  body { background: #e9e9e9; }
+  .cover { margin: 15mm auto 12mm; box-shadow: 0 2mm 8mm #0002; }
+  .report-body {
+    width: 210mm;
+    max-width: 210mm;
+    padding: 24mm 24mm 22mm;
+    margin: 0 auto 18mm;
+    background: white;
+    box-shadow: 0 2mm 8mm #0002;
+  }
+}
+@media print {
+  html, body { margin: 0; padding: 0; background: #fff; }
+  .cover { margin: 0; box-shadow: none; }
+  .report-body { width: auto; max-width: 162mm; margin: 0; padding: 0; box-shadow: none; }
+}

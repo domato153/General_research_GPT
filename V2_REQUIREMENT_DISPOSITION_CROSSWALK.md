@@ -36,7 +36,7 @@
 | H1 | 채팅 전달/원격보존 | `PROJECT_BOOTSTRAP.md:52` | A23,A16 | X45 | X44 | X04 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | H2 | 첫 결과 선제 제안 | `PROJECT_BOOTSTRAP.md:38` | A07 | N04 | X27 | — | SAME-DIRECTION/비대칭 의심; 실제 반대 상태 판정 필요 | NOT RUN |
 | H3 | 경쟁 반론 | `04B_VALIDATION_RULES.md:185` | A09 | N06 | X19 | X32 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
-| M1 | 저장 실패 폴백 | `PROJECT_BOOTSTRAP.md:52` | A23 | X37 | X04 | X04 | SHARED SCENARIO: X04 | NOT RUN |
+| M1 | 저장 실패 폴백 | `PROJECT_BOOTSTRAP.md:52` | A23 | X04,X37 | X04 | X04 | SHARED SCENARIO: X04 | NOT RUN |
 | M2 | 자료 인젝션 | `PROJECT_BOOTSTRAP.md:51` | A22 | N04 | X03 | — | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | M3 | HEAD 원자성 경계 | `PROJECT_BOOTSTRAP.md:54` | A21 | X05 | X21 | X21 | SHARED SCENARIO: X21 | NOT RUN |
 | L1 | 의미있는 옵션 수량 | `02_RESEARCH_PIPELINE.md:195` | A07 | X28 | X27,X48 | — | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
@@ -59,7 +59,7 @@
 | G04 | 공개계획 승인 범위 | `00_INDEX.md:268` | A06 | N03 | N02 | — | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | G05 | 일괄 위임시 재승인 금지 | `02_RESEARCH_PIPELINE.md:417` | A11,A16 | X02,X45 | X44 | — | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | G06 | 채팅만 전달된 결과 | `PROJECT_BOOTSTRAP.md:52` | A23,A16 | X45 | X44 | X04 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
-| G07 | 쓰기실패 인계 | `PROJECT_BOOTSTRAP.md:52` | A23 | X37 | X04 | X04 | SHARED SCENARIO: X04 | NOT RUN |
+| G07 | 쓰기실패 인계 | `PROJECT_BOOTSTRAP.md:52` | A23 | X04,X37 | X04 | X04 | SHARED SCENARIO: X04 | NOT RUN |
 | G08 | main/타브랜치 보존 | `PROJECT_BOOTSTRAP.md:54` | A22 | X05 | X03 | X21 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | G09 | 승인된 기준 계획 원문 보존 | `04_STATE_MANAGEMENT.md:47` | A08 | N03 | X22 | X29 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |
 | G10 | 미착수 Summary 반박 | `04_STATE_MANAGEMENT.md:49` | A08 | X09 | X14 | X29 | 독립성 미검증(서로 다른 ID만으로 입증 불가) | NOT RUN |

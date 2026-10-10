@@ -763,3 +763,13 @@ North Sync A~I 다중 턴 E2E와 FINAL_REPORT.md 저장까지 완료됐는지 �
 - **완료 검증 정본:** `V2_DEVELOPMENT_PHASE_CLOSEOUT.md`, `V2_POST_APPLY_VERIFICATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_EXTERNAL_AUDIT_RECONCILIATION.md`, `V2_FULL_ISSUE_INVENTORY.md`; 기존 실제 E2E `V2_TEST_RESULTS.md` §§1~48의 최초 FAIL/회복 PASS 분리 유지.
 - **별도로 계속 시험할 사항:** 동일 모델/접근권한·비개인화 프로젝트의 **실제** BASE↔개선 규칙 자연어 N01~12 / 부정 X01~28, 새 스레드 T06-R R1~R4, 실물 출처/원고·저장/브랜치 변경 확인, 서버 HEAD 경합/도구 장애/인젝션, PDF 생성·렌더, 불필요한 승인·검색량·시간·비용 차이. **NOT TESTED** 항목을 자동 PASS로 전환하지 말 것.
 - `main` 승격은 이 개발 작업의 목표가 아니다. 실제 E2E의 결함이 발견되면 **`design/research-v2`에서 국소 보완 → 동일 이론 검증 → 다시 실사용 평가**한다. 사용자는 내부 단계/검수법을 몰라도 되는 **짧은 자연어**가 주시험의 기본이다.
+
+## 31. 두 번째 외부 재감사 수용 및 이론 커버리지 판정 정정 (2026-10-10)
+
+- **외부 Temporary 재감사 결과:** 개발 PR #1 적용본에 대해 `수정 후 재감사`. 주요 P1은 (a) T06-R4 GitHub **읽기 실패** 시험 부재, (b) 실제 사용자에게 **표시된** 편집안↔저장본↔최종 원고의 재현 가능한 추적 부족, (c) `59/59 MAPPED`를 **모든 POS/NEG/FALLBACK 시험 설계·동작 PASS**로 확장하는 오류. P2는 PDF 실제 변환 지침·오류주입과 사용성 비용 실측 필요.
+- **실제 개발 브랜치 국소 보완 완료, 고정 SHA `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`.** 과거 `0e5721...`는 2차 감사에 쓰인 **수정 전** 개발 SHA다. 변경 전 BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`; 새 실사용은 이 둘(BASE/3c0a)만 직접 비교하고 실제 활성 프로젝트 설정을 따로 확인한다.
+- **규칙 보완:** `04_STATE_MANAGEMENT.md` 읽기/쓰기 실패 분리, `02_RESEARCH_PIPELINE.md`·`04_STATE_MANAGEMENT.md`·`04B_VALIDATION_RULES.md`의 `proposal_id`/revision/출력 문구 선저장·반론/수록 위치 대조·과거 채팅 접근 불가 `UNKNOWN`; `13_FINAL_REPORT.md` PDF 서식 원본 연결. 원문/권한/기존 기능 보존.
+- **정적·시험 설계 재검증:** 전체 59개 소스/시험 참조·실제 파일 위치 PASS, 18개 보호조건 PASS. 다만 3개 E14/R11/R12는 독립 평가규약이고, **모델행동 56개에 POS+NEG 시나리오 설계**, 그중 실패·폴백 34개. 실제 모델 수행 성적은 **NOT RUN**. `V2_THEORETICAL_COVERAGE_MATRIX.md`의 `—`는 숨기지 않는다.
+- **독립 E2E 프로토콜:** `V2_E2E_PRE_POST_PROTOCOL.md` N01~N12/X01~X43. X29 읽기 실패, X30 **실제 출력 문구** 보존, X31~X35 대표성/원문/PDF 실패, X36~X43 7종·채팅전용·초기 승인/선제리뷰·판본/분류·실주입 SHA/장문 조립. 정답 목록을 사용자 자연어 프롬프트에 주입하지 않는다.
+- **별도 결과 정본:** `V2_REAUDIT_02_REMEDIATION.md`(외부 지적별 대응·한계); `V2_THEORETICAL_COVERAGE_MATRIX.md`(분리 판정). 사용자에게 이미 공유된 과거 `V2_POST_APPLY_VERIFICATION.md` 및 첫 감사 INDEX는 해당 시점의 **역사적 상태**로 유지하고 새 판단보다 우선하지 않는다.
+- **다음 순서:** 독립 실제 모델 첫 응답 E2E → T06-R·X29/X30·동시 쓰기·PDF·비용 회귀 → P0/P1 결함만 개발 브랜치 국소 보완 → 매번 소스/시험 매핑 재검증. 3차 외부 정적 감사만 반복하는 것으로 실제 E2E를 대체하지 말 것. `main`은 제외.

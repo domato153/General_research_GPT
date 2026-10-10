@@ -1,5 +1,13 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [2026-10-11 /handoff] PDF-STYLE 시험 지시 전달, 응답 대기
+
+- 인계 시점 개발 격리 브랜치 HEAD: `bbab0f6b8b530b030379ac4569c444f4f6b221b2`. 고정 후보 `design/research-v2` HEAD `44bd894cb464229a6d8b926f152113dd0f1bbbae` (고정 상태), D01 연구 브랜치 HEAD `d55714adb510cbdd293ae9d92a358a22e5dc9812`. 운영 `main`과 기존 연구 브랜치 수정 금지.
+- D01 대표 E2E 축약 경로 PASS, LONG-LITE 01~04 각 관찰 범위 PASS (03은 사용자에게 출력된 간단 어휘 비교만 확인, 도구 전수 로그 미확인). 최종 원고/검수·실전 근거는 각각 기존 `V2_LONG_LITE_TEST_LOG.md` 및 이전 인계 절 참조. 실주입 ChatGPT 프로젝트 규칙 SHA/100~200쪽 신규 저술/토큰 절감 측정/실제 PDF 렌더는 UNKNOWN 또는 NOT TESTED.
+- 사용자가 **기존 시험 프로젝트의 새로운 채팅에 PDF-STYLE 시안 지시문을 이미 전송**했다고 보고함. 시안에는 `final_pdf_html_formatting_instruction_final.md`를 정본, D01 `research/20261011-openssh-cve-2024-6387/FINAL_REPORT.md`를 변경 불가 원고로 사용하고, `design/20261011-pdf-style-smoke` 새 격리 브랜치에 `report.html`·`report_style.css`를 저장·재조회하며 **PDF 렌더는 하지 말 것**을 요청. 외부 평가자 GitHub 조회에서는 해당 PDF 시험 브랜치를 아직 찾지 못함(404가 아닌 GitHub 422 no commit for ref); **실행 결과·최초 행동·저장 SHA·PASS는 확인되지 않았음**. 제출 지시 이후 결과가 도착하면 반드시 새로 조회.
+- **다음 단 하나의 작업:** 사용자가 PDF-STYLE 피시험 응답을 제공하면 `design/20261011-pdf-style-smoke` 실제 HEAD, 두 파일 내용/원고 대응, Markdown 제목·표 4개·부록 4개·출처 S1~S20·주요 반론 보존, A4 표지·본문·표/코드/소결 스타일 규칙, 렌더 미실시 주장을 확인해 정적 시안 PASS/FAIL/UNKNOWN 판정. 기존 HEAD나 선제 추정으로 성공 기록 금지. 실물 PDF 렌더/시각 검수는 별도 명시 요청까지 보류.
+- 이번 `/handoff`는 **인계만** 승인한 요청이며 신규 브랜치 생성·PDF 출력·규칙 승격·독립 테스트/조사는 수행하지 않는다. 새 스레드에서 최신 정본 파일과 HEAD를 다시 읽고 재개한다.
+
 ## [현행 — 2026-10-11] LONG-LITE 종료 / PDF-STYLE 대기
 
 LONG-LITE-01, 02, 03, 04: 각 관찰 범위 PASS. LL03은 일탈·이탈 단문 응답을 확인했고 내부 도구 로그는 미확인. 실제 100~200쪽 신규 작성 및 토큰 절감은 미검증. 다음은 `final_pdf_html_formatting_instruction_final.md`와 D01 확정 원고를 사용한 내용 불변 HTML/CSS PDF-STYLE 시안. PDF 실물 렌더는 별도 단계. 최신 시험 기록은 `V2_LONG_LITE_TEST_LOG.md` 참조.

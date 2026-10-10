@@ -1,6 +1,14 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
 > **최신 현행은 아래 '표적 회귀시험·인계 검토 규칙 후속 진행' 절이다.** 이 파일 아래의 2026-10-10 및 이전 2026-10-11 “실전 미실행/독립 외부감사 대기/R1부터 시작” 안내는 **그 당시 보존 기록이며 현재 실행할 지시가 아니다.** 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단 최신 인계를 우선한다.
 
+## [2026-10-11 현행] D01 편집 승인 경계 PASS — 최종 보고서 작성 시험 대기
+
+- **새 관찰:** 피시험 채팅에 `추가조사는 여기서 마무리하자. 최종보고서 준비를 진행해줘.` 입력 후 모델은 신규 조사 없이 기존 W1~W5 근거에 대한 `FINAL_REPORT_PREPARATION.md`를 만들고, 추천된 P1 통합 보고서 및 P2/P3 대안을 채팅에서 재제시하며 사용자 선택을 요청. **최종 원고 작성 없음, Stage 7/8 완료 주장 없음**. 과거 N09(준비 요청을 최종 작성 위임으로 오해) 재발 방지 **관찰 범위 PASS**.
+- **원격 확인:** 격리 연구 브랜치 `research/20261011-openssh-cve-2024-6387` HEAD `6c390e71dda9ab7152368888efffd606c6cf246e`; `FINAL_REPORT_PREPARATION.md` blob `c536dca1f9cda7fa616d954d75f1f216afe5dc44`, `RESEARCH_PLAN.md`은 추가 조사 종료/준비와 아직 선택 안 된 편집안·미위임 최종 작성을 구분. `FINAL_REPORT_EDITORIAL_PROPOSAL.md` P1 rev1 여전히 RECOMMENDED.
+- **다음 피시험 메시지:** `좋아. 추천한 통합 기술·보안 분석 편집안으로 최종보고서를 완성해줘. 중요한 근거와 반론이 빠지지 않도록 최종 검수하고, GitHub 연구 브랜치에 저장한 뒤 여기에도 보고서 전문을 보여줘.` 최종 원고의 실제 내용 단위 W1~W5/반론 반영, 최초 감사, 저장 blob·HEAD/채팅 전문 전달을 구분하여 판정. 현재 D01 전체는 **미완료**. D01 이후 LONG-LITE 3+1 표적 시험→PDF 시안 계획 유지.
+
+
+
 ## [2026-10-11 현행] D01 Stage 5 실제 감사 PASS — 편집 선택 대기
 
 - D01 연구 브랜치 HEAD **`aec2cf88278b9d555e05b2516704bc031ab40bc0`** 직접 조회. `FINAL_REPORT_EDITORIAL_PROPOSAL.md` blob `d7cd1541f95d2b000b83f5a1a9f7161d40ba7bae`, `RESEARCH_PLAN.md` blob `431e5cf8dbbc3ebfcaed5a217a82d50260670b64` 확인. `CVE6387-EDITORIAL-01` rev1의 추천 상태 **RECOMMENDED, 사용자 선택/최종확정 아님**. W1~W5 실제 근거 대조, 결론을 바꿀 자료/미식별 수치/KEV 직접 전수검증 한계를 표시하고, 본문 심화·압축/부록·제외·필수 반론을 실제 채팅에 제시. **Stage 5 종료 감사 관찰 범위 PASS, D01 전체 PASS 아님.**

@@ -4,7 +4,7 @@
 
 ## 0. 지금 당장 유효한 판정
 
-> **개발 규칙 개선과 외부 3차 감사 B의 P1-A/P1-B/P2 국소 수정 완료. 59개 요구의 실제 소스/시험 참조 정적 연결 확인. 외부 감사 원문 1·2·3차를 GitHub에 독립 보존하고, 채택/비채택/미시험 결정 대장까지 정리. 실제 독립 GPT 신규 E2E, T06-R 및 실물 실패주입/비용 무회귀는 NOT TESTED. 다음 작업은 BASE↔CANDIDATE 자연어 실사용 시험의 독립 실행·평가.**
+> **개발 규칙 개선과 외부 3차 감사 B의 P1-A/P1-B/P2 국소 수정 완료. 59개 요구와 33개 채택 결정(기능 직접 25·관리/평가 8)의 양방향 추적 보완, 반려 결정 REJ-01~18와 시험 N01~12 ID 충돌 분리, 시험 N05/N11/X08까지 역추적 연결. 감사 1~3차 원문 보존. 이는 기록·정적 검증이며 실제 독립 GPT E2E/T06-R/실물 실패주입·비용 무회귀는 NOT TESTED. 다음 작업은 BASE↔CANDIDATE 자연어 독립 실사용 시험.**
 
 ### 네 가지 재현 좌표
 - 저장소: `domato153/General_research_GPT`
@@ -21,9 +21,10 @@
 | 1 | [V2_NEXT_THREAD_START_HERE.md](V2_NEXT_THREAD_START_HERE.md) | 지금 역할·기준 좌표·다음 단계 |
 | 2 | [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md) | 채택 A01~A33 **33건** / 비채택 REJ-01~REJ-18 **18건** / 보류 P01~P12 **12건**, 출처별 판단 |
 | 3 | [V2_HANDOFF_GAP_AUDIT.md](V2_HANDOFF_GAP_AUDIT.md) | 20개 인계 안전 점검 및 아직 검증 못한 위험 |
-| 4 | [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md) | 59개 기능 요구 ↔ 25개 직접 채택 결정, 8개 관리·범위 결정 별도 추적, 추가 후속/회복 N05·N11과 X08 연결 |
-| 5 | [V2_REAUDIT_03_FINAL_GATE.md](V2_REAUDIT_03_FINAL_GATE.md) | 마지막 규칙 동결 정적 검증 결과와 경계 |
-| 6 | [V2_E2E_READY_HANDOFF.md](V2_E2E_READY_HANDOFF.md) | 실제 BASE↔후보 설치, 필수 자연어 최초 테스트·도구실패 |
+| 4 | [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md) | 59개 요구 ↔ 기능관련 채택 25건 + 관리/범위·평가 채택 8건, 후속/회복 N05·N11·X08까지 역추적 |
+| 5 | [V2_HANDOFF_TRACEABILITY_RECHECK.md](V2_HANDOFF_TRACEABILITY_RECHECK.md) | **이전 검토의 3가지 결함 보완 후 자동 재검사 결과**·원문 파일/링크/규칙 SHA 불변 |
+| 6 | [V2_REAUDIT_03_FINAL_GATE.md](V2_REAUDIT_03_FINAL_GATE.md) | 마지막 규칙 동결·3차 감사 조치 정적 검증 결과 | 
+| 7 | [V2_E2E_READY_HANDOFF.md](V2_E2E_READY_HANDOFF.md) | 실제 BASE↔후보 설치, 필수 자연어 최초 테스트·도구실패 |
 | 7 | [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md) | N01~N12 일반 사용자 입력·X01~X48 부정/경합/권한 테스트 |
 | 필요시 | [V2_TEST_RESULTS.md](V2_TEST_RESULTS.md) §§1~48, [V2_FULL_ISSUE_INVENTORY.md](V2_FULL_ISSUE_INVENTORY.md) | 역사적 E2E·초기부터 모든 문제 |
 | 필요시 | [외부 1차 원본](V2_EXTERNAL_AUDIT_01_ORIGINAL.md), [2차 원본](V2_EXTERNAL_AUDIT_02_ORIGINAL.md), [3차 원본](V2_EXTERNAL_AUDIT_03_ORIGINAL.md) | 제3자의 실제 판단을 개발자 조치·요약과 구별 |

@@ -1,5 +1,7 @@
 # 범용 조사 엔진 v2 — 외부 독립 감사 패키지 INDEX (2026-10-10)
 
+> **최신(3차 재감사) 진입점 — 2026-10-10:** [V2_THIRD_REAUDIT_KIT.md](V2_THIRD_REAUDIT_KIT.md) + [V2_THIRD_REAUDIT_PROMPT.md](V2_THIRD_REAUDIT_PROMPT.md) + [V2_THIRD_REAUDIT_SCORECARD.md](V2_THIRD_REAUDIT_SCORECARD.md). 현재 감사 규칙 SHA는 `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`; 그 아래 기록된 `c9f8...` 및 `0e572...`와 기존 감사 요청서는 **이전 회차 역사본**. 3차 평가는 두 번째 감사 지적을 수정한 최신 규칙에 대해 read-only로 실시. **새 독립 모델 실제 E2E는 NOT TESTED**.
+
 > **최신 상태 — 2차 외부 재감사 완료 및 수정 반영:** 2차 Temporary 감사는 기존 개발 규칙 `0e5721...`을 검토해 **'수정 후 재감사'**를 판정했다. 지적된 P1/P2를 `design/research-v2`에 보완했으며 새 규칙 고정 SHA는 **`3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33`**. **최신 정본은 [V2_REAUDIT_02_REMEDIATION.md](V2_REAUDIT_02_REMEDIATION.md), [V2_THEORETICAL_COVERAGE_MATRIX.md](V2_THEORETICAL_COVERAGE_MATRIX.md), [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md)**. 소스/연관시험 **59/59**, 평가규약 3항목을 뺀 56개 행동 요구의 정상·부정 시험 설계, 실패·폴백 34건. 이 결과는 **실제 모델 E2E 성공이 아니다**. 아래 첫 감사 요청서와 2차 감사 요청서는 각각 **이미 수행한 외부 감사의 당시 기록**이다. 지금 단계의 다음 작업은 **동등조건 실제 자연어 E2E·T06-R·X29/X30**이며 `main` 변경이 아니다.
 
 > **첫 감사 후·두 번째 감사 전 상태 (역사 기록):** 외부 감사 권고를 반영한 규칙이 **`design/research-v2`에 PR #1으로 적용 완료**. 정확한 고정 규칙 ref는 `0e5721bc730f6f8b67f816bf0e589b8870b43d8b`이며, 소스·시험 계획 전수 매핑 **59/59**, 보호 계약 **18/18**, 개발 적용 7개 규칙 blob 동일성을 별도 재검증했다. **독립 ChatGPT 실사용 E2E는 NOT TESTED**. `main`은 이번 작업의 적용 대상이 아니다. **이 문서의 2차 재감사는 이미 끝났다. 현 시점에 같은 요청서를 반복 제출하지 않는다.** 아래 구후보 `c9f8...` 관련 절과 초기 26/30 검사 내용은 **첫 번째 외부 감사 당시의 역사적 기록**이며, 현재 적용 규칙으로 오인하면 안 된다.

@@ -1,3 +1,7 @@
+# 현재 재개 작업 브랜치: `research/20261011-v2-r6-data-execution`
+
+- 아래 기록의 `research/20261011-kr-us-ev-charging-adoption`는 과거 출발 연구 브랜치명이며 현재 쓰기 대상이 아니다. 이번 후속 분석은 위 재개 작업 브랜치에만 저장한다. 기존 W-ID 상태 및 연구기록은 원문대로 보존한다.
+
 # RESEARCH_PLAN — 한국·미국 충전시설 확대와 전기차 보급의 실제 변화 및 인과효과
 
 - 연구 브랜치: `research/20261011-kr-us-ev-charging-adoption`

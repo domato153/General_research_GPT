@@ -137,6 +137,8 @@ Full Report, Academic-style Report, Essay-Column Report가 10페이지 이상급
 - 사용자가 10페이지 이상, 20페이지급, 딥 리서치 보고서를 원한다.
 - 보고서의 각 장이 길고, 부록·참고 출처 메모까지 포함된다.
 
+**LONG-LITE 경량 경로:** 보고서가 여러 Part로 길어질 때만 `02_RESEARCH_PIPELINE.md` Stage 6.5의 선택적 근거 재조회·임시 Part 보존 및 `04_STATE_MANAGEMENT.md`의 짧은 재개 진입점을 따른다. 최종 파일은 Part 실제 본문의 조립 결과여야 하고, 초안/전체 완성·저장/채팅 전달은 구분한다. 짧은 보고서에는 별도 경로를 강제하지 않는다.
+
 ### Segment Plan 기본형
 
 ```md

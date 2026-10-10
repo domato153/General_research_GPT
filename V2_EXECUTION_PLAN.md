@@ -786,7 +786,7 @@ North Sync A~I 다중 턴 E2E와 FINAL_REPORT.md 저장까지 완료됐는지 �
 ## 33. 다음 스레드 무손실 인계·명시적 결정 기록 (2026-10-10)
 
 - **사용자 요청:** 다음 스레드에서 작업을 그대로 재개하도록 저장 상태 확인·외부의 적절한 방법론을 **방법만** 차용해 누락·채택/반려/보류·검증 증거를 점검. 기존 기록을 다시 장문으로 복제하는 대신 **최신 시작 파일+결정 대장+누락 점검+요구 역추적**의 얇은 인덱스 구조 채택.
-- **정본:** `V2_NEXT_THREAD_START_HERE.md`(새 스레드 첫 읽기), `V2_DECISION_REGISTER.md`(A33/N18/P12과 근거 주체·이유), `V2_REQUIREMENT_DISPOSITION_CROSSWALK.md`(59개 요구 ↔ A-결정 ↔ 원문/시험), `V2_HANDOFF_GAP_AUDIT.md`(20개 체크·진짜 미검증·첨부 Bootstrap 옛 main 리스크).
+- **정본:** `V2_NEXT_THREAD_START_HERE.md`(새 스레드 첫 읽기), `V2_DECISION_REGISTER.md`(채택 33건 / REJ 18건 / 미검증 12건과 근거 주체·이유), `V2_REQUIREMENT_DISPOSITION_CROSSWALK.md`(59개 요구 ↔ A-결정 ↔ 원문/시험), `V2_HANDOFF_GAP_AUDIT.md`(20개 체크·진짜 미검증·첨부 Bootstrap 옛 main 리스크).
 - **기존의 중요한 인계 누락 수정:** 사용자가 이 채팅에 제출했던 외부 1·2·3차 감사 **원본 텍스트**를 `V2_EXTERNAL_AUDIT_01_ORIGINAL.md`, `02_ORIGINAL.md`, `03_ORIGINAL.md`로 개발 브랜치에 저장하고 3/3 파일의 GitHub 재조회 텍스트를 원본 Files 읽기 결과와 일치 확인. 원본을 개발자 조치 요약으로 대신하지 않는다.
 - **외부 절차 차용:** ADR 상태/맥락/결정/영향·대체 연결, NASA 요구→설계→시험→실제 증거의 양방향 추적, GitHub 고정 SHA/branch HEAD 분리. 새 엔진 정책 규칙을 덧쓰지 않고 **문서 결정/검증 이력 관리에만 적용**했다.
 - **정확한 재현:** BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`, 현재 후보 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4` (GitHub 문서 HEAD로 대체 금지). 3차 감사 B 국소 개선 완료, 새 모델 독립 E2E·T06-R·X29/X30/X44/X45/실물 PDF·비용 **NOT TESTED**. 사용자 직접 판단/개발자 채택/감사 권고/반려·대체/아직 안 한 실험의 상태 분리.

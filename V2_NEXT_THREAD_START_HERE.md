@@ -1,5 +1,14 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [2026-10-11 PDF-STYLE 실제 렌더링·시각 검수] 현행 결과 — 원본 VISUAL FAIL 1건 / 국소 수정본 검수 PASS
+
+- **원본의 실제 첫 렌더:** 피시험 `design/20261011-pdf-style-smoke` HEAD `0b34dcfa02a88d687ef25a474a84c9a924396dd5`의 `report.html` blob `11d00ce36fa3af2ab8beb3f49f622ce89baf0b29`, `report_style.css` blob `2f18e0c528c92ba8c538f33ab678a1c8d8644d1e`를 재구성하고 로컬 Git blob SHA로 **완전 일치** 확인 후 Chromium 144/Playwright로 실제 PDF 렌더. 12페이지 A4. 원본 표지 영문 첫 줄 끝부분 `regreSSHion):`이 오른쪽으로 **잘려서 최초 시각 검수 FAIL**. 원인은 첫 줄에 `white-space:nowrap`, 가로 변형 `scaleX(.75)`, 표지의 `overflow:hidden`이 공존할 때 해당 실제 글꼴에서 가용 너비 초과.
+- **국소 회복:** 원본 HTML 및 원고 불변, 로컬 CSS `.cover-title-line`의 **첫 기본 `scaleX(.75)→scaleX(.68)` 한 군데만** 수정해 별도 `report_reviewed.pdf`를 렌더. 2줄 표지 제목 전체 표시. 페이지 수 12 동일. 전/후 PNG 픽셀 diff **1페이지만 변경, 2~12페이지 완전 동일**. PyMuPDF에서 수정본의 12페이지 모두 텍스트 바운딩박스 용지 밖 검출 0건·빈 페이지 0건. CSS 외부 의존 없이 폰트 Noto Sans CJK KR Regular/Bold 임베딩, PDF 열림 및 텍스트 추출 확인. HTML 내용 보존의 직전 STATIC PASS 그대로.
+- **판정 구별:** PDF-STYLE **원본 렌더 시각 FAIL 1건**과 **로컬 수정본 Chromium 렌더 시각·페이지 경계 관찰 범위 PASS**는 별도 기록. 다른 렌더러/OS/사용자 화면 실제 미리보기·세부 선호 판정까지 일반화하지 않는다. 원본 시험 브랜치·운영 `main`·고정 `design/research-v2`·연구 브랜치 파일 **무변경**. 수정 CSS 및 원본/수정 PDF·미리보기는 이 채팅의 /mnt/data/pdf_style_review/output/에 생성했으며 **GitHub에 PDF나 수정 CSS를 저장했다고 주장하지 않는다**.
+- **남은 다음 작업:** 사용자에게 원본/수정 PDF 및 페이지 미리보기를 제시해 직접 확인하고, 교정 방향이 적합하다고 결정하면 해당 **한 줄 CSS 수정만 시험 시안에 승인 범위로 반영**하는 방안을 검토. 운영 승격 및 최종 실사용 bootstrap 교체는 별도 승인 요건. /handoff 후속 감사 최초 P1 FAIL, D01/LONG-LITE PASS 및 기존 미검증/판정 보존.
+
+
+
 ## [2026-10-11 PDF-STYLE 독립 정적 검수] 현행 결과 — STATIC PASS / 시각·PDF 미시험
 
 - **대상 확인:** 격리 피시험 `design/20261011-pdf-style-smoke` HEAD `0b34dcfa02a88d687ef25a474a84c9a924396dd5`; HTML blob `11d00ce36fa3af2ab8beb3f49f622ce89baf0b29`, CSS blob `2f18e0c528c92ba8c538f33ab678a1c8d8644d1`; 변경 출발 커밋 `41af390269785833404a8a98e28ab42c37e92ece` 대비 두 신규 파일만 확인. 원고 `research/20261011-openssh-cve-2024-6387/FINAL_REPORT.md` blob `cb4b764e1a236df63802cf5a612e7a84c6f66270` (연구 HEAD `d55714adb510cbdd293ae9d92a358a22e5dc9812`), 서식 정본 개발 파일 blob `8c3e55b42bc8b7997f4671d8ada35ba8f315c699`을 GitHub에서 독립 읽기.

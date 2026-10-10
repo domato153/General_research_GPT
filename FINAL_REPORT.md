@@ -9,7 +9,7 @@
 - **문서 상태: 최종보고서 검토용 초안 — 추가 조사 종료, 독립적 반례 전수검증(W4)·종합 비교 재검증(W5) 미수행을 명시한 조건부 결론**
 - 연구 질문: 공공 및 생활권 충전 접근성 확대가 승용 순수전기차(BEV) 보급을 실제로 얼마나 증가시키며, 다른 요인에 따른 동반 변화와 구별되는가?
 - 분석 범위의 제한: 한국의 장기 지역별 승용 BEV *신규 등록* 및 전체 사업자 충전시설 연결 패널이 확보되지 않았고, 미국의 2018~2025년 주별 신규 BEV 등록 flow와 정책 변수를 모두 결합한 패널도 완성되지 않았다. **본 보고서의 자체 산술은 관측 추이 비교이며 독립적인 새로운 인과효과 회귀 추정이 아니다.**
-- 연구 자료 보존처: 본 연구 브랜치의 \`W1_DATA_AUDIT.md\`, \`W1_A_REMEDIATION.md\`, \`W2_OBSERVED_CHANGES.md\`, \`W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv\`, \`W3_CAUSAL_EVIDENCE.md\`.
+- 연구 자료 보존처: 본 연구 브랜치의 `W1_DATA_AUDIT.md`, `W1_A_REMEDIATION.md`, `W2_OBSERVED_CHANGES.md`, `W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv`, `W3_CAUSAL_EVIDENCE.md`.
 
 ---
 
@@ -173,9 +173,9 @@
 
 ## 부록 A. 데이터 출처·계산의 추적성
 
-1. 미국 공공 충전시설: DOE AFDC, [Alternative Fueling Station Counts by State](https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false), 2018~2025 각각 12월 31일 historical snapshot. 지역·연도별 408관측치 및 전국 합계 8행은 연구파일 [\`W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv\`](W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv)에 보존. 포트 증가율은 \`(2025말 포트 / 2018말 포트 − 1) × 100\`.
+1. 미국 공공 충전시설: DOE AFDC, [Alternative Fueling Station Counts by State](https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false), 2018~2025 각각 12월 31일 historical snapshot. 지역·연도별 408관측치 및 전국 합계 8행은 연구파일 [`W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv`](W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv)에 보존. 포트 증가율은 `(2025말 포트 / 2018말 포트 − 1) × 100`.
 2. AAI, [Get Connected EV Quarterly Report 2024 Q4](https://www.autosinnovate.org/posts/papers-reports/Get%20Connected%20EV%20Quarterly%20Report%202024%20Q4.pdf), 신규 등록 중 2024 BEV 8.14%.
-3. AAI, [Get Connected EV Quarterly Report 2025 Q4](https://www.autosinnovate.org/posts/papers-reports/Get%20Connected%20EV%20Quarterly%20Report%202025%20Q4.pdf), 신규 등록 중 2025 BEV 7.87%; \`7.87 − 8.14 = −0.27%p\`. 이 보고서의 총 EV 점유율과 BEV 점유율을 분리.
+3. AAI, [Get Connected EV Quarterly Report 2025 Q4](https://www.autosinnovate.org/posts/papers-reports/Get%20Connected%20EV%20Quarterly%20Report%202025%20Q4.pdf), 신규 등록 중 2025 BEV 7.87%; `7.87 − 8.14 = −0.27%p`. 이 보고서의 총 EV 점유율과 BEV 점유율을 분리.
 4. 기후에너지환경부, [2025년 11월 전기차 연간 보급 실적 및 충전시설 통계 발표](https://mcee.go.kr/home/web/board/read.do?boardId=1820170&boardMasterId=1&maxIndexPages=10&maxPageItems=10&menuId=10357&pagerOffset=110); 2020~2024 전 차종 보급·급속/완속 누적 기수.
 5. 기후에너지환경부, [2025년 연간 전기차 보급 후속 발표](https://m.mcee.go.kr/home/web/board/read.do?boardId=1868130&boardMasterId=939); 연간 약 22.1만 대 값은 기존 W2 기록의 후속 출처에 기반한 대략치.
 6. Kim, Woo & Choi (2026), [*Charging Ahead or Catching Up?*](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6138466), SSRN/KDI School 사전공개 연구; 초록 기반으로 제한적으로 해석.

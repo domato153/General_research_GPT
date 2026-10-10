@@ -1,5 +1,13 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
+## [현행 최신 — 2026-10-11] LONG-LITE-01 최초 실전 PASS, LL-02 새 채팅 재개 검사
+
+- D01 전체 대표 경로 PASS 기록 유지. LONG-LITE 국소 규칙 02/04/13은 개발 격리 브랜치 `design/handoff-fidelity-review-20261011`에만 적용 중. 피시험 첫 3-Part 가상 검토용 초안 **LONG-LITE-01 PASS**: `research/20261011-long-lite-smoke` HEAD `b466b7fbb2baf0d1605e61b58bdeb1cb66324219`, `FINAL_REPORT.md` blob `262f374d0ed0966ee01fb4f40339fe03f7ef0b8f`, `RESEARCH_PLAN.md` blob `1bc76a2b39367f0f63a695231f13bc30f6fc8d92` 조회. E1/E2/E3 반영, 조건부 결론·Part 순서·P1 가상 승인/미확정·근거 맵 정상. 현재 시험 원고는 이미 한 파일에 3 Part가 들어 있지만 확정 문서 아님.
+- **다음 피시험 한 작업:** 동일 ChatGPT Project의 **다른 새 채팅**에서 해당 연구 브랜치 `RESEARCH_PLAN.md`을 진입점으로 실제 원고·가상 원자료를 재조회하고 E2 정정: '8개 중 3개 감소하지 않음' 주장은 사실상 '해당 3개 구역은 전후 계측값 없어 비교 불가'로 변경. 원본 fixture 불변, E2 revision 별도 보존, Part 1 내용 보존, 영향받는 Part 2·3의 주장과 반론/결론만 조정해 SHA·HEAD 재조회. 최종 완성/외부 조사/PDF 불허. 이 결과가 오면 국소 수정·교차의존·재개 검증 판정 후 LONG-LITE-03 단문 비발동 및 -04 피시험 144쪽 PDF 3~5지점 표적 조회를 무겁지 않게 수행하고 문제 없으면 PDF-STYLE 진행.
+- **주의:** LL-01 PASS를 LL-02 새 채팅 재개/컨텍스트 토큰 감소/초장문 완성/PDF 품질 PASS로 확대하지 않음. 실제 프로젝트 자동 주입 규칙 SHA UNKNOWN, R5/실제 CAS/API/UI 장애 미시험 보존.
+
+
+
 ## [현행 최신 — 2026-10-11] LONG-LITE 국소 구현 및 평가자 점검 완료, 피시험 실전 검사 대기
 
 - D01 대표 축약 E2E 관찰 범위 PASS와 이전 N/R 최초 실패·조건부 미시험 기록은 그대로 유지. LONG-LITE 구현을 개발 격리 `design/handoff-fidelity-review-20261011`의 `02_RESEARCH_PIPELINE.md`, `04_STATE_MANAGEMENT.md`, `13_FINAL_REPORT.md`에 국소 기록(최종 기능 변경 커밋 `a168c48c95c06e02dbbebbb2fde7f35c6abcf2f9`). 기존 원문 보존을 기준 고정 `44bd894...`와 대조해 확인. **운영 main/고정 개발 후보/기존 모든 연구 브랜치 변경 안 함**. Project에 실제 자동 주입된 SHA는 여전히 UNKNOWN.

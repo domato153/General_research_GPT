@@ -1,6 +1,6 @@
 # 범용 조사 엔진 v2 — 외부 독립 감사 패키지 INDEX (2026-10-10)
 
-> **최신 새 스레드 재개(2026-10-10):** [V2_NEXT_THREAD_START_HERE.md](V2_NEXT_THREAD_START_HERE.md) → [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md) → [V2_HANDOFF_GAP_AUDIT.md](V2_HANDOFF_GAP_AUDIT.md) → [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md). **외부 감사 원본 1·2·3차도 독립 보존 완료**. 실제 규칙 frozen `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`. **규칙 개발·정적 검증과 실제 모델 E2E 미실행을 구별**. 아래 초기 감사 문서·옛 후보 SHA는 이력이며, 새 평가 채팅은 이 최신 시작 파일을 우선한다.
+> **최신 새 스레드 재개·역추적 보완(2026-10-10):** [V2_NEXT_THREAD_START_HERE.md](V2_NEXT_THREAD_START_HERE.md) → [V2_DECISION_REGISTER.md](V2_DECISION_REGISTER.md) → [V2_HANDOFF_GAP_AUDIT.md](V2_HANDOFF_GAP_AUDIT.md) → [V2_REQUIREMENT_DISPOSITION_CROSSWALK.md](V2_REQUIREMENT_DISPOSITION_CROSSWALK.md). **외부 감사 원본 1·2·3차도 독립 보존 완료**. 실제 규칙 frozen `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`. **규칙 개발·정적 검증과 실제 모델 E2E 미실행을 구별**. 아래 초기 감사 문서·옛 후보 SHA는 이력이며, 새 평가 채팅은 이 최신 시작 파일을 우선한다.
 
 > **3차 감사 보완 및 정적 검증 종료 — 신규 평가 시작점:** [V2_REAUDIT_03_FINAL_GATE.md](V2_REAUDIT_03_FINAL_GATE.md) → [V2_E2E_READY_HANDOFF.md](V2_E2E_READY_HANDOFF.md) → [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md). 규칙 고정 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`, BASE `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0`, N01~12/X01~48. **3차 외부 감사의 B 판정과 P1-A/B 국소 대응은 완료했으나 실제 모델 E2E/무회귀는 NOT TESTED**. 아래의 과거 3차 감사 요청서와 이전 SHA는 역사 참조이며, 동일 감사 요청을 새 E2E 모델에 주입하지 않는다. 
 

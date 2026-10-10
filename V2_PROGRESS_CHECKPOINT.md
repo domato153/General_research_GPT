@@ -170,3 +170,12 @@
 - **최신 확인 연구 브랜치 HEAD:** `cbe5b68d8a0fcfa355d320268ceb8b3c8e9d634b`. 이전 C14 `b028d5eb9b7f632dbe79e51b3905d127ded8af4c` 대비 4커밋, `FINAL_REPORT.md` 수정, `FINAL_REPORT_COUNTERARG_AUDIT.md` 신규, `RESEARCH_PLAN.md` 갱신만. 최종보고서 blob **`827bfb87428265323c5048f1cc92ec97fbb35adc`**, 30,379자 / 7장+4부록; 감사 blob `b3784d4e8dc86b86d55470dcff05e4c6015e9324`. 종전 국가별 AI 인과 순고용 미식별 유지, 운영 `main` 이전 HEAD 유지.
 - **판정:** C14-R **요청 후 회복 PASS**. 모델 주장 '기계검사 17/17' 자체를 외부 전수 재현한 것은 아니므로 판정은 표적 확인 범위로 한정한다. **첫 C14 Stage7 PARTIAL / C10·C13 선제 FAIL은 반드시 보존**한다.
 - **다음 목적:** 이번 실측 E2E는 더 이상 늘리지 않는다. 누적 개선안을 P1부터 소형 규칙 패치로 설계·사용자 승인 후 적용하고, 별도 고정 규칙 SHA·격리 ChatGPT 프로젝트에서 독립 자연어 주시험 및 T06-R 새 스레드 GitHub 복원을 검증한다. `V2_EXECUTION_PLAN.md` §25·§26 참고. 실제 주입 규칙/연구 출발 `fb22...`/신규 설계 `a10...` 구분 필수.
+
+## 14. V2 외부감사 후보 고정·기준선/후보 자체 검증 (2026-10-10)
+
+- **사용자 지시:** 기존 C10/C13/C14에 국한하지 말고 최초 설계·초기/중간/최종 실사용·이전 외부감사·미검증 항목을 **전부 정리**, 기존규칙/변경 전 E2E/후보 수정/변경 후 회귀·외부 비개인화 감사에 제출 가능한 전체 자료 제작.
+- **전체 이슈:** `V2_FULL_ISSUE_INVENTORY.md` E01~E22. P1 사용자 협업·계획/W-ID·인과·근거·선택·버전·상태·부정 안전성 및 후속 T06-R 모두 포함. 역사 실패와 후속 회복 PASS 분리.
+- **변경 전 고정 기준선:** `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0` (이 섹션 기록 전 설계 기록 HEAD). **격리 후보 규칙 동결:** `c9f8b9a52eab43e24f322e19da03e3006504a206`, 브랜치 `audit/v2-e2e-hardening-20261010`. 7개 엔진 규칙 파일의 **삽입만** 시행; 원문 전체 순서 보존, 승인 없이 `main` 미변경.
+- **자체 실행:** GitHub 원문 실제 조회, 같은 26 정규식 소스 앵커 **변경 전 13/26→후보 19/26**, 새 30개 자체 문구/전이 시나리오 **8/30→30/30**, 원문 8개 전체 원래 줄 보존. **이는 문서 정적 검사/자체 모의이고 새 모델 실제 독립 E2E가 아니다**. 기존 AI 고용 C1~C14+회복 실사용 결과는 별도 옛 연구 출발 SHA(`fb22...`)의 역사 증거이며 위 두 후보의 동등한 블라인드 비교가 아니다.
+- **외부 독립 감사 패키지:** 후보 브랜치 루트 `V2_AUDIT_README.md`, `V2_EXTERNAL_AUDIT_REQUEST.md`, `V2_EXTERNAL_AUDIT_HANDOFF.md`, `V2_CANDIDATE_CHANGE_SPEC.md`, `V2_SELF_REVIEW_AND_LIMITATIONS.md`, `V2_BEFORE_BASELINE_REPLAY.md`, `V2_BEFORE_AFTER_STATIC_VERIFICATION.md`, `V2_SCENARIO_GATE_WALKTHROUGH.md`, `V2_E2E_PRE_POST_PROTOCOL.md`, `V2_AUDIT_FIXTURE.md` (+ 본 브랜치 인벤토리·기존 시험 정본). 12개 자체 설계 위험·비용·프롬프트 자율성 오염·동시 HEAD·실제 주입 SHA 불명도 공개.
+- **미완료 절대선:** 실제 두 고정 후보를 새 독립 모델에 주입한 **변경 전/후 실사용 E2E**, T06-R R1~R4 실제 냉시작, 도구 장애/HEAD 경쟁/비신뢰 자료 부정 시험, 외부 모델의 원문·반대 검토는 **NOT TESTED**. 문서 검증 숫자만으로 성능 개선/운영 배포 PASS 금지. 외부 감사는 **read-only**, 사용자 승인 후 최소 후속 패치와 실제 E2E 및 `main` 승격 여부 별도 결정.

@@ -1,0 +1,17 @@
+# CLOSURE_READINESS_REVIEW — 2026-10-11
+
+- Current branch: `research/20261011-kr-us-ev-charging-adoption` originating from `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`; audited research HEAD `e105fb85e9aad619167f5e208a5d6b304c2ddc32`.
+- Trigger: user asked "이제 최종보고서로 넘어가도 되겠어?" after W2 observational results.
+- Status: **CONDITIONAL_PREPARATION**, **FINAL_CONFIRMATION_NOT_READY**.
+- Checked actual files: `RESEARCH_PLAN.md`, `W1_DATA_AUDIT.md`, `W1_A_REMEDIATION.md`, `W2_OBSERVED_CHANGES.md`, `W2_US_AFDC_PUBLIC_CHARGING_2018_2025.csv`, `W3_CAUSAL_EVIDENCE.md`, fixed-candidate `13_FINAL_REPORT.md`.
+- W2 CSV validation: 416 records (408 state/DC-year + 8 US totals) for years 2018–2025, 52 geographic rows per year (50 states + DC + total). Earlier compilation reports exact state-to-national summation in each year. This current audit checked file/record counts and year distribution, not a new independent full recomputation of all cell sums.
+- W3 study accounting correction: evidence sections K-01, K-02, U-01 through U-07 = **9** studies, while prior RESEARCH_PLAN text described 8. Correct the count in plan; this is a bookkeeping error not a missing opposing study.
+- Data definition correctives carried forward: 2024 BEV registration share 8.14% vs 2025 7.87% = -0.27 percentage points; BEV vs PHEV/FCEV total distinct; Korea country-level annual EV delivery/program '보급' includes multiple vehicle classes and is not strict passenger BEV new-registration flow; charging '기', charging 'ports', station locations, EV-ready codes are different treatments.
+- W1 PARTIAL: regional Korea all-operator historical installed+operational chargers and KR true passenger BEV new registration series as a merged panel absent; US long-run public ports available; complete Korea-US aligned confounders pending.
+- W2 PARTIAL: USA AFDC charger station/port historic snapshots for 51 regions 2018–2025; partial 2024/2025 US BEV new-registration regional percent and Korean yearly charging vs all-EV deployment observations. Regional full 2018–2025 BEV new registrations and monthly/quarterly lead-lag test absent.
+- W3 PARTIAL: published and working paper identification strategies/estimates assessed, competing positive/null/negative evidence documented; no fresh estimated Korea-US charger-installation elasticity and important IV/DID/SDID assumptions not checked deeply.
+- W4 WAITING: standalone adversarial review with original statistical tables and sensitivity/contrary studies incomplete. Prior W3 has preliminary contrary studies but not sufficient to mark W4 complete.
+- W5 WAITING: national cross-country comparability, distinct outcomes, sensitivity, contextualized synthesis not yet executed as a formal approved work item.
+- Final report can be a **conditional evidence synthesis draft** now; a definitive report claiming a general causal effect or completed original econometric analysis **cannot** be validly declared. Proposed minimum closure route: W4 independent critical review; W5 Korea-US synthesis, decision whether unidentifiable elasticities are documented as limitations vs a narrowed conditional-scope report; fresh Stage 5 readiness; evidence-ID to final-report claim/section mapping; Stage 7 fact/bias/source review; user explicit final delegation/confirmation.
+- First proposal wording/status stored separately in `FINAL_REPORT_EDITORIAL_PROPOSAL.md`, status RECOMMENDED only.
+- No permission from readiness question alone to execute W4/W5 automatically, draft/confirm/send `FINAL_REPORT.md`, merge, delete, or share externally.

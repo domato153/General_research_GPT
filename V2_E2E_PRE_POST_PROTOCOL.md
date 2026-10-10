@@ -3,7 +3,7 @@
 ## A. 두 고정 비교대상 및 증거 수준
 - Repository: domato153/General_research_GPT
 - BASE 개발 규칙: cd64bef326544cacc0dc05fe6f65d9e1bd318fc0
-- CANDIDATE 동결 규칙: c9f8b9a52eab43e24f322e19da03e3006504a206 (격리 audit/v2-e2e-hardening-20261010)
+- **변경 후 개발 적용 고정 규칙:** 0e5721bc730f6f8b67f816bf0e589b8870b43d8b (`design/research-v2`에 병합한 PR #1 커밋, 실제 적용 대상). 이전 외부감사 구후보 c9f8b9a52eab43e24f322e19da03e3006504a206는 비교 대상이 아님. 최종 격리 후보 039d89d18a9d25675424e50fe1ea94b292125046와 적용 개발본의 7개 규칙 blob은 동일.
 - 과거 실제 연구 브랜치 출발은 fb22fe86834893e607072b41885277d29cfc57fc였으며 새 개발 SHA를 단일 규칙으로 실사용한 증거가 아님. 과거 시험은 문제 발견의 실증이지만 이 BASE/CANDIDATE의 동등 조건 A/B 시험이 아니다.
 - 수행 완료: 두 버전의 소스 정적 검사와 원문 보존 검사, 과거 E2E 결과 재판독. 미수행: 이 정확한 두 SHA를 서로 다른 실제 비개인화 ChatGPT 프로젝트에 주입한 독립 완주 E2E. 후자를 완료 전 PASS로 기록하지 않는다.
 

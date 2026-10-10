@@ -723,3 +723,12 @@ North Sync A~I 다중 턴 E2E와 FINAL_REPORT.md 저장까지 완료됐는지 �
 - **후속 개정판 필수 회귀:** 새 스레드 복원 T06-R을 포함한 실제 E2E에서 **짧은 입력으로 자발적 판단·행동과 저장된 결과**를 검증한다. 상세 체크리스트를 알려준 시험만 통과한 경우 자연어 자율성 PASS 금지.
 
 **상태:** 사용자 목표·시험 원칙을 계획에 기록한 것이며, 공통 규칙·운영 `main`·연구 브랜치의 구현을 지금 변경한 것은 아니다.
+
+## 27. 외부감사 가능한 범위까지 완료한 후보 · 비교기준 및 시험 경계 (2026-10-10)
+
+- 사용자 요청은 먼저 **전체 과거 이슈 22개 범주**를 재분류하고 변경 전 자체 E2E/기타검증 및 개선안·개선목표, 후보 자체 검증·변경 후 실사용 E2E 계획과 외부 비개인화 감사용 패키지를 준비하는 것. `V2_FULL_ISSUE_INVENTORY.md`와 별도 `audit/v2-e2e-hardening-20261010`에 실물 정본 저장.
+- **규칙 비교 정본:** BASE SHA `cd64bef326544cacc0dc05fe6f65d9e1bd318fc0` / CANDIDATE SHA `c9f8b9a52eab43e24f322e19da03e3006504a206`. 후보는 부트스트랩/Index/Pipeline/Review/State/Validation/Final Template **7개 규칙 파일만 삽입 수정**. 지표 개선이 아니라 발동/실제 점검/자료대조/짧은 사용성을 구체화한 설계 후보; 자동 운영에 적용되지 않음.
+- **변경 전 재생:** GitHub 원문 고정 조회+26 앵커 검사(13 발견), 이전 실제 AI 고용 C1~14+회복 및 더 오래된 실패/부분완료 재판독. **현재 BASE SHA를 주입한 새 독립 실제 모델 E2E는 불가능/미실시**. 구 실사용의 `fb22...` 연구 출발 SHA를 현재 BASE 실제 모델 주입으로 소급 주장 금지.
+- **변경 후 자가검증:** 8개 기존 규칙 줄 완전 보존, 동일 26 앵커(19 발견), 자체 30 소스 기반 전이 계약(8→30) **정적/모의 합격만**. 개별 대화에서 단계/감사/편집 결정을 실행할지는 실제 독립 LLM E2E와 외부 심사가 필요.
+- **자료:** `V2_AUDIT_README.md`(전체 인덱스), `V2_EXTERNAL_AUDIT_REQUEST.md`(외부 복사용), `V2_EXTERNAL_AUDIT_HANDOFF.md`(평가 기준), `V2_CANDIDATE_CHANGE_SPEC.md`, `V2_SELF_REVIEW_AND_LIMITATIONS.md`, `V2_BEFORE_BASELINE_REPLAY.md`, `V2_BEFORE_AFTER_STATIC_VERIFICATION.md`, `V2_SCENARIO_GATE_WALKTHROUGH.md`, `V2_AUDIT_FIXTURE.md`, `V2_E2E_PRE_POST_PROTOCOL.md` 모두 위 격리 브랜치에 저장. 먼저 사용자에게는 **외부 비개인화 독립 감사**를 요청하도록 제공; 결과로 P0/P1/P2 재분류·최소 후속 수정안 선택 후 동일 조건 실사용 E2E·T06-R 진행.
+- **배포·승격:** 현 단계 후보 상태, `main` 변경 없음. 실행 모델의 실제 주입 규칙 SHA/과거 출발/현재 HEAD/설계 후보를 분리한다. 외부 감사나 사용자 허가 없이 기존 시험/연구 브랜치와 `main` 절대 변형하지 않음. 문서 정적 자체검사와 진짜 모델 E2E를 혼동하지 않음.

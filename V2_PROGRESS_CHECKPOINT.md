@@ -1,6 +1,14 @@
 # V2_PROGRESS_CHECKPOINT — 설계 시험 인계 및 개선 후보
 > **최신 현행은 아래 '표적 회귀시험·인계 검토 규칙 후속 진행' 절이다.** 이 파일 아래의 2026-10-10 및 이전 2026-10-11 “실전 미실행/독립 외부감사 대기/R1부터 시작” 안내는 **그 당시 보존 기록이며 현재 실행할 지시가 아니다.** 재개 정본은 `V2_NEXT_THREAD_START_HERE.md` 최상단 최신 인계를 우선한다.
 
+## [2026-10-11 최신] LONG-LITE-01 실제 시험 PASS, 재개·국소 수정 대기
+
+- **피시험 최초 동작:** 개발 후보 `109985c6c1ea5ac422ea4f63018df1818e4c71e1`을 기준으로 3-Part 가상 LED 가로등 검토용 원고를 생성하고 격리 `research/20261011-long-lite-smoke`에 저장. HEAD **`b466b7fbb2baf0d1605e61b58bdeb1cb66324219`**와 `FINAL_REPORT.md` blob `262f374d0ed0966ee01fb4f40339fe03f7ef0b8f`, `RESEARCH_PLAN.md` blob `1bc76a2b39367f0f63a695231f13bc30f6fc8d92` 실제 재조회. 전후 전력 100/82MWh 18% 감소 계산, 구역별 3/8 반론 E2의 실질 본문 설명, 단가 E3 미확인 보존, Part 순서/근거 맵, P1 가상 선택 및 미확정 상태 **관찰 범위 PASS**.
+- **다음 실전:** 기존 시험 프로젝트의 **새 채팅**에서 격리 브랜치의 `RESEARCH_PLAN.md`와 `FINAL_REPORT.md`를 재개 진입점으로 읽고 E2를 **'3개 구역이 감소하지 않았다'가 아니라 '3개 구역은 비교 계측 자료 부재로 증감 여부가 미확인'**으로 정정하는 E2-r2 revision을 별도 보정 기록. 원래 `V2_LONG_LITE_FIXTURE.md` 불변·Part 1 보존, Part 2/3 종속 서술만 갱신, 재조회 후 새 HEAD 보고·최종 미확정. 이 결과는 아직 NOT TESTED.
+- **전체 장문·PDF·실주입:** 실제 100~200쪽 신규 원고 완성 및 컨텍스트 절약 정량 검증/실제 PDF 렌더는 미검증. 운영 main·기존 연구 브랜치 비쓰기 경계 유지. 원격 개발 규칙을 실제 프로젝트 고정 주입한 SHA는 여전히 UNKNOWN.
+
+
+
 ## [2026-10-11 현행] LONG-LITE 경량 규칙 구현·평가자 측 표적 검사 완료, 피시험 모델 행동 대기
 
 - **작업 구현:** `design/handoff-fidelity-review-20261011`에서 `02_RESEARCH_PIPELINE.md`(Stage 6.5의 선택적 원문/Part 재조회·부분 보존·조립), `04_STATE_MANAGEMENT.md`(짧은 재개 진입점), `13_FINAL_REPORT.md`(Segment Plan 연결)만 국소 보완. 구현 커밋 `a168c48c95c06e02dbbebbb2fde7f35c6abcf2f9`. 후보 규칙 고정 `44bd894...`, 운영 main, D01 연구 브랜치 미변경. **규칙을 시험 Project에 실제 주입하지는 않음**.

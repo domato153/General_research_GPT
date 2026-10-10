@@ -23,3 +23,9 @@
 - Route B: produce an explicitly conditional evidence-synthesis draft based on current verified material now, with absent direct Korea-US causal estimate prominently disclosed, without claiming that W4/W5 or Stage 7 are complete.
 - Not an approval of user choice and not an authorization to finalize/publish.
 - Only user can select substantial editorial change and final completion, unless explicit complete delegation.
+
+## 2026-10-11 초안 제작 결정·상태
+- user_requested: 추가조사 종료, 최종보고서 준비 진행.
+- writing_applied: 위 추천 본문/부록/제외 기준을 `FINAL_REPORT.md` 초안 제작에 잠정 적용. 초안은 승인된 최종 편집판 또는 Stage 8 최종 확정이 아님.
+- user_choice: 개별 편집안 명시 선택은 없음; 이 파일의 status=RECOMMENDED 보존. 본문은 연구의 원래 초점(실제 변화+인과 식별)에 맞춰 합리적 기본값으로 구성.
+- fresh_research_or_W4_W5_executed: NO. 

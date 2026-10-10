@@ -59,7 +59,7 @@
 | G01 | 쉬운 질문은 간단히 | `01_CORE_RULES.md:69` | 짧은 질문은 위 구조를 압축해서 사용 | N12,X13 | **MAPPED** |
 | G02 | 기본값≠승인 | `01_CORE_RULES.md:75` | 추천 기본값 | N01,N02 | **MAPPED** |
 | G03 | 계속은 다음 작업 한정 | `02_RESEARCH_PIPELINE.md:181` | 사용자의 '계속해'는 실제 직전에 안내한 | N07,X27 | **MAPPED** |
-| G04 | 공개계획 승인 범위 | `00_INDEX.md:270` | 미공개 계획 | N02,N03 | **MAPPED** |
+| G04 | 공개계획 승인 범위 | `00_INDEX.md:268` | 미공개 계획 | N02,N03 | **MAPPED** |
 | G05 | 일괄 위임시 재승인 금지 | `02_RESEARCH_PIPELINE.md:417` | 명시적 일괄 위임 | X02 | **MAPPED** |
 | G06 | 채팅만 전달된 결과 | `PROJECT_BOOTSTRAP.md:51` | 채팅 전용 완성은 유효한 | X04 | **MAPPED** |
 | G07 | 쓰기실패 인계 | `PROJECT_BOOTSTRAP.md:51` | 원격 저장이 불가능하면 | X04 | **MAPPED** |

@@ -952,3 +952,31 @@
 `좋아. 그럼 W02 인과관계 검증으로 계속 진행해줘.`
 
 사용자는 게이트/W-ID 오류·알려진 반론 목록을 모델에 가르쳐주지 않는다. 다음 검증은 실제 AI 도입 vs 노출도, 비교집단·사전 추세·경쟁 설명, 새로운 반대 연구 탐색과 인용 검증, W01 인구·고용률 분해를 올바르게 통제하는지, 실제 결과 공유 뒤 사용자 선택을 유지하는지 중심.
+
+## 37. 자연어 E2E C6 — W02 인과관계 실제 조사·반론 및 사용자 협업 관문 (2026-10-10)
+
+**사용자 시험 입력:** `좋아. 그럼 W02 인과관계 검증으로 계속 진행해줘.`; 모델의 실제 긴 응답을 사용자가 `붙여넣은 텍스트(1)(6).txt`로 제공. **연구 브랜치** `research/20261010-ai-employment-kr-us-1538-fb22`, 결과 HEAD `63e9f2b8de943312a7deeb43f6958ab121883a11`. 직전 C5 `5789d406b63d286f68760086d3dcd38f9c491df1` 대비 2커밋·변경 파일 `W02_CAUSAL_EVIDENCE.md` 신규와 `RESEARCH_PLAN.md` 갱신. 읽기·내용 재조회 확인.
+
+### 실제 E2E 관측 판정
+
+- **W02 승인된 실제 조사 PASS:** 고노출 대 실제 도입, 비교집단/사전추세/경쟁 설명, 인과 강도의 경계 및 평균과 청년·기업·지역 결과 구별. W02 조건부 완료, W03~06 미착수, 최종완성 위임 없음. 연구 근거 문서에 독립된 미국 청년 고용 감소 연구 Stanford/Census, 반대 결과 Yale/NY Fed, 한국 BOK 대 KLI/AI 보조금 기업, 미국 BTOS 실도입, 덴마크 기업/근로자, 다국적 채용기업 사례 등 실제 다른 자료원을 추적할 수 있게 기록.
+- **반대 연구 발굴 PASS(결과 존재 확인):** Yale Budget Lab synthetic DiD 2026-09 평균 고용효과 미검출, NY Fed 2026-05 고노출 구인 감소의 ChatGPT 이전 시작 및 별도 junior/senior 구인 약화 부재, 한국 KLI 2026 사업체패널 실제 도입 기업에서 총량 감소가 명확하지 않은 결과, 2026-09 다국 기업 신입비중 하락이 주로 senior 증가인 반례를 실질적으로 통합. 외부 독립 검색과 주요 공개 원문 대조. 다만 **실제 대조 탐색의 매 검색어/검색 횟수·원문 PDF 전체 재현**은 이 사용자 제공 결과만으로 증명 불가.
+- **인과설명 조건부:** Stanford 19% 격차와 Census 12% 고용 격차는 AI 단독 인과효과 아님. Census 채용 9% 상대 변화, AI 이전 사전 추세, 금리충격 일부, 대표성·노출→실제 도입 오류를 검토. 국별 AI로 없어졌다는 일자리 숫자 발명 금지 지킴. 'AI가 신규채용 감소에 기여하고 있을 가능성 유력'은 **대체 설명이 남는 경험적 가설**이지 확정적인 treatment effect가 아님.
+- **사용자 선택형 반복 관문 PARTIAL:** W02 결과 끝에서는 W03을 다음 단계로 **추천만**하고 중요한 다른 보완 방법(예: Stanford/Census 사전추세 별도 재검증, 실제 도입 근거를 먼저 추가, 기존 계획 W03로 진행)을 나란히 제시·질문하지 않음. 모델이 사용자 승인 없이 W03을 수행하진 않았고 **첫 W01 선제 사용자 선택 관문은 이전 C4에서 실측 통과**했으므로 자동 전체 FAIL은 부적절하나, '각 의미 있는 연구 묶음 결과 후 다른 보완 경로·사용자 선택'이라는 절대목표에는 개선 여지가 분명하다. 다음 단계에서 다시 감시.
+- **GitHub 저장 PASS; 규칙 계보 일치 FAIL/미확인:** `RESEARCH_PLAN.md`는 여전히 구 기준 SHA `fb22fe86834893e607072b41885277d29cfc57fc`, 신버전 고정 SHA `a10efe04c354bdae463c77424f7672f9615916da`과 브랜치 계보 diverged. 연구 브랜치 시작 커밋이 구 SHA라는 사실은 확인되나, 프로젝트에 적용한 실제 프롬프트의 교체 성공 여부는 별도 독립 확인 불가.
+
+### 주요 원문 독립 검증 및 자격 제한
+
+- Stanford DEL 2026-08 최신 개정, 22~25세 상대격차 약 19%, 대량 economy-wide displacement 없음; 이전 추세/교육/표본대표성/기업 채용 통제시 변화의 민감도, 인과 불확정: `https://digitaleconomy.stanford.edu/news/canariesaug26/`.
+- Census Tucker CES-26-27 `https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html` 및 실제 논문 `https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-27.pdf`: QWI 고노출 22~24세 10분기 회귀조정 고용 −12%; 신규채용 급감 약 −9%, COVID 선행 추세 가능성, 통화긴축 최대 약 1/4 설명. 정부 통계의 AI 공식 인과 추정치가 아니라 검토 중 Working Paper.
+- Yale Budget Lab 2026-09 `https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market`: 노출 직업군의 광범위한 인과 흔적 뚜렷하지 않음. NY Fed `https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/`: 고노출 구인의 상대 감소는 AI 공개 이전부터 시작.
+- Census CES-WP-26-25 `https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html`: 사용 18% / 고용가중 32% / 증강만 66% / AI 관련 고용 감소 기업 2%, 전반적인 기업 실제 사용의 제한과 자가보고 한계. CES-WP-26-61 `https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-61.html`: 노출과 실제 도입은 유의하지만 설명력 제한.
+- 한국 KLI 2023 AI 사업체 도입 5.0%, 고숙련 비중 증가·저숙련 감소, 총량 유의 감소 부재는 KLI 자료 색인 `https://dl.kli.re.kr/index.jsp/10470/contents/7738034` 및 2026-06-24 연합뉴스·뉴시스 교차 대조. 해당 KLI 지정 영문 페이지의 웹 직접 본문 열람은 제한됐으므로 전체 원문 독립 상세 재현으로 표기하지 않음. AI 보조금 연구 `https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7158038`는 초록만 검증해 인과확정 예외 처리.
+- 덴마크 중앙은행 2026-09 실제 도입 기업의 고용증가율이 미도입 대비 11% 낮음(고용이 절대 11% 감소 아님) `https://www.nationalbanken.dk/en/news-and-knowledge/press/archive/2026/firms-hire-fewer-people-when-they-start-using-ai-16-09-2026`; 덴마크 NBER `https://www.nber.org/papers/w33777`는 평균 근로시간·소득 2% 이상 효과 배제, 고용증가율 결과와 종속변수 다름. 41개국 연구 `https://digitaleconomy.stanford.edu/publication/how-does-ai-change-labor-demand/`: 신입비중 감소 주된 원인은 시니어 고용 증가.
+- **제한:** 전체 연구 PDF의 통계코드/추정치 재현, 모든 2026 한국 원문 전수 확인, 엄밀한 systematic literature search, 실제 채택 기업의 selection-bias 제거 미수행. W02의 조건부 완료 판정을 유지함.
+
+### 다음 자연어 시험
+
+`좋아. 그럼 추천한 W03 기업 사례 교차검증을 진행해줘.`
+
+이는 '이미 제안한 다음 승인 작업'의 자연스러운 진행 문장으로 시험 AI에 규칙 정답을 주지 않는다. W03은 실제 기업 도입 시점·직원수/신규채용/해고/인과효과 및 반례를 구분하여 수행해야 하며, W02 근거의 최종 판정 변화와 중요 새 선택을 사용자에게 보고해야 한다. **후속 선택지를 다시 자발 제공할지는 계속 관찰**.

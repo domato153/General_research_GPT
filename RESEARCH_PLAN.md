@@ -15,7 +15,7 @@
 | W03 | 기업 도입/감원 사례 | 공시/고용 결과/AI 활용 실측 대조, 비감원 반례 | 조건부 완료; `W03_COMPANY_CASE_EVIDENCE.md` (Block 실제 40%+ 감원과 AI 판단 확인; Klarna 연말 총원 감소+AI 운영 병존; Amazon/KT 혼합원인; Grindr/Samsung 반례; 인과 인원수 미식별) |
 | W04 | 직종·연령·경력차이 | 모집단 정합 비교, 이질성 | 조건부 완료; `W04_OCCUPATION_AGE_TENURE_FLOWS.md` (미국 청년 실제 신규입직 감소·총이직 비증가, 한국 신입 개발직 공고 급감·기존 청년 이탈 증가 구분, AI 단독 인과규모 불명) |
 | W05 | 새 일자리/순고용 | 신규고용과 업무 이동·명칭 변경 구분, 순효과 가능성 | 조건부 완료; `W05_NEW_JOBS_NET_EMPLOYMENT.md` (미국 BLS 관련 직업 증가와 실제 AI 신규채용 증거, 한국 BOK 고노출 직업 증가; KLI 바우처 엄격 대조에서 고용효과 소거; LinkedIn 130만은 채용공고; AI 인과순고용/상쇄율 미식별) |
-| W06 | 교차검증·보고 | W01~05 근거·한계 대응, 사용자 최종완성 위임 후 종합보고서 검토/전달·필요 시 저장 | Stage 5 종료 준비 **조건부 통과**; 사용자 추가조사 종료·최종보고서 준비 지시로 Stage 6 초안 `FINAL_REPORT_DRAFT.md` 작성, Stage 7 검토 `FINAL_REPORT_DRAFT_REVIEW.md` **조건부 통과**. Stage 8 사용자 최종확정 승인 대기. `FINAL_REPORT.md` 미작성·미확정 |
+| W06 | 교차검증·보고 | W01~05 근거·한계 대응, 사용자 최종완성 위임 후 종합보고서 검토/전달·필요 시 저장 | **Stage 8 최종본 GitHub 확정·재조회 완료**: `FINAL_REPORT.md` (A안, 26,710자, blob `506d2e6c15d181cdb59950c3782c1d6e06ed6795`), `FINAL_REPORT_A_REVIEW.md` Stage 7 통과. 사용자 요청에 따라 동일 본문 채팅 전달을 현재 응답에서 수행. 연구 인과 한계 조건부 유지. |
 
 ## 현재 상태
 - W01 공식 연간·최신 월간 시계열, 연령·업종·직종, 고용24·JOLTS 채용흐름, 대조 반례를 수집·검증함. 인구 표준화·정합 직종 패널은 추가 경로로 남음.
@@ -35,6 +35,8 @@
 - 2026-10-10 사용자 후속 결정: 추가조사 종료, 최종보고서 **준비**를 지시. 이미 승인된 W01~W06 결과와 고정 규칙의 `13_FINAL_REPORT.md` 양식을 사용하여 Full Report/Expanded Markdown 초안 `FINAL_REPORT_DRAFT.md`를 연구 브랜치에 작성. 초안 약 2만 자, Executive Summary·1~10장·W-ID 근거 부록·직접 원문 링크 포함. Stage 7 초안 검토 `FINAL_REPORT_DRAFT_REVIEW.md`에서 W01~06 누락 검토·주요 정량 검산·핵심 충돌 검토 **조건부 통과**. 새로운 본조사·원자료 수집 없음.
 - 아직 최종 산출물을 **확정하라는 별도 위임은 받지 않았으므로** Stage 8 대기. `FINAL_REPORT.md` 최종본, 외부 공개, main 병합, Stage9 Closeout은 수행하지 않음. 최종확정/수정 여부 사용자 선택 대기.
 
+- 2026-10-10 사용자가 A안으로 **최종 완성 + GitHub 저장 + 채팅 전체 제공**을 명시 위임함. 승인 편집안 FINAL_REPORT_EDITORIAL_PROPOSAL.md의 A 구성을 바탕으로 전체 7장 및 A~D 부록, 26,710자 FINAL_REPORT_A_CANDIDATE.md를 작성하고 FINAL_REPORT_A_REVIEW.md Stage 7 전 W-ID/정량/핵심반론/인과한계 점검 통과. 검토한 후보와 **바이트 수준 동일한** GitHub 최종 FINAL_REPORT.md를 현재 연구 브랜치에 commit c59af40aaa816176096ba8d7630dd0fe9e8d89fe 저장, 원격 blob 506d2e6c15d181cdb59950c3782c1d6e06ed6795 재조회하고 후보와 내용 완전일치 확인. 최종 확정본 채팅 전달은 본 응답에 수행. 사용자 승인 없이 GitHub 운영 main, 타 연구브랜치, 제3자 웹공개 변경 없음. Stage 9 Closeout은 선택 단계로 자동 실행하지 않음.\
+\
 ## 첫 결과 관문
 W01 첫 실질 결과를 사용자에게 보고하는 동일 응답에서 주요 근거/잠정 결론, 중요한 한계, 서로 다른 재검증 경로 2~3개와 명시적 추천을 설명하고 후속 방법 선택을 요청한다. '계속해'는 추천된 경로만 승인한 것으로 본다.
 

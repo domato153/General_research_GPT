@@ -1,8 +1,21 @@
 # 새 스레드 시작점 — 범용 딥 리서치 v2 개발 평가자 (2026-10-11)
 
-> **현행 정본은 아래 ‘최신 인계’만이다. 2026-10-10 이하 절은 당시 상태를 보존한 아카이브로, 그 안의 '지금 유효한 판정', '다음 작업', '최단 메시지'는 절대 현행 지시가 아니다.** 이번 새 스레드의 다음 작업은 1차 패치에 대한 독립 외부감사(read-only)이지, 이미 끝난 N01~N12 재실행·자동 추가 패치·PDF 실물 제작이 아니다.
+> **현행 정본은 바로 아래 '최신 인계 추가 — 외부감사 P2 국소 교정 이후'다.** 그 아래의 예전 `/handoff` 섹션과 2026-10-10 기록은 각 시점의 이력으로 보존하며, 예전의 '외부감사 미실행/다음에 첫 감사'·'E2E 시작' 지시는 현행이 아니다. 다음 작업은 P2 국소 교정에 대한 **독립 read-only 재감사**이며, 수정판 모델 실전 회귀·운영 승격·PDF는 아직 시작하지 않는다.
 
-## 최신 인계 — 2026-10-11 /handoff
+## 최신 인계 추가 — 2026-10-11 / 외부감사 P2 국소 교정 이후 (현행)
+
+- **역할·권한:** `domato153/General_research_GPT`, 개발 `design/research-v2`에만 사용자 승인된 국소 기록 수정. `main`, 과거/frozen SHA, `research/20261011-kr-us-ev-charging-adoption`은 변경하지 않는다. 매 새 채팅 시작 때 GitHub **HEAD를 다시 조회**한다.
+- **역사적 E2E:** 최초 N01~N12 **10 PASS/2 FAIL**, N09 C13 편집 승인 전에 장문 초안, N10 C14 내용 단위 검수 과대평가. N11 회복 PASS는 N10 최초 FAIL을 취소하지 않는다. BASE 동등 시험 NOT RUN, 실제 프로젝트 active rules SHA UNKNOWN.
+- **독립 외부 1차 정적감사 완료:** 외부판정 **A(규칙의 조건부 정적 수용, 런타임 합격 아님)**. [외부 원문(불변)](V2_POST_E2E_EXTERNAL_AUDIT_01_ORIGINAL.md) blob `0611c7cc97130f81ec53f069a885005dc0ff31ff`. 외부 감사는 30개 GitHub 고정 원문을 열람했다고 기록했지만, 실제 모델 테스트·실주입/동시성 장애 시험은 미실행.
+- **P2 실제 변경 대상:** 최초 외부감사 기준 commit `d26bb61abd0402df03571147b46a4faafca06310` → **국소 직접 패치 commit `6256894edd1efa0491714f4f882122959253639b`**. `V2_POST_E2E_X48_STATIC_COVERAGE.md` X17/X27 참조 위치 교체, `V2_RUNTIME_EARLY_WARNING_DESIGN.md` 입력 부재 HOLD/UNKNOWN vs 아는 허위 완료 선언 STOP 구별. **주 규칙 3개·부트스트랩 불변**. 별도 [사후 판독·정정](V2_POST_E2E_EXTERNAL_AUDIT_01_RECONCILIATION.md)이 감사 원본의 잘못된 행 번호/초안 줄 수를 교정하며 원문은 보존.
+- **자체 사후 감사:** [V2_POST_E2E_P2_STATIC_SELF_AUDIT.md](V2_POST_E2E_P2_STATIC_SELF_AUDIT.md): GitHub 고정 파일 30/30 blob 동일, X-ID 48개 고유/누락 없음, P2 수정 정적 14/14 문구 조건 충족(초기 검사 앵커 오류 1건 해소), 개발 주 규칙·main/연구 HEAD 무변경. **자체 정적 검사일 뿐 외부 재감사·회귀 실전 PASS가 아님**.
+- **현행 다음 정확한 하나:** 다른 독립 리뷰어에게 [V2_POST_E2E_P2_REAUDIT_REQUEST.md](V2_POST_E2E_P2_REAUDIT_REQUEST.md)를 보내 **고정 P2 patch diff, 외부 원문, 개발자 정정/자기감사를 반증 검토**하고 서면 재감사 결과 확보. 사용자 결정 전 추가 코어 패치·운영 승격·새 E2E·PDF 생성 금지. 그다음 필요시 국소 수정 → **R1~R10/D01 표적 실전시험** → 승격/설치 사용자와 협의. 기존 12턴 E2E 전면 재실행 안 함.
+- **실제 실행 미검증:** 수정판 R1~R10/D01·X01~X48 사고 주입·BASE 공정 비교·프로젝트 실주입 SHA·외부 GitHub 자동 경고·PDF 렌더 모두 NOT TESTED/미활성. PDF 양식 시안은 엔진 실증 뒤, 실제 PDF 렌더 시험은 더 뒤.
+- **새 스레드 재개:** `design/research-v2의 V2_NEXT_THREAD_START_HERE.md 최신 추가 절, V2_POST_E2E_EXTERNAL_AUDIT_01_ORIGINAL.md, V2_POST_E2E_EXTERNAL_AUDIT_01_RECONCILIATION.md, V2_POST_E2E_P2_STATIC_SELF_AUDIT.md, V2_POST_E2E_P2_REAUDIT_REQUEST.md를 GitHub에서 실제 읽고 현 단계만 복원해. 먼저 독립 P2 재감사이며, main/연구/주 규칙 수정·실전시험/PDF는 내 지시 전 수행하지 마.`
+
+---
+
+## [보존 기록 — 2026-10-11] 이전 인계 — /handoff 당시 상태 (현행 아님)
 
 - **현재 역할/권한:** 개발 규칙 평가자·국소 패치 관리자. 저장소 `domato153/General_research_GPT`, 작업 브랜치 **`design/research-v2`만** 기존 개발기록/규칙에 승인된 범위 내 수정. 운영 `main`, 피시험 연구 `research/20261011-kr-us-ev-charging-adoption`, 과거 연구, frozen 후보 SHA의 역사와 원문은 변경하지 않는다. 새 스레드는 먼저 **GitHub HEAD를 재조회**한다.
 - **완료된 단일 CANDIDATE 자연어 E2E:** N01~N12 **12/12 실행**, 최초 행동 **PASS 10 / FAIL 2**. N01~N08 및 N11~N12 PASS. **N09 C13:** '추가조사 종료/보고서 준비'를 핵심 편집 선택 승인으로 오인해 장문 초안 강행. **N10 C14:** Li(2017) 보조금 동일 예산 2배 이상 비교 및 Gbeda(2026) 민간·공공/충전소·포트 비교가 W3에 존재했지만 최초 보고서 설명이 부족하고 '부록 상세'로 과대검수. N10 GitHub 저장·보고서 전체 채팅 전달 자체 PASS. **N11 후속 국소 수정 PASS가 N10 최초 실패를 취소하지 않음.** 독립 BASE 비교 시험은 **NOT RUN**.

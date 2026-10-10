@@ -17,6 +17,8 @@
 - **NOT_TESTED, UNVERIFIED / 실증 미실행·증거 미확인**: 불합격·반려도 아니고 합격도 아님.
 - **USER_EXPLICIT vs AUDITOR_PROPOSED vs DEVELOPER_IMPLEMENTED**: 출처 열을 구분. *제안만 있고 적용되지 않은 것을 사용자 확정이라고 하지 않는다.*
 
+**ID 구분:** `A01~A33`은 채택·정책 결정, **`REJ-01~REJ-18`은 반려·비채택·대체 결정**, `P01~P12`는 미검증·보류다. **`N01~N12`는 별도 `V2_E2E_PRE_POST_PROTOCOL.md`의 자연어 시험**이며 이 대장의 반려 결정 ID가 아니다. 과거 기록의 반려 ID `N01~N18`은 현재 `REJ-01~REJ-18`의 **역사적 별칭**이다. 이전 회차 문서의 과거 표기를 소급 수정하지 않는다.
+
 ## A. 채택·적용 및 보호하는 결정 (33건)
 
 | ID | 결정 근거 주체 | 채택한 규칙·범위·이유 | 정본 근거 | 미완료 확인 |
@@ -55,30 +57,30 @@
 | A32 | 개발 채택 | 운영 `main`/과거 연구 브랜치 원형 보존, 개발에서만 수정 | V2_PROGRESS_CHECKPOINT.md §§15,20,21; PROJECT_BOOTSTRAP.md | HEAD 재조회 |
 | A33 | 사용자 현재 요청 수용 | 다음 스레드 재개를 위한 고정 버전·결정 대장·감사 원문·실행/미실행 분리 인계 작성 | V2_NEXT_THREAD_START_HERE.md; V2_DECISION_REGISTER.md | 새 대화 읽기 검증 |
 
-## B. 반려·비채택·대체된 대안 (18건)
+## B. 반려·비채택·대체된 대안 (18건; REJ-01~REJ-18)
 
 | ID | 처분 분류 | 채택하지 않은 대안 | 이유·남기는 예외 | 근거 |
 |---|---|---|---|---|
-| N01 | REJECTED_CURRENT_SCOPE | '개선안은 `main`에 바로 적용' | 사용자가 개발 브랜치 적용 대상이라고 직접 정정; `main` 자체를 영구 사용 금지한 것은 아님 | V2_EXECUTION_PLAN.md §28 |
-| N02 | SUPERSEDED | 외부 최초 후보 `c9f8...` / 개발 최초 `0e572...` / 2차 수정 `3c0a...`를 현재 최신 후보로 취급 | 최신 후보는 `ac4675...`; 이전 SHA는 과거 감사 재현에만 사용 | V2_E2E_READY_HANDOFF.md |
-| N03 | REJECTED_AS_PROOF | 규칙 문자열 59/59, 26개 정규식 또는 30개 자가 시나리오 통과를 모델 E2E PASS로 사용 | 정적 계약/증거 레벨만 채택하고 실제 모델 PASS 주장은 배척 | V2_THEORETICAL_COVERAGE_MATRIX.md |
-| N04 | REJECTED_AS_PROOF | 명시 요청 뒤 C11/C13-R/C14-R 성공으로 최초 C10/C13/C14 실패 소급 삭제 | 최초 FAIL/PARTIAL과 회복 PASS 분리 | V2_TEST_RESULTS.md §§42~48 |
-| N05 | REJECTED_DESIGN | 종료 가능 질문만으로 W06 전체 재조사·보고서 최종 확정 자동 착수 | 질문은 준비 감사의 권한만 | 02_RESEARCH_PIPELINE.md |
-| N06 | REJECTED_DESIGN | 중요 선택이 남은 '준비'에서 원고 먼저 확정하고 내용 선택 나중 | 먼저 추천/차이 제시, 명시적 초안/완성 위임 예외는 허용 | 02_RESEARCH_PIPELINE.md |
-| N07 | REJECTED_DESIGN | 이미 W-ID에 있는 반론이 원고에 누락됐을 때 매번 전체 Stage1~3 재시작 | 국소 수정/검수, 원자료 자체 결함이면 표적 재조사 | 02_RESEARCH_PIPELINE.md |
-| N08 | REJECTED_DESIGN | 의미 없는 옵션을 2~3개 강제하고 기승인 작업마다 승인 재요구 | 실질 선택이 있는 상황만 사용자 협의 | 02_RESEARCH_PIPELINE.md |
-| N09 | REJECTED_DESIGN | 사용자가 GitHub 비저장을 지시해도 기본값으로 `research/*` 생성/쓰기 | 명시적 no-write 우선, 읽기/채팅은 가능 | PROJECT_BOOTSTRAP.md |
-| N10 | REJECTED_DESIGN | 과거 채팅 내용을 열람 못해도 표시↔저장 일치를 PASS 처리 | `UNKNOWN`; W-ID↔원고는 별도 검수 | 04_STATE_MANAGEMENT.md |
-| N11 | REJECTED_DESIGN | 파일 blob SHA 확인만으로 브랜치 전체 HEAD CAS 원자성 완전 보장 주장 | 서버 지원 수준 별도 확인, race/부분저장 정직 | PROJECT_BOOTSTRAP.md |
-| N12 | REJECTED_DESIGN | GitHub READ 장애를 WRITE 장애 X04 하나로 대체해 합격 주장 | 독립 X29 필요 | V2_EXTERNAL_AUDIT_02_ORIGINAL.md |
-| N13 | REJECTED_AS_PROOF | 동일 X-ID를 POS/NEG/FAIL에 재사용한 횟수를 독립 반대 실험 건수로 주장 | 공유/같은 방향 표시와 항목별 평가를 우선 | V2_THEORETICAL_COVERAGE_MATRIX.md |
-| N14 | PARTIALLY_REJECTED | 3차 감사의 Bootstrap 48줄·Pipeline 567줄 주장을 그대로 수용 | 지적 목적(실제 line 검증)은 채택, 당시 파일 전체 줄수 주장은 실제 fetch 55/623과 달라 반려; 이동한 행만 검증·갱신 | V2_REAUDIT_03_REMEDIATION.md |
-| N15 | NOT_ADOPTED_AS_GATE | 추가 4차 정적 감사만 반복해 실제 신규 모델 E2E를 대체 | 제3차 B의 두 P1 국소 수정 뒤 우선 다음 독립 E2E로 이동; 추가 감사 자체가 영구 금지 아님 | V2_REAUDIT_03_FINAL_GATE.md |
-| N16 | NOT_ADOPTED_AS_GATE | 과거 AI 고용 연구 브랜치에서 같은 조사 C1~C14 전부 다시 하고 기존 연구 결과 덮어쓰기 | 새 독립 프로젝트/브랜치와 E2E로 수행 | V2_PROGRESS_CHECKPOINT.md §0·§21 |
-| N17 | REJECTED_EVIDENCE | 외부 감사자 개발 요약을 원본 보고서 자체로 간주 | 원문 1/2/3차 별도 보존, 조치 기록과 구분 | V2_EXTERNAL_AUDIT_01/02/03_ORIGINAL.md |
-| N18 | NOT_ADOPTED_AS_RULE | 모든 조사에 PDF 생성·전수 인용 검사·보고서/절차 로그 강제 | 요청·조건에 따른 필요 경로만 적용 | 13_FINAL_REPORT.md; 01_CORE_RULES.md |
+| REJ-01 | REJECTED_CURRENT_SCOPE | '개선안은 `main`에 바로 적용' | 사용자가 개발 브랜치 적용 대상이라고 직접 정정; `main` 자체를 영구 사용 금지한 것은 아님 | V2_EXECUTION_PLAN.md §28 |
+| REJ-02 | SUPERSEDED | 외부 최초 후보 `c9f8...` / 개발 최초 `0e572...` / 2차 수정 `3c0a...`를 현재 최신 후보로 취급 | 최신 후보는 `ac4675...`; 이전 SHA는 과거 감사 재현에만 사용 | V2_E2E_READY_HANDOFF.md |
+| REJ-03 | REJECTED_AS_PROOF | 규칙 문자열 59/59, 26개 정규식 또는 30개 자가 시나리오 통과를 모델 E2E PASS로 사용 | 정적 계약/증거 레벨만 채택하고 실제 모델 PASS 주장은 배척 | V2_THEORETICAL_COVERAGE_MATRIX.md |
+| REJ-04 | REJECTED_AS_PROOF | 명시 요청 뒤 C11/C13-R/C14-R 성공으로 최초 C10/C13/C14 실패 소급 삭제 | 최초 FAIL/PARTIAL과 회복 PASS 분리 | V2_TEST_RESULTS.md §§42~48 |
+| REJ-05 | REJECTED_DESIGN | 종료 가능 질문만으로 W06 전체 재조사·보고서 최종 확정 자동 착수 | 질문은 준비 감사의 권한만 | 02_RESEARCH_PIPELINE.md |
+| REJ-06 | REJECTED_DESIGN | 중요 선택이 남은 '준비'에서 원고 먼저 확정하고 내용 선택 나중 | 먼저 추천/차이 제시, 명시적 초안/완성 위임 예외는 허용 | 02_RESEARCH_PIPELINE.md |
+| REJ-07 | REJECTED_DESIGN | 이미 W-ID에 있는 반론이 원고에 누락됐을 때 매번 전체 Stage1~3 재시작 | 국소 수정/검수, 원자료 자체 결함이면 표적 재조사 | 02_RESEARCH_PIPELINE.md |
+| REJ-08 | REJECTED_DESIGN | 의미 없는 옵션을 2~3개 강제하고 기승인 작업마다 승인 재요구 | 실질 선택이 있는 상황만 사용자 협의 | 02_RESEARCH_PIPELINE.md |
+| REJ-09 | REJECTED_DESIGN | 사용자가 GitHub 비저장을 지시해도 기본값으로 `research/*` 생성/쓰기 | 명시적 no-write 우선, 읽기/채팅은 가능 | PROJECT_BOOTSTRAP.md |
+| REJ-10 | REJECTED_DESIGN | 과거 채팅 내용을 열람 못해도 표시↔저장 일치를 PASS 처리 | `UNKNOWN`; W-ID↔원고는 별도 검수 | 04_STATE_MANAGEMENT.md |
+| REJ-11 | REJECTED_DESIGN | 파일 blob SHA 확인만으로 브랜치 전체 HEAD CAS 원자성 완전 보장 주장 | 서버 지원 수준 별도 확인, race/부분저장 정직 | PROJECT_BOOTSTRAP.md |
+| REJ-12 | REJECTED_DESIGN | GitHub READ 장애를 WRITE 장애 X04 하나로 대체해 합격 주장 | 독립 X29 필요 | V2_EXTERNAL_AUDIT_02_ORIGINAL.md |
+| REJ-13 | REJECTED_AS_PROOF | 동일 X-ID를 POS/NEG/FAIL에 재사용한 횟수를 독립 반대 실험 건수로 주장 | 공유/같은 방향 표시와 항목별 평가를 우선 | V2_THEORETICAL_COVERAGE_MATRIX.md |
+| REJ-14 | PARTIALLY_REJECTED | 3차 감사의 Bootstrap 48줄·Pipeline 567줄 주장을 그대로 수용 | 지적 목적(실제 line 검증)은 채택, 당시 파일 전체 줄수 주장은 실제 fetch 55/623과 달라 반려; 이동한 행만 검증·갱신 | V2_REAUDIT_03_REMEDIATION.md |
+| REJ-15 | NOT_ADOPTED_AS_GATE | 추가 4차 정적 감사만 반복해 실제 신규 모델 E2E를 대체 | 제3차 B의 두 P1 국소 수정 뒤 우선 다음 독립 E2E로 이동; 추가 감사 자체가 영구 금지 아님 | V2_REAUDIT_03_FINAL_GATE.md |
+| REJ-16 | NOT_ADOPTED_AS_GATE | 과거 AI 고용 연구 브랜치에서 같은 조사 C1~C14 전부 다시 하고 기존 연구 결과 덮어쓰기 | 새 독립 프로젝트/브랜치와 E2E로 수행 | V2_PROGRESS_CHECKPOINT.md §0·§21 |
+| REJ-17 | REJECTED_EVIDENCE | 외부 감사자 개발 요약을 원본 보고서 자체로 간주 | 원문 1/2/3차 별도 보존, 조치 기록과 구분 | V2_EXTERNAL_AUDIT_01/02/03_ORIGINAL.md |
+| REJ-18 | NOT_ADOPTED_AS_RULE | 모든 조사에 PDF 생성·전수 인용 검사·보고서/절차 로그 강제 | 요청·조건에 따른 필요 경로만 적용 | 13_FINAL_REPORT.md; 01_CORE_RULES.md |
 
-> **오해 방지:** N01의 `main` 개발 적용 반려는 사용자가 **명시적으로 정정**한 결정이지만, N14 줄번호 일부 반려는 **개발자 원문 검증 판단**이다. N15 같은 후속 정적 감사 미채택은 **이번 순서의 운영 판단**이지 외부 감사 자체를 전부 거부한 것이 아니다. N02는 '거절된 설계'가 아니라 **대체된 역사 후보**다. N17은 이번에 원본 파일을 보존하면서 인계 결함을 복구한 것이다.
+> **오해 방지:** REJ-01의 `main` 개발 적용 반려는 사용자가 **명시적으로 정정**한 결정이지만, REJ-14 줄번호 일부 반려는 **개발자 원문 검증 판단**이다. REJ-15의 후속 정적 감사 미채택은 **이번 순서의 운영 판단**이지 외부 감사를 전부 거부한 것이 아니다. REJ-02는 설계 거절이 아니라 **대체된 역사 후보**다. REJ-17은 외부 감사 원문 보존으로 인계 결함을 복구한 것이다.
 
 ## C. 보류·미검증·불확실 (반려가 아님, 12건)
 

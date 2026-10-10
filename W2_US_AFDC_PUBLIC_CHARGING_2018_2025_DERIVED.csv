@@ -1,0 +1,409 @@
+year,state,public_station_locations,public_ev_charging_ports,level1_ports,level2_ports,dc_fast_ports,port_component_residual,dc_fast_share_pct,ports_per_station_location,delta_station_locations,station_locations_yoy_pct,delta_charging_ports,charging_ports_yoy_pct,delta_level2_ports,delta_dc_fast_ports,port_cagr_2018_2025_pct,source_url
+2018,Alaska,7,11,0,11,0,0,0.000000,1.571429,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Alabama,97,222,1,160,61,0,27.477477,2.288660,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Arkansas,51,104,3,81,20,0,19.230769,2.039216,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Arizona,433,1149,3,918,228,0,19.843342,2.653580,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,California,4864,18484,435,15363,2636,50,14.260982,3.800164,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Colorado,651,1645,69,1367,209,0,12.705167,2.526882,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Connecticut,331,757,32,595,129,1,17.040951,2.287009,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,District of Columbia,106,275,26,245,4,0,1.454545,2.594340,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Delaware,46,128,2,75,51,0,39.843750,2.782609,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Florida,1091,2634,149,2046,439,0,16.666667,2.414299,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Georgia,704,2076,150,1661,265,0,12.764933,2.948864,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Hawaii,257,501,7,412,81,1,16.167665,1.949416,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Iowa,117,283,27,202,54,0,19.081272,2.418803,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Idaho,66,145,0,103,42,0,28.965517,2.196970,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Illinois,476,1185,33,919,233,0,19.662447,2.489496,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Indiana,188,426,0,318,108,0,25.352113,2.265957,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Kansas,175,743,6,671,66,0,8.882907,4.245714,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Kentucky,97,203,8,146,49,0,24.137931,2.092784,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Louisiana,81,190,5,129,56,0,29.473684,2.345679,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Massachusetts,576,1668,32,1433,203,0,12.170264,2.895833,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Maryland,585,1563,56,1254,253,0,16.186820,2.671795,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Maine,141,250,7,187,56,0,22.400000,1.773050,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Michigan,406,1137,102,848,177,10,15.567282,2.800493,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Minnesota,293,692,94,481,117,0,16.907514,2.361775,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Missouri,389,1642,7,1492,143,0,8.708892,4.221080,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Mississippi,43,104,1,64,39,0,37.500000,2.418605,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Montana,39,94,0,46,48,0,51.063830,2.410256,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,North Carolina,549,1203,26,962,215,0,17.871987,2.191257,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,North Dakota,18,25,0,25,0,0,0.000000,1.388889,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Nebraska,72,189,8,123,58,0,30.687831,2.625000,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,New Hampshire,108,205,5,153,47,0,22.926829,1.898148,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,New Jersey,267,693,18,496,179,0,25.829726,2.595506,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,New Mexico,66,177,25,83,69,0,38.983051,2.681818,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Nevada,220,633,13,466,154,0,24.328594,2.877273,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,New York,1063,2405,40,2046,319,0,13.264033,2.262465,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Ohio,375,831,10,619,202,0,24.308063,2.216000,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Oklahoma,51,151,9,100,42,0,27.814570,2.960784,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Oregon,603,1440,71,1096,273,0,18.958333,2.388060,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Pennsylvania,395,910,8,704,198,0,21.758242,2.303797,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Rhode Island,84,240,21,199,20,0,8.333333,2.857143,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,South Carolina,224,472,4,381,87,0,18.432203,2.107143,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,South Dakota,29,73,0,29,44,0,60.273973,2.517241,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Tennessee,402,1045,29,855,161,0,15.406699,2.599502,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Texas,1065,2895,96,2374,425,0,14.680484,2.718310,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Utah,180,514,2,395,117,0,22.762646,2.855556,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Virginia,523,1219,80,895,244,0,20.016407,2.330784,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Vermont,202,517,62,398,57,0,11.025145,2.559406,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Washington,864,2344,164,1866,314,0,13.395904,2.712963,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Wisconsin,271,503,88,307,108,0,21.471173,1.856089,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,West Virginia,80,200,5,142,53,0,26.500000,2.500000,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2018,Wyoming,44,120,4,52,64,0,53.333333,2.727273,,,,,,,,https://afdc.energy.gov/stations/states?count=public&date=2018-12-31&include_temporarily_unavailable=false
+2019,Alaska,19,34,0,30,4,0,11.764706,1.789474,12,171.428571,23,209.090909,19,4,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Alabama,127,327,1,262,64,0,19.571865,2.574803,30,30.927835,105,47.297297,102,3,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Arkansas,84,268,0,232,36,0,13.432836,3.190476,33,64.705882,164,157.692308,151,16,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Arizona,464,1344,3,1037,304,0,22.619048,2.896552,31,7.159353,195,16.971279,119,76,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,California,5801,23921,363,19889,3626,43,15.158229,4.123599,937,19.263980,5437,29.414629,4526,990,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Colorado,792,2264,63,1954,247,0,10.909894,2.858586,141,21.658986,619,37.629179,587,38,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Connecticut,360,921,30,733,157,1,17.046688,2.558333,29,8.761329,164,21.664465,138,28,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,District of Columbia,144,435,17,417,1,0,0.229885,3.020833,38,35.849057,160,58.181818,172,-3,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Delaware,51,163,2,108,53,0,32.515337,3.196078,5,10.869565,35,27.343750,33,2,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Florida,1355,3885,50,3200,635,0,16.344916,2.867159,264,24.197984,1251,47.494305,1154,196,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Georgia,811,2742,130,2270,342,0,12.472648,3.381011,107,15.198864,666,32.080925,609,77,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Hawaii,274,620,7,536,77,0,12.419355,2.262774,17,6.614786,119,23.752495,124,-4,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Iowa,133,339,27,225,87,0,25.663717,2.548872,16,13.675214,56,19.787986,23,33,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Idaho,73,178,0,111,67,0,37.640449,2.438356,7,10.606061,33,22.758621,8,25,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Illinois,558,1574,21,1270,283,0,17.979670,2.820789,82,17.226891,389,32.827004,351,50,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Indiana,199,548,0,411,137,0,25.000000,2.753769,11,5.851064,122,28.638498,93,29,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Kansas,206,856,4,747,105,0,12.266355,4.155340,31,17.714286,113,15.208614,76,39,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Kentucky,125,307,8,239,60,0,19.543974,2.456000,28,28.865979,104,51.231527,93,11,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Louisiana,93,265,4,201,60,0,22.641509,2.849462,12,14.814815,75,39.473684,72,4,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Massachusetts,725,2234,32,1917,285,0,12.757386,3.081379,149,25.868056,566,33.932854,484,82,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Maryland,636,1830,38,1462,330,0,18.032787,2.877358,51,8.717949,267,17.082534,208,77,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Maine,173,404,7,287,110,0,27.227723,2.335260,32,22.695035,154,61.600000,100,54,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Michigan,418,1188,67,883,228,10,19.191919,2.842105,12,2.955665,51,4.485488,35,51,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Minnesota,352,937,77,709,151,0,16.115261,2.661932,59,20.136519,245,35.404624,228,34,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Missouri,416,1826,6,1648,172,0,9.419496,4.389423,27,6.940874,184,11.205847,156,29,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Mississippi,67,222,0,166,56,0,25.225225,3.313433,24,55.813953,118,113.461538,102,17,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Montana,50,134,2,75,57,0,42.537313,2.680000,11,28.205128,40,42.553191,29,9,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,North Carolina,623,1605,20,1303,282,0,17.570093,2.576244,74,13.479053,402,33.416459,341,67,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,North Dakota,25,42,0,42,0,0,0.000000,1.680000,7,38.888889,17,68.000000,17,0,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Nebraska,88,231,7,162,62,0,26.839827,2.625000,16,22.222222,42,22.222222,39,4,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,New Hampshire,106,227,5,180,42,0,18.502203,2.141509,-2,-1.851852,22,10.731707,27,-5,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,New Jersey,363,1038,17,717,304,0,29.287091,2.859504,96,35.955056,345,49.783550,221,125,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,New Mexico,77,237,24,115,98,0,41.350211,3.077922,11,16.666667,60,33.898305,32,29,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Nevada,271,883,7,648,228,0,25.821065,3.258303,51,23.181818,250,39.494471,182,74,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,New York,1556,4277,13,3759,505,0,11.807342,2.748715,493,46.378175,1872,77.837838,1713,186,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Ohio,474,1214,5,929,280,0,23.064250,2.561181,99,26.400000,383,46.089049,310,78,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Oklahoma,114,287,9,200,78,0,27.177700,2.517544,63,123.529412,136,90.066225,100,36,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Oregon,629,1639,55,1278,306,0,18.669921,2.605723,26,4.311774,199,13.819444,182,33,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Pennsylvania,508,1355,8,1100,247,0,18.228782,2.667323,113,28.607595,445,48.901099,396,49,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Rhode Island,105,337,21,293,23,0,6.824926,3.209524,21,25.000000,97,40.416667,94,3,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,South Carolina,240,559,3,463,93,0,16.636852,2.329167,16,7.142857,87,18.432203,82,6,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,South Dakota,38,124,0,72,52,0,41.935484,3.263158,9,31.034483,51,69.863014,43,8,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Tennessee,388,1052,10,871,171,0,16.254753,2.711340,-14,-3.482587,7,0.669856,16,10,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Texas,1262,3692,65,3000,627,0,16.982665,2.925515,197,18.497653,797,27.530225,626,202,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Utah,272,910,2,745,163,0,17.912088,3.345588,92,51.111111,396,77.042802,350,46,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Virginia,599,1717,54,1330,333,0,19.394292,2.866444,76,14.531549,498,40.853158,435,89,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Vermont,228,644,75,522,47,0,7.298137,2.824561,26,12.871287,127,24.564797,124,-10,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Washington,976,2851,103,2265,483,0,16.941424,2.921107,112,12.962963,507,21.629693,399,169,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Wisconsin,314,661,78,442,141,0,21.331316,2.105096,43,15.867159,158,31.411531,135,33,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,West Virginia,80,226,1,165,60,0,26.548673,2.825000,0,0.000000,26,13.000000,23,7,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2019,Wyoming,54,156,4,87,65,0,41.666667,2.888889,10,22.727273,36,30.000000,35,1,,https://afdc.energy.gov/stations/states?count=public&date=2019-12-31&include_temporarily_unavailable=false
+2020,Alaska,37,68,0,63,5,0,7.352941,1.837838,18,94.736842,34,100.000000,33,1,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Alabama,156,419,1,328,90,0,21.479714,2.685897,29,22.834646,92,28.134557,66,26,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Arkansas,98,328,0,276,52,0,15.853659,3.346939,14,16.666667,60,22.388060,44,16,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Arizona,536,1693,3,1323,367,0,21.677496,3.158582,72,15.517241,349,25.967262,286,63,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,California,7040,30654,332,24859,5428,35,17.707314,4.354261,1239,21.358386,6733,28.146817,4970,1802,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Colorado,966,2894,67,2394,433,0,14.961990,2.995859,174,21.969697,630,27.826855,440,186,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Connecticut,399,1112,21,847,242,2,21.762590,2.786967,39,10.833333,191,20.738328,114,85,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,District of Columbia,167,602,24,545,33,0,5.481728,3.604790,23,15.972222,167,38.390805,128,32,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Delaware,61,192,2,117,73,0,38.020833,3.147541,10,19.607843,29,17.791411,9,20,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Florida,1625,4857,39,3942,876,0,18.035825,2.988923,270,19.926199,972,25.019305,742,241,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Georgia,943,3466,172,2808,486,0,14.021927,3.675504,132,16.276202,724,26.404085,538,144,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Hawaii,299,708,7,605,96,0,13.559322,2.367893,25,9.124088,88,14.193548,69,19,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Iowa,178,470,27,291,152,0,32.340426,2.640449,45,33.834586,131,38.643068,66,65,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Idaho,90,239,0,156,83,0,34.728033,2.655556,17,23.287671,61,34.269663,45,16,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Illinois,702,2068,15,1650,403,0,19.487427,2.945869,144,25.806452,494,31.385006,380,120,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Indiana,239,708,0,537,171,0,24.152542,2.962343,40,20.100503,160,29.197080,126,34,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Kansas,217,901,3,777,121,0,13.429523,4.152074,11,5.339806,45,5.257009,30,16,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Kentucky,159,374,8,298,68,0,18.181818,2.352201,34,27.200000,67,21.824104,59,8,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Louisiana,126,329,4,257,68,0,20.668693,2.611111,33,35.483871,64,24.150943,56,8,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Massachusetts,949,3160,23,2801,336,0,10.632911,3.329821,224,30.896552,926,41.450313,884,51,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Maryland,785,2485,21,2001,463,0,18.631791,3.165605,149,23.427673,655,35.792350,539,133,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Maine,207,487,7,354,126,0,25.872690,2.352657,34,19.653179,83,20.544554,67,16,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Michigan,482,1369,47,978,334,10,24.397370,2.840249,64,15.311005,181,15.235690,95,106,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Minnesota,418,1116,74,841,201,0,18.010753,2.669856,66,18.750000,179,19.103522,132,50,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Missouri,469,1989,4,1768,217,0,10.910005,4.240938,53,12.740385,163,8.926616,120,45,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Mississippi,91,275,0,217,58,0,21.090909,3.021978,24,35.820896,53,23.873874,51,2,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Montana,60,185,2,83,100,0,54.054054,3.083333,10,20.000000,51,38.059701,8,43,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,North Carolina,710,1909,16,1580,313,0,16.396019,2.688732,87,13.964687,304,18.940810,277,31,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,North Dakota,39,97,0,54,43,0,44.329897,2.487179,14,56.000000,55,130.952381,12,43,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Nebraska,111,280,7,205,68,0,24.285714,2.522523,23,26.136364,49,21.212121,43,6,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,New Hampshire,116,273,5,197,71,0,26.007326,2.353448,10,9.433962,46,20.264317,17,29,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,New Jersey,458,1385,17,939,429,0,30.974729,3.024017,95,26.170799,347,33.429672,222,125,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,New Mexico,115,368,24,218,126,0,34.239130,3.200000,38,49.350649,131,55.274262,103,28,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Nevada,285,1116,4,822,290,0,25.985663,3.915789,14,5.166052,233,26.387316,174,62,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,New York,1879,5548,6,4904,638,0,11.499640,2.952634,323,20.758355,1271,29.717091,1145,133,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Ohio,591,1616,5,1231,380,0,23.514851,2.734349,117,24.683544,402,33.113674,302,100,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Oklahoma,240,653,6,302,345,0,52.833078,2.720833,126,110.526316,366,127.526132,102,267,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Oregon,678,1879,43,1411,425,0,22.618414,2.771386,49,7.790143,240,14.643075,133,119,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Pennsylvania,692,1938,14,1599,325,0,16.769866,2.800578,184,36.220472,583,43.025830,499,78,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Rhode Island,137,472,21,413,38,0,8.050847,3.445255,32,30.476190,135,40.059347,120,15,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,South Carolina,268,676,3,552,121,0,17.899408,2.522388,28,11.666667,117,20.930233,89,28,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,South Dakota,42,130,0,76,54,0,41.538462,3.095238,4,10.526316,6,4.838710,4,2,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Tennessee,437,1219,10,1026,183,0,15.012305,2.789474,49,12.628866,167,15.874525,155,12,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Texas,1471,4519,40,3742,737,0,16.308918,3.072060,209,16.561014,827,22.399783,742,110,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Utah,427,1566,2,1357,207,0,13.218391,3.667447,155,56.985294,656,72.087912,612,44,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Virginia,717,2208,58,1629,521,0,23.596014,3.079498,118,19.699499,491,28.596389,299,188,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Vermont,255,773,71,632,70,0,9.055627,3.031373,27,11.842105,129,20.031056,110,23,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Washington,1129,3473,90,2742,641,0,18.456666,3.076174,153,15.676230,622,21.816906,477,158,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Wisconsin,356,776,76,553,147,0,18.943299,2.179775,42,13.375796,115,17.397882,111,6,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,West Virginia,84,240,1,179,60,0,25.000000,2.857143,4,5.000000,14,6.194690,14,0,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2020,Wyoming,58,169,2,90,77,0,45.562130,2.913793,4,7.407407,13,8.333333,3,12,,https://afdc.energy.gov/stations/states?count=public&date=2020-12-31&include_temporarily_unavailable=false
+2021,Alaska,49,89,0,73,16,0,17.977528,1.816327,12,32.432432,21,30.882353,10,11,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Alabama,198,505,0,391,114,0,22.574257,2.550505,42,26.923077,86,20.525060,63,24,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Arkansas,148,439,0,373,66,0,15.034169,2.966216,50,51.020408,111,33.841463,97,14,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Arizona,845,2160,1,1741,418,0,19.351852,2.556213,309,57.649254,467,27.584170,418,51,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,California,13799,35570,247,28616,6671,36,18.754568,2.577723,6759,96.008523,4916,16.037059,3757,1243,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Colorado,1505,3537,56,2899,582,0,16.454623,2.350166,539,55.797101,643,22.218383,505,149,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Connecticut,465,1251,21,920,308,2,24.620304,2.690323,66,16.541353,139,12.500000,73,66,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,District of Columbia,245,686,19,628,39,0,5.685131,2.800000,78,46.706587,84,13.953488,83,6,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Delaware,124,296,2,203,91,0,30.743243,2.387097,63,103.278689,104,54.166667,86,18,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Florida,2410,5895,34,4726,1135,0,19.253605,2.446058,785,48.307692,1038,21.371217,784,259,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Georgia,1516,3781,200,2997,584,0,15.445649,2.494063,573,60.763521,315,9.088286,189,98,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Hawaii,363,765,5,675,85,0,11.111111,2.107438,64,21.404682,57,8.050847,70,-11,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Iowa,262,558,23,377,158,0,28.315412,2.129771,84,47.191011,88,18.723404,86,6,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Idaho,104,262,0,182,80,0,30.534351,2.519231,14,15.555556,23,9.623431,26,-3,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Illinois,958,2399,12,1880,507,0,21.133806,2.504175,256,36.467236,331,16.005803,230,104,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Indiana,314,888,0,610,278,0,31.306306,2.828025,75,31.380753,180,25.423729,73,107,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Kansas,460,944,0,834,110,0,11.652542,2.052174,243,111.981567,43,4.772475,57,-11,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Kentucky,209,503,8,390,105,0,20.874751,2.406699,50,31.446541,129,34.491979,92,37,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Louisiana,140,339,3,255,81,0,23.893805,2.421429,14,11.111111,10,3.039514,-2,13,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Massachusetts,2080,4566,10,4129,427,0,9.351730,2.195192,1131,119.178082,1406,44.493671,1328,91,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Maryland,1131,3018,21,2421,576,0,19.085487,2.668435,346,44.076433,533,21.448692,420,113,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Maine,285,591,6,450,135,0,22.842640,2.073684,78,37.681159,104,21.355236,96,9,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Michigan,760,1681,14,1265,392,10,23.319453,2.211842,278,57.676349,312,22.790358,287,58,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Minnesota,553,1275,69,972,234,0,18.352941,2.305606,135,32.296651,159,14.247312,131,33,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Missouri,997,2107,2,1869,236,0,11.200759,2.113340,528,112.579957,118,5.932629,101,19,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Mississippi,93,283,0,211,72,0,25.441696,3.043011,2,2.197802,8,2.909091,-6,14,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Montana,70,207,2,103,102,0,49.275362,2.957143,10,16.666667,22,11.891892,20,2,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,North Carolina,1004,2431,15,1921,495,0,20.361991,2.421315,294,41.408451,522,27.344159,341,182,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,North Dakota,58,135,0,77,58,0,42.962963,2.327586,19,48.717949,38,39.175258,23,15,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Nebraska,178,370,7,283,80,0,21.621622,2.078652,67,60.360360,90,32.142857,78,12,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,New Hampshire,145,332,4,223,105,0,31.626506,2.289655,29,25.000000,59,21.611722,26,34,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,New Jersey,652,1696,12,1134,550,0,32.429245,2.601227,194,42.358079,311,22.454874,195,121,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,New Mexico,173,410,2,285,123,0,30.000000,2.369942,58,50.434783,42,11.413043,67,-3,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Nevada,430,1273,4,929,340,0,26.708562,2.960465,145,50.877193,157,14.068100,107,50,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,New York,2800,6889,15,6036,838,0,12.164320,2.460357,921,49.015434,1341,24.170872,1132,200,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Ohio,894,1989,7,1619,363,0,18.250377,2.224832,303,51.269036,373,23.081683,388,-17,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Oklahoma,282,1004,6,340,658,0,65.537849,3.560284,42,17.500000,351,53.751914,38,313,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Oregon,905,2149,38,1679,432,0,20.102373,2.374586,227,33.480826,270,14.369345,268,7,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Pennsylvania,1064,2533,14,2032,487,0,19.226214,2.380639,372,53.757225,595,30.701754,433,162,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Rhode Island,236,533,20,476,37,0,6.941839,2.258475,99,72.262774,61,12.923729,63,-1,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,South Carolina,338,793,3,613,177,0,22.320303,2.346154,70,26.119403,117,17.307692,61,56,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,South Dakota,53,155,0,88,67,0,43.225806,2.924528,11,26.190476,25,19.230769,12,13,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Tennessee,598,1391,3,1156,232,0,16.678648,2.326087,161,36.842105,172,14.109926,130,49,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Texas,2198,5192,29,4246,917,0,17.661787,2.362147,727,49.422162,673,14.892675,504,180,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Utah,887,1924,3,1682,239,0,12.422037,2.169109,460,107.728337,358,22.860792,325,32,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Virginia,999,2733,54,1948,731,0,26.747164,2.735736,282,39.330544,525,23.777174,319,210,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Vermont,320,859,71,713,75,0,8.731083,2.684375,65,25.490196,86,11.125485,81,5,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Washington,1599,3860,82,3068,710,0,18.393782,2.414009,470,41.629761,387,11.143104,326,69,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Wisconsin,449,909,78,637,194,0,21.342134,2.024499,93,26.123596,133,17.139175,84,47,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,West Virginia,91,275,1,196,78,0,28.363636,3.021978,7,8.333333,35,14.583333,17,18,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2021,Wyoming,60,171,4,92,75,0,43.859649,2.850000,2,3.448276,2,1.183432,2,-2,,https://afdc.energy.gov/stations/states?count=public&date=2021-12-31&include_temporarily_unavailable=false
+2022,Alaska,58,108,0,79,29,0,26.851852,1.862069,9,18.367347,19,21.348315,6,13,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Alabama,248,674,0,440,234,0,34.718101,2.717742,50,25.252525,169,33.465347,49,120,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Arkansas,197,558,0,480,78,0,13.978495,2.832487,49,33.108108,119,27.107062,107,12,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Arizona,931,2523,0,1920,603,0,23.900119,2.709989,86,10.177515,363,16.805556,179,185,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,California,13779,37678,189,28995,8467,27,22.472000,2.734451,-20,-0.144938,2108,5.926342,379,1796,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Colorado,1663,3934,56,3146,732,0,18.607016,2.365604,158,10.498339,397,11.224201,247,150,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Connecticut,518,1433,12,1074,345,2,24.075366,2.766409,53,11.397849,182,14.548361,154,37,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,District of Columbia,254,831,19,776,36,0,4.332130,3.271654,9,3.673469,145,21.137026,148,-3,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Delaware,146,349,2,242,105,0,30.085960,2.390411,22,17.741935,53,17.905405,39,14,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Florida,2687,6922,27,5281,1614,0,23.316960,2.576107,277,11.493776,1027,17.421544,555,479,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Georgia,1479,3957,200,2964,793,0,20.040435,2.675456,-37,-2.440633,176,4.654853,-33,209,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Hawaii,382,866,5,784,77,0,8.891455,2.267016,19,5.234160,101,13.202614,109,-8,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Iowa,285,632,0,397,235,0,37.183544,2.217544,23,8.778626,74,13.261649,20,77,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Idaho,116,288,0,205,83,0,28.819444,2.482759,12,11.538462,26,9.923664,23,3,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Illinois,1224,2991,2,2303,686,0,22.935473,2.443627,266,27.766180,592,24.676949,423,179,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Indiana,359,1009,0,672,337,0,33.399405,2.810585,45,14.331210,121,13.626126,62,59,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Kansas,454,970,0,817,153,0,15.773196,2.136564,-6,-1.304348,26,2.754237,-17,43,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Kentucky,235,575,8,456,111,0,19.304348,2.446809,26,12.440191,72,14.314115,66,6,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Louisiana,177,435,1,307,127,0,29.195402,2.457627,37,26.428571,96,28.318584,52,46,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Massachusetts,2294,5385,3,4797,585,0,10.863510,2.347428,214,10.288462,819,17.936925,668,158,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Maryland,1260,3553,19,2848,686,0,19.307627,2.819841,129,11.405836,535,17.726972,427,110,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Maine,395,820,7,634,179,0,21.829268,2.075949,110,38.596491,229,38.747885,184,44,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Michigan,1067,2473,4,1935,524,10,21.188839,2.317713,307,40.394737,792,47.114813,670,132,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Minnesota,566,1417,22,1118,277,0,19.548342,2.503534,13,2.350814,142,11.137255,146,43,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Missouri,980,2138,0,1846,292,0,13.657624,2.181633,-17,-1.705115,31,1.471286,-23,56,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Mississippi,95,290,0,209,81,0,27.931034,3.052632,2,2.150538,7,2.473498,-2,9,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Montana,93,248,2,138,108,0,43.548387,2.666667,23,32.857143,41,19.806763,35,6,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,North Carolina,1048,2672,8,1973,691,0,25.860778,2.549618,44,4.382470,241,9.913616,52,196,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,North Dakota,77,168,0,107,61,0,36.309524,2.181818,19,32.758621,33,24.444444,30,3,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Nebraska,209,437,0,331,106,0,24.256293,2.090909,31,17.415730,67,18.108108,48,26,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,New Hampshire,172,418,4,278,136,0,32.535885,2.430233,27,18.620690,86,25.903614,55,31,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,New Jersey,847,2396,10,1646,740,0,30.884808,2.828808,195,29.907975,700,41.273585,512,190,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,New Mexico,195,477,2,321,154,0,32.285115,2.446154,22,12.716763,67,16.341463,36,31,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Nevada,456,1553,3,1126,424,0,27.301996,3.405702,26,6.046512,280,21.995287,197,84,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,New York,3133,8688,15,7526,1147,0,13.202118,2.773061,333,11.892857,1799,26.114095,1490,309,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Ohio,1178,2648,7,2202,439,0,16.578550,2.247878,284,31.767338,659,33.132227,583,76,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Oklahoma,308,1010,3,385,622,0,61.584158,3.279221,26,9.219858,6,0.597610,45,-36,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Oregon,925,2203,30,1694,479,0,21.743078,2.381622,20,2.209945,54,2.512797,15,47,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Pennsylvania,1238,3074,15,2355,704,0,22.901757,2.483037,174,16.353383,541,21.358073,323,217,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Rhode Island,274,660,20,566,74,0,11.212121,2.408759,38,16.101695,127,23.827392,90,37,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,South Carolina,359,878,2,614,262,0,29.840547,2.445682,21,6.213018,85,10.718789,1,85,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,South Dakota,64,171,0,93,78,0,45.614035,2.671875,11,20.754717,16,10.322581,5,11,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Tennessee,604,1429,2,1163,264,0,18.474458,2.365894,6,1.003344,38,2.731848,7,32,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Texas,2340,6000,13,4577,1410,0,23.500000,2.564103,142,6.460419,808,15.562404,331,493,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Utah,756,1801,3,1542,256,0,14.214325,2.382275,-131,-14.768884,-123,-6.392931,-140,17,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Virginia,1079,3070,47,2173,850,0,27.687296,2.845227,80,8.008008,337,12.330772,225,119,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Vermont,338,873,35,733,105,0,12.027491,2.582840,18,5.625000,14,1.629802,20,30,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Washington,1618,4073,75,3193,805,0,19.764301,2.517305,19,1.188243,213,5.518135,125,95,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Wisconsin,442,1047,4,773,270,0,25.787966,2.368778,-7,-1.559020,138,15.181518,136,76,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,West Virginia,116,348,2,241,105,0,30.172414,3.000000,25,27.472527,73,26.545455,45,27,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2022,Wyoming,76,201,4,105,92,0,45.771144,2.644737,16,26.666667,30,17.543860,13,17,,https://afdc.energy.gov/stations/states?count=public&date=2022-12-31&include_temporarily_unavailable=false
+2023,Alaska,59,115,0,81,34,0,29.565217,1.949153,1,1.724138,7,6.481481,2,5,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Alabama,343,911,0,558,353,0,38.748628,2.655977,95,38.306452,237,35.163205,118,119,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Arkansas,312,800,0,679,121,0,15.125000,2.564103,115,58.375635,242,43.369176,199,43,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Arizona,1145,3369,0,2357,1012,0,30.038587,2.942358,214,22.986037,846,33.531510,437,409,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,California,15571,43072,205,32478,10371,18,24.078288,2.766168,1792,13.005298,5394,14.316046,3483,1904,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Colorado,2047,4967,56,3986,925,0,18.622911,2.426478,384,23.090800,1033,26.258261,840,193,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Connecticut,735,2129,9,1706,413,1,19.398779,2.896599,217,41.891892,696,48.569435,632,68,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,District of Columbia,324,1024,2,973,49,0,4.785156,3.160494,70,27.559055,193,23.225030,197,13,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Delaware,186,502,2,303,197,0,39.243028,2.698925,40,27.397260,153,43.839542,61,92,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Florida,3229,8967,24,6793,2150,0,23.976804,2.777021,542,20.171195,2045,29.543485,1512,536,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Georgia,1810,4804,200,3520,1084,0,22.564530,2.654144,331,22.379986,847,21.405105,556,291,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Hawaii,357,783,1,715,67,0,8.556833,2.193277,-25,-6.544503,-83,-9.584296,-69,-10,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Iowa,350,804,0,497,307,0,38.184080,2.297143,65,22.807018,172,27.215190,100,72,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Idaho,165,423,0,287,136,0,32.151300,2.563636,49,42.241379,135,46.875000,82,53,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Illinois,1253,3273,3,2300,970,0,29.636419,2.612131,29,2.369281,282,9.428285,-3,284,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Indiana,509,1437,0,932,505,0,35.142658,2.823183,150,41.782730,428,42.418236,260,168,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Kansas,513,1119,0,897,222,0,19.839142,2.181287,59,12.995595,149,15.360825,80,69,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Kentucky,308,808,8,592,208,0,25.742574,2.623377,73,31.063830,233,40.521739,136,97,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Louisiana,235,640,1,420,219,0,34.218750,2.723404,58,32.768362,205,47.126437,113,92,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Massachusetts,2832,6599,5,5931,663,0,10.046977,2.330155,538,23.452485,1214,22.544104,1134,78,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Maryland,1598,4577,13,3646,918,0,20.056806,2.864205,338,26.825397,1024,28.820715,798,232,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Maine,464,1015,4,789,222,0,21.871921,2.187500,69,17.468354,195,23.780488,155,43,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Michigan,1367,3108,3,2397,701,7,22.554698,2.273592,300,28.116214,635,25.677315,462,177,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Minnesota,734,1877,20,1420,437,0,23.281833,2.557221,168,29.681979,460,32.462950,302,160,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Missouri,1183,2608,1,2167,440,0,16.871166,2.204565,203,20.714286,470,21.983162,321,148,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Mississippi,141,395,0,280,115,0,29.113924,2.801418,46,48.421053,105,36.206897,71,34,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Montana,121,342,2,176,164,0,47.953216,2.826446,28,30.107527,94,37.903226,38,56,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,North Carolina,1483,3844,10,2855,979,0,25.468262,2.592043,435,41.507634,1172,43.862275,882,288,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,North Dakota,95,205,0,117,88,0,42.926829,2.157895,18,23.376623,37,22.023810,10,27,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Nebraska,255,548,0,395,153,0,27.919708,2.149020,46,22.009569,111,25.400458,64,47,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,New Hampshire,228,537,3,359,175,0,32.588454,2.355263,56,32.558140,119,28.468900,81,39,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,New Jersey,1206,3399,10,2391,998,0,29.361577,2.818408,359,42.384888,1003,41.861436,745,258,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,New Mexico,263,645,2,404,239,0,37.054264,2.452471,68,34.871795,168,35.220126,83,85,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Nevada,570,1851,3,1228,620,0,33.495408,3.247368,114,25.000000,298,19.188667,102,196,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,New York,3685,10244,7,8913,1324,0,12.924639,2.779919,552,17.618896,1556,17.909761,1387,177,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Ohio,1517,3482,8,2731,743,0,21.338311,2.295320,339,28.777589,834,31.495468,529,304,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Oklahoma,328,1284,1,442,841,0,65.498442,3.914634,20,6.493506,274,27.128713,57,219,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Oregon,1173,2920,29,2103,788,0,26.986301,2.489344,248,26.810811,717,32.546527,409,309,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Pennsylvania,1629,4110,15,3099,996,0,24.233577,2.523020,391,31.583199,1036,33.702017,744,292,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Rhode Island,292,692,20,581,91,0,13.150289,2.369863,18,6.569343,32,4.848485,15,17,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,South Carolina,500,1264,1,813,450,0,35.601266,2.528000,141,39.275766,386,43.963554,199,188,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,South Dakota,93,227,0,124,103,0,45.374449,2.440860,29,45.312500,56,32.748538,31,25,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Tennessee,829,1969,2,1489,478,0,24.276282,2.375151,225,37.251656,540,37.788663,326,214,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Texas,2974,8285,0,6028,2257,0,27.242004,2.785810,634,27.094017,2285,38.083333,1451,847,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Utah,870,2135,1,1802,332,0,15.550351,2.454023,114,15.079365,334,18.545253,260,76,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Virginia,1429,4034,36,2928,1070,0,26.524541,2.822953,350,32.437442,964,31.400651,755,220,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Vermont,364,912,19,774,119,0,13.048246,2.505495,26,7.692308,39,4.467354,41,14,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Washington,2048,5369,21,4283,1065,0,19.836096,2.621582,430,26.576020,1296,31.819298,1090,260,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Wisconsin,544,1326,5,909,412,0,31.070890,2.437500,102,23.076923,279,26.647564,136,142,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,West Virginia,135,413,2,272,139,0,33.656174,3.059259,19,16.379310,65,18.678161,31,34,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2023,Wyoming,94,240,1,133,106,0,44.166667,2.553191,18,23.684211,39,19.402985,28,14,,https://afdc.energy.gov/stations/states?count=public&date=2023-12-31&include_temporarily_unavailable=false
+2024,Alaska,64,138,0,104,34,0,24.637681,2.156250,5,8.474576,23,20.000000,23,0,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Alabama,478,1364,2,705,657,0,48.167155,2.853556,135,39.358601,453,49.725576,147,304,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Arkansas,350,906,0,734,172,0,18.984547,2.588571,38,12.179487,106,13.250000,55,51,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Arizona,1360,3994,0,2878,1116,0,27.941913,2.936765,215,18.777293,625,18.551499,521,104,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,California,16581,49105,232,35799,13057,17,26.589960,2.961522,1010,6.486417,6033,14.006779,3321,2686,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Colorado,2317,5638,55,4479,1104,0,19.581412,2.433319,270,13.190034,671,13.509160,493,179,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Connecticut,1196,3484,10,2909,564,1,16.188289,2.913043,461,62.721088,1355,63.644904,1203,151,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,District of Columbia,323,1074,2,1010,62,0,5.772812,3.325077,-1,-0.308642,50,4.882813,37,13,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Delaware,238,632,2,372,258,0,40.822785,2.655462,52,27.956989,130,25.896414,69,61,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Florida,3612,11106,22,8124,2960,0,26.652260,3.074751,383,11.861257,2139,23.854132,1331,810,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Georgia,2113,5864,196,4268,1400,0,23.874488,2.775201,303,16.740331,1060,22.064946,748,316,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Hawaii,350,813,1,695,117,0,14.391144,2.322857,-7,-1.960784,30,3.831418,-20,50,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Iowa,434,1016,0,605,411,0,40.452756,2.341014,84,24.000000,212,26.368159,108,104,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Idaho,209,522,0,338,184,0,35.249042,2.497608,44,26.666667,99,23.404255,51,48,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Illinois,1433,4000,4,2701,1295,0,32.375000,2.791347,180,14.365523,727,22.212038,401,325,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Indiana,634,1789,0,1046,743,0,41.531582,2.821767,125,24.557957,352,24.495477,114,238,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Kansas,538,1153,0,900,253,0,21.942758,2.143123,25,4.873294,34,3.038427,3,31,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Kentucky,346,968,4,655,309,0,31.921488,2.797688,38,12.337662,160,19.801980,63,101,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Louisiana,289,771,0,483,288,0,37.354086,2.667820,54,22.978723,131,20.468750,63,69,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Massachusetts,3462,8425,21,7348,1056,0,12.534125,2.433564,630,22.245763,1826,27.670859,1417,393,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Maryland,1600,4503,12,3486,1005,0,22.318454,2.814375,2,0.125156,-74,-1.616780,-160,87,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Maine,512,1158,3,873,282,0,24.352332,2.261719,48,10.344828,143,14.088670,84,60,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Michigan,1609,3745,3,2752,983,7,26.248331,2.327533,242,17.702999,637,20.495495,355,282,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Minnesota,905,2391,17,1699,675,0,28.230866,2.641989,171,23.297003,514,27.384124,279,238,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Missouri,1287,2952,0,2346,606,0,20.528455,2.293706,104,8.791209,344,13.190184,179,166,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Mississippi,180,463,0,313,150,0,32.397408,2.572222,39,27.659574,68,17.215190,33,35,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Montana,160,440,2,204,234,0,53.181818,2.750000,39,32.231405,98,28.654971,28,70,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,North Carolina,1717,4748,9,3414,1325,0,27.906487,2.765288,234,15.778827,904,23.517170,559,346,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,North Dakota,99,236,0,120,116,0,49.152542,2.383838,4,4.210526,31,15.121951,3,28,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Nebraska,280,609,0,409,200,0,32.840722,2.175000,25,9.803922,61,11.131387,14,47,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,New Hampshire,276,704,3,443,258,0,36.647727,2.550725,48,21.052632,167,31.098696,84,83,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,New Jersey,1484,4491,10,3060,1421,0,31.641060,3.026280,278,23.051410,1092,32.127096,669,423,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,New Mexico,331,805,2,461,342,0,42.484472,2.432024,68,25.855513,160,24.806202,57,103,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Nevada,640,2336,4,1481,851,0,36.429795,3.650000,70,12.280702,485,26.202053,253,231,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,New York,4539,15852,11,13854,1987,0,12.534696,3.492399,854,23.175034,5608,54.744241,4941,663,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Ohio,1742,4268,7,3167,1094,0,25.632615,2.450057,225,14.831905,786,22.573234,436,351,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Oklahoma,373,1534,1,582,951,0,61.994785,4.112601,45,13.719512,250,19.470405,140,110,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Oregon,1454,3562,28,2557,977,0,27.428411,2.449794,281,23.955669,642,21.986301,454,189,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Pennsylvania,1897,4905,15,3646,1244,0,25.361876,2.585662,268,16.451811,795,19.343066,547,248,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Rhode Island,344,831,20,691,120,0,14.440433,2.415698,52,17.808219,139,20.086705,110,29,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,South Carolina,599,1592,1,1066,525,0,32.977387,2.657763,99,19.800000,328,25.949367,253,75,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,South Dakota,116,319,0,173,146,0,45.768025,2.750000,23,24.731183,92,40.528634,49,43,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Tennessee,943,2392,0,1646,746,0,31.187291,2.536585,114,13.751508,423,21.482986,157,268,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Texas,3693,10628,0,7408,3220,0,30.297328,2.877877,719,24.176194,2343,28.280024,1380,963,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Utah,915,2554,9,2048,497,0,19.459671,2.791257,45,5.172414,419,19.625293,246,165,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Virginia,1761,4895,30,3566,1299,0,26.537283,2.779671,332,23.233030,861,21.343580,638,229,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Vermont,444,1134,19,913,202,0,17.813051,2.554054,80,21.978022,222,24.342105,139,83,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Washington,2376,6423,19,4942,1462,0,22.761949,2.703283,328,16.015625,1054,19.631216,659,397,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Wisconsin,715,1730,9,1097,624,0,36.069364,2.419580,171,31.433824,404,30.467572,188,212,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,West Virginia,157,465,2,306,157,0,33.763441,2.961783,22,16.296296,52,12.590799,34,18,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2024,Wyoming,108,272,1,143,128,0,47.058824,2.518519,14,14.893617,32,13.333333,10,22,,https://afdc.energy.gov/stations/states?count=public&date=2024-12-31&include_temporarily_unavailable=false
+2025,Alaska,71,196,0,107,89,0,45.408163,2.760563,7,10.937500,58,42.028986,3,55,50.901921,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Alabama,543,1654,2,806,846,0,51.148730,3.046041,65,13.598326,290,21.260997,101,189,33.228612,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Arkansas,374,1087,0,841,246,0,22.631095,2.906417,24,6.857143,181,19.977925,107,74,39.829710,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Arizona,1510,4619,2,3257,1360,0,29.443603,3.058940,150,11.029412,625,15.648473,379,244,21.988327,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,California,19003,62614,281,45525,16794,14,26.821478,3.294953,2422,14.607080,13509,27.510437,9726,3737,19.040981,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Colorado,2560,6648,55,5086,1507,0,22.668472,2.596875,243,10.487700,1010,17.914154,607,403,22.080541,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Connecticut,1473,4495,9,3735,750,1,16.685206,3.051595,277,23.160535,1011,29.018370,826,186,28.979033,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,District of Columbia,321,1079,2,1019,58,0,5.375348,3.361371,-2,-0.619195,5,0.465549,9,-4,21.566154,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Delaware,250,781,2,486,293,0,37.516005,3.124000,12,5.042017,149,23.575949,114,35,29.480947,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Florida,4110,13650,21,9386,4243,0,31.084249,3.321168,498,13.787375,2544,22.906537,1262,1283,26.495140,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Georgia,2384,7318,92,5230,1996,0,27.275212,3.069631,271,12.825367,1454,24.795362,962,596,19.719925,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Hawaii,379,964,1,786,177,0,18.360996,2.543536,29,8.285714,151,18.573186,91,60,9.800828,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Iowa,480,1230,0,700,530,0,43.089431,2.562500,46,10.599078,214,21.062992,95,119,23.355867,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Idaho,227,636,0,379,257,0,40.408805,2.801762,18,8.612440,114,21.839080,41,73,23.517080,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Illinois,1722,5287,4,3129,2154,0,40.741441,3.070267,289,20.167481,1287,32.175000,428,859,23.818182,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Indiana,683,2015,0,1136,879,0,43.622829,2.950220,49,7.728707,226,12.632756,90,136,24.855981,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Kansas,557,1292,0,951,341,0,26.393189,2.319569,19,3.531599,139,12.055507,51,88,8.224307,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Kentucky,374,1095,4,683,408,0,37.260274,2.927807,28,8.092486,127,13.119835,28,99,27.221270,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Louisiana,288,841,0,477,364,0,43.281807,2.920139,-1,-0.346021,70,9.079118,-6,76,23.677806,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Massachusetts,4074,10303,22,8575,1706,0,16.558284,2.528964,612,17.677643,1878,22.290801,1227,650,29.708013,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Maryland,1754,5502,12,4128,1362,0,24.754635,3.136830,154,9.625000,999,22.185210,642,357,19.696163,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Maine,634,1552,3,1183,366,0,23.582474,2.447950,122,23.828125,394,34.024180,310,84,29.801232,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Michigan,1947,5260,4,3727,1522,7,28.935361,2.701592,338,21.006837,1515,40.453939,975,539,24.460684,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Minnesota,1064,2897,13,2041,843,0,29.099068,2.722744,159,17.569061,506,21.162693,342,168,22.697193,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Missouri,1327,3219,1,2447,771,0,23.951538,2.425772,40,3.108003,267,9.044715,101,165,10.094082,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Mississippi,224,668,0,350,318,0,47.604790,2.982143,44,24.444444,205,44.276458,37,168,30.434319,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Montana,151,464,0,217,247,0,53.232759,3.072848,-9,-5.625000,24,5.454545,13,13,25.619116,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,North Carolina,1939,5822,9,4042,1771,0,30.419100,3.002579,222,12.929528,1074,22.620051,628,446,25.264933,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,North Dakota,110,277,1,131,145,0,52.346570,2.518182,11,11.111111,41,17.372881,11,29,41.000277,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Nebraska,316,696,0,470,226,0,32.471264,2.202532,36,12.857143,87,14.285714,61,26,20.469804,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,New Hampshire,299,797,3,469,325,0,40.777917,2.665552,23,8.333333,93,13.210227,26,67,21.406935,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,New Jersey,1727,5476,14,3539,1923,0,35.116874,3.170816,243,16.374663,985,21.932754,479,502,34.352939,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,New Mexico,443,1130,3,586,541,0,47.876106,2.550790,112,33.836858,325,40.372671,125,199,30.321186,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Nevada,646,2615,4,1528,1083,0,41.414914,4.047988,6,0.937500,279,11.943493,47,232,22.464358,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,New York,5060,18390,11,15564,2815,0,15.307232,3.634387,521,11.478299,2538,16.010598,1710,828,33.724050,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Ohio,1908,5076,6,3701,1369,0,26.970055,2.660377,166,9.529277,808,18.931584,534,275,29.501372,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Oklahoma,404,1669,1,652,1016,0,60.874775,4.131188,31,8.310992,135,8.800522,70,65,40.951105,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Oregon,1578,4129,37,2910,1182,0,28.626786,2.616603,124,8.528198,567,15.918024,353,205,16.239739,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Pennsylvania,2039,5666,13,3909,1744,0,30.780092,2.778813,142,7.485503,761,15.514781,263,500,29.856044,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Rhode Island,353,866,20,719,127,0,14.665127,2.453258,9,2.616279,35,4.211793,28,7,20.119976,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,South Carolina,665,2051,1,1190,860,0,41.930765,3.084211,66,11.018364,459,28.831658,124,335,23.352012,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,South Dakota,116,314,0,163,151,0,48.089172,2.706897,0,0.000000,-5,-1.567398,-10,5,23.172925,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Tennessee,1122,3043,1,2078,964,0,31.679264,2.712121,179,18.981972,651,27.215719,432,218,16.496328,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Texas,3944,12164,3,7598,4563,0,37.512331,3.084178,251,6.796642,1536,14.452390,190,1343,22.761199,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Utah,955,2841,4,2114,723,0,25.448786,2.974869,40,4.371585,287,11.237275,66,226,27.665217,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Virginia,1870,5439,27,3787,1625,0,29.876816,2.908556,109,6.189665,544,11.113381,221,326,23.819175,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Vermont,526,1343,19,1053,271,0,20.178704,2.553232,82,18.468468,209,18.430335,140,69,14.611051,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Washington,2792,7807,15,5823,1969,0,25.220956,2.796203,416,17.508418,1384,21.547563,881,507,18.753564,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Wisconsin,826,2140,9,1347,784,0,36.635514,2.590799,111,15.524476,410,23.699422,250,160,22.980177,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,West Virginia,190,559,2,343,214,0,38.282648,2.942105,33,21.019108,94,20.215054,37,57,15.816072,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false
+2025,Wyoming,120,333,1,165,167,0,50.150150,2.775000,12,11.111111,61,22.426471,22,39,15.697316,https://afdc.energy.gov/stations/states?count=public&date=2025-12-31&include_temporarily_unavailable=false

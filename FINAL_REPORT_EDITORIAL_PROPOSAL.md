@@ -3,9 +3,9 @@
 - proposal_id: EDIT-20261011-01
 - revision: 1
 - research_head_at_proposal: e105fb85e9aad619167f5e208a5d6b304c2ddc32
-- status: RECOMMENDED
-- user_choice: NOT_YET_SELECTED
-- delivery_status: DELIVERY_UNKNOWN until user-facing message is sent and accessible
+- status: SELECTED
+- user_choice: 2026-10-11 user explicitly requested completion of the recommended report and GitHub save + full chat display, following the previous instruction to stop additional research
+- delivery_status: REPORT_SAVED; FULL_CHAT_RENDER_PENDING (host/UI display confirmation not available inside repo tools)
 - closure_assessment: conditional preparation, full final confirmation deferred pending W4/W5
 - key evidence: W2_OBSERVED_CHANGES.md; W3_CAUSAL_EVIDENCE.md; W1_DATA_AUDIT.md; W1_A_REMEDIATION.md
 - competing results: K-01 DCFC negative vs U-02 positive; U-03 BEV policy effect weaker than PHEV; U-04 diminishing / mutual response; U-05 no Granger causality
@@ -29,3 +29,9 @@
 - writing_applied: 위 추천 본문/부록/제외 기준을 `FINAL_REPORT.md` 초안 제작에 잠정 적용. 초안은 승인된 최종 편집판 또는 Stage 8 최종 확정이 아님.
 - user_choice: 개별 편집안 명시 선택은 없음; 이 파일의 status=RECOMMENDED 보존. 본문은 연구의 원래 초점(실제 변화+인과 식별)에 맞춰 합리적 기본값으로 구성.
 - fresh_research_or_W4_W5_executed: NO. 
+
+## 2026-10-11 최종 편집안 선택
+- 사용자 원문: '추천한 안으로 최종보고서를 완성해줘. GitHub에도 저장하고 여기에도 보여줘.'
+- selection: 기존 추천 본문 깊이/요약·부록/제외 기준 승인·최종본 완성 위임. 별도 추가조사를 중단한다는 이전 결정을 유지.
+- evidence mapping: 미국 추이 W2, 한국 추이 W2, 인과·반론 W3, 원자료 한계 W1/W2, 정량 미식별 W3, W4/W5 미수행 상태 RESEARCH_PLAN.
+- report: `FINAL_REPORT.md` 최종본. 이 서류 자체는 사용자 화면 전달 확인 자료가 아님.

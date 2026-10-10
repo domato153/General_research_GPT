@@ -5,7 +5,7 @@
 
 > **이 채팅의 역할은 평가자/규칙 개발자**이다. 다른 ChatGPT 프로젝트의 **실제 조사 모델**이 진행한 C1~C12 출력을 사용자로부터 받아 평가하고, 평가 기록만 `design/research-v2`에 남긴다. **평가자가 조사 모델을 대신해 C13을 실행하거나 사용자 승인 없이 연구 브랜치를 고치지 않는다.** 새 스레드에서 먼저 이 역할을 확정한다.
 
-1. GitHub에서 `design/research-v2`의 **최신 HEAD**와 이 체크포인트 **§16**, `V2_POST_APPLY_VERIFICATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_E2E_PRE_POST_PROTOCOL.md`, `V2_EXECUTION_PLAN.md` **§29**를 먼저 읽는다. 기존 `V2_TEST_RESULTS.md` §§1~48 및 과거 체크포인트 §§0~15는 역사 판정 기록으로 보존한다. 중요 사실은 상세 시험 로그를 정본으로 하고, 이 파일은 빠른 인덱스로만 쓴다.
+1. GitHub에서 `design/research-v2`의 **최신 HEAD**와 이 체크포인트 **§18**, `V2_REAUDIT_02_REMEDIATION.md`, `V2_THEORETICAL_COVERAGE_MATRIX.md`, `V2_E2E_PRE_POST_PROTOCOL.md`, `V2_EXECUTION_PLAN.md` **§31**를 먼저 읽는다. 기존 `V2_TEST_RESULTS.md` §§1~48 및 과거 체크포인트 §§0~15는 역사 판정 기록으로 보존한다. 중요 사실은 상세 시험 로그를 정본으로 하고, 이 파일은 빠른 인덱스로만 쓴다.
 2. 과거 AI 고용 E2E 원자료를 재감사할 이유가 있을 때만 `research/20261010-ai-employment-kr-us-1538-fb22`의 `RESEARCH_PLAN.md`·W01~W06·최종본과 HEAD를 확인한다. 최신 확인 연구 HEAD는 `cbe5b68d8a0fcfa355d320268ceb8b3c8e9d634b`. 새 후보의 실사용 시험은 이 과거 연구를 재시작하지 말고 **별도 격리 프로젝트·연구 브랜치**로 진행한다.
 3. **완료/미완료 구분:** 22개 과거 이슈 포함 59개 이론상 요구 매핑·외부 감사 충돌 보완·개발 브랜치 7규칙파일 적용·18개 정적 보호조건 확인까지 완료. **실제 새 프로젝트 독립 BASE↔개선 후 자연어 모델 E2E·T06-R·도구 실패/HEAD 충돌·PDF 렌더·지연/비용 비교는 아직 NOT TESTED**. 기존 C10/C13 FAIL·C14 PARTIAL은 보존.
 4. **다음 작업:** **짧은 자연어 자연사용 E2E**를 BASE와 개발 적용 고정 SHA의 **별도 독립 모델/프로젝트**에서 실시하고 실제 행동·출처·GitHub 브랜치/파일·추가 승인 횟수를 비교한다. 그 다음 T06-R·실패 주입·PDF·회귀 판정. 개발 브랜치에 발견 결함을 국소 보완하고 적용 후 이론 매핑을 다시 돌린다. 운영 `main`은 이번 작업 범위에서 계속 제외한다.
@@ -211,7 +211,7 @@
 - **2차 감사 대응 동결 개발 규칙:** `3c0a2e85f6d1f3a8b91ec2c3eabd38ccbb58ca33` (규칙 수정·매핑 재구성 완료, 후속 기록 커밋과 구별). C10/C13/C14 첫 자연어 실패 기록은 과거 로그에서 그대로 보존.
 - **P1-01 T06-R4:** 기존 X04(쓰기 장애)는 읽기 장애가 아님. X29 **GitHub 브랜치 목록/원문 파일 읽기 실패** 직접 주입으로 교정; `04_STATE_MANAGEMENT.md`에서 읽기/쓰기 오류·부분 접근·거짓 복원 주장 구분.
 - **P1-02 편집안 추적:** `proposal_id`, revision, 기준 연구 HEAD, 핵심 제안 원문/근거·반례 ID, 실제 사용자 선택, 저장 blob과 최종 원고 연결. 가능하면 실제 출력할 핵심 문구 선저장·재조회, 출력과 저장 동일성은 **외부에 실제 가시 응답이 있어야 검증 가능**. 새 채팅 과거 UI 접근 불가 시 `UNKNOWN`, 합성 X07과 실제 X30 시험 분리.
-- **P1-03 59개 매핑 과대판정 교정:** `V2_THEORETICAL_COVERAGE_MATRIX.md`에 POS/NEG/FAIL-FALLBACK/NOT RUN 별도 표시. **59/59 소스+연관시험 위치 검증**, 모델행동 56개에 **POS·NEG 설계**, 34개에 실패·폴백 설계, E14/R11/R12 3개는 평가규약으로 별도. 실제 성공 0/56(미실행), 어느 경로도 글자 수로 실사용 PASS 선언 금지.
+- **P1-03 59개 매핑 과대판정 교정:** `V2_THEORETICAL_COVERAGE_MATRIX.md`에 POS/NEG/FAIL-FALLBACK/NOT RUN 별도 표시. **59/59 소스+연관시험 위치 검증**, 모델행동 56개에 **POS·NEG 설계**, 34개에 실패·폴백 설계, E14/R11/R12 3개는 평가규약으로 별도. 실제 성공률 미측정(신규 시험 0건 시행), 어느 경로도 글자 수로 실사용 PASS 선언 금지.
 - **P2 PDF/사용성:** `13_FINAL_REPORT.md`에 기존 `final_pdf_html_formatting_instruction_final.md`를 요청시에만 연결. X34 입력 파일 없음, X35 렌더·폰트 실패, X36 일곱 산출물, X37 채팅만 전달, X38~X43 부분승인·첫 결과·판본·태그·규칙 SHA 미확인·Part 누락 시험 추가. 현 E2E 설계 **N01~N12/X01~X43**.
 - **개발 무결성:** 수정 전 개발 HEAD `6f65e4...` 대비 규칙 파일 `02_RESEARCH_PIPELINE.md`, `04_STATE_MANAGEMENT.md`, `04B_VALIDATION_RULES.md`, `13_FINAL_REPORT.md` + 검증문서 2개만 변경. 코어·상태 템플릿·도메인 모듈 원본 SHA 그대로, `main` 및 과거 AI 고용 연구 브랜치 불변. 원문 앵커·시험 참조 **59/59**, 보호 18/18 재조회 통과.
 - **다음 필수:** 별도 비개인화 GPT 프로젝트에서 BASE `cd64...` ↔ 2차 보완 규칙 `3c0a...`으로 짧은 자연어 첫 응답 E2E, T06-R 읽기 장애·실제 사용자 표시안 X30·GitHub 경쟁 쓰기·PDF 실물·비용/승인량 비교. 실제 증거가 없다면 NOT TESTED 유지. `main` 승격은 이 개발 프로젝트의 목적이 아니다.

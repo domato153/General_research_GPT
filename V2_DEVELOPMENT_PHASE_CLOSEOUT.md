@@ -1,5 +1,7 @@
 # v2 개발 적용 단계 최종 종료 판정 — 2026-10-10
 
+> **주의 — 1차 외부감사 후 개발 최초 병합 당시의 역사적 종료 기록.** 이 문서 안의 `0e5721...` 및 N01~12/X01~28은 **그 당시 버전**이다. 2차·3차 외부감사로 추가 수정된 **현행 규칙 SHA는 `ac4675d50bc0355b0939f7eb32b6fd72605acfb4`**이며, 신규 독립 실사용 시험은 [V2_E2E_PRE_POST_PROTOCOL.md](V2_E2E_PRE_POST_PROTOCOL.md)의 **N01~12/X01~48**을 사용한다. 현행 종료·수정 판정은 [V2_REAUDIT_03_REMEDIATION.md](V2_REAUDIT_03_REMEDIATION.md)·[V2_PROGRESS_CHECKPOINT.md](V2_PROGRESS_CHECKPOINT.md) §20. 아래 내용은 원래 작성 시점의 상태를 보존하기 위해 역사를 고치지 않는다. **실사용 E2E NOT TESTED**.
+
 ## 판정
 
 **요청받은 '전체 문제 정리 → 감사 지적 보완 → 이론상 전체 기능/기존 기능 보호 설계 → `design/research-v2` 적용 → 적용 후 동일 정적 정합성 재검증 → 후속 독립 E2E 준비' 단계 완료.** 독립 ChatGPT 실제 E2E나 그에 따른 실사용 성능·무회귀를 PASS로 확정한 것은 아니다.

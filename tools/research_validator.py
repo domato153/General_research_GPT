@@ -27,21 +27,59 @@ def check(out, key, status, reason, **details):
     out["checks"][key] = {"status": status, "reason": reason, **details}
 
 def sections(text):
-    """Only explicit Wxx-Eyy headings / item comments count, not prose mentions."""
+    """Find W-ID items outside fenced code and retain headings after markers."""
     lines = text.splitlines()
-    result, duplicates = {}, []
+    visible = []
+    fence_char, fence_width = None, 0
+    for line in lines:
+        gate = re.match(r"^[ \t]{0,3}((?:\x60){3,}|~{3,})", line)
+        if fence_char is not None:
+            visible.append(False)
+            if gate and gate.group(1)[0] == fence_char and len(gate.group(1)) >= fence_width:
+                fence_char, fence_width = None, 0
+        elif gate:
+            visible.append(False)
+            fence_char, fence_width = gate.group(1)[0], len(gate.group(1))
+        else:
+            visible.append(True)
+    headings = {i: HEADING.match(line) for i, line in enumerate(lines) if visible[i] and HEADING.match(line)}
+    markers = {i: MARKER.match(line) for i, line in enumerate(lines) if visible[i] and MARKER.match(line)}
+    items = []
     for i, line in enumerate(lines):
-        header, comment = HEADING.match(line), MARKER.match(line)
-        hit = ID.search(header.group(2)) if header else None
-        value = comment.group(1) if comment else hit.group(1) if hit else None
-        if not value:
+        if not visible[i]:
             continue
-        key = value.upper().replace("_", "-")
-        level = len(header.group(1)) if header else 6
+        marker, heading = markers.get(i), headings.get(i)
+        if marker:
+            items.append((i, marker.group(1).upper().replace("_", "-"), True))
+        elif heading:
+            match = ID.search(heading.group(2))
+            if match:
+                key = match.group(1).upper().replace("_", "-")
+                previous = i - 1
+                while previous >= 0 and not lines[previous].strip():
+                    previous -= 1
+                if previous in markers and markers[previous].group(1).upper().replace("_", "-") == key:
+                    continue  # same ID named in the title directly after its marker
+                items.append((i, key, False))
+    starts = {i for i, _, _ in items}
+    result, duplicates = {}, []
+    for i, key, marked in items:
+        level = len(headings[i].group(1)) if not marked else 1
+        title = None
+        if marked:
+            following = i + 1
+            while following < len(lines) and not lines[following].strip():
+                following += 1
+            if following in headings and following not in starts:
+                title = following
+                level = len(headings[following].group(1))
         stop = len(lines)
         for j in range(i + 1, len(lines)):
-            next_header = HEADING.match(lines[j])
-            if MARKER.match(lines[j]) or (next_header and len(next_header.group(1)) <= level):
+            if j in starts:
+                stop = j
+                break
+            heading = headings.get(j)
+            if j != title and heading and len(heading.group(1)) <= level:
                 stop = j
                 break
         body = "\n".join(lines[i + 1:stop]).strip()
@@ -103,40 +141,53 @@ def final(args, out):
     else:
         check(out, "delivery_text", "UNKNOWN", "Delivered text not supplied")
     if args.source:
-        sources = set()
+        sources, source_duplicates = set(), set()
         for f in args.source:
-            items, _ = sections(load(f))
+            items, duplicates = sections(load(f))
+            source_duplicates.update(duplicates)
+            source_duplicates.update(sources & set(items))
             sources.update(items)
         if args.mapping:
             try:
                 entries = json.loads(load(args.mapping))["items"]
                 if not isinstance(entries, list):
                     raise ValueError("items must be an array")
-                invalid, missing, mapped = [], [], set()
+                invalid, missing, mapped, duplicate_map, exclusions = [], [], set(), set(), []
+                headings_in_report = set(report.splitlines())
                 for e in entries:
+                    if not isinstance(e, dict):
+                        raise TypeError("map entry must be an object")
                     key = str(e["id"]).upper().replace("_", "-")
                     section = str(e.get("section", "")).strip()
                     disposition = e.get("disposition", "full")
+                    if key in mapped:
+                        duplicate_map.add(key)
+                    mapped.add(key)
                     if not ID.fullmatch(key) or disposition not in ("full", "brief", "appendix", "excluded") or (disposition != "excluded" and not section):
                         invalid.append(key)
                         continue
-                    mapped.add(key)
-                    if key not in sources or (disposition != "excluded" and section not in report.splitlines()):
+                    if key not in sources or (disposition != "excluded" and section not in headings_in_report):
                         missing.append(key)
+                    if disposition == "excluded":
+                        exclusions.append({"id": key, "decision_ref": e.get("decision_ref"), "reason": e.get("reason")})
                 unmapped = sorted(sources - mapped)
-                state = "HOLD" if invalid or missing else "UNKNOWN" if unmapped else "PASS"
+                state = "HOLD" if invalid or missing or duplicate_map or source_duplicates else "UNKNOWN" if unmapped or exclusions else "PASS"
                 check(out, "coverage_map_structure", state,
-                      "Section presence only; depth, valid exclusion, and counterevidence require Stage 7",
-                      invalid=invalid, missing=missing, unmapped=unmapped)
+                      "Syntax and headings only: actual counterevidence and exclusion authorization require Stage 7",
+                      scope="syntax_and_heading_only", invalid=invalid, missing=missing,
+                      unmapped=unmapped, duplicate_map=sorted(duplicate_map),
+                      duplicate_source=sorted(source_duplicates), exclusions_need_review=exclusions)
             except (ValueError, TypeError, KeyError) as exc:
-                check(out, "coverage_map_structure", "HOLD", f"Invalid map: {exc}")
+                check(out, "coverage_map_structure", "HOLD", f"Invalid map: {exc}", scope="syntax_and_heading_only")
         else:
             check(out, "coverage_map_structure", "UNKNOWN",
                   "Source W-ID findings exist but no explicit coverage/selection map supplied",
-                  stable_source_items=len(sources))
+                  scope="syntax_and_heading_only", stable_source_items=len(sources),
+                  duplicate_source=sorted(source_duplicates))
     else:
         check(out, "coverage_map_structure", "UNKNOWN",
-              "No source W-ID file supplied: inclusion cannot be confirmed")
+              "No source W-ID file supplied: inclusion cannot be confirmed",
+              scope="syntax_and_heading_only")
     check(out, "semantic_adequacy", "UNKNOWN",
           "No automated proof of fact coverage, detailed narratives, counterarguments, or authorization")
 
@@ -202,7 +253,7 @@ def main(argv=None):
     try:
         {"evidence": evidence, "final": final, "pdf": pdf}[args.mode](args, out)
     except (OSError, UnicodeError) as exc:
-        check(out, "file_access", "UNKNOWN", f"Input unavailable: {type(exc).__name__}: {exc}")
+        check(out, "file_access", "HOLD", f"Required input unreadable: {type(exc).__name__}: {exc}")
     highest = max((RANK[c["status"]] for c in out["checks"].values()), default=1)
     out["status"] = "HOLD" if highest == 2 else "UNKNOWN" if highest == 1 else "PASS"
     print(json.dumps(out, ensure_ascii=False, indent=2))

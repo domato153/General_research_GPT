@@ -93,4 +93,64 @@ def test_read_only_and_missing_file(tmp_path, capsys):
     run(capsys, ["evidence", "--before", p, "--after", p])
     assert Path(p).read_bytes() == original
     code, r = run(capsys, ["final", "--report", str(tmp_path / "does-not-exist.md")])
-    assert code == 0 and r["status"] == "UNKNOWN"
+    assert code == 2 and r["status"] == "HOLD" and r["checks"]["file_access"]["status"] == "HOLD"
+
+
+def test_marker_title_nested_and_fenced_fake_items(tmp_path, capsys):
+    ticks = chr(96) * 3
+    data = ("<!-- item: W02-E01 -->\n### 사건 배경\n원인과 반론을 함께 기록한 중요한 본문입니다.\n"
+            "#### 근거\nhttps://example.org/citation\n" + ticks + "md\n## W02-E88\n"
+            "<!-- item: W02-E99 -->\n" + ticks + "\n"
+            "<!-- item: W02-E02 -->\n### 사건 전개\n후속 경과를 충분히 설명한 내용입니다.")
+    file = fixture(tmp_path, "marked.md", data)
+    code, result = run(capsys, ["evidence", "--before", file, "--after", file])
+    items, duplicates = rv.sections(data)
+    assert not duplicates and set(items) == {"W02-E01", "W02-E02"}
+    assert "### 사건 배경" in items["W02-E01"]["body"]
+    assert "#### 근거" in items["W02-E01"]["body"]
+    assert code == 0 and result["checks"]["body_floor"]["status"] == "PASS"
+
+
+def test_marker_followed_by_same_id_title(tmp_path, capsys):
+    data = "<!-- item: W02-E01 -->\n### W02-E01 — 배경\n실질 배경과 증거 내용입니다."
+    items, duplicates = rv.sections(data)
+    assert not duplicates and list(items) == ["W02-E01"]
+    assert "실질 배경" in items["W02-E01"]["body"]
+
+
+def test_duplicate_source_and_mapping(tmp_path, capsys):
+    source = fixture(tmp_path, "source.md",
+                     "<!-- item: W02-E01 -->\n### 첫째\n근거 한 개가 포함된 본문입니다.\n"
+                     "<!-- item: W02-E01 -->\n### 둘째\n또 다른 근거가 포함된 본문입니다.")
+    report = fixture(tmp_path, "report.md", "## 수록\n구체적 반론을 검토합니다.")
+    mapping = fixture(tmp_path, "map.json", json.dumps({"items": [
+        {"id": "W02-E01", "section": "## 수록"},
+        {"id": "W02-E01", "section": "## 수록"}]}))
+    code, result = run(capsys, ["final", "--report", report, "--source", source, "--mapping", mapping])
+    mapped = result["checks"]["coverage_map_structure"]
+    assert code == 2 and mapped["status"] == "HOLD"
+    assert mapped["duplicate_map"] == ["W02-E01"]
+    assert mapped["duplicate_source"] == ["W02-E01"]
+
+
+def test_heading_only_and_exclusion_not_semantic_pass(tmp_path, capsys):
+    source = fixture(tmp_path, "src.md", "## W02-E01\n불리한 논문 두 개를 상세 비교한 자료입니다.")
+    report = fixture(tmp_path, "report.md", "## 반론\n")
+    mapping = fixture(tmp_path, "map.json", json.dumps({"items": [{"id": "W02-E01", "section": "## 반론"}]}))
+    code, result = run(capsys, ["final", "--report", report, "--source", source, "--mapping", mapping])
+    assert code == 0 and result["checks"]["coverage_map_structure"]["status"] == "PASS"
+    assert result["checks"]["coverage_map_structure"]["scope"] == "syntax_and_heading_only"
+    assert result["checks"]["semantic_adequacy"]["status"] == "UNKNOWN"
+    Path(mapping).write_text(json.dumps({"items": [{"id": "W02-E01", "disposition": "excluded"}]}), encoding="utf-8")
+    code, result = run(capsys, ["final", "--report", report, "--source", source, "--mapping", mapping])
+    assert code == 0 and result["checks"]["coverage_map_structure"]["status"] == "UNKNOWN"
+    assert result["checks"]["coverage_map_structure"]["exclusions_need_review"]
+
+
+def test_required_file_unicode_and_unknown_exit_modes(tmp_path, capsys):
+    bad = tmp_path / "broken.md"
+    bad.write_bytes(bytes([0xff, 0xfe, 0xfa]))
+    code, result = run(capsys, ["final", "--report", str(bad)])
+    assert code == 2 and result["checks"]["file_access"]["status"] == "HOLD"
+    code, result = run(capsys, ["--fail-on-unknown", "final", "--report", str(tmp_path / "absent.md")])
+    assert code == 2 and result["checks"]["file_access"]["status"] == "HOLD"

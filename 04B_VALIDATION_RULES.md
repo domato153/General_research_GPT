@@ -387,6 +387,10 @@ Final Report를 출력하기 전에 아래를 확인한다.
 
 ---
 
+## 선택형 검증기 종료 상태와 실제 의미 검증
+
+- 필수 입력 파일을 열지 못하거나 UTF-8 읽기 실패 시 `file_access=HOLD`, 종료 코드 2이다. 의미·UI 검증 불가에 따른 `UNKNOWN`은 기존 기본 비차단을 유지한다. `coverage_map_structure`의 구조 PASS는 W-ID 대응 구문·제목 확인만 뜻하고, 본문 반론의 실수록·승인된 제외·장문 의미 충실성을 증명하지 않는다. 실제 내용은 Stage 7에서 검증한다.
+
 ## Segmented Final Report 검증
 
 긴 Final Report를 여러 Part로 출력할 때는 아래를 확인한다.

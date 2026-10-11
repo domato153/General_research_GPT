@@ -1,17 +1,29 @@
-# RESEARCH_PLAN
+# RESEARCH_PLAN — 2026 미국 중간선거 여론·정세 종합조사
 
-Research date: 2026-10-11
-Topic: US midterm public-opinion trends, domestic conditions, and foreign affairs.
-Scope: A — comprehensive analysis selected by user.
-Method: Compare original poll questionnaires, field dates, population and historical series. Distinguish temporal association from causation and presidential approval from congressional vote intent. Check independent survey houses, competing explanations, and poll nonresponse.
+- 기준일 2026-10-11. 대상 2025-01-20~2026-10-11, 중간선거 2026-11-03.
+- 사용자 선택: A안 전축 종합. 이번 턴에서 세부 방법 설계 및 1차 조사를 위임. 최종보고서 확정/외부 공유까지 위임한 것은 아님.
+- 기본 산출물: 한국어 장문 Full Report. 근거 URL·조사시점·모집단·수치·불확실성, 연표 및 시계열, 주요 경쟁 설명 포함.
+- 저장: 이 `research/20261011-trump-midterms-polling` 브랜치에만. 기준 운영 main HEAD `7b348d427733ad5be795fa91b822fb03164a962f`; main 변경 금지.
 
-Work packages:
-- W01: National approval, congressional vote intent, and turnout interest; initial research in progress.
-- W02: Economy, prices, energy and household conditions; pending.
-- W03: International crises and US foreign policy; pending.
-- W04: Domestic policy and social issues; pending.
-- W05: Demographic and 2024 coalition changes; pending.
-- W06: House/Senate regional context and polling errors; pending.
-- W07: Cross-source synthesis, challenges and report; pending.
+## 작업 ID·필수 완료 기준
+| ID | 조사축 | 완료 기준 | 현 상태 |
+|---|---|---|---|
+| W01 | 국정 지지율, 정당·하원 투표 의향, 투표 열의 | 동일기관 2025~26 추세와 최신 독립기관 조사 교차, 집단별 응답·선거 전환 반례 확인 | **부분완료** — `W01_BASELINE.md` |
+| W02 | 경제와 정책·체감 | BLS·BEA·EIA·Fed·Michigan 원자료로 물가/유가/고용/임금/주거/금리/소비심리의 발표시점·수정 여부·여론 연결 점검 | 미착수; W01에 예비 수치 |
+| W03 | 외교·세계 정세 | 이란 전쟁, 러시아·우크라이나, 중국·통상 외 실제 사건의 원문·일자·정책/가격 파급·여론 비교 및 반론 | 미착수; W01에 이란 예비 수치 |
+| W04 | 미국 국내 정치 | 이민/추방·의료·치안·의회/사법 갈등의 실제 조치, 여론, 집단차 검증 | 미착수 |
+| W05 | 유권자 재편 | 2024 트럼프/해리스 유권자, 무당층, 연령·인종·교육·소득별 추세·표본 크기·교차 전환/기권 구분 | 미착수; W01에 예비 수치 |
+| W06 | 의회 선거의 제도·지역 | 하원/상원, 전국/지역, 경합 선거구·후보, 참여율 지표, 선거구 변경, 여론조사 비응답·과거 오차 | 미착수 |
+| W07 | 사건-여론 통합·반례·보고서 | 주장별 출처 추적/반례 검증, 이질집단·시차·동시 사건 비교, 최종 편집 선택 및 별도 검토 | 미착수 |
 
-First-round output: W01_BASELINE.md. Full report to be finalized only after review and user's completion decision. Research evidence stays on this branch; do not change main.
+## 검증 기준
+1. **단위 일치**: 성인·등록유권자·투표가능성이 높은 유권자, 직무 지지·정책 지지·하원 표심·상원 지역 지표는 분리. 날짜는 발표일과 조사실시일을 구별하고 질문 문구·표본·오차·모드를 기록.
+2. **시계열**: 동일 기관/동일 지표를 우선하며 독립 기관 2곳 이상으로 중요한 시점 교차. 단일 표본의 작은 등락을 추세나 원인으로 과장하지 않음.
+3. **실제 경제**: 인플레이션율과 가격 수준을 구별. 발표일·관측월·잠정/확정·개정 여부 확인. 소비심리·체감은 경제 실측과 별도 표시.
+4. **정세 사건**: 사건 발생일→정책/경제 파급→설문 현장기간 순서를 정합 검토. 인과 주장은 반사실적 대조나 강한 식별 근거 없으면 '가능한 기여 경로'로 한정.
+5. **반례 최소 요건**: 대통령 불만≠민주당 투표, 국정 지지 하락≠공화당 이탈, 여론조사 열의≠실제 투표율, 전국 표심≠의석, 유가 상승≠전쟁 단독 원인, 상충 조사≠평균만 내고 종료.
+6. **중립·선거**: 측정된 여론과 외부 기관 분석은 날짜와 출처로 기술. 자체적으로 당선 확률·당락 예측·정치인 종합평가는 하지 않음.
+7. **근거 보존**: 작업별 Wxx 결과에 출처 URL·조회일·모집단·자료 확인 수준·반론 및 미확인 항목 기재. 재인용 언론은 별개 독립 조사로 중복 집계하지 않음.
+
+## 다음 사용자 관문
+W01의 첫 조사 결과·잔여 한계와 **실제로 다른** 보완 경로를 채팅에 제시해 선택받음. 다음 작업은 선택을 따른다. 자동 최종보고서 확정 없음. 별도 운영 Summary/Delta 파일은 사용하지 않음.

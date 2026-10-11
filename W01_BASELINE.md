@@ -39,3 +39,8 @@ https://www.reuters.com/world/us/most-republicans-tight-midterm-distance-themsel
 - Republican nonresponse and historical polling error can skew generic ballot; validate weighting and likely voter screens.
 - House and Senate structures and district boundaries require separate W06.
 - This first round does not assess Ukraine/China/immigration with equal depth; subsequent W03/W04 are still open.
+
+## Independent trend corroboration added 2026-10-11
+Ipsos original Sept 21 release (fieldwork Sept 17-20) reports within self-identified Republicans Trump overall job approval fell from 86% (Jan 2026) to 73% (Sept), economy handling approval 80% to 56%, cost-of-living handling approval 70% to 44%. These Republicans are NOT interchangeable with Pew's validated 2024 Trump-voter cohort. Ipsos reports 32% all-US-adult approval in Sept; Reuters reports 32% in the Oct 5 wave. Confirm precise question wording and item-level sampling before aggregation.
+https://www.ipsos.com/en-us/republicans-rating-trump-cost-living-declines
+https://www.reuters.com/world/us/trump-approval-record-low-hispanic-voters-sour-on-republicans-reutersipsos-poll-2026-10-05/

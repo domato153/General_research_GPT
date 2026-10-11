@@ -74,6 +74,6 @@ class TriggerStrengthStaticContract(unittest.TestCase):
             self.assertIn(f"| T{i:02d} |",s)
         for term in ("NOT RUN","E2E UNKNOWN","static","no-write","not a behavioral PASS"):
             self.assertIn(term,s)
-        
+
 if __name__ == "__main__":
     unittest.main()

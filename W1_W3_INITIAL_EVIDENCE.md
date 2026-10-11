@@ -69,8 +69,8 @@ W1 시계열 + W2 공식 경제지표의 비교 가능성부터 완성하면서 
 
 
 ## [현행 2026-10-12] 초기 여론·선거 의제 그림 실물 보존
-- **E6-VIS-F01**: Pew 2026-09-28~10-04 미국 **등록 유권자**의 중간선거 투표 의제별 '매우 중요' 응답: 경제84·민주주의 미래73·의료68·교육62·이민59·외교57·에너지54%. 한 가지 최우선 문제를 고르는 질문이 아니며 비율 총합은 100%가 아님. 이전 채팅 그래프 일곱 항목과 7/7 대응.
-![2026년 중간선거 쟁점 중요도](assets/E6-VIS-F01_midterm_issue_importance_2026.svg)
+- **E6-VIS-F01**: Pew 2026-09-28~10-04 미국 **등록 유권자**의 중간선거 투표 의제별 '매우 중요' 응답: 경제84·민주주의 미래73·의료68·교육62·이민59·외교57·에너지54%. **원자료 중 선택한 7개 의제**로 전체 의제 목록이나 전체 순위가 아님. 한 가지 최우선 문제를 고르는 질문이 아니며 비율 총합은 100%가 아님. 이전 채팅 그래프 일곱 항목과 7/7 대응.
+![2026년 중간선거 쟁점 중요도 — 선택한 7개 의제](assets/E6-VIS-F01_midterm_issue_importance_2026.svg)
 [SVG](assets/E6-VIS-F01_midterm_issue_importance_2026.svg) · [CSV](assets/E6-VIS-F01_midterm_issue_importance_2026.csv). 원출처: https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/
 - **E2-VIS-F01**: Pew의 **2024년 트럼프 투표 검증 집단** 국정 승인율 2025-02 95%·2026-10 67%. 과거 투표자를 기준으로 한 두 조사 시점의 집단 승인율이지 그 집단의 민주당 투표전환율 또는 개인의 인과 변화량이 아님.
 ![2024년 트럼프 투표 집단의 국정 수행 승인율](assets/E2-VIS-F01_trump_2024_voters_approval.svg)

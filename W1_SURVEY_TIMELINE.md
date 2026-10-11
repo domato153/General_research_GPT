@@ -1,0 +1,67 @@
+# W1 — 대통령 국정지지 여론 시계열 복원 (2025-01~2026-10-11)
+기록일: 2026-10-11 KST. 단계: A 보완조사 2차. 상태: **부분완료**, 특히 2026 완전한 동일기관 월별 연속 지지율은 아직 부재.
+
+## W1-01 2025 Gallup 월간 동일기관 국정 승인율
+모집단: 미국 성인. 단위: 국정 수행 승인 %. 중간 결측 대체/보간 없음. 각 행은 그달 조사(필드 종료월), 연속 일별 관측이 아님.
+
+| 필드 종료일 | 승인 % | 출처 |
+|---|---:|---|
+| 2025-01-27 | 47 | Gallup |
+| 2025-02-14 | 45 | Gallup |
+| 2025-03-16 | 43 | Gallup |
+| 2025-04-14 | 44 | Gallup |
+| 2025-05-18 | 43 | Gallup |
+| 2025-06-19 | 40 | Gallup |
+| 2025-07-21 | 37 | Gallup |
+| 2025-08-20 | 40 | Gallup |
+| 2025-09-16 | 40 | Gallup |
+| 2025-10-16 | 41 | Gallup |
+| 2025-11-25 | 36 | Gallup |
+| 2025-12-15 | 36 | Gallup |
+
+출처: [Gallup 역사 통계](https://news.gallup.com/poll/116677/presidential-approval-ratings-herbert-hoover.aspx), [UCSB/APP 2025 Gallup 필드 일자 확인](https://www.presidency.ucsb.edu/statistics/data/donald-j-trump-2nd-term-public-approval).
+검증: 연초 47%, 7월 37%, 10월 41%, 11~12월 36%: 단조 감소가 아니며 2025년 이미 하락했음. 인과효과 미식별.
+
+## W1-02 Pew American Trends Panel 동일 기관/동일 문항 불규칙 조사 (보완)
+미국 성인 국정 수행 승인. 아래 **조사 종료일**, 월별 모든 달 조사됐음을 뜻하지 않음.
+| 필드 종료일 | 승인 % | 2024 Trump 투표층 승인 % |
+|---|---:|---:|
+| 2025-02-02 | 47 | 95 |
+| 2025-04-13 | 40 | 89 |
+| 2025-06-08 | 41 | 88 |
+| 2025-08-10 | 38 | 85 |
+| 2025-09-28 | 40 | 87 |
+| 2026-01-26 | 37 | 83 |
+| 2026-04-26 | 34 | 78 |
+| 2026-07-12 | 34 | 75 |
+| 2026-10-04 | 30 | 67 |
+
+출처: [Pew 2026-10-08 최신 조사 원문과 데이터 표](https://www.pewresearch.org/politics/2026/10/08/trumps-approval-rating-drops-as-fewer-americans-are-confident-in-his-handling-of-the-economy-other-issues/). 2024 투표는 선거 사후 설문 응답과 실제 투표 기록 확인에 기반. **반복 횡단면/재접촉 자료를 투표 전환 판정으로 오용하지 않음**. 2026-10-04의 30%는 국정 승인, 67%는 2024 Trump 투표층의 국정 승인(현재 중간선거 트럼프 '득표'와 다름).
+감지된 원자료 표기 위험: Pew의 1기·2기 비교 그래프 다운로드 테이블에는 2기 수치 옆에 2017/2018 X 플로팅 날짜가 배치되는 표시상 오류/정렬 문제가 있으므로 **날짜는 2026 보고서 본문 및 투표층 원자료의 2025~2026 실제 필드 표기를 우선**.
+
+## W1-03 2026 Ipsos/Reuters 보완 단면 (하나의 2025 Gallup 선으로 잇지 않음)
+| 필드 날짜 | 국정 승인 % | 유형/한계 |
+|---|---:|---|
+| 2026-04-24~27 | 34 | Reuters/Ipsos 성인 KnowledgePanel n=1269 |
+| 2026-05-15~18 | 35 | Reuters/Ipsos 성인 |
+| 2026-06-03~08 | 35 | Reuters/Ipsos 성인 KnowledgePanel n=4531 |
+| 2026-08월(구체 필드 확인 필요) | 35 | Reuters/Ipsos 8월 발표, 다른 월과 비동일 필드 확인 대기 |
+| 2026-09-17~20 | 32 | Reuters/Ipsos 성인 |
+| 2026-09-30~10-05 | 32 | Reuters/Ipsos 성인 KnowledgePanel n=4506 |
+
+원문:
+- [Reuters/Ipsos 2026-04-27](https://www.ipsos.com/en-us/americans-increasingly-feel-economy-wrong-track)
+- [Reuters/Ipsos 2026-05-19](https://www.ipsos.com/en-us/americas-frustration-cost-living-continues-rise)
+- [Reuters/Ipsos 2026-06-08](https://www.ipsos.com/en-us/reutersipsos-june-2026-poll)
+- [Reuters/Ipsos 2026-08](https://www.ipsos.com/en-us/reutersipsos-august-2026-poll)
+- [Reuters/Ipsos 2026-09-21](https://www.ipsos.com/en-us/republicans-rating-trump-cost-living-declines)
+- [Reuters/Ipsos 2026-10-05 조사 방법](https://www.ipsos.com/en-us/reutersipsos-october-survey), [Reuters 2026-10-05 보도](https://www.reuters.com/world/us/trump-approval-record-low-hispanic-voters-sour-on-republicans-reutersipsos-poll-2026-10-05/).
+단, Reuters/Ipsos **핵심정치/대규모 KnowledgePanel/다른 합동 설문**의 표본설계와 질문을 추가 추적해 월별 동일성 판정 필요. 2026-08 값 원문 35%는 전체 승인; 필드일 미확인으로 엄격한 시계열표에는 미확인으로 표시.
+
+## W1-04 동시 관찰·집단 반례
+- 2026-09 Reuters/Ipsos 공화당 응답자 국정 승인 73% vs 2026-01 86%; 생활비 대응 승인 44% vs 70%; 경제 대응 승인 56% vs 80%. 해당 응답은 **정당 식별 집단**이며 Pew의 **2024 Trump 실제 투표층**과 다름. 출처: [Ipsos](https://www.ipsos.com/en-us/republicans-rating-trump-cost-living-declines).
+- 2026-10 Pew 2024 Trump 유권자 승인 67%(-28%p vs 2025-02). 모두 민주당 지지로 전환한 것으로 해석 금지.
+- Gallup 2025 (47→36) vs Pew 2025-02 47→2026-10 30 등 장기 방향은 대체로 일치하나 조사기관별 수준·반등 정도가 다름. **혼합 곡선의 가중평균 및 수치상 단일 회귀는 아직 하지 않음**.
+
+## W1-05 남은 데이터 작업
+2026-01~10 Reuters/Ipsos 설문별 정확한 필드, 국정 승인, 설문모드, 모집단·가중치·질문 원문 확보 후 동질성 조건 아래 월별 지표 재구성; 2025 Gallup 월간 시계열 기초 편의·기관 추세 상호 비교; 오차·주요 변화 지점 통계 검증. 결측/시차 적시.

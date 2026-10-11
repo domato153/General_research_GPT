@@ -113,3 +113,10 @@ body {color:#1F303B; font-family:"Noto Sans CJK KR","Noto Sans CJK JP",sans-seri
 .report-body .lead-verdict, .report-body .conclusion-box p, .report-body .table-wrap p, .report-body li p {text-indent:0;}
 
 /* Named @page + target-counter require WeasyPrint; customize the report copy of running header/date text as needed. */
+
+/* Optional report figure support; existing approved cover, page margins, colors, typography unchanged. */
+.report-body .report-figure {margin:6mm 0 8mm;max-width:100%;break-inside:avoid;page-break-inside:avoid;}
+.report-body .report-figure img,
+.report-body .report-figure svg {display:block;max-width:100%;width:auto;height:auto;max-height:205mm;margin:0 auto;}
+.report-body .report-figure figcaption {margin:2mm 0 0;text-align:left;text-indent:0;font-size:8pt;line-height:1.48;color:#586A74;overflow-wrap:anywhere;}
+.report-body .report-figure figcaption a {color:#255D72;overflow-wrap:anywhere;}

@@ -66,3 +66,13 @@ W1 시계열 + W2 공식 경제지표의 비교 가능성부터 완성하면서 
 - 그림 ID E2-F01: **2024년 트럼프 투표 확인 집단**의 국정 승인율 2025-02 95%, 2026-10 67%. 두 카드의 서로 다른 조사시점·같은 분류의 과거 투표 집단 승인율이며 직접 투표 전환율/개인의 인과 변화가 아님. 자료 Pew 위 E2. 한편 Pew 전체 미국 성인 국정승인은 47→30으로 모집단이 다르므로 동일 표본 서술 금지. 원래 UI 카드 픽셀/레이아웃 복원성 UNKNOWN.
 - 그림 ID E6-F01: **미국 등록 유권자**가 2026-09-28~10-04 각 문제를 중간선거 투표에서 '매우 중요'하다고 답한 비율: 경제 84, 민주주의의 미래 73, 보건의료 68, 교육 62, 이민 59, 외교 57, 에너지 54 (%). 가로형 막대, x=의제, y=0~100%, 각 문항 독립 응답(합계 100%가 아님). 원자료 링크: https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/ ; 위 E6 본문 수치와 7/7 대조. Chicago Council의 '한 가지 가장 중요한 투표 문제' 2%와 **질문 및 모집단·조사시점 혼합 금지**. 원본 ChatGPT 그래프 이미지/툴팁은 보존되지 않음(UNKNOWN).
 - 초기 보고서의 Reuters/Ipsos 32%, Pew 30% 대형 숫자 카드도 서로 다른 조사기관·날짜를 유지해야 함. 등록 유권자 하원 선호(Reuters/Ipsos 민주44/공화37, Pew 민주44/공화36)는 국정 승인과 별도의 문항. 표/카드로 변환 시 '등록 유권자'와 '미국 성인'을 명시한다.
+
+
+## [현행 2026-10-12] 초기 여론·선거 의제 그림 실물 보존
+- **E6-VIS-F01**: Pew 2026-09-28~10-04 미국 **등록 유권자**의 중간선거 투표 의제별 '매우 중요' 응답: 경제84·민주주의 미래73·의료68·교육62·이민59·외교57·에너지54%. 한 가지 최우선 문제를 고르는 질문이 아니며 비율 총합은 100%가 아님. 이전 채팅 그래프 일곱 항목과 7/7 대응.
+![2026년 중간선거 쟁점 중요도](assets/E6-VIS-F01_midterm_issue_importance_2026.svg)
+[SVG](assets/E6-VIS-F01_midterm_issue_importance_2026.svg) · [CSV](assets/E6-VIS-F01_midterm_issue_importance_2026.csv). 원출처: https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/
+- **E2-VIS-F01**: Pew의 **2024년 트럼프 투표 검증 집단** 국정 승인율 2025-02 95%·2026-10 67%. 과거 투표자를 기준으로 한 두 조사 시점의 집단 승인율이지 그 집단의 민주당 투표전환율 또는 개인의 인과 변화량이 아님.
+![2024년 트럼프 투표 집단의 국정 수행 승인율](assets/E2-VIS-F01_trump_2024_voters_approval.svg)
+[SVG](assets/E2-VIS-F01_trump_2024_voters_approval.svg) · [CSV](assets/E2-VIS-F01_trump_2024_voters_approval.csv). 원출처: https://www.pewresearch.org/politics/2026/10/08/trumps-approval-rating-drops-as-fewer-americans-are-confident-in-his-handling-of-the-economy-other-issues/
+- 실제 그래프는 연구의 확인된 데이터를 사용한 **별도 재생성본**으로 과거 채팅 UI 픽셀·도구팁을 복제한 것이 아님. 본문 다른 모집단(전체 미국 성인, 등록유권자, 과거 트럼프 투표층) 혼합 금지.

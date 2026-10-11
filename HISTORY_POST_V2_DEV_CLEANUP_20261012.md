@@ -29,3 +29,12 @@
 - `main`은 **현행 범용 운영 규칙**, 역사 브랜치의 `PROJECT_BOOTSTRAP.md` 등 과거 파일은 **구판본 증거**다. 역사 HEAD를 그대로 운영본으로 교체하지 않는다.
 - 브랜치 참조 삭제는 별도 단계이다. 삭제 **완료 여부**는 실제 REST DELETE와 후속 브랜치 조회 결과가 있는 추가 역사 기록에서 확인해야 하며, 이 보존 스냅샷만으로 삭제 완료라고 주장하지 않는다.
 - 이 기록은 현재 `research/*` 자료/상태를 재감사한 결과가 아니다. 사용자 연구 브랜치를 삭제·병합하지 않는다.
+
+## 실제 정리 완료 결과 (별도 후속 확인)
+
+- 실행 도구: 사용자 인증 `gh` CLI(계정 `domato153`)에서 GitHub REST API `DELETE /repos/domato153/General_research_GPT/git/refs/heads/design/...`. 원격 파일·연구 브랜치를 변경하지 않았다.
+- 삭제 직전 REST GET으로 보호 브랜치 3개와 임시 브랜치 5개의 **정확한 HEAD**를 모두 비교하고, **각 DELETE 직전** 해당 임시 ref의 SHA를 다시 확인했다. 전체 5개 DELETE가 정상 종료(프로세스 exit 0).
+- 삭제된 임시 ref는 상단 표의 5개 전부다. 삭제 후 GitHub branches API 원격 결과: 정확히 **3개**: `main` = `7fd46d9fb738fcb74f63f0f6e23aec00c27b945f`; `archive/research-v2-development-20261011` = `b8cf7192d1ea09dbf47ea787a451bcd9b2d7434e` (본 완료 기록 추가 커밋 전); `research/20261011-trump-midterms-opinion` = `068e13063e5d88ead9e96a8568b6ed14cb96e3f3`.
+- **역사 보존 커밋** `b8cf7192d1ea09dbf47ea787a451bcd9b2d7434e`의 부모 커밋을 GitHub Git Commit API로 재조회하여 과거 아카이브 HEAD·운영 main HEAD·개발 고유 HEAD가 연결된 사실을 확인했다. 최종 보존 상태는 이 완료 기록 추가 이후 새 archive HEAD를 기준으로 재조회한다.
+- 삭제 ref의 이름은 더 이상 존재하지 않는다. 복원은 이 문서의 고정 SHA로 수행하며, 같은 이름의 브랜치가 다시 만들어졌다고 가정하지 않는다.
+- 원격 브랜치 삭제는 Git 커밋 객체·실물 연구/운영 파일 삭제가 아니다. 운영/연구 본체 보존의 진짜 완료 여부는 이력에서 해당 SHA가 도달 가능한지 별도 확인한다.

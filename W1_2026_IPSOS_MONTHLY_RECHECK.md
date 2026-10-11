@@ -38,3 +38,12 @@
 - 대상: Reuters/Ipsos 2026-01~10 미국 성인 국정 승인율. 값(조사 월별 대표 관측): 38, 38, 36, 34, 35, 35, 37, 33, 32, 32%. 정확한 각 조사 시작/종료일·모집단·이견은 위 표에 기록. **월평균 아님**; 동일 달 다중 조사(1월 42·41·38, 8월 35·33·33) 고려. 2026-10 포인트는 실제 필드 Sep30–Oct5.
 - X=조사 월 10개 범주(실제 필드 간 간격 및 시작 날짜 불균등), Y=0~50%, 단위=%, 한 개 선/원점 표시, 도표 원자료=위 표 W1 3차 대표 10행. 앞선 중간 채팅 그래프의 10개 수치를 위 표와 10/10 수치 대조. 실제 채팅 UI 차트 픽셀/툴팁 원형은 미수집 UNKNOWN. 각달 1~2%p 변화는 표본오차·질문 순서/가중치·core/large 표본 구성 차이로 유의성을 단정하지 않음.
 - 2026-07 대표 37% 및 약 n=1,246 성인은 Reuters 보도(https://www.reuters.com/world/us/just-one-three-americans-back-iran-war-most-unsure-trumps-goals-reutersipsos-2026-07-27/)와 제3자 원자료 표(https://archive.li/2026.07.31-071606/https%3A/www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin)에서 독립 확인; 정밀 topline PDF 전체 문항/가중치 감사 전까지 방법 동일성 CONDITIONAL.
+
+### W1-VIS-F03 실제 시각자료 보존 (2026-10-11)
+
+![2026 Reuters Ipsos 국정 승인율 월별 대표 관측](assets/W1-VIS-F03_reuters_ipsos_approval_2026.svg)
+
+- [SVG 그래프](assets/W1-VIS-F03_reuters_ipsos_approval_2026.svg) · [CSV 원데이터](assets/W1-VIS-F03_reuters_ipsos_approval_2026.csv). 각 월의 필드 날짜·표본·조사설계 제한은 위 본문에 보존되어 있다.
+- 2026년 10월 표본은 9/30~10/5 조사. **월간 평균이 아닌 대표 관측치이며, 각 조사 방법이 완전히 동일하다고 검증되지 않았다.**
+- 그림 원본: 검증된 W1 수치로 재생성한 SVG. 과거 ChatGPT UI의 실제 픽셀·툴팁과 동일 여부는 UNKNOWN.
+- 최종보고서: W1 중요 시각자료 편입 후보. 최종 본문 수록 위치는 사용자 편집 선택 후 확정.

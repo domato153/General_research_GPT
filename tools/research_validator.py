@@ -121,7 +121,7 @@ def final(args, out):
                         invalid.append(key)
                         continue
                     mapped.add(key)
-                    if key not in sources or (disposition != "excluded" and section not in report):
+                    if key not in sources or (disposition != "excluded" and section not in report.splitlines()):
                         missing.append(key)
                 unmapped = sorted(sources - mapped)
                 state = "HOLD" if invalid or missing else "UNKNOWN" if unmapped else "PASS"

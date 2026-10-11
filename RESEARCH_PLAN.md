@@ -56,3 +56,5 @@
 - 3차 기존 핵심 수치 교차검증: BEA 2026-08 real DPI 0.0%·real PCE +0.6% (https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026); BLS 2026-09 제조업 +9k 및 2025-12 저점 대비 +72k (https://www.bls.gov/news.release/archives/empsit_10022026.htm); Freddie Mac 30년 주간 금리 2026-10-08 7.40% (https://fred.stlouisfed.org/series/MORTGAGE30US). 서로 다른 월/지표로 인과 분해 금지.
 - 근거/판정: W1·W2·W3·W7 부분완료 지위 유지. Gallup/W1·CPI/W2와 시각 정보 복원성 보강 완료; Reuters/Ipsos 전체 PDF별 원문 질문/가중치 동일성 미전수검증, 소득·주거·제조업 2025~26 전체기간 월별 복원 미완료. 정치/선거 최종 승패 예측·전쟁/관세의 국정승인 %p 인과효과는 추정하지 않음.
 - 원본 재현 한계 및 E2E: 운영 main의 tests/fixtures는 실제 Gallup 연구 수치로 만든 **별도 재생성 시각자료**이고 과거 ChatGPT UI 차트를 복제한 것이 아님. main 정적 테스트 자체가 실제 새 스레드의 자동 적용·시각 렌더 E2E PASS를 뜻하지 않음. 이번 연구 감사 역시 W-ID와 이용 가능한 대화 수치 기준으로만 판정.
+
+- 추가 시각 보존 세부검수: 초기 Pew 등록유권자 정책 중요도 7개 막대 및 2024 Trump 투표층 95→67 카드(E2/E6), 전쟁·관세→생활비 인식→국정/투표 판단 **미확정 경로** 개념도(W3)까지 관련 W-ID에 그림 ID·값/질문·조건/출처를 연결. 사용자 실제 UI 렌더/픽셀 원형은 별도 확인 불가.

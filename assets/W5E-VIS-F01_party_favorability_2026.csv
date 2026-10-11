@@ -1,0 +1,9 @@
+key,date,party,measure,value_pct
+D_apr_fav,2026-04-28,Democrat,favorable,39
+R_apr_fav,2026-04-28,Republican,favorable,40
+D_apr_unfav,2026-04-28,Democrat,unfavorable,59
+R_apr_unfav,2026-04-28,Republican,unfavorable,58
+D_oct_fav,2026-10-04,Democrat,favorable,40
+R_oct_fav,2026-10-04,Republican,favorable,37
+D_oct_unfav,2026-10-04,Democrat,unfavorable,58
+R_oct_unfav,2026-10-04,Republican,unfavorable,61

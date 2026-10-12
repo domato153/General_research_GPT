@@ -13,6 +13,7 @@ import fitz
 from bs4 import BeautifulSoup
 from markdown_it import MarkdownIt
 from weasyprint import HTML
+from pdf_pagination_audit import audit as audit_pages
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "FINAL_REPORT.md"
@@ -124,6 +125,7 @@ def main():
                 sec["class"].extend(["appendix", "appendix-break"])
             m = re.match(r"^(\d+)\.", title_txt)
             if m:
+                sec["class"].append("major-break")
                 el["id"] = f"chapter-{int(m.group(1))}"
             elif title_txt.startswith("요약"):
                 sec["class"].append("executive")
@@ -219,6 +221,16 @@ def main():
     assert html_tables == raw_tables, (html_tables, raw_tables)
 
     HTML(filename=str(HTML_PATH), base_url=str(ROOT)).write_pdf(str(OUT))
+
+    pagination = audit_pages(OUT, expected=14, top_limit=180., gap_threshold=.30)
+    if pagination["hard_issues"]:
+        raise AssertionError("PDF chapter pagination violations: " + json.dumps(
+            pagination["hard_issues"], ensure_ascii=False))
+    audit_path = OUT.parent / "W8_pdf_pagination_audit.json"
+    audit_path.write_text(json.dumps(pagination, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("PAGINATION_REVIEW:", json.dumps(
+        {"verdict":pagination["verdict"],
+         "large_gap_pages":pagination["large_gap_pages"]},ensure_ascii=False))
 
     pdf = fitz.open(OUT)
     text = "\n".join(page.get_text() for page in pdf)

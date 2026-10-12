@@ -8,6 +8,10 @@ on:
       - .github/workflows/export_w8_pdf.yml
       - tools/export_w8_pdf.py
       - tools/visual_layout_audit.py
+      - tools/pdf_pagination_audit.py
+      - tests/test_pdf_pagination_audit.py
+      - final_pdf_report_style.css
+      - final_pdf_html_formatting_instruction_final.md
       - tests/test_visual_layout_audit.py
       - assets/**
   workflow_dispatch:
@@ -42,6 +46,10 @@ jobs:
       - name: Run reusable visual-layout regression tests
         run: |
           python -m unittest discover -s tests -p "test_visual_layout_audit.py" -v
+
+      - name: Run PDF pagination regression tests
+        run: |
+          python -m unittest discover -s tests -p "test_pdf_pagination_audit.py" -v
 
       - name: Audit repaired SVG geometry before PDF rendering
         run: |

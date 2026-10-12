@@ -13,3 +13,10 @@
 
 ## Full Report 상세형 충실도 개선 보존 (2026-10-12)
 - `HISTORY_FULL_REPORT_FIDELITY_20261012.md`: 외부 감사 교차검증, 주요 설계 결론, 운영 `main` `75b8c3e` 패치·32 PASS/1 SKIP 정적 검증과 실전 E2E 미검증 구분, 역사보존 추가 부모 커밋 및 세 브랜치 상태.
+## PDF 시각화·페이지 조판 실전 보완 (2026-10-12, 후속 역사기록)
+- [`HISTORY/pdf-quality-20261012/README.md`](HISTORY/pdf-quality-20261012/README.md): W8 실물 PDF에서 확인된 출처↔축 겹침·단일 범주 과대 공백·밀집 날짜 눈금·대장 중간 시작·장식 HR 빈 페이지까지의 **문제→수정→실패→재시험→남는 경계**와 복원 명령을 통합 기록.
+- [`HISTORY/pdf-quality-20261012/W8_VISUAL_LAYOUT_REMEDIATION_20261012.md`](HISTORY/pdf-quality-20261012/W8_VISUAL_LAYOUT_REMEDIATION_20261012.md): 연구 브랜치의 원래 SVG 교정 36쪽 판 감사 파일을 Git blob 그대로 재사용.
+- [`HISTORY/pdf-quality-20261012/W8_PDF_PAGINATION_IMPROVEMENT_AUDIT_20261012.md`](HISTORY/pdf-quality-20261012/W8_PDF_PAGINATION_IMPROVEMENT_AUDIT_20261012.md): 실제 42쪽 최종 보고서의 페이지 조판·상단 장 시작·빈 페이지 검수 파일을 Git blob 그대로 재사용.
+- 관련 운영 `main` 커밋: `1045ef57672a93637b628e21227ede7be327e381`, `3f60f9376237496cc30c09a835c14ea5bbbdca8a`, `297535465be5819323c012d3dd7f3ea33ac8de9b`.
+- 보존 시점 운영 `main` HEAD `297535465be5819323c012d3dd7f3ea33ac8de9b`, 연구 HEAD `e84adae6e7131cfc33105f39d229268fdf696443`, 직전 역사 HEAD `462c6c05f883e6669db008eb4a0e0878bf40ac48`.
+- 역사 기록용 커밋은 위 **직전 archive HEAD를 첫 부모**, 해당 main·research 고정 HEAD를 추가 부모로 하여 각 정본의 당시 원본 코드/검증기/CSV/SVG/PDF Git 객체를 실제 연결한다. 루트의 과거 `PROJECT_BOOTSTRAP.md` 등 구판 운영 파일은 변경하지 않는다. 이 기록은 원본 조사자료를 운영 `main`으로 옮긴 사실을 뜻하지 않는다.

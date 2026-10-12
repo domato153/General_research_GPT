@@ -81,3 +81,11 @@ https://twdatabase.com/patch/9-0-3
 - Warhammer III 게임 문자열(구판 Warhammer I 별명과 혼동 금지): wh_dlc08_nor_mon_skinwolves_0 → 늑대두겁; wh_dlc08_nor_mon_skinwolves_1 → 늑대두겁 (장갑 무장).
 - 짐승 무리 모집 계열: 군견 보관소 wh_main_nor_beasts_1: L1 500골드 1턴 군견; 전투 늑대 소굴 wh_main_nor_beasts_2: L2 추가1000골드 3턴, 늑대두겁/얼음 늑대; 암흑 공물의 동굴 wh_main_nor_beasts_3: L3 추가2000골드 4턴, 장갑 무장 늑대두겁. 건설 총 3500골드·8턴(정착지 레벨업 비용/기간 별도). https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings 및 https://twdatabase.com/buildings/norsca
 - 게임 고유 스킬/기술은 한글 문자열 직접 추출이 미완료라 일부 이름 미확인. 표기 확정·미확인 구별.
+
+## W06 확인: 9.0 게임 원자료가 보여 주는 구체 비용과 소집 규칙
+자세한 원문·제약·링크: W06_RESOURCE_SCRIPT_AUDIT.md. 9.0 공개 덤프 데이터로서 9.0.3 한국어 클라이언트 직접 실행 검증 전까지는 조건부.
+- 트롤 왕국 '트롤 굴' / '트롤 땅굴'로 이어질 법한 shelter 건설 비용 키가 Trollkind 차감 -30/-40으로 존재(이름상 연관성 높으나 직접 건물 가격 매핑 불완전).
+- '트롤 동굴' / '돌투성이 소굴' / L3 분기와 연결될 법한 woods/deep woods 건설 비용 키 -20/-35/-50, 'troll caves' -30. 금0 건물이라고 자원 무료로 간주하지 않음.
+- 트로그 자신의 군단 내 지정 트롤 1부대 +2 Trollkind/턴, 타군주 +1/턴, 트로그 자신 +1/턴. 주둔군/군주 없는 군단 0.
+- 소집 완료시 stop gain 효과 10턴, ritual 1~6단계 재사용 대기 10/12/14/16/18/20턴. 플레이어 resource costs 2~6단계 60/90/120/150/200 Trollkind, 1단계 자원가격 raw table 미존재. AI spawns의 20/40/60/80/100/140을 인간 플레이어 가격과 혼동 금지.
+- 금전 비용과 Dominion(+2,+4,+10 등) 증가량, Trollkind 건설 비용, Call ritual 비용은 서로 구별.

@@ -1,87 +1,243 @@
-# [초안·최종 미확정] 트로그 — 워해머 3 불멸의 제국 9.0.3 실전 통합 공략
-**상태: 초기 초안 — 새 9.0 자원 스크립트 검증 및 한국어 건물 검증 결과가 본문에 아직 통합되지 않음. 최종 승인·최종 검수된 결과물이 아님.**
-**경고: 본문의 영문 위주 명칭과 트롤족 자원·초기 건설 루트에는 W07에서 확인된 누락 및 부정확한 설명이 남아 있습니다. 지금은 W06_RESOURCE_SCRIPT_AUDIT.md, W04_KO_LOCALIZATION.md, W07_DRAFT_AUDIT.md를 함께 봐야 합니다. 9.0 Lua 수치를 9.0.3 직접 확인값으로 단정하지 마십시오.** 상세 보정은 W04_KO_LOCALIZATION.md와 W02_PRACTICAL_GUIDE.md를 함께 확인. 기존 영문 표현은 확정 한국어 명칭이 아직 보정되지 않은 초안 표기.
+# [통합 공략 개정 초안 · 최종 미확정] 트로그(윈터투스) — 토탈 워: 워해머 III 불멸의 제국들, 9.0.3
 
-*2026-10-12 조사. 9.0.3 2026-10-09 배포. 직접 런타임 플레이 검증이 아닌 공식 패치+게임 데이터 추출+2026년 사용자 사례 교차.*
+> 상태: 2026-10-12 사용자 승인 범위의 조사·개정 원고. **최종 완성/확정/배포가 아님.** 기존 W01~W08 근거를 모은 한국어 실전 가이드 초안이다. 모든 게임 내 메뉴/특수 자원 가격을 현행 9.0.3 한국어 클라이언트에서 실측한 것은 아니다.
+>
+> **판본 원칙**: 9.0.3 게임 데이터가 있으면 우선 채택. 7.0 노스카 개편의 현재 남은 규칙·9.0 루아 스크립트는 9.0.3에서 관련 변경이 확인되지 않는 한 **유효한 참고값**으로 채택하되, 변경 부재만으로 숨은 스크립트 무변경을 100% 입증했다고 주장하지 않는다. 패치마다 모든 동일 값을 재측정하지 않는다. Honga의 한국어 건물/부대 ID 매핑은 유용하지만 일부 수치는 9.0.3과 달라 가격은 더 신선한 데이터 우선이다.
+>
+> **한국어 표기**: 한글 게임 데이터와 원문 키를 대조한 한국어명 우선. 한국어 게임 UI 직접 검증이 안 된 기술·스킬·영지명은 '한국어 공식명 미확인'을 달고 영문 검색 키워드를 함께 적음. 의역을 공식 한글명으로 제시하지 않는다.
 
-## 종합
-트로그는 노스카 부족 지도자 격파 통합→기본/얼음 트롤 모집→Trollkind 순수입 안정 및 Troll Kingdom 강화→Throgg 군주 고유 스킬/연구→핵심 정착지 및 단기 승리→후반 Monstrous Horde 원정의 흐름이 안정적이다. 대량 트롤은 강하지만 사격/화염/대대형/사기 약점으로 인해 Skin Wolves, 피미르, 마법사 및 정면 스크린을 혼합할 실익이 있다. 이는 정해진 속도전 루트가 아닌 조건부 권고다.
+## 1. 실행 결론
 
-## 판본 확인
-CA 공식 9.0.3: https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-patch-notes-amp-announcements/threads/16126-total-war-warhammer-iii-patch-9-0-3
-7.0 노스카 개편 원문: https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/84-total-war-warhammer-iii-patch-7-0-introducing-the-free-content-and-the-masque
-9.0.3 게임 데이터: https://twdatabase.com/factions/wintertooth , https://twdatabase.com/races/norsca , https://twdatabase.com/buildings/norsca , https://twdatabase.com/technologies/norsca , https://twdatabase.com/units/throgg , https://twdatabase.com/patch/9-0-3
-2026-06 실제 운용 상반 후기: https://www.reddit.com/r/totalwarhammer/comments/1tx76x4/advice_for_playing_norsca/ ; https://www.reddit.com/r/totalwar/comments/1u6jiln/norscas_rework_is_such_a_bloated_mess_that_ca/
-상세 수치와 증거·한계는 W01_EVIDENCE.md 참고.
+**트로그의 안정적인 목표는 북부 노스카 부족의 지도자를 격파해 연방 통합하고, 트롤족 자원 생산의 중심인 트로그 군단·트롤 왕국 건물을 성장시키며, 늑대두겁/피미르로 트롤의 사격·대대형 약점을 보완하고, 남부는 가치 높은 거점만 골라 점령하면서 남은 도시를 약탈해 전리품을 확보하는 것이다.**
 
-## 트로그 특성
-Monolith of Flesh (Mountains of Hel) 시작, 근처 Broken Wheel Black Rock, Aesling Forbidden Citadel, Sarl Sarl Encampment, Tallymen Forest of Decay, Naglfarlings. Battle loot +10% / factionwide all Troll physical resist +15% / Troll upkeep -20% / Allegiance Champions recruit rank +24 / 지역별 Bile-Chaos-River-Stone 모집. Wulfrik을 격파 합병하면 Seafang sea-to-revealed-port teleport 개인 능력을 이용할 수 있다는 2026 사용 사례 있음. 울프릭 고유 연구의 유산까지 얻는다고 단정해서는 안 됨.
+통합 확장·적 처리·수익 기반이 확보된 뒤 승리목표(괴수 사냥 4개, 지배 III 단계, 특정 건물·랜드마크)를 병행한다. 울프릭 연방 통합 시 울프릭 개인의 바닷길 이동 능력을 해외 원정에 활용하는 것은 2026년 실전 보고에 근거한 유용한 선택이며, 필수 고정 턴 루트는 아니다.
 
-## Troll Empire
-트롤이 군대에 있으면 Trollkind 수급. 별도 Troll Empire 건물 건설에 소비, 지역 보너스 및 HUD Troll King's Dominion 성장, 고단계일수록 기간제 Monstrous Horde summon 강해짐. 지역 troll 특수 모집은 물가/습지 River, 바위산 Stone, 카오스 황무지/오염 Chaos/Bile. 게임상 각 건물의 실제 수급/소비 수치 확인 우선. 고전 Norsca Ice Troll Lair(2000 gold/2turn)와 **Trollkind 쓰는 전용 Kingdom 건물** 구분 필요. 2025-26 보고의 '소집 중 Trollkind 생산 정지/후반 18대 괴수 증원/여러 굴 건설해도 cap 증가 안 함'은 **9.0.3 직접 런타임 미검증**이다. 초기에는 생산형 Troll Kingdom 건물과 지배력 진행 우선, 소비형 금 생산 건물 과도한 투자를 피하고 소집은 원정 준비 완료 또는 위기 시.
+## 2. 현재 시작 위치·확장 표적 (불멸의 제국들)
 
-## 초반 운영 (난이도 비지정, 턴 기준 권고)
-- T1-5: 인접 노스카 minor faction leader 군단을 찾아 이길 수 있는 전투, 지도자 격파 후 부족 연방 통합, confed 후 비용 점검. 상황에 따라 순서 유동적.
-- T5-15: 정착지 2티어 이후 Ice Troll Lair(2000, 2turn)로 일반+얼음 Troll recruit; 최소 screening Infantry & fast skirmish. Trollkind net positive, 항구/일반 gold 경제.
-- T15-30: 북부 후방 통합, 울프릭 합병 기회 탐색, 말라카이 드워프 및 스케이븐·키슬레프와 다중 전선 회피, Lair of Troll King/landmark 확보 계획과 4 monster hunts 병행.
-- 이후: Tier III short victory, Tier VI eventual Monsters summon after resource balance, remote Troll Dens and monster hunts.
+9.0.3 윈터투스는 The Monolith of Flesh(Mountains of Hel) 1지역에서 출발. **아래 지도상의 정착지 공식 한글명은 미확인**, 플레이 화면에는 외국어 원문 대신 실제 번역된 지명으로 나타날 수 있다.
 
-## 경제와 정착지
-Gold=post-battle, raid, ports, industry; Trollkind=Throgg special; Spoils=Norsca pillage and raze spawned convoy returned to friendly settlement, used occupying outside Norsca and other uses. 이 셋을 혼동 금지. Beast Tanner baseline 1000 cost,+160 income; resource Gold Cultist Camp 750,+300 income. Ports & important hubs, Troll Den, Lair of Troll King, landmark must usually be held. Non-strategic undefendable settlements can be razed for spoils, but convoy protection essential. Raid stance for upkeep saving per community; tooltips validate. Chaos altar sometimes blocks Throgg Troll Kingdom building slots: dedicate key troll economic settlements carefully; June 2026 players reported this counter-synergy. Allegiance to one of four chaos gods triggers capital reprisal by unchosen three gods at culmination per official.
+| 후보 세력 / 주요 정착지 영문 키 | 성격 | 기본 행동 |
+|---|---|---|
+| Broken Wheel / Black Rock | 인접 노스카 소부족 | 적 부족 **지도자**를 격파해 연방 통합 가능성 확인 |
+| Aesling / The Forbidden Citadel | 인접 노스카 소부족 | 영토·병력 계승 이익을 고려해 합병 |
+| Sarl / Sarl Encampment | 인접 노스카 소부족 | 합병 후보, 별도 공격방향·전선 확인 |
+| Naglfarlings / Naglfari Plain | 인접 노스카 소부족 | 합병 후보, 사방 전쟁 방지 |
+| Tallymen of Pestilence / The Forest of Decay | 인접 너글 세력 | 일반 노스카 강제 합병 대상 아님; 후방을 위협하면 토벌 |
+| 서남부 말라카이/스케이븐/키슬레프 접경 | 상대 편성에 따라 위험 | 화염 포병·대대형·집중사격 대비; 다중전선 회피 |
 
-## Research priority (source 9.0.3 game data)
-Natural Selection: Troll/Fimir/Skin Wolf etc leadership+4, recruit rank+1;
-Elder Trolls: prereq Natural Selection, Troll BvI+5 MD+4;
-Blood-Fuelled Hunger: Skin Wolf physical resistance+10%, vigour loss-50%;
-Violent Evolution: prereq Blood-Fuelled Hunger+Occasional Appeasement, armor+10 Troll/Fimir/etc, missile resistance+15% rank7+;
-Sea Marauder's Tools: global recruitment -1turn, +1 capacity;
-Master of Beasts: rank7+ Norscan Monster ward save +5 and faster recruitment;
-Rally the Tribes: recruitment cost -25%, upkeep -5% all, local cap +1.
-Shortest path prioritize Troll leadership and armor before expansive advanced research (requires tech deps).
+9.0.3 출발 세력 데이터: https://twdatabase.com/factions/wintertooth
 
-## Throgg skills
-- Rank12 Lord of Beasts prerequisite to unique upgrades: Troll/Fimir/Skin Wolf leadership +12 and own upkeep -10%; control +2 faction.
-- Mutant Regeneration: Horrible Regen for Troll+Skin Wolf, Fimir regen, missile resistance +20% Lord army.
-- Monstrous Fiends: Troll & Fimir Frenzy, Troll/Fimir/Skin Wolf melee defence +8 Lord army.
-- Rank18 Battle-Hardened: +15% battle healing cap factionwide, +8% replenishment Lord army.
-- Rank22 Unite the Creatures: faction +2 summoned monster units, special Troll physical resist +10% faction, monster/troll/fimir recruitment rank+2, Throgg army xp gain +20%.
-Preconditions and Lord rank gates differ; do not invent one strict point sequence.
+### 확장 1단계 — 북부 중심부 확보
 
-## Unit comparisons (all ultra unit size, unbuffed base in 9.0.3; campaign upkeep)
-Norscan Troll: armor40, MA34/MD32, WS100, upkeep200.
-Norscan Ice Troll: armor60, MA38/MD32, WS120, upkeep238. Default generalist with slow.
-River Troll: armor40, MA34/MD40, WS105, upkeep225. Melee defense & debuff support.
-Chaos Troll: armor40, MA34/MD32, WS100, upkeep200. Regional alternative.
-Armoured Chaos Troll: armor110 MA34/MD32 WS100 upkeep238. Armor vs non-AP.
-Bile Troll: armor60 MA29/MD45 WS115 upkeep250 HP8672 vs baseline7904. Defensive.
-Stone Troll: armor70 MA36/MD32 WS120 upkeep275, spell resist situational.
-Fimir Warriors: armor110 lead70 vs trolls base45, front-line screen.
-Skin Wolves: mobile anti-large/flanking, armored variant recommended as roster develops.
-Unit stat weapon strength not DPS and does not include ability/attacks/cost/recruit caps.
+1. 첫 전투와 인접 소부족 지도자의 현위치 확인. 노스카 **세력 지도자를 패배**시키면 연방 통합 선택지가 나타날 수 있다. 아무 일반 군주를 잡아도 즉시 병합된다고 가정하지 않는다.
+2. 합병 선택 시 새로 획득한 모든 군단·도시·국경·전쟁 상태와 유지비를 점검한다. 비싼 잉여 군단을 모두 유지할 필요는 없다.
+3. 핵심 본거지와 항구를 먼저 안정시키고, 트롤 전용 건물을 지을 도시를 일반 노스카 정착지로 유지한다. 카오스 제단 형태의 정착지는 슬롯 제약으로 트롤 왕국 건설에 부적합할 수 있다.
+4. 인접 너글 세력이 주요 항구나 트롤 건축도시를 위협하면 우선 정리한다. 반대로 다른 카오스 세력이 우호적이고 완충지역을 제공한다면 불필요한 선전포고를 피한다.
 
-Example armies 20 incl general:
-early balanced = Throgg1 hero1 Troll9 SkinWolf2 infantry/fimir4 horse/skirmish3.
-late versatile = Throgg1 mage1 supporthero1 Troll13 SkinWolf3 Fimir1.
-'18 trolls optimal universally' unverified; adapt to fire artillery, dwarf gyros or skaven weapon teams.
+### 확장 2단계 — 다른 북부 부족과 울프릭
 
-## Battle
-Lead troll blob with infantry/Fimir anchor, Throgg in leadership aura, wolves chase flank/backline, mage for armoured enemy. Against Dwarfs Malakai/Skaven Ratlings and warpfire/Empire artillery/Kislev hybrids, avoid frontal open-field charge and wipe missile tools first. Troll regeneration and rank18 healing cap useful but fire, anti-large, low leadership and healing cap limit stacking. Manual battle can protect against auto-resolve unexpected Troll casualties. Ice Troll spam is strong low-maintenance meta in June 2026 testimonials, but exceptions to strong fire/anti-large.
+울프릭은 지도자를 격파하여 연방 통합할 기회가 생길 수 있다. 2025~26년 실전 보고는 합병된 울프릭 **자신이** Seafang 항구 이동 능력을 사용할 수 있다고 설명한다. 트로그나 모든 군단이 자동으로 그 능력을 쓰는 것이 아니다. 실제 이동 가능 항구·시야·해상 조건·대기시간은 그 시점 게임 UI를 따른다.
 
-## Monster hunts/god choices/victory
-24 hunts (12 old+12 7.0 new), Glorious unique RoR monsters, Taming repeatable recruit, Trophy alternate rewards. God altars allegiance unique character, nonchosen gods revenge on capital.
-Short 9.0.3 script: (1) 4 Hunts, (2) III Troll-kin March, (3) own Lair of Troll King, (4) build Cave of Rocky Throne landmark; reward Trollkind build cost -20%, Troll Kingdom resource production +25%, all Troll upkeep -10%. Long: short, Supreme Hunter, own 3 Troll Dens, VI Empire of Trolls; reward global recruit -1turn,+2cap and Spoils +2000.
-Older 7.0-preceding guides are not valid source for current victory criteria.
+울프릭을 확보하려다 본거지가 말라카이·스케이븐에게 노출된다면 우선 해당 적을 제압하고 나중에 합병해도 된다. 반대로 동부가 안정적이면 울프릭 합병은 이후 해외 원정의 편의와 북부 항구 확보를 동시에 가져온다.
 
-## Patch 9.0.3 exact relevant changes vs 9.0.2
-Norscan Ice Wolves cost600→625/upkeep150→156/fire resist0→-25%.
-Marauder Horsemen cost525→600/upkeep131→150.
-Marauder Horsemasters cost750→850/upkeep188→213.
-Dread Maw cost1100→1200/upkeep275→300.
-Marauder Bearmen HP11600→11200.
-Numbers from https://twdatabase.com/patch/9-0-3. These changes reinforce focus Troll core, but do **not** mean each nerfed unit unusable. Patch effects on Troll Empire hidden scripted timers/caps not independently established.
+### 확장 3단계 — 남부 진입: 선택적 점령·약탈
 
-## 근거 판정과 한계
-**확인**: official 7.0 explanation; extracted 9.0.3 faction roster, victory script, research, skill, building data; 9.0.3 change diff. **최근 관측**: June 2026 community long campaigns and contrasts about economy, ice trolls, skin wolves, Wulfrik confed. **9.0.3 미확인**: exact per-turn Trollkind from all special buildings, 18-unit army each from late Horde, Horde stopping Trollkind, all Troll Den recruit cap and specific all-map den positions, actual first-turn optimal speedrun. Building/script mechanics may change, runtime reproduction would be required. Recommendation conditional on matchup, difficulty, available DLC and actual tooltip.
+**노스카 바깥의 영토도 점령할 수 있지만 전리품(Spoils)이 필요하다.** 7.0 이후 공식 변경이다. Pillage & Raze(해당 행동의 공식 한글명 미확인)로 적 정착지를 약탈·파괴하면 전리품을 실은 아군 수송 군단이 따로 나타난다. 수송 군단은 아군 지역까지 이동해 전리품을 진영 자원으로 입금해야 한다. 도중 격파당하면 손실이다.
 
-### Practical final line
-Start with fast nearby leader confed, early Ice Troll recruitment, build Trollkind economy without overconsumption, recruit flank wolves and mage, prioritize Lord-of-Beasts→Mutant Regeneration, grow to Tier III with 4 Hunts + cave and then choose when to unleash upgraded Monstrous Horde against a prepared frontline. 
+- **직접 점령/유지**: 방어 가능한 항구, 수익 높은 주도, 트롤 전용 특수지역·괴수굴, 바위 왕좌 랜드마크·단기/장기 승리 조건에 필요한 지역, 본국 출입 관문.
+- **약탈·파괴 후 이탈**: 전리품 점령 비용을 투자할 가치가 낮은 해외 일반 마을, 장거리 유지·방어 비용이 과도한 지역. 다만 수송 군단의 귀환 경로 확보가 필수.
+- **일시 완충/거래**: 우리 주력의 수비 부담이 큰 국경 지역을 우호적인 세력에 거래해 적대 전선 축소(2026 플레이 사례). 아카온·말루스 등 상대 관계가 적대적이면 무턱대고 영지를 넘기는 전략은 위험.
+- **카오스 제단**: 별도 성장/신앙 보너스에 유용하지만 트롤 굴 등 핵심 경제 건물 슬롯이 막힐 수 있다. 핵심 정착지는 트롤 왕국용으로 남기는 것이 대체로 합리적.
+
+**실전 추천 방향:** 북부 통합 → 너글·말라카이 등 실제로 후방을 위협하는 적 처리 → 항구/전리품 기반 확보 → 키슬레프 또는 제국 방면의 취약 거점 약탈·선별 점령. 전쟁 상대와 외교 관계에 따라 서부 울프릭 우선/동부 방어 우선/남부 원정 우선으로 분기한다. '1~5/5~15/15~30턴'은 보장된 속도전 경로가 아니라 각 시기의 점검 목표다.
+
+출처: 공식 노스카 7.0 https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/84 ; 2026 실전 https://www.reddit.com/r/totalwarhammer/comments/1s1qx5k/why_are_the_chaos_factions_trying_to_fight_me_as/ 및 https://www.reddit.com/r/totalwar/comments/1su8k7x/how_do_you_play_throggs_campaign/ ; 근거 범위 W08_EXPANSION_STRATEGY.md.
+
+## 3. 3가지 자원과 건축 선택
+
+| 자원 | 어디에 쓰는가? | 수급 원리 |
+|---|---|---|
+| **금** | 보통 모집·건물·유지비 | 건물, 전투 승리, 항구, 약탈 |
+| **트롤족** (Trollkind) | 트롤 왕국 특수 건축·단계 성장·괴수 무리 소집 등 | 트로그 군단의 해당 트롤 병종, 특수 건물, 사냥 보상 |
+| **전리품** (Spoils; 인게임 한국어 명칭 직접 미대조) | 해외 점령, 전리품 소비형 조기 모집/특수 건축 | 약탈·파괴→소형 수송 군단 귀환, 일부 건물·효과 |
+
+### 트롤족 생산의 실제 공식 (9.0 공개 Lua, 9.0.3 관련 변경 미확인)
+
+- 트로그 본인 군단 +1/턴.
+- 트로그 군단에 포함된 '트롤족 생산 대상 집합'의 트롤 1부대당 +2/턴.
+- 다른 군주 군단에 포함된 같은 집합의 1부대당 +1/턴.
+- 주둔군, 군주 없는 군단은 0.
+- 예시: 트로그 + 해당 트롤 8부대 = **턴당 기본 트롤족 17**(건물/사냥 보상 제외). 따라서 동일 트롤 수라면 트로그에게 주력 트롤을 먼저 집중하면 자원 증가가 빠르다.
+
+출처 9.0 공개 게임 스크립트: https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/script/campaign/wh3_dlc27_nor_kinfolk.lua
+
+### 사용자 화면에서 구분해야 할 3개의 비슷한 '트롤' 건물
+
+| 건물 체인/한국어 데이터 대조명 | 실행 조건·비용 | 역할 |
+|---|---|---|
+| **트롤 굴 → 트롤 땅굴** | 정착지 1→2단계, 각각 1턴. 공개 자료 금비용 0, **별도 트롤족 소모 존재** | 트롤족 +4→+6/턴, 트롤 왕의 영역 +2→+4, 수입 +100→+150, 성장+15→+30 |
+| **트롤 둥지 → 같은 계열 2단계(공식 한글명 미확인)** | 첫 건물 1단계 750금·1턴, 업그레이드 2단계 추가 1,500금·2턴 | 노스카 트롤 조기 모집→노스카 얼음 트롤 추가 모집 |
+| **트롤 동굴 → 돌투성이 소굴 → 3단계 분기** | 허용된 지역/슬롯에 한정. 금비용 0으로 표시되어도 트롤족 비용 별개 | 트롤족·영역 성장·특수지역 수입과 충원 강화 |
+
+여기서 중요한 실전 판단:
+1. 시작 정착지에 **트롤 둥지**를 짓는 것이 가능하면 1단계부터 노스카 트롤을 먼저 모집할 수 있다. 정착지 2단계까지 무조건 아무 모집도 못 하는 것이 아니다.
+2. 정착지 2단계가 되면 트롤 둥지 계열을 업그레이드하거나, 다른 일반 모집 체인 **얼음 트롤 둥지**(정착지 2단계, 2,000금·2턴)를 선택할 수 있는지 건설창에서 비교한다. 현재 슬롯·지역에 두 체인이 동시에 허용되는지는 미확인.
+3. **트롤 굴**은 병력을 뽑는 시설이 아니라 트롤족·영역 생산용 핵심 성장 시설이다. 별도 허용 슬롯이 있으면 군단 수를 늘리기 전에 투자할 가치가 있다.
+4. 특수 **트롤 동굴** 계열의 3단계에서는 **미궁 둥지**(+8 트롤족, +10 영역)와 **거대한 요새의 폐허**(+20 트롤족, +4 영역)로 분기한다. 어떤 것을 택할지는 지배 III/VI 단계 달성이 급한지, 이후 건축 자원 누적이 더 중요한지에 좌우된다. 한국어 DB의 3단계 공통 수입 +45%·충원 +10% 표시.
+
+9.0 공개 특수 자원 비용표에는 shelter 계열 -30/-40, woods/deep-woods 계열 -20/-35/-50, caves 계열 -30의 항목이 실제로 존재한다. **그러나 raw 비용 키↔정확한 한글 건물 단계 대응을 완전히 확인하지 못했으므로 이를 9.0.3 확정 건물별 가격표로 단정하지 않는다.** 현재 게임의 특수 자원 툴팁을 우선 적용. 건설비 0은 금 비용 0일 뿐 트롤족 비용 0이 아니다.
+
+출처: https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings , https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/db/resource_cost_pooled_resource_junctions_tables/data__.tsv ; 세부 W04_KO_LOCALIZATION.md, W06_RESOURCE_SCRIPT_AUDIT.md.
+
+### 경제형 대체 투자
+
+**털가죽 은닉처**: 1단계 500금·1턴·수입 +80·성장 +10. → **야수 무두장이**: 2단계 추가 1,000금·2턴, 수입 +160·성장 +20. 업그레이드의 추가 수입은 +80/턴이고 회수기간은 기타 수정 제외 약 12.5 수입턴이다. 얼음 트롤 병력 확보가 급하면 업그레이드보다 모집시설·트롤족 생산을 앞세울 수 있다. 자원 슬롯의 **광신자 숙영지 (금)** 등은 금 자원 지역에서만 가능하므로 아무 도시나 지을 수 있다고 가정하지 않는다.
+
+## 4. 괴수 무리 소집 — 강한 대신 성장 비용을 지불
+
+9.0 트로그 스크립트는 괴수 무리 소집 성공 시 **트롤족 수입 정지 효과 10턴**을 설정한다. 부속 임시 군단이 사라지면 정지 효과를 해제하는 처리도 있다. 소집 자원 가격과 재사용 대기시간은 별도의 제한이다.
+
+| 소집 등급 | 공개 9.0 플레이어 트롤족 비용 | 재사용 대기 |
+|---|---:|---:|
+| I | 비용 항목 미확인 | 10턴 |
+| II | 60 | 12턴 |
+| III | 90 | 14턴 |
+| IV | 120 | 16턴 |
+| V | 150 | 18턴 |
+| VI | 200 | 20턴 |
+
+**주의**: 같은 Lua의 20/40/60/80/100/140은 AI의 지원군 생성 비용표이지 인간 플레이어의 호출 비용이 아니다. 위 9.0 비용은 실제 resource_cost_pooled_resource_junctions와 rituals 데이터를 결합했다. 각 소집 등급은 트롤 왕의 영역 진행에 묶인다. 공개 Lua의 단계 경계 20/40/60/80/115는 **지배 성장의 기준**이고 현금처럼 쌓이는 트롤족 잔고 요구치와 다르다.
+
+**실전 행동:** 평시에 트롤족·지배 단계·특수 건물을 먼저 육성 → 대규모 전투·해외 원정·본국 긴급 방어 시 소집 → 그 기간 생산 정지와 재사용 대기를 감수. 최종 단계 소집 규모를 전면 숫자로 확정하기 위해서는 병종 구성·군단 상한 추가 게임 검증이 필요.
+
+원문 스크립트·표: W06_RESOURCE_SCRIPT_AUDIT.md.
+
+## 5. 연구 우선순위 (9.0.3 능력치 근거, **공식 한국어 연구명 미확인**)
+
+아래 영어 이름은 게임 데이터 검색용 키워드일 뿐 공식 한글명으로 번역·확정하지 않았다.
+
+| 우선 | 실전 목적(한국어 기능 설명) | 영문 데이터명과 핵심 확인 효과 |
+|---|---|---|
+| 1 | 트롤 사기·신병 경험 강화 | Natural Selection: 대상 트롤/피미르/늑대두겁 등 리더십 +4, 모집 등급 +1 |
+| 2 | 트롤 전열 능력 강화 | Elder Trolls: 위 연구 후, 트롤 대보병 보너스 +5, 근접 방어 +4 |
+| 3 | 늑대두겁 측면 전력 강화 | Blood-Fuelled Hunger: 늑대두겁 물리저항 +10%, 피로 누적 감소 |
+| 4 | 괴수 방어력·사격저항 강화 | Violent Evolution: 트롤/피미르 등 장갑 +10, 고경험 대상 사격저항 +15% (선행 연구 필요) |
+| 조건부 | 장거리 원정 병력 수급 | Sea Marauder's Tools: 전역 모집 시간 -1턴 및 최대 모집 수 +1 |
+| 후반 | 괴수 심화 | Master of Beasts: 고경험 괴수의 성능 강화 |
+| 조건부 | 전군 유지비 절감 | Rally the Tribes: 모집비 -25%, 유지비 -5% 등 |
+
+자료: https://twdatabase.com/technologies/norsca . 연구 선행 관계를 무시해 위 순서를 곧바로 클릭 가능한 일렬 해금으로 해석하면 안 된다.
+
+## 6. 트로그 스킬 선택 (9.0.3 능력 원문; **일부 스킬 공식 한글명 미확인**)
+
+| 능력 식별 영문 | 게임에서 얻는 주요 효과 | 단계/조건 |
+|---|---|---|
+| Lord of Beasts | 트롤·피미르·늑대두겁 사기 +12, 자기 군단 유지비 -10%, 세력 통제 +2 | 12레벨 및 선행 |
+| Mutant Regeneration | 트롤·늑대두겁 **끔찍한 재생**, 피미르 재생, 자기 군단 대상 사격저항 +20% | 고유 트리 선행 |
+| Monstrous Fiends | 트롤·피미르 광란, 트롤·피미르·늑대두겁 근접 방어 +8 | 고유 트리 선행 |
+| Battle-Hardened | 진영 모든 군단 전투 치유 상한 +15%, 자기 군단 충원 +8% | 18레벨 |
+| Unite the Creatures | 지원 괴수 소집 +2부대, 특수 트롤 물리저항 +10%, 모집·경험 보너스 | 22레벨 및 선행 |
+
+한국어 2차 전재에는 Mutant Regeneration='돌연변이 재생', Monstrous Fiends='무시무시한 마귀', Battle-Hardened='전투 숙련', Unite the Creatures='괴물들을 뭉쳐라'로 기록되어 있다. **원시 한국어 .loc와 9.0.3 게임 화면을 직접 대조하지 않았으므로 공식 최종 표기라고 확언하지 않는다.** 확정 게임 데이터 수치는 https://twdatabase.com/units/throgg .
+
+## 7. 병종·군단 편성: 실제 한국어 부대명 중심
+
+9.0.3 기본 병종(초대형 부대 규모, 무버프·유지비). 수치는 근접 DPS가 아니라 기초 능력치.
+
+| 한국어명 (원문 ID 대조) | 장갑 | 근공/근방 | 무기 피해 | 유지비 | 판단 |
+|---|---:|---:|---:|---:|---|
+| 노스카 트롤 | 40 | 34 / 32 | 100 | 200 | 초반 L1 트롤 둥지에서 조기 확보 |
+| 노스카 얼음 트롤 | 60 | 38 / 32 | 120 | 238 | 트로그 주력 범용 트롤 |
+| 강가 트롤 | 40 | 34 / 40 | 105 | 225 | 방어·적 약화 |
+| 카오스 트롤 | 40 | 34 / 32 | 100 | 200 | 지역별 대체 |
+| 카오스 트롤 (장갑 무장) | 110 | 34 / 32 | 100 | 238 | 비장갑관통 상대 |
+| 담즙 트롤 | 60 | 29 / 45 | 115 | 250 | 버티기 특화, 체력 8,672 |
+| 돌 트롤 | 70 | 36 / 32 | 120 | 275 | 고급 지역형, 특수 저항 |
+| 늑대두겁 | 경장갑 | 기동·대대형·측후방 | — | — | 적 사격진/기병 측면 대응 |
+| 늑대두겁 (장갑 무장) | 중장갑 | 기동·대대형·측후방 | — | — | 고급 기동 보조 |
+| 피미르 전사 | 중장갑 | 버티는 전열 | — | — | 트롤 앞 지원·중장갑 대응 |
+
+※ 9.0.3 스탯: https://twdatabase.com/races/norsca . 한국어 병종명은 Honga의 Warhammer III 유닛 내부 ID 매핑을 우선했으나 공식 클라이언트 단독 검증은 아님.
+
+### 실제 20칸 편성의 한 가지 권장안 (확정 최적해 아님)
+- 트로그 1
+- 재앙의 마귀 피미르(마법 영웅) 1
+- 피미르 귀족(근접 영웅) 1
+- 노스카 얼음 트롤 10
+- 늑대두겁/늑대두겁 (장갑 무장) 4
+- 피미르 전사 2
+- 기동형 사격 병력 1
+총 **20칸**. 캐릭터/고급 병종의 실제 모집 가능 여부, DLC, 영웅 수용량 등 필요조건은 건설·기술 단계에 따라 달라질 수 있다.
+
+늑대두겁 모집시설은 **군견 보관소** L1 500금/1턴 → **전투 늑대 소굴** L2 추가 1000금/3턴(늑대두겁) → **암흑 공물의 동굴** L3 추가 2000금/4턴(장갑 무장 늑대두겁). 이 3500금·8건설턴은 정착지 단계 자체의 비용·대기 제외.
+
+### 상대에 따른 전투 운용
+- 약한 대보병/일반 야전군: 얼음 트롤 다수 전선+트로그 사기 범위로 짧은 교전 반복.
+- 말라카이 드워프/사격 스케이븐: 트롤 덩어리를 화염·기관총 사선에 정면으로 모으지 않는다. 엄폐·적 전열 분산·늑대두겁 후방 침투 후 트롤 투입.
+- 키슬레프/제국: 기병과 사격/포병 역할을 먼저 확인. 피미르가 전열을 받아 주고 늑대두겁으로 측면 이동.
+- 상대 대대형 유닛·집중 화염: 저렴한 보병/피미르로 공격을 받아내고 트롤 재생만 믿지 않는다. 치유 상한과 사기 붕괴 위험 존재.
+- 고난이도/자동전투: 트롤이 의도치 않게 큰 피해를 입는 경우 직접 전투로 병력을 보존. 무리한 18~19트롤 단일 유형 군단보다 상대별 지원병을 조절.
+
+2026 캠페인 이용자 다수의 혼합 추천 및 반대 견해: https://www.reddit.com/r/totalwarhammer/comments/1r2zdri/throgg_campaign_retrospect/ ; https://www.reddit.com/r/totalwarhammer/comments/1s09y77/norsca_army_comps/ ; https://www.reddit.com/r/totalwarhammer/comments/1sl82zw/norsca_army/ . 모드 사용·난이도 개인 차이를 보편 결과로 오인하지 않는다.
+
+## 8. 특수 트롤 모집 영토·괴수 사냥·승리 계획
+
+- 트로그는 특정 지역에서 **담즙 트롤 / 카오스 트롤 / 강가 트롤 / 돌 트롤**을 한정적으로 모집한다. 모든 해당 지형에서 자동 모집되는 것이 아니라 **지정 정착지의 트롤 전용 건물** 조건이 있다. 어느 지역에서 모집 수용량이 얼마인지는 9.0.3 직접 검증 전 미확정.
+- 지역형 예시: 특정 지정지역의 **야생의 강둑** L1 → **강가 트롤 소굴** L2. 2단계 수입 보너스 +20%, 충원 +6%, 트롤족 +8/턴, 트롤 왕의 영역 +4, 진영 트롤 유지비 -1%가 한국어 추출 데이터에 있다. 탈라브하임·잘첸문트·켐리 등 조건 목록의 특정 정착지에 한정하며, '강가 마을이면 전부'가 아니다.
+- 괴수 아르카눔/사냥은 7.0 개편 후 총 24종, Glorious/Taming/Trophy 형태. 직접 보상·DLC에 따른 특수 유닛 접근과 트롤족 보상 가능. 꼭 모든 사냥을 한 번에 수행할 필요는 없으며 원정길에서 가까운 목표를 우선한다.
+- 카오스 신에게 바치는 제단·신앙의 효과도 유용하지만, 트롤 왕국 성장에 필요한 유효 건설 슬롯과 승리 조건을 놓치지 않는 것이 먼저다.
+
+### 9.0.3 승리 조건 추출 데이터
+**단기 승리:** 괴수 사냥 4개 완료; 트롤 왕의 영역 III 단계 도달(영문 Troll-kin March, 공식 한글명 미확인); 트롤 왕의 소굴(Lair of the Troll King, 공식 한글명 미확인) 보유; 바위 왕좌의 동굴(Cave of the Rocky Throne, 공식 한글명 직접 미검증) 랜드마크 건설. 보상 트롤 왕국 건설 트롤족 비용 -20%, 트롤 왕국 자원 생산 +25%, 트롤 유지비 -10%.
+
+**장기 승리:** 단기 목표 완료 후 최고 사냥꾼 관련 요건(Supreme Hunter, 공식 한국어명 미확인), 트롤 둥지 3개 소유(여기서 영문 Troll Dens가 일반 모집건물 '트롤 둥지'와 정확히 같은 대상인지는 원문 승리 조건 추적 필요), 트롤 왕의 영역 VI 단계(Empire of the Trolls, 공식 한국어명 미확인). 보상 전역 모집 -1턴·한도 +2와 전리품 +2000 등.
+
+주의: 트롤 특수건물 '굴/동굴/둥지', 승리 조건의 거점 'Troll Den'은 이름이 비슷해도 내부 승리 대상 키를 확인하지 않고 동의어로 단정하지 않는다. 확정 승리 트리거 소스: https://twdatabase.com/factions/wintertooth .
+
+## 9. 9.0.3에서 실제 바뀐 항목과 이전 자료의 이용
+
+2026-10-09 공개 9.0.3 변경 자료에서 확인된 노스카 관련 차이(9.0.2 대비):
+- 노스카 얼음 늑대: 모집 600→625 / 유지비 150→156 / 화염저항 0→-25%
+- 약탈자 기마병: 모집 525→600 / 유지비 131→150
+- 약탈자 기마병 숙련형(영문 Marauder Horsemasters, 공식 한글명 미확인): 모집 750→850 / 유지비 188→213
+- 공포의 아가리(Dread Maw, 한국어 표기 직접 미확인): 모집 1100→1200 / 유지비 275→300
+- 약탈자 곰 전사(Marauder Bearmen, 한국어 표기 직접 미확인): 체력 11,600→11,200
+- 공식 패치에는 Styrkaar의 노스카 세력 이용 가능 등 개별 수정도 기재됨.
+
+반면 확인된 패치 변경 내역에서는 트로그 트롤족의 +1/+2 생산법과 건축·소집 코드의 변경을 발견하지 못했다. **따라서 검증된 9.0 내부 구조를 실전 가이드로 사용하는 것이 타당**하지만, 9.0.3 전체 .pack 동일성이 확인된 것은 아니므로 세부값 조정 가능성만 남겨 둔다. 구버전 동영상/자료 중 7.0 개편 전의 '해외 정착지 점령 불가'와 이전 노스카 경제는 현재 전략에 적용하지 않는다.
+
+패치: https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-total-war-warhammer/threads/16126-total-war-warhammer-iii-patch-9-0-3 ; https://twdatabase.com/patch/9-0-3
+
+## 10. 실제 캠페인 실행 체크 — 순서대로 클릭 전 확인할 것
+
+**첫 전투와 첫 합병 전:** 타깃이 노스카 소부족 세력 지도자인가? 전투가 가능한가? 합병 후 넘어오는 영토/군단의 유지비를 감당할 수 있는가?
+
+**첫 정착지 건설:** 일반 건물 슬롯이 남아 있는가? 트롤 둥지(모집)와 트롤 굴(트롤족·영역 자원)의 역할을 혼동하지 않았는가? 자원 부족으로 건설이 잠겨 있는가?
+
+**정착지 2단계:** 노스카 얼음 트롤 모집에 트롤 둥지 업그레이드와 얼음 트롤 둥지 신규 건설 중 어느 쪽이 가능·저렴한가? 트롤 땅굴 업그레이드까지 자원이 충분한가?
+
+**전쟁/영토 확장:** 본국 항구·핵심 지역이 방어 가능한가? 해외 신규 점령에 전리품 비용이 충분한가? 별도 전리품 수송 군단의 귀환 경로가 안전한가?
+
+**괴수 무리 소집 직전:** 트롤 왕국 건설·지배 단계 투자 여유가 있는가? 트롤족 수입 정지 10턴과 소집 단계별 재사용 대기를 감당할 수 있는가?
+
+**단기 승리 전:** 괴수 사냥 4개·지배 III·거점 보유·랜드마크 완료를 모두 게임 UI에서 확인했는가?
+
+## 확인·미확인·추천의 경계
+
+**신뢰도 높음:** 공식 7.0 노스카 점령/전리품·7.0 이후 시스템; 공개된 9.0.3 현재 세력 출발/기본 병종/기술/스킬/승리 조건; 9.0 원시 스크립트상의 트롤족 생산·소집 정지·소집 비용 및 쿨다운; 한글 건물/부대명 내부 식별자의 대응.
+
+**유력하지만 직접 9.0.3 실측 없음:** 9.0 공개 Lua 내용의 현재 동일성, 특수 트롤족 건설비의 정확한 건물명별 적용, 울프릭 합병 뒤 능력 활용, 특정 턴 이내 반도 전체 합병.
+
+**미확인:** 모든 지명/기술·스킬의 9.0.3 공식 한글 문자열, 출발지 보유 건물·슬롯 및 정확한 1~30턴 고정 재현, 모든 지역별 트롤 모집상한/인게임 실제 트롤족 지출, 고단계 괴수 무리 증원 부대수의 보편적 숫자, 승리조건 'Troll Dens'와 일반 트롤 둥지의 내부 키 일대일 대응.
+
+## 출처/조사 정본 안내
+- W01_EVIDENCE.md — 9.0.3 정적 데이터·개편 원문 근거
+- W02_PRACTICAL_GUIDE.md — 초반 경제/건축/전투 추천과 수정 이력
+- W04_KO_LOCALIZATION.md — 한글 건물 ID·영어 대응
+- W05_BATTLE_ROSTER.md — 군단·전투 비교/반례
+- W06_RESOURCE_SCRIPT_AUDIT.md — 9.0 트롤족·소집·특수 자원 비용 원시 대조
+- W07_DRAFT_AUDIT.md — 이전 초안 결함 감사
+- W08_EXPANSION_STRATEGY.md — 영토 확장·합병·전리품 수송·선별 점령 실전 사례
+- RESEARCH_PLAN.md — 사용자가 승인한 단계, 실행 상태, 미완료와 다음 결정
+
+이 원고는 사용자 중간검토를 위한 **개정 초안**이다. 최종 판정과 브랜치 main 병합은 수행하지 않는다.

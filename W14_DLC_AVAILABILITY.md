@@ -42,3 +42,14 @@ https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff
 - `Tides of Torment – Norsca` 소유 시 정확한 건설 슬롯/지역/영웅 수용량·부대 모집 해금 조건 vs 9.0.3 현재 UI.
 - 비소유 상황에서 Fimir Noble 명확한 비노출, '기본 Norsca only' 신앙 특수 카오스 병종의 9.0.3 DLC gate 예외/버그.
 - 9.0.3 특별 보상용 `core_base_norsca` Chimera 정상 획득 여부, DLC 없는 합병 군주 재모집/승계 사례. D1 상세 사냥 목록으로 확장하지 않는다.
+
+## 6. [2차 9.0.3 패치·사용자 실전평] 접근성 차이
+- **9.0.3 공식 (2026-10-09):** `Styrkaar the Sortsvinaer is now available to all Norscan factions.` 따라서 예전 게임 덤프 `wh3_dlc27_sla_styrkaar_the_sortsvinaer → wh3_dlc27_tides_of_torment_sla` 소유권 행만으로 **'트로그는 스티르카르를 절대 못 쓴다'라고 판단하면 잘못**. 그러나 '모든 노스카 진영 이용 가능'은 '모든 DLC 미보유자에게 무료' 또는 '초반 자동 지급'까지 뜻하지 않는다. 실제 획득 퀘스트/계정 소유권과 조건은 현행 인게임 확인 필요.
+  https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-patch-notes-amp-announcements/threads/16126-total-war-warhammer-iii-patch-9-0-3
+- **2026-02-12 실제 트로그 클리어, Sayl DLC 없음**(캠페인 Normal/전투 Hard, Victory Conditions Overhaul 모드, 당시 일부 젠취 연구 버그): 얼음 트롤과 늑대두겁 4~5로 유효한 20칸 군단을 구성하고 울프릭 합병. 즉 사일 개별 DLC 없이도 트로그 핵심 플레이 루프가 성립한다는 **실전 사례 1건**, 현재 9.0.3 성능 수치 보증은 아님.
+  https://www.reddit.com/r/totalwarhammer/comments/1r2zdri/throgg_campaign_retrospect/
+- **2026-03-22 사용자 병종 편성 댓글**: 추가 DLC로 Chimera(비행) + Dread Maw(지하 공격) 조합이 적 사격 후열 차단에 효과적이라는 개인 사용담; 보편 최적이 아니라 사일 보유 시 전술적 **분기**.
+  https://www.reddit.com/r/totalwar/comments/1s09yh4/norsca_army_comps/
+- **2026-06-05 댓글**: 비DLC 전제 트로그+울프릭의 주요 가치는 기존 노스카 스킨울프·항구 경제와 전투 수입이라는 것. '키메라 너무 좋다'는 별도 DLC 소유 가능성에 따라 정확히 분리해서 해석해야 하며 **Norsca만 샀으니 Chimera 기본 일반 모집 가능**이라는 주장은 안 됨.
+  https://www.reddit.com/r/totalwarhammer/comments/1tx76x4/advice_for_playing_norsca/
+- **9.0.3 판본 충돌 검증 우선순위:** 최신 공식 패치의 Styrkaar 사용가능 진영 ＞ 과거 9.0 덤프의 세력 제한 / DLC 소유권(법적 상품 제한)은 9.0.3 명시 확인 불가면 미확인. 원래 Fimir Noble·Dread Maw·일반 Chimera 사일 DLC 조건은 게임 소유권 원자료 기준 유지; 실제 미소유 플레이로 영웅 탭/모집권까지 재현한 테스트는 아님.

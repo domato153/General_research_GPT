@@ -33,3 +33,12 @@
 1. 트로그 본국 코어/트롤족 생산 → 북방 소부족 지도자 합병 → 지형·외교 안정 후 울프릭 합병 기회 포착. **울프릭은 Seafang 원정 전용 지휘관**으로 계속 운용 가능성이 높다.
 2. 사일은 '마법 전설군주 개인' 획득 가능성이 목적일 때만 추가 검토하고, **트로그가 사일의 Dark Ritual/Manipulations를 얻는다고 기대해 원정할 필요는 없다**.
 3. 다음 검증: Wulfrik Seafang 실전 합병 뒤 UI, 사일 합병 가능 여부(소유권 분기), 동반군단 제한, 강제합병 직후 제단 전환 오류 9.0.3, 선행 동맹/전쟁 상태 이동, 사일 패배시 LL 생존과 재모집.
+
+## 6. [2차 사용자 실전평] 강제 합병과 전선/개인 군주 가치
+- 2025-12-27 r/totalwar Norsca 군주 선택 댓글 **137 추천**(공유 당시): 트로그가 종족 트롤제국 능력을 갖고 출발해 울프릭을 **지도자 격파 후 합병**하면 Seafang은 **울프릭 개인에게만 유지**. 약 턴10 중앙 산맥 출몰·마라우더 위주 군단이라는 것은 개별 사례(맵 진행 랜덤)이지 고정 스폰 아님. https://www.reddit.com/r/totalwar/comments/1px8aua/who_is_the_best_ll_to_learn_how_ti_play_norsca/
+- 2026-06-05 r/totalwarhammer 156 추천 플레이어: **트로그 시작→울프릭 합병**, 트로그 Troll Empire+울프릭 순간이동·항구 경제 조합 추천. 전투 수입이 우선이고 일반 노스카 수동 내정 수익은 한정적이라고 강조. https://www.reddit.com/r/totalwarhammer/comments/1tx76x4/advice_for_playing_norsca/
+- 2026-02-12 r/totalwarhammer **실제 트로그 클리어 후기**, 캠페인 Normal/전투 Hard, **Victory Conditions Overhaul 모드**, Sayl DLC 미소유. 초반 말라카이 격파·울프릭 합병 후 기동성 좋은 늑대두겁 4~5가 전투 핵심이라고 평가. **2026년 2월 일부 턴 젠취 버그 적용**이라고 스스로 밝힘, 9.0.3 정확 증거로 오용 금지. https://www.reddit.com/r/totalwarhammer/comments/1r2zdri/throgg_campaign_retrospect/
+- 2026-03-26 유저 Wulfrik 캠페인 한 건 '40턴 3군단 40지역' 경험은 연방통합 스노우볼 가능성의 표본이지 트로그에서도 보장되는 최적 성과 아님. https://www.reddit.com/r/totalwarhammer/comments/1s48jww/chaos_factions_confederation/
+- **반례:** 2026-05 유저는 보잘것없는 바나하임링 부족 AI가 울프릭·트로그를 역으로 합병했다고 보고. 리더 패배 시 **자기 주군도 연방통합 대상이 될 수 있음**. https://www.reddit.com/r/totalwarhammer/comments/1t6p71m/perhaps_the_most_bizarre_campaign_ive_ever_played/
+- 2026-03 플레이어는 트로그로 트롯(클랜 몰더) 동맹 시 전선 보호 vs **동맹의 불필요한 원거리 전쟁 소환**이라는 손익을 제시. 이 선택은 판본·외교 차이 때문에 고정 명령으로 확정하지 않음. https://www.reddit.com/r/totalwar/comments/1rpgqxl/a_couple_questions_for_norsca_throgg_and_sayl/
+- **조건부 2차 판정:** 트로그의 고유 트롤 경제를 포기하고 울프릭으로 새 캠페인을 시작할 이유보다, **트로그로 울프릭을 추가하는 기회이익**이 강하게 뒷받침됨. 그러나 세력 지도자 합병 직후 **전쟁·영지·적자 군단·건물 및 제단 등급** 대조가 필요. 사일의 Dark Ritual 소속 키가 고정되어 있으며, 사일 합병 뒤 트로그로 이식된다는 실제 플레이 후기를 찾지 못함 → 여전히 UNKNOWN; 스크립트 구조상 이식되지 않을 가능성이 크다는 **추론**만.

@@ -8,7 +8,7 @@
 
 ## 1. 실행 결론
 
-**트로그의 안정적인 목표는 북부 노스카 부족의 지도자를 격파해 연방 통합하고, 트롤족 자원 생산의 중심인 트로그 군단·트롤 왕국 건물을 성장시키며, 늑대두겁/피미르로 트롤의 사격·대대형 약점을 보완하고, 남부는 가치 높은 거점만 골라 점령하면서 남은 도시를 약탈해 전리품을 확보하는 것이다.**
+**트로그의 캠페인 스노우볼은 '전투가 자주 나는 곳의 젠취(독수리) 제단을 일찍 세워 연구 진도를 가속 → 성장·트롤족·군단 강화 기술 조기 확보 → 북부 노스카 지도자 격파·울프릭 합병과 트롤 왕국 건물 확충 → 핵심 정착지·항구를 성장시키고 남부는 선별 점령·약탈'을 결합하는 것이다.** 초기 기술 가속의 실제 9.0.3 보너스와 2026년 플레이어 사례는 아래 §5 및 W12/W15에 근거하고, 옛 무한 연구 버그의 성능을 전제로 하지 않는다.
 
 통합 확장·적 처리·수익 기반이 확보된 뒤 승리목표(괴수 사냥 4개, 지배 III 단계, 특정 건물·랜드마크)를 병행한다. 울프릭 연방 통합 시 울프릭 개인의 바닷길 이동 능력을 해외 원정에 활용하는 것은 2026년 실전 보고에 근거한 유용한 선택이며, 필수 고정 턴 루트는 아니다.
 
@@ -114,6 +114,27 @@
 
 ## 5. 연구 우선순위 (9.0.3 능력치 근거, **공식 한국어 연구명 미확인**)
 
+
+### 먼저 결정할 것 — 초반 젠취 연구 가속 vs 내정 성장
+
+사용자 실전 기준은 **연구 속도와 성장의 누적 효과**다. 이전 초안처럼 젠취를 단순 마법 효율형으로 낮게 평가하면 핵심인 전투 후 연구 진도 증가를 놓친다.
+
+**1순위 추천: 젠취(독수리) 제단을 전선 부근에 일찍 확보.** 9.0.3 건물 데이터상 일반 독수리 제단 **2단계 750금/2턴**부터 '인접 속주에서 아군이 전투 승리 시 연구 진도 +25/+50/+75/+100포인트(신앙 단계에 따른 값)'를 표시한다. *다른 정착지 제단 체인은 750금/1턴인 경우도 있으므로 해당 거점 건설 UI 확인*. 수치가 영구 연구 속도 25~100%를 의미하는 것은 아니며, **해당 영향권에서 실제로 승리한 전투**가 있어야 한다. 9.0 게임 스크립트도 `grant_research_points`를 실제 호출한다. https://twdatabase.com/buildings/norsca ; https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/script/campaign/wh3_campaign_bonus_values.lua
+
+**2순위 선택: 너글(까마귀) 성장·수입.** 빠르게 획득한 연구를 모집·성장·트롤 경제 증대에 활용한다. 중간중간 너글 신앙을 높이면 지역 건물 수입/전국 성장을 보완할 수 있다. 그러나 **핵심 트롤족 생산 건물 슬롯이나 수익 높은 항구를 제단으로 교체하지 않는다.** 젠취 제단도 고레벨에서 지역 성장 +20/30/40을 제공하므로 '젠취를 하면 성장이 전혀 없다'도 오류. **젠취 신앙 만렙 영웅을 먼저 확정해야 연구 보너스가 활성화되는 것도 아니다.**
+
+| 신앙 | 초반 연구·성장형 추천 | 조건/반례 |
+|---|---|---|
+| **젠취(독수리)** | **최우선 전투 전선 제단**: 기술 조기 해금/눈덩이 효과 | 인접 전투 승리 시에만 진도 보너스, 전선 밖 제단의 수익 약함 |
+| **너글(까마귀)** | **두 번째 성장·내정 보완**: 전체 성장/수입/충원 | Spoils를 활용한 건축·점령 인구 증가 기술로 성장이 덜 막히는 경우 한계효용 감소 |
+| **코른(사냥개)** | 연전·확장 속도 강조하면 상향 | 제단 전투 승리 후 이동력 재충전이 연속 정복에 강력하다는 2026 실전 반론 |
+| **슬라네쉬(뱀)** | 군단 다수의 유지비와 영웅 성장에 유리 | 제단 인근 승리 후 군주·영웅 경험, 트롤 전군 물리저항으로 오해 금지 |
+
+**버그 시점 검증:** 7.0의 전투 후 **영구 연구속도 누적 버그**는 7.0.3에서 잉여 연구 포인트로 변경; 7.0.3의 '전투 1회에 기술 2~8개' 사례에도 별도 `grant_research_points` 버그가 포함됐으며, 7.1 공식 패치에서 무한 연구 수정. **현재 9.0.3에서 전투 하나로 기술 여러 개가 반드시 끝난다고 안내하지 않는다.** 공식: https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-patch-notes-amp-announcements/threads/12797 ; https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/93 .
+
+**2026 실전평:** 6월 r/totalwarhammer는 젠취 제단의 전투 후 연구 누적을 높게 보되, 일부는 코른의 이동력 회복을 더 강력하게 보고, 일부는 트로그 Troll Empire 도시의 2슬롯 제단 전환 기회비용을 문제 삼는다. https://www.reddit.com/r/totalwarhammer/comments/1u34qwe/bestpreferred_approach_to_norscan_altars/ ; https://www.reddit.com/r/totalwar/comments/1u6jiln/norscas_rework_is_such_a_bloated_mess_that_ca/ .
+
+
 아래 영어 이름은 게임 데이터 검색용 키워드일 뿐 공식 한글명으로 번역·확정하지 않았다.
 
 | 우선 | 실전 목적(한국어 기능 설명) | 영문 데이터명과 핵심 확인 효과 |
@@ -193,6 +214,23 @@
 
 주의: 승리 목표의 Troll Dens는 이름이 비슷한 일반 모집 건물 수가 아니라, 9.0 원시 승리 스크립트의 RegionFactionChangeEvent에서 res_bile_trolls, res_chaos_trolls, res_river_trolls, res_stone_trolls 특수 자원 지역 소유를 센다. 이는 2026년 1월 플레이어 설명과 독립적으로 일치. 9.0.3 직접 실플레이 재현은 하지 않았다. 근거: https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/script/campaign/main_warhammer/victory_objectives.lua ; https://twdatabase.com/factions/wintertooth .
 
+## 8.5. 2026 실제 플레이어 평가 — 9.0.3 적용성 구분
+
+| 직접 플레이 환경/평가 | 실전에서 쓸 점 | 그대로 일반화하면 안 되는 점 |
+|---|---|---|
+| **2026-02 트로그 완료**, Normal 캠페인/Hard 전투, 승리조건 모드 사용, **사일 DLC 미보유** | 얼음 트롤+늑대두겁 4~5, 말라카이 조기 토벌, 울프릭 합병의 강력함 | 당시 **젠취 연구 버그 일부 적용**이라고 작성자가 인정, 무DLC 9.0.3 최고 기록 아님 |
+| **2026-06 신앙 제단 토론**(다수 코멘트) | 전선 근처 젠취 제단의 전투 후 연구 가속과 중첩, 전선이동 시 제단 재배치 중요 | 일부는 코른 연전 이동력 최고, 너글 성장 낮은 한계효용, 전체 신앙 최적 순위 합의 없음 |
+| **2026-06 트로그+울프릭 합병 추천** | 트로그 진영 Troll Empire 기반+울프릭 개인 Seafang·항구/약탈 전투수입 조합 | 울프릭 텔레포트가 모든 군단/트로그에게 이전되는 게 아님 |
+| **2026-03 DLC 조합 경험** | 사일 DLC 추가 시 키메라+공포의 아가리를 이용한 원거리 후열 교란 | DLC 미보유 트로그에게 기본 모집 가능한 병종이 아님 |
+| **2026-06 개편 반론** | 2슬롯 제단은 트롤 왕국 고유 건축을 희생할 수 있으므로 소규모 비핵심 지역에 집중 | '제단은 언제나 좋다'라는 과도한 도시 전환 금지 |
+
+실전 후기 원문: https://www.reddit.com/r/totalwarhammer/comments/1r2zdri/throgg_campaign_retrospect/ ; https://www.reddit.com/r/totalwarhammer/comments/1u34qwe/bestpreferred_approach_to_norscan_altars/ ; https://www.reddit.com/r/totalwarhammer/comments/1tx76x4/advice_for_playing_norsca/ ; https://www.reddit.com/r/totalwar/comments/1s09yh4/norsca_army_comps/ ; https://www.reddit.com/r/totalwar/comments/1u6jiln/norscas_rework_is_such_a_bloated_mess_that_ca/ .
+
+**D3 합병 실전 요령:** 북부 노스카 세력 지도자를 격파해 통합을 얻되, 울프릭 개인의 Seafang 이동을 활용하고 사일 고유 'Dark Ritual/Manipulations'는 트로그에게 넘어온다고 가정하지 않는다. 전쟁·유지비·도시 건물/제단 단계 확인. 합병 후 능력 승계·사일 접근성 중 직접 실측되지 않은 부분은 W13 경계 참조.
+
+**D4 9.0.3 신규 예외:** 개발사가 2026-10-09 **스티르카르(Styrkaar)를 모든 노스카 세력에서 사용할 수 있도록 변경**했다고 공지. 하지만 '모든 노스카 진영 접근'이 '모든 사용자에게 DLC 없이 무료'를 보증하지 않으므로 **획득·소유권은 미확인**. 이 세력 사용 가능성 변화는 과거 9.0 소유권/진영 제한 추론보다 9.0.3 패치가 우선한다. https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-patch-notes-amp-announcements/threads/16126-total-war-warhammer-iii-patch-9-0-3 .
+
+
 ## 9. 9.0.3에서 실제 바뀐 항목과 이전 자료의 이용
 
 2026-10-09 공개 9.0.3 변경 자료에서 확인된 노스카 관련 차이(9.0.2 대비):
@@ -240,7 +278,8 @@
 - W10_PLAN_EXPANSION_REVIEW.md — 계획 밖 후보를 제시한 역사 문서. **D1은 이후 제외, D2~D4는 사용자 채택.**
 - W12_CHAOS_DEVOTION.md — D2 신앙/제단 1차 원문 대조, 보상·침공 불확실성
 - W13_CONFEDERATION.md — D3 울프릭·사일 합병 규칙·능력 승계 1차
-- W14_DLC_AVAILABILITY.md — D4 소유권 DB·미보유 대체 편성 및 버그 경계
+- W14_DLC_AVAILABILITY.md — D4 소유권 DB·미보유 대체 편성 및 9.0.3 스티르카르 예외
+- W15_COMMUNITY_PRACTICE_AND_PATCH_AUDIT.md — 2026 유저 실전평·반대 의견·버그/버전 구별 및 연구·성장 중심 전략
 - RESEARCH_PLAN.md — 사용자가 승인한 단계, 실행 상태, 미완료와 다음 결정
 
 이 원고는 사용자 중간검토를 위한 **개정 초안**이다. 최종 판정과 브랜치 main 병합은 수행하지 않는다.

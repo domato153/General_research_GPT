@@ -44,7 +44,12 @@ def main():
     assert len(src) > 40000, "This is not the full source report"
 
     renderer = MarkdownIt("default", {"html": False, "linkify": False, "breaks": False})
-    soup = BeautifulSoup(renderer.render(src), "html.parser")
+    # Media-specific metadata adjustment, without changing research claims.
+    pdf_src = src.replace(
+        "PDF·외부 게시본은 아니다.",
+        "이 문서는 원고의 PDF 조판본이며 외부 공개 게시본은 아니다."
+    )
+    soup = BeautifulSoup(renderer.render(pdf_src), "html.parser")
     h1 = soup.find("h1")
     assert h1 and h1.get_text(" ", strip=True) == title
     h1.decompose()
@@ -59,12 +64,12 @@ def main():
     # Markdown TOC is replaced by a page-linked TOC of the same 14 chapters.
     toc_head = next((x for x in soup.find_all("h2") if x.get_text(" ", strip=True) == "목차"), None)
     if toc_head:
-        nxt = toc_head.next_sibling
-        while nxt and getattr(nxt, "name", None) in ("ol", "ul", "p"):
-            following = nxt.next_sibling
-            nxt.extract()
-            nxt = following
-        toc_head.extract()
+        # BeautifulSoup inserts whitespace NavigableStrings as siblings.
+        # Find the actual generated Markdown ordered list, not whitespace.
+        following = toc_head.find_next_sibling()
+        if following and following.name in ("ol", "ul"):
+            following.decompose()
+        toc_head.decompose()
 
     # Replace figure paragraph+following italic caption with one figure without
     # changing image or caption contents.
@@ -179,6 +184,16 @@ def main():
     .cover-middle:after { top:124mm; }
     .report-body .report-figure img { max-height: 170mm; width: 100%; object-fit:contain; }
     .report-body .report-figure figcaption { break-before:avoid; }
+    /* Keep the report's 14-item automated contents on one A4 page. */
+    .toc { padding:18mm 23mm 15mm; }
+    .toc-header { margin:7mm 0 5mm; }
+    .toc-small-num { font-size:49pt; }
+    .toc h2 { font-size:29pt; }
+    .toc-note { padding:4mm 5mm; margin-bottom:4mm; font-size:10pt; }
+    .toc-note-label { font-size:7pt; margin-bottom:1mm; }
+    .toc-row { padding:1.8mm 0; min-height:8mm; gap:3mm; }
+    .toc-name { font-size:9.7pt; line-height:1.3; }
+    .toc-num { font-size:8.1pt; }
     .report-section .table-wrap { break-inside:auto; }
     .report-section .table-wrap tr { break-inside:avoid; }
     """

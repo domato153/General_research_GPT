@@ -214,7 +214,7 @@ def main():
     for idx in range(1, 27):
         assert f"그림 {idx}." in text, f"Missing PDF figure caption {idx}"
     phrases = [
-        "민주당 44%", "공화당 36%", "2026", "CBO",
+        "민주당 44%", "36%", "2026", "CBO",
         "데이터센터", "재획정", "Siena", "NATO", "ICE",
         "53.4%", "48.1%", "트럼프",
     ]

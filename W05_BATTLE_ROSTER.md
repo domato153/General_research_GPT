@@ -25,3 +25,8 @@
 - 기술·고유스킬의 정확한 9.0.3 공식 한국어 표시명; Honga unit page는 스킬 항목 노출 부족. 한국어명 확인 없이 영어를 마음대로 번역 금지.
 - 일반 노스카 건설 체인을 트로그 특정 지역/카오스 제단에서도 동일하게 지을 수 있는지; 시작 정착지의 기존 건물 슬롯/건물 없는 상태; DLC 유닛 획득 루트; 실제 소집 중 트롤족 자원 정지 턴수.
 - 골드·트롤족·전리품 비용이 9.0.3 최신 인게임 표기와 충돌할 가능성. 동일 조건 전투 실측 데이터 부족.
+
+## 2026-10-12 D4 공개 소유권 원시 테이블에 따른 A 정정
+- 이전 '피미르 귀족 1'이 모든 트로그 플레이어의 보편 기본 가용성인 것으로 읽히면 오류. 9.0 게임 DB `db/agent_subtype_ownership_content_pack_junctions_tables/data__.tsv`: `wh3_dlc27_nor_fimir_noble → wh3_dlc27_tides_of_torment_nor`. **사일 DLC 소유 필요**. `피미르 마귀`와 구분.
+- **사일 미보유 기본 20칸:** 트로그 1 + 기본 피미르 마귀 1 + 얼음 트롤 11 + 장갑 늑대두겁 4 + 피미르 전사 2 + 기동 사격 1 = 20.
+- **사일 보유 20칸:** 트로그 1 + 피미르 마귀 1 + 피미르 귀족 1 + 얼음 트롤 10 + 장갑 늑대두겁 4 + 피미르 전사 2 + 기동 사격 1 = 20. 실제 영웅 수용량/건설 티어 조건 별도. 근거 `W14_DLC_AVAILABILITY.md`, https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/db/agent_subtype_ownership_content_pack_junctions_tables/data__.tsv

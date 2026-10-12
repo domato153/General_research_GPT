@@ -1,6 +1,6 @@
 # W02 — Throgg 실전 운영안 (9.0.3, 조건부 실전 추천)
 ## 목표
-얼음 트롤 조기 모집 + 노스카 부족 지도자 격파/통합으로 후방 구축 + Trollkind 순유입 유지 + Troll Empire Tier III/V1 증원 + 항구/전리품 복귀로 경제 안정, 4 hunts/Troll King's Lair/Rocky Throne 단기 목표 후 3 Troll Den/TierVI 장기 목표.
+얼음 트롤 조기 모집 + 노스카 부족 지도자 격파/통합으로 후방 구축 + Trollkind 순유입 유지 + Troll Empire Tier III/VI 증원 + 항구/전리품 복귀로 경제 안정, 4 hunts/Troll King's Lair/Rocky Throne 단기 목표 후 3 Troll Den/TierVI 장기 목표.
 
 ## 초반 루트(실제 순서는 동적)
 - 1~5턴: 인접 부족장 위치와 세력을 확인, 승리 가능한 전투 우선. 지도자 격파 후 즉시 confed 여부 판단, 종속 군단 유지비 점검. Initial nearby Broken Wheel Black Rock, Aesling Forbidden Citadel, Sarl Encampment, Tallymen of Pestilence Forest Decay, Naglfarlings Naglfari Plain.

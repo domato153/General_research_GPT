@@ -2,7 +2,9 @@
 
 ## 정본
 - `main`: 범용 조사 엔진·최종보고서 양식·선택형 상태 관리 초기 템플릿·승인된 PDF 스타일 **운영 정본**. 개별 연구 데이터나 개발 실험 기록은 넣지 않는다.
-- `PROJECT_BOOTSTRAP.md`: 실사용 프로젝트에 배포할 전체 부트스트랩. GitHub `main` 파일 변경만으로 ChatGPT 프로젝트 지침/첨부가 자동 갱신되지는 않는다.
+- `PROJECT_BOOTSTRAP.md`: GitHub의 `AGENTS.md`를 실제로 읽도록 안내하는 짧은 진입점. GitHub `main` 파일 변경만으로 ChatGPT 프로젝트 지침/첨부가 자동 갱신되지는 않는다.
+- `AGENTS.md`: 공통 권한·브랜치·협업 경계와 요청별 라우팅. 일반 ChatGPT는 부트스트랩의 명시적 조회 지시를 따른다. 파일명만으로 자동 열람되었다고 가정하지 않는다.
+- `06_COLLABORATION_WORKFLOW.md`, `07_CONTINUITY_HANDOFF.md`, `08_RESEARCH_FIDELITY.md`: 기존 부트스트랩의 협업·인계·자료/원고/시각자료 보존 상세 규칙. 해당 요청일 때 읽는다.
 - `00_INDEX.md`, `01_CORE_RULES.md`, `02_RESEARCH_PIPELINE.md`, `03_REVIEW_MODULES.md`, `04*`, `05_DOMAIN_MODULES.md`, `13_FINAL_REPORT.md`: 사용 목적에 따라 필요한 규칙만 읽는다.
 - `final_pdf_html_formatting_instruction_final.md` + `final_pdf_report_style.css`: 사용자 승인 PDF 레이아웃. PDF 생성 요청이 있을 때만 참조한다.
 - `10_CURRENT_SUMMARY.md`~`12_ARCHIVE_LOG.md`: 필요할 때 조사별로 쓰는 **초기 템플릿**. 단계마다 반드시 업데이트하거나 Closeout할 필요는 없다.

@@ -18,8 +18,8 @@ def section(filename, start, end):
     return remainder.split(end, 1)[0]
 
 class TriggerStrengthStaticContract(unittest.TestCase):
-    def test_bootstrap_trigger_and_choice_separated(self):
-        s=section("PROJECT_BOOTSTRAP.md","## 대화형 단계 협업 보존","## 심층조사의 반복 검증")
+    def test_collaboration_module_trigger_and_choice_separated(self):
+        s=section("06_COLLABORATION_WORKFLOW.md","## 대화형 단계 협업 보존","## 심층조사의 반복 검증")
         for term in ("사용자 질문을 기다리지 않고","필수 근거 오류","개수 제한 없이",
                      "추천만으로 착수하지 않는다","현 근거로 진행","무한 확장"):
             self.assertIn(term,s)

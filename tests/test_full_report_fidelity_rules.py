@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOT = (ROOT / "PROJECT_BOOTSTRAP.md").read_text(encoding="utf-8")
+FIDELITY = (ROOT / "08_RESEARCH_FIDELITY.md").read_text(encoding="utf-8")
 PIPE = (ROOT / "02_RESEARCH_PIPELINE.md").read_text(encoding="utf-8")
 FINAL = (ROOT / "13_FINAL_REPORT.md").read_text(encoding="utf-8")
 VALID = (ROOT / "04B_VALIDATION_RULES.md").read_text(encoding="utf-8")
@@ -15,10 +15,10 @@ def between(text, start, end):
 
 
 class FullReportFidelityRules(unittest.TestCase):
-    def test_bootstrap_routes_followup_results_without_short_mode_bloat(self):
-        self.assertIn("상세형 최종보고서의 후속 결과 동등 수록", BOOT)
-        self.assertIn("Brief·일반 단발 답변", BOOT)
-        self.assertIn("추가 승인 관문을 강제하지 않는다", BOOT)
+    def test_fidelity_module_preserves_followup_results_without_short_mode_bloat(self):
+        self.assertIn("상세형 최종보고서의 후속 결과 동등 수록", FIDELITY)
+        self.assertIn("Brief·일반 단발 답변", FIDELITY)
+        self.assertIn("추가 승인 관문을 강제하지 않는다", FIDELITY)
 
     def test_stage5_discovers_real_files_beyond_parent_wid(self):
         scope = between(PIPE, "## Stage 5 —", "## Stage 6 —")

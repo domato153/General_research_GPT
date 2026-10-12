@@ -20,3 +20,8 @@
 - 관련 운영 `main` 커밋: `1045ef57672a93637b628e21227ede7be327e381`, `3f60f9376237496cc30c09a835c14ea5bbbdca8a`, `297535465be5819323c012d3dd7f3ea33ac8de9b`.
 - 보존 시점 운영 `main` HEAD `297535465be5819323c012d3dd7f3ea33ac8de9b`, 연구 HEAD `e84adae6e7131cfc33105f39d229268fdf696443`, 직전 역사 HEAD `462c6c05f883e6669db008eb4a0e0878bf40ac48`.
 - 역사 기록용 커밋은 위 **직전 archive HEAD를 첫 부모**, 해당 main·research 고정 HEAD를 추가 부모로 하여 각 정본의 당시 원본 코드/검증기/CSV/SVG/PDF Git 객체를 실제 연결한다. 루트의 과거 `PROJECT_BOOTSTRAP.md` 등 구판 운영 파일은 변경하지 않는다. 이 기록은 원본 조사자료를 운영 `main`으로 옮긴 사실을 뜻하지 않는다.
+
+## 운영 제안·단계별 관문 계약 개선 (2026-10-12)
+- [운영 관문 이력](HISTORY/operating-gate-20261012/README.md): 기존 번역 배치별 운영 제안 영수증에서 파생된 조사 Stage별 제안·종합 전환 강제 검사, 운영 `main` `ce1bc9d9cd2a422dc18e783ba5991b6b50b1948c` 및 트로그 롤아웃 `3d6be6e4191b5124dfbe3a2d48e43214c075c6fe`의 정확한 권한 범위와 역사적 증거를 보존.
+- [회귀 결과와 제한](HISTORY/operating-gate-20261012/REGRESSION_RESULTS.md): 기존 JS 동등 재시험 11+9, 신규 20, 결손 변형 5, 보존용 JS 시험 21의 **정적 PASS**, Python/독립 모델 E2E NOT RUN 명시.
+- 역사 커밋은 위 시점의 운영 main·연구 커밋을 추가 부모로 연결하고, 기존 루트 파일·연구 원고는 복제/치환하지 않음.

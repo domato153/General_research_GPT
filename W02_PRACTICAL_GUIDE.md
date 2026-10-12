@@ -43,3 +43,12 @@ Norsca monster hunt 24 hunts 3 types, Allegiance god unlock special hero & retal
 - Specific current unique Troll Kingdom building costs, monster horde summon cooldown/size & effect on Trollkind, Troll Den recruit unit capacity are NOT verified 9.0.3 gameplay. Treat supplied older community cases as conditional, and revise after direct test.
 - Not a deterministic 1-to-30 turn speedrun or simulator tested army comp. No independent game start was launched in this research.
 - Tides of Torment ownership may gate some monster units; 7.0 core Throgg rework is free but Throgg base requires Norsca DLC.
+
+
+## 한국어 명칭/구체 건축 중요 보정 (2026-10-12)
+사용자가 9.0.3 실제 인게임 한국어 명칭과 정착지 단계/건물 체인/건설비/모집 병종까지 따라 하기 좋은 구체안을 필수로 요청. 직역 금지, 명칭 미확인은 명시. 세부 W04_KO_LOCALIZATION.md 참조.
+- Troll Kingdom L1 트롤 굴(트롤족 +4/턴, 영역 +2) → L2 트롤 땅굴(+6/턴, 영역 +4) 생산 성장.
+- Throgg 모집 L1 트롤 둥지(750골드/1턴, 노스카 트롤) → L2 정착지에서 그 체인 업그레이드(1500골드/2턴, 한국어명 미확인, 노스카 얼음 트롤 포함).
+- 별도 일반 L2 얼음 트롤 둥지(2000골드/2턴, 노스카·얼음 트롤)는 상황에 따라 비교. 금비용 0 Troll Kingdom 건물에 Trollkind 소모가 없다고 추정 금지.
+- 탈라브하임 등 조건 맞는 특정 지역에 야생의 강둑 L1 → 강가 트롤 소굴 L2 선택 가능. 지배력+자원 효과 확인.
+- 1차 공략의 일반 Ice Troll Lair만 최우선 추천한 부분은 L1 조기 모집 선택지를 누락한 것으로 정정; 실제 주어진 군단/도시 슬롯에 따라 선택.

@@ -1,0 +1,61 @@
+name: Export W8 Korean Full Report PDF
+
+on:
+  push:
+    branches:
+      - research/20261011-trump-midterms-opinion
+    paths:
+      - .github/workflows/export_w8_pdf.yml
+      - tools/export_w8_pdf.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: export-w8-full-report
+  cancel-in-progress: false
+
+jobs:
+  pdf:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out authoritative research branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Korean fonts and PDF renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk libpango-1.0-0 libpangocairo-1.0-0
+          python -m pip install --quiet --disable-pip-version-check \
+            "weasyprint==68.0" "markdown-it-py>=3,<5" "beautifulsoup4>=4.12" "PyMuPDF>=1.25"
+
+      - name: Render and validate all sections and 26 original SVGs
+        run: |
+          python tools/export_w8_pdf.py
+
+      - name: Preserve generated PDF on approved research branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/Trump_2026_Midterms_Full_Report_20261012.pdf
+          if git diff --cached --quiet; then
+            echo "PDF is unchanged"
+          else
+            git commit -m "Publish inspected W8 Full Report A4 PDF on authorized research branch"
+            git push origin HEAD:research/20261011-trump-midterms-opinion
+          fi
+
+      - name: Archive generated PDF for download
+        uses: actions/upload-artifact@v4
+        with:
+          name: W8-Korean-Full-Report-PDF
+          path: exports/Trump_2026_Midterms_Full_Report_20261012.pdf
+          if-no-files-found: error
+          retention-days: 90

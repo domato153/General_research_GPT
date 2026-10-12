@@ -54,3 +54,25 @@
 기존 '얼음 트롤 둥지 2단계 2000 골드를 먼저'만 제시한 설명은 Throgg의 L1 750골드 '트롤 둥지' 모집 옵션을 누락. Gold 경제형·Troll Kingdom 계열·기본 Troll 모집 계열을 실제 이름과 효과로 나눠서 제시할 필요.
 ## 잔여 검증
 게임 자체 9.0.3 한국어 번역 추출과 정착지별 최초 빌드 가능 슬롯/이름, 특수 트롤굴 이름, Trollkind 건축비·소집 관련 스크립트, 모든 고유 스킬·기술 한글명.
+
+
+## A+B 2차 조사 보강 (2026-10-12)
+검증 분리: Honga는 게임 한글 문자열/내부 ID 대응 자료지만 일부 병종 값은 9.0.3과 충돌. 노스카 얼음 늑대 비용/유지비 Honga 600/150, 9.0.3 TWDatabase 625/156. 건물 최신 수치 동일성까지 증명되지 않음.
+- 범위: 윈터투스 트롤 모집 L1 '트롤 둥지' 750골드/1턴, 기본 노스카 트롤 모집; 그 계열 L2 이름은 Honga 'L2'만 표시되므로 공식 한국어명 미확인. L2 추가 1500골드/2턴, 노스카 얼음 트롤도 모집. 두 단계 누적 2250골드, 건설 총 3턴(성장 대기 제외). 일반 노스카 '얼음 트롤 둥지' 2000골드/2턴, 정착지 L2 필요. 전자는 L1에서 빨리 기본 트롤부터 뽑을 때 적합, 후자는 기존 L2와 일반 체인 슬롯 이용 가능시 유리할 수 있음. 실제 지역별 두 건물 동시 가용 여부 재검증 필요.
+- Troll Kingdom L1 '트롤 굴': 1턴, 금 비용 표시0, 수입+100, 성장+15, 트롤족+4/턴, 영역+2. → L2 '트롤 땅굴': 1턴, 금비용 표시0, 수입+150 성장+30 트롤족+6 영역+4. 트롤족 별도 건설비는 미확인(무료라는 의미 아님).
+- 일반 경제 건물 '털가죽 은닉처' L1 500골드/1턴, 수입80 성장10 → '야수 무두장이' L2 추가 1000골드/2턴, 수입160 성장20. 업그레이드로 늘어나는 수입은 +80/턴, 추가 1000골드 회수는 다른 수정/효과 제외 12.5 수입 턴.
+- 특수 주도/지역 건물 '트롤 동굴→돌투성이 소굴' 분기: L3 미궁 둥지 트롤족+8/턴·영역+10 vs 거대한 요새의 폐허 트롤족+20·영역+4. 수입+45%·충원+10%는 공통 표기. 지배력 성장 vs 자원 채굴로 선택, 실제 9.0.3 특수 자원 건설비 및 건설 슬롯 미확인.
+- 지정지역 '야생의 강둑→강가 트롤 소굴' L2: 트롤족+8, 영역+4, 속주 수입+20%, 충원+6%, 진영 트롤 유지비 -1%. 허용 지역 중 탈라브하임·잘첸문트·켐리 등 확인. 임의의 강가 마을 전부가 건설 가능하다는 뜻 아님. L3 3a/3b는 한국어 이름 미확인(현재 Honga 'L3'), 영역 성장 +10/트롤족 +8 혹은 +4/+20 분기.
+- 추가 한국어 ID 대조: River Trolls=강가 트롤, Stone Trolls=돌 트롤, Bile Trolls=담즙 트롤, Skin Wolves (Armoured)=늑대두겁 (장갑 무장), Fimir Noble=피미르 귀족, Fimir Balefiend (Fire)=재앙의 마귀 피미르 (화염).
+- TWDB.io의 Troll Grotto (wh3_dlc27_nor_throgg_trolls_shelter_1) 게임 건물 효과 설명에는 괴수 무리 소집 후 한동안 트롤족 수입이 차단된다는 문구 있음. 런타임 지속 기간 확인 전까지 몇 턴이라고 단정하지 않음.
+- '먹이 구덩이→괴물 구덩이' 별도 건물 계열도 검출됐지만 자료에서 효과 데이터가 비어 있어 우선 추천 제외. 모든 트롤 왕국 L1 및 특수지역 건물은 9.0.3 정착지 타입/슬롯·트롤족 건설비 직접 대조 필요.
+신규/강화 근거:
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings/wh_main_nor_slaves_1
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings/wh_main_nor_slaves_2
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings/wh3_dlc27_nor_throgg_trolls_woods_3a
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings/wh3_dlc27_nor_throgg_trolls_woods_3b
+https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings/wh3_dlc27_special_throgg_river_trolls_2
+https://twdb.io/warhammer3/database/buildings/wh_dlc27_nor_offerings_0_throgg/
+https://twdb.io/warhammer3/database/buildings/wh3_dlc27_nor_throgg_trolls_shelter_1/
+https://twdatabase.com/patch/9-0-3

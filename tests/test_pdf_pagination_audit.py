@@ -26,6 +26,10 @@ class PageTests(unittest.TestCase):
         a=self.check([[(95,'1. First'),(190,'Short ending')],[(95,'2. Second')]])
         self.assertFalse(a['hard_issues'])
         self.assertEqual(a['large_gap_pages'][0]['gap_class'],'possible_intentional_chapter_end')
+    def test_contentless_report_page_is_error(self):
+        r=self.check([[(95,'1. First')],[],[(95,'2. Second')]])
+        self.assertTrue(any(e['type']=='contentless_report_page' for e in r['hard_issues']))
+
     def test_non_chapter_gap_requires_review(self):
         a=self.check([[(95,'1. First'),(190,'Text')],[(95,'Continued chart')],[(95,'2. Second')]])
         self.assertTrue(any(x['gap_class']=='review_figure_or_table_flow' for x in a['large_gap_pages']))

@@ -22,6 +22,8 @@ def audit(path: Path, expected: int | None = None, top_limit: float = 180.,
                                  'page': i+1, 'y': round(b[1], 1)})
         chapters += hits
         body = [b for b in blocks if b[1] >= 63 and b[3] <= p.rect.height - 57]
+        if i >= 2 and not body:
+            problems.append({'type': 'contentless_report_page', 'page': i+1})
         bottom = max((b[3] for b in body), default=0.)
         gap = (p.rect.height - 60 - bottom) / max(1., p.rect.height - 130)
         pages.append({'page': i+1, 'last_body_y': round(bottom, 1),

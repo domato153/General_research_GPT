@@ -33,7 +33,7 @@
   - Sea Marauder's Tools global recruit duration -1 all units, global cap +1.
   - Master of Beasts rank7+ monsters ward save +5 and recruit improvements.
   - Rally the Tribes recruitment cost -25%, upkeep -5%, local recruit capacity +1.
-- Throgg skills: Lord of Beasts rank12 (leadership +12 trolls/fimir/skinwolves, upkeep -10% own army, global control+2); Mutant Regeneration Horrible Regeneration + missile res20% to trolls/skin wolves, Fimir regeneration; Monstrous Fiends frenzy Troll+Fimir, melee defense+8 trolls/fimir/skinwolves; Battle-Hardened rank18 heal cap+15% all armies, replenishment+8% own; Unite the Creatures rank22 +2 summon factionwide, special troll phys resist+10%, recruit rank+2, xp+20% own army. 해금 prerequisite 확인 필수.
+- Throgg skills: Lord of Beasts rank12 (leadership +12 trolls/fimir/skinwolves, upkeep -10% specifically Trolls/Fimir/Skin Wolves in own army, global control+2); Mutant Regeneration Horrible Regeneration + missile res20% to trolls/skin wolves, Fimir regeneration; Monstrous Fiends frenzy Troll+Fimir, melee defense+8 trolls/fimir/skinwolves; Battle-Hardened rank18 heal cap+15% all armies, replenishment+8% own; Unite the Creatures rank22 +2 summon factionwide, special troll phys resist+10%, recruit rank+2, xp+20% own army. 해금 prerequisite 확인 필수.
 - Faction victory data short: 4 monster hunts; Dominion Tier III Troll-kin March; own Lair of Troll King; landmark Cave of Rocky Throne. Reward troll-building Trollkind cost -20%, Trollkind from Troll Kingdom building +25%, all trolls upkeep -10%. Long: short plus Supreme Hunter, 3 Troll Dens, Tier VI Empire of Trolls, reward global recruit time -1 / cap +2 and Spoils +2000.
 - 9.0.3 Norsca nerfs vs 9.0.2: Dread Maw campaign cost1100→1200/upkeep275→300; Marauder Horsemen recruit525→600/upkeep131→150; Horsemasters recruit750→850/upkeep188→213; Ice Wolves recruit600→625/upkeep150→156/fire resistance 0→-25%; Marauder Bearmen HP11600→11200. 대부분 트롤 기본 수치는 본 변경 목록에서 주요 변경으로 확인되지 않음; 누락이 변경 없음 증명은 아님.
 
@@ -56,3 +56,6 @@
 3. 'rush horde early' contradicted by halted Trollkind accrual report; check actual tooltip each time.
 4. 'Norsca poor passive income' countered by port/extra Throgg special economy buildings; measure net rather than stereotype.
 5. 'all 9.0.3 unchanged' contradicted Norsca roster cost and fire vulnerability nerfs.
+
+## W16 2026-10-12 확정 대상 수정
+- Lord of Beasts 유지비 -10%는 트로그 군단 **트롤·피미르·늑대두겁 한정**. Mutant Regeneration의 사격저항 +20%도 **트롤·늑대두겁만**; 피미르는 일반 재생만. 최상위 Lord of Monstrosities는 세력 전체 트롤/피미르/늑대두겁 전역 모집 -2턴, 노스카 괴수 무기 피해 +10%. 출처 https://twdatabase.com/units/throgg . 다른 구 연구 결론/파일은 삭제하지 않고 국소 보정.

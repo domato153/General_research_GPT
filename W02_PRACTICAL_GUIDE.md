@@ -71,3 +71,8 @@ Norsca monster hunt 24 hunts 3 types, Allegiance god unlock special hero & retal
 - 9.0 리소스 비용표: shelter(트롤 굴 계열 추정) -30/-40; woods/deep_woods(트롤 동굴 계열 추정) -20/-35/-50; caves -30. 정확한 건물 단계 UI 가격 매핑은 미확인이라 본문에서는 '잠정 대응'으로 표시.
 - 소집 rituals tier1~6 재사용 대기 10/12/14/16/18/20턴, 2~6단계 자원 사용 60/90/120/150/200, 출처는 9.0; 소집 후 트롤족 수입정지 효과 기본 10턴. 자원 생산기·건설기와 소집 대규모 공세기를 분리.
 - 9.0.3 패치에 대한 현재 룰 재현 불가, 최신 게임 UI/툴팁 확인 후 비용 정확 표현 가능. W06_RESOURCE_SCRIPT_AUDIT.md 근거 참조.
+
+## W16 사용자 선호에 맞춘 연구·성장 경로 보강
+- 젠취(독수리) 제단 근처 반복 전투 → 전투 후 연구 진도 확보. 이는 7.0/7.0.3 무한 연구 버그가 아니라 수정 후 9.0.3 건물의 정상 보너스 조건을 전제로 한다. 제단은 트롤족 전용 슬롯이 중요한 코어 도시에서 무분별하게 전환하지 않는다.
+- 성장 우선: **Untiring Sentries(200)→Beware the Crow(400, 성장 +15)**→A Reminder of Strength(500, 성장 명령 추가 +10). 정복·정착지 확장 우선 시 **A Taste of Bloody Triumph(정착지 시간 -1·비용 -20%, 복수 선행 필요)→The Eyes of the Four→Under Their Gaze(신규 점령 도시 인구잉여+1)**.
+- 전투에 자주 패하면 **Natural Selection→Elder Trolls**를 앞에 두고 이후 성장으로 전환. Lord of Monstrosities(트롤/피미르/늑대두겁 전역 모집 -2턴)는 모집·보충 가속에 매우 중요. 근거 https://twdatabase.com/technologies/norsca 및 https://twdatabase.com/units/throgg .

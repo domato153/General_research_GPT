@@ -7,7 +7,7 @@
 - Fimir Balefiend (Fire) 국내 한국어 '재앙의 마귀 피미르 (화염)', 9.0.3 실제 모집 경로/필요영웅수용량 미검증. 이름만 확인해 두고 즉시 모집가능하다는 지시 금지.
 
 ## 군단 실전 판정 및 9.0.3 기초 스탯
-- 트로그 all-Troll +15% physical resistance faction, upkeep -20% faction. 트로그 고유 Lord of Beasts rank12 prerequisites, Mutant Regeneration Horrible Regeneration trolls+wolves, +20% missile resist own army, Fimir normal regen; Monstrous Fiends +8 MD trolls/fimir/wolves, frenzy trolls/fimir. Battle-Hardened rank18 heal cap+15% faction and replenishment+8% own. Unite Creatures rank22 extra +2 horde summon and +10% phys resist special Troll faction. 현재 9.0.3 출처 https://twdatabase.com/units/throgg .
+- 트로그 all-Troll +15% physical resistance faction, upkeep -20% faction. 트로그 고유 Lord of Beasts rank12 prerequisites, Mutant Regeneration Horrible Regeneration trolls+wolves, +20% missile resist **Trolls/Skin Wolves own army only**, Fimir normal regen (Fimir not in missile-resistance target); Monstrous Fiends +8 MD trolls/fimir/wolves, frenzy trolls/fimir. Battle-Hardened rank18 heal cap+15% faction and replenishment+8% own. Unite Creatures rank22 extra +2 horde summon and +10% phys resist special Troll faction. 현재 9.0.3 출처 https://twdatabase.com/units/throgg .
 - 9.0.3 ultra rank0 Trolls 16 entities, Ice Troll armor60 MA38 MD32 WS120 cost950 upkeep238, River Troll armor40 MA34 MD40 WS105 cost900 upkeep225, Bile armor60 HP8672 MA29 MD45 WS115 upkeep250, Stone armor70 MA36 MD32 WS120 upkeep275, Fimir Warriors greatweapons heavy AP front support. 수치가 전투 DPS 아님.
 - 늑대두겁 기본 24개체 HP7416 armor15 speed75 MA32 MD28 WS60, 기본 장갑 무장 24개체 HP7416 armor70 speed65 MA32 MD28 WS60. Korean Honga 일부 값은 참고이고 9.0.3 TWDatabase 기준 구체 가격 대조 필요. 늑대두겁은 기동+대대형 측후방 타격 역할, 사격/고장갑 유닛엔 별도 판단.
 - 추천 20슬롯 예시(후보, 우위 직접 재현X): 트로그1, 마법 영웅1, 피미르 영웅1, 얼음트롤10, 늑대두겁4, 피미르전사2, 기마투척/원거리1 =20. 초반 부족하면 트롤7~9 + 늑대두겁2 + 저렴한 보병/사격. 늑대두겁 4~5 체감 추천이 2026-02와 2026-03 커뮤니티에 복수 확인됨. 사용자가 높은 마이크로 부담을 싫어하면 늑대두겁 2~3으로 줄이고 트롤 늘리는 선택 가능.
@@ -30,3 +30,8 @@
 - 이전 '피미르 귀족 1'이 모든 트로그 플레이어의 보편 기본 가용성인 것으로 읽히면 오류. 9.0 게임 DB `db/agent_subtype_ownership_content_pack_junctions_tables/data__.tsv`: `wh3_dlc27_nor_fimir_noble → wh3_dlc27_tides_of_torment_nor`. **사일 DLC 소유 필요**. `피미르 마귀`와 구분.
 - **사일 미보유 기본 20칸:** 트로그 1 + 기본 피미르 마귀 1 + 얼음 트롤 11 + 장갑 늑대두겁 4 + 피미르 전사 2 + 기동 사격 1 = 20.
 - **사일 보유 20칸:** 트로그 1 + 피미르 마귀 1 + 피미르 귀족 1 + 얼음 트롤 10 + 장갑 늑대두겁 4 + 피미르 전사 2 + 기동 사격 1 = 20. 실제 영웅 수용량/건설 티어 조건 별도. 근거 `W14_DLC_AVAILABILITY.md`, https://github.com/Shazbot/WH3-Dump/blob/8a4f7e64714cf971b44988a4b59f218af6d04ff2/db/agent_subtype_ownership_content_pack_junctions_tables/data__.tsv
+
+## W16 최종 내용 감사 보정
+- Lord of Beasts: 트롤·피미르·늑대두겁 유지비 -10%(트로그 군단), 기타 병종 전체 적용 아님.
+- Mutant Regeneration: 트롤·늑대두겁 사격저항 +20%, 피미르는 일반 재생만.
+- Lord of Monstrosities: 전 세력 트롤·피미르·늑대두겁 전역 모집시간 -2턴, 노스카 괴수 무기피해 +10%, 트로그 공포 유발, 4개 고유 선행 필요. 원시 https://twdatabase.com/units/throgg .

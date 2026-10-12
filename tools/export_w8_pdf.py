@@ -72,6 +72,17 @@ def main():
             following.decompose()
         toc_head.decompose()
 
+    # With mandatory fresh-page chapters the source's purely decorative HR
+    # before chapter 1 can otherwise occupy an entire otherwise blank page.
+    # Drop only dividers immediately preceding a numbered major chapter,
+    # preserving original FINAL_REPORT.md and all semantic section boundaries.
+    for divider in list(soup.find_all("hr")):
+        next_el = divider.find_next_sibling()
+        if next_el and next_el.name == "h2" and re.match(
+            r"^\d+\.\s", next_el.get_text(" ", strip=True)
+        ):
+            divider.decompose()
+
     # Replace figure paragraph+following italic caption with one figure without
     # changing image or caption contents.
     md_figs = []

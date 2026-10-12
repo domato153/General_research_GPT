@@ -76,3 +76,8 @@ https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/b
 https://twdb.io/warhammer3/database/buildings/wh_dlc27_nor_offerings_0_throgg/
 https://twdb.io/warhammer3/database/buildings/wh3_dlc27_nor_throgg_trolls_shelter_1/
 https://twdatabase.com/patch/9-0-3
+
+## C 단계 관련 추가 한국어 매핑 및 모집 건물
+- Warhammer III 게임 문자열(구판 Warhammer I 별명과 혼동 금지): wh_dlc08_nor_mon_skinwolves_0 → 늑대두겁; wh_dlc08_nor_mon_skinwolves_1 → 늑대두겁 (장갑 무장).
+- 짐승 무리 모집 계열: 군견 보관소 wh_main_nor_beasts_1: L1 500골드 1턴 군견; 전투 늑대 소굴 wh_main_nor_beasts_2: L2 추가1000골드 3턴, 늑대두겁/얼음 늑대; 암흑 공물의 동굴 wh_main_nor_beasts_3: L3 추가2000골드 4턴, 장갑 무장 늑대두겁. 건설 총 3500골드·8턴(정착지 레벨업 비용/기간 별도). https://www.honga.net/totalwar/ko/warhammer3/factions/wh_dlc08_nor_wintertooth/buildings 및 https://twdatabase.com/buildings/norsca
+- 게임 고유 스킬/기술은 한글 문자열 직접 추출이 미완료라 일부 이름 미확인. 표기 확정·미확인 구별.

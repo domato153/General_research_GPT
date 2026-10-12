@@ -7,6 +7,9 @@ on:
     paths:
       - .github/workflows/export_w8_pdf.yml
       - tools/export_w8_pdf.py
+      - tools/visual_layout_audit.py
+      - tests/test_visual_layout_audit.py
+      - assets/**
   workflow_dispatch:
 
 permissions:
@@ -35,6 +38,19 @@ jobs:
           sudo apt-get install -y -qq fonts-noto-cjk libpango-1.0-0 libpangocairo-1.0-0
           python -m pip install --quiet --disable-pip-version-check \
             "weasyprint==68.0" "markdown-it-py>=3,<5" "beautifulsoup4>=4.12" "PyMuPDF>=1.25"
+
+      - name: Run reusable visual-layout regression tests
+        run: |
+          python -m unittest discover -s tests -p "test_visual_layout_audit.py" -v
+
+      - name: Audit repaired SVG geometry before PDF rendering
+        run: |
+          python tools/visual_layout_audit.py --strict \
+            assets/W7-VIS-F02_pew_economic_policy_attribution_all_adults_2025_2026.svg \
+            assets/W7-VIS-F03_pew_economic_policy_attribution_republicans_2025_2026.svg \
+            assets/W2-VIS-F02_gasoline_2025_2026.svg \
+            assets/W6-VIS-F02_cook_37_battleground_house_2026.svg
+          python tools/visual_layout_audit.py assets/*.svg > visual_layout_review_candidates.json
 
       - name: Render and validate all sections and 26 original SVGs
         run: |
